@@ -1,0 +1,68 @@
+{
+  "gerado_em": "2026-09-22T23:27:24.169Z",
+  "total_selecoes": 3,
+  "grupos_ativos": 3,
+  "selecoes": [
+    {
+      "grupo": {
+        "id": "grupo-geral-1",
+        "nome": "Grupo Geral",
+        "group_id": "987613641743046",
+        "nicho": "geral"
+      },
+      "oferta": {
+        "id": "58209865798",
+        "titulo": "Glúteo Max – Fórmula Avançada para Desempenho e Estética Muscular Envio Imediato !!",
+        "preco": "24.89",
+        "preco_formatado": "R$ 24,89",
+        "link": "https://s.shopee.com.br/9zxuB3rIQC",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-820l5-mnqnvlwobqptf0",
+        "nicho": "saude"
+      },
+      "texto": "🔥 OFERTA DO DIA\n\nGlúteo Max – Fórmula Avançada para Desempenho e Estética Muscular Envio Imediato !!\n\n💰 R$ 24,89\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9zxuB3rIQC",
+      "status": "pendente",
+      "selecionado_em": "2026-09-22T23:27:24.169Z"
+    },
+    {
+      "grupo": {
+        "id": "grupo-casa-1",
+        "nome": "Grupo Casa",
+        "group_id": "811021770682797",
+        "nicho": "casa"
+      },
+      "oferta": {
+        "id": "22192792890",
+        "titulo": "Faca Para Churrasco Profissional Luxo Personalizado Seu time",
+        "preco": "54",
+        "preco_formatado": "R$ 54,00",
+        "link": "https://s.shopee.com.br/3qNJ3y6BA0",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mfyfc5895i4l55",
+        "nicho": "casa"
+      },
+      "texto": "🔥 OFERTA DO DIA\n\nFaca Para Churrasco Profissional Luxo Personalizado Seu time\n\n💰 R$ 54,00\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/3qNJ3y6BA0",
+      "status": "pendente",
+      "selecionado_em": "2026-09-22T23:27:24.169Z"
+    },
+    {
+      "grupo": {
+        "id": "grupo-saude-1",
+        "nome": "Grupo Saúde",
+        "group_id": "404233713795205",
+        "nicho": "saude"
+      },
+      "oferta": {
+        "id": "58209865798",
+        "titulo": "Glúteo Max – Fórmula Avançada para Desempenho e Estética Muscular Envio Imediato !!",
+        "preco": "24.89",
+        "preco_formatado": "R$ 24,89",
+        "link": "https://s.shopee.com.br/9zxuB3rIQC",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-820l5-mnqnvlwobqptf0",
+        "nicho": "saude"
+      },
+      "texto": "🔥 OFERTA DO DIA\n\nGlúteo Max – Fórmula Avançada para Desempenho e Estética Muscular Envio Imediato !!\n\n💰 R$ 24,89\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9zxuB3rIQC",
+      "status": "pendente",
+      "selecionado_em": "2026-09-22T23:27:24.169Z"
+    }
+  ],
+  "aviso": "Publicação automática em grupos NÃO está implementada. Groups API oficial da Meta foi removida em abril/2024."
+}
