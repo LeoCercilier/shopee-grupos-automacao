@@ -1,0 +1,15 @@
+{
+  "versao": 1,
+  "descricao": "Cadastro de Páginas do Facebook usadas como identidade de publicação. Tokens NÃO ficam neste arquivo — use GitHub Secrets / variáveis de ambiente.",
+  "paginas": [
+    {
+      "id": "pagina-principal",
+      "nome": "Página principal (configure o Page ID real)",
+      "page_id": "",
+      "token_env": "FACEBOOK_PAGE_ACCESS_TOKEN",
+      "ativo": true,
+      "observacoes": "Defina page_id e o Secret FACEBOOK_PAGE_ACCESS_TOKEN neste repositório. Permissões típicas da Página: pages_manage_posts, pages_read_engagement."
+    }
+  ],
+  "nota_api": "A Graph API oficial (Pages API) permite publicar NA Página (POST /{page-id}/feed). A publicação Página→Grupo do Facebook consumer não possui endpoint oficial documentado após a remoção da Groups API (abril/2024)."
+}
