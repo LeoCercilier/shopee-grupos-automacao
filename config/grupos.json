@@ -1,0 +1,42 @@
+{
+  "versao": 1,
+  "descricao": "Cadastro de grupos do Facebook por nicho. Preencha group_id e ative (ativo: true) quando for usar. Publicação automática ainda não está implementada (Groups API oficial removida pela Meta em 2024).",
+  "grupos": [
+    {
+      "id": "exemplo-beleza-1",
+      "nome": "Grupo Exemplo Beleza",
+      "group_id": "",
+      "nicho": "beleza",
+      "ativo": false,
+      "prioridade": 1,
+      "observacoes": "Substitua group_id pelo ID real do grupo quando houver mecanismo de publicação."
+    },
+    {
+      "id": "exemplo-eletronicos-1",
+      "nome": "Grupo Exemplo Eletrônicos",
+      "group_id": "",
+      "nicho": "eletronicos",
+      "ativo": false,
+      "prioridade": 1,
+      "observacoes": ""
+    },
+    {
+      "id": "exemplo-casa-1",
+      "nome": "Grupo Exemplo Casa",
+      "group_id": "",
+      "nicho": "casa",
+      "ativo": false,
+      "prioridade": 1,
+      "observacoes": ""
+    },
+    {
+      "id": "exemplo-geral-1",
+      "nome": "Grupo Exemplo Geral",
+      "group_id": "",
+      "nicho": "geral",
+      "ativo": false,
+      "prioridade": 10,
+      "observacoes": "Pode receber ofertas de qualquer nicho se não houver grupo específico."
+    }
+  ]
+}
