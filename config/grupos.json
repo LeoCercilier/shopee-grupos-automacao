@@ -1,21 +1,23 @@
 {
   "versao": 1,
-  "descricao": "Cadastro de grupos do Facebook por nicho. Publicação automática ainda não está implementada.",
+  "descricao": "Cadastro de grupos do Facebook por nicho. Campo pagina_id referencia config/paginas.json (sem tokens).",
   "grupos": [
     {
       "id": "grupo-geral-1",
       "nome": "Grupo Geral",
       "group_id": "987613641743046",
       "nicho": "geral",
+      "pagina_id": "pagina-principal",
       "ativo": true,
       "prioridade": 1,
-      "observacoes": "Grupo geral de ofertas."
+      "observacoes": "Grupo geral de ofertas. Publicação Página→Grupo depende de API oficial (atualmente indisponível)."
     },
     {
       "id": "grupo-casa-1",
       "nome": "Grupo Casa",
       "group_id": "811021770682797",
       "nicho": "casa",
+      "pagina_id": "pagina-principal",
       "ativo": true,
       "prioridade": 1,
       "observacoes": "Grupo de ofertas relacionadas a casa e utilidades."
@@ -25,6 +27,7 @@
       "nome": "Grupo Saúde",
       "group_id": "404233713795205",
       "nicho": "saude",
+      "pagina_id": "pagina-principal",
       "ativo": true,
       "prioridade": 1,
       "observacoes": "Grupo de ofertas relacionadas a saúde e bem-estar."
