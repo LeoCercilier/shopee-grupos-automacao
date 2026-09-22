@@ -1,0 +1,29 @@
+{
+  "name": "shopee-grupos-automacao",
+  "version": "1.0.0",
+  "description": "Automação para coleta e preparação de ofertas Shopee destinadas a grupos do Facebook por nicho",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "coletar": "node src/coletor.js",
+    "classificar": "node src/classificador.js",
+    "selecionar": "node src/seletor.js",
+    "pipeline": "node src/pipeline.js",
+    "test": "node --check src/coletor.js && node --check src/classificador.js && node --check src/seletor.js && node --check src/pipeline.js && node --check src/historico.js && node --check src/utils.js",
+    "test:coleta": "node src/coletor.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "shopee",
+    "afiliados",
+    "facebook-grupos",
+    "automacao",
+    "github-actions"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0"
+  }
+}
