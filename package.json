@@ -8,8 +8,9 @@
     "coletar": "node src/coletor.js",
     "classificar": "node src/classificador.js",
     "selecionar": "node src/seletor.js",
+    "publicar": "node src/publicador.js",
     "pipeline": "node src/pipeline.js",
-    "test": "node --check src/coletor.js && node --check src/classificador.js && node --check src/seletor.js && node --check src/pipeline.js && node --check src/historico.js && node --check src/utils.js",
+    "test": "node --check src/coletor.js && node --check src/classificador.js && node --check src/seletor.js && node --check src/pipeline.js && node --check src/historico.js && node --check src/utils.js && node --check src/publicador.js",
     "test:coleta": "node src/coletor.js"
   },
   "engines": {
