@@ -2,13 +2,16 @@
 
 /**
  * Pipeline principal do projeto.
- * Executa: coletor → classificador → seletor.
- * Não publica em grupos (API oficial indisponível).
+ * Executa: coletor → classificador → seletor → publicador (opcional).
+ *
+ * Publicação real só ocorre com PUBLICAR=true e FACEBOOK_PAGE_ACCESS_TOKEN.
+ * Por padrão o publicador roda em dry-run.
  */
 
 const { coletarOfertas } = require('./coletor');
 const { executar: classificar } = require('./classificador');
 const { selecionar } = require('./seletor');
+const { publicarSelecoes } = require('./publicador');
 const { nowIso } = require('./utils');
 
 async function run() {
@@ -26,18 +29,26 @@ async function run() {
   const selecao = selecionar();
   console.log(`Seleções prontas: ${selecao.total_selecoes}`);
 
-  console.log('----------------------------------------');
-  console.log('Pipeline concluído sem publicação em grupos.');
+  const publicacao = await publicarSelecoes();
   console.log(
-    'Motivo: Facebook Groups API (publish_to_groups) foi removida pela Meta em abril/2024.'
+    `Publicação: modo=${publicacao.modo} publicados=${publicacao.publicados || 0} erros=${publicacao.erros || 0}`
   );
-  console.log('O projeto está preparado para receber um mecanismo futuro de publicação.');
+
+  console.log('----------------------------------------');
+  if (publicacao.modo === 'dry-run') {
+    console.log('Dry-run: nenhum post foi enviado ao Facebook.');
+    console.log('Para publicar de verdade: PUBLICAR=true + FACEBOOK_PAGE_ACCESS_TOKEN');
+    console.log('(somente em grupos que aceitam postagem da Página)');
+  }
   console.log('========================================');
 
   return {
     coleta_total: coleta.total,
     classificadas_total: classificadas.total,
     selecoes_total: selecao.total_selecoes,
+    publicacao_modo: publicacao.modo,
+    publicados: publicacao.publicados || 0,
+    erros_publicacao: publicacao.erros || 0,
   };
 }
 
