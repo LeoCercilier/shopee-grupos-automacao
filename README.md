@@ -1,71 +1,68 @@
 # shopee-grupos-automacao
 
-Sistema **independente** de automação: coleta, classificação e seleção de ofertas Shopee para grupos do Facebook por nicho, com publicação **opcional** via **Page Access Token** em grupos que aceitam postagem de Página.
+Sistema **independente**: coleta, classificação e seleção de ofertas Shopee para grupos do Facebook por nicho.
+
+Publicação via Graph API (**opção C**) fica preparada, com `PUBLICAR=false` por padrão.
 
 ---
 
-## Objetivo
+## Fluxo
 
 ```
-Fonte Shopee (ofertas.html / edge function)
-        ↓
-     Coletor
-        ↓
- Classificação por nicho
-        ↓
- Seleção da oferta × grupo
-        ↓
-   Agendamento (GitHub Actions)
-        ↓
- Publicador (dry-run por padrão)
-        ↓
- Histórico (somente após sucesso real)
+Fonte Shopee → Coletor → Classificação → Seleção oferta×grupo
+       → Publicador (dry-run por padrão) → Histórico (só após sucesso real)
 ```
 
 ---
 
-## Publicação em grupos (opção C — Página)
+## Limitação crítica da Graph API
 
-A permissão `publish_to_groups` (usuário membro) foi **removida** pela Meta em abril/2024.
+| Cenário | API oficial? |
+|---------|----------------|
+| Publicar **na Página** (`POST /{page-id}/feed`) | Sim (Pages API) |
+| Publicar **em Grupo** como usuário (`publish_to_groups`) | **Não** — removida em abril/2024 |
+| Publicar **em Grupo** como Página | **Não documentado / não suportado** na Graph API pública atual |
 
-Ainda é possível, em **alguns** grupos, publicar **como Página** se:
+O módulo `src/publicador.js` **não inventa** endpoint. Em dry-run ou com `PUBLICAR=true`, registra:
 
-1. O grupo permitir posts de Páginas / a Página estiver autorizada no grupo;
-2. Você usar um **Page Access Token** com `pages_manage_posts` e `pages_read_engagement`;
-3. O endpoint usado for `POST /{group-id}/photos` (com imagem) ou `POST /{group-id}/feed`.
+> **API oficial não disponível para este grupo/cenário.**
 
-Este projeto implementa isso em `src/publicador.js`.
-
-### Controle de segurança
-
-| Variável | Valor | Efeito |
-|----------|--------|--------|
-| `PUBLICAR` | `false` (padrão) | Dry-run: só registra o que *faria* |
-| `PUBLICAR` | `true` | Tenta publicar de verdade |
-| `FACEBOOK_PAGE_ACCESS_TOKEN` | (Secret) | Token da Página (nunca senha) |
-
-No GitHub Actions, o disparo manual tem o input `publicar` (padrão `false`). O cron **não** publica de verdade até você configurar o Secret e alterar o fluxo se desejar.
-
-### Secrets neste repositório (independente)
-
-- `FACEBOOK_PAGE_ACCESS_TOKEN` — Page token da **sua** Página
-- Opcional: `SUPABASE_URL`, `SUPABASE_PUBLISHABLE_KEY`
-
-**Não copie** tokens do projeto `shopee-facebook-automacao` automaticamente; configure Secrets **deste** repo.
-
-### Limitações
-
-- Só funciona em grupos que **aceitam post de Página**.
-- Grupos só-para-membros (perfil) **não** serão atendidos por este caminho.
-- Se a API recusar, o item fica com `status: erro` em `data/resultado-publicacao.json` e **não** entra no histórico.
+Histórico **não** é atualizado sem sucesso real (hoje: zero sucessos possíveis via API oficial Página→Grupo).
 
 ---
 
-## Fonte das ofertas
+## Configuração grupo → Página
 
-**https://leocercilier.github.io/shopee-achadinho/ofertas.html**
+- `config/grupos.json` — grupos + `pagina_id`
+- `config/paginas.json` — Páginas + `page_id` + nome da env do token (`token_env`)
 
-Edge function `shopee-products-v2` (mesma da página pública).
+Tokens **somente** em Secrets / env, nunca no git.
+
+### Secrets sugeridos (neste repositório)
+
+- `FACEBOOK_PAGE_ACCESS_TOKEN`
+- `FACEBOOK_PAGE_ID` (opcional; também pode ir em `config/paginas.json`)
+
+`PUBLICAR=false` (padrão)
+
+---
+
+## Uso
+
+```bash
+npm install
+npm run pipeline          # coleta + classificação + seleção + dry-run
+PUBLICAR=false npm run publicar
+npm test
+```
+
+Ativar publicação real no futuro (só faria sentido se a Meta restabelecer endpoint oficial):
+
+1. Configurar Secrets
+2. Preencher `page_id` em `config/paginas.json`
+3. Actions → Run workflow com `publicar=true` **ou** `PUBLICAR=true`
+
+Hoje, mesmo com `PUBLICAR=true`, o publicador **recusa** Página→Grupo e explica a limitação.
 
 ---
 
@@ -73,84 +70,9 @@ Edge function `shopee-products-v2` (mesma da página pública).
 
 ```
 config/grupos.json
-data/
-  ofertas-brutas.json
-  ofertas-classificadas.json
-  selecao-atual.json
-  historico-publicacoes.json
-  resultado-publicacao.json
-src/
-  coletor.js
-  classificador.js
-  seletor.js
-  publicador.js      ← Page token → grupo
-  historico.js
-  pipeline.js
-  utils.js
+config/paginas.json
+src/coletor.js | classificador.js | seletor.js | publicador.js | historico.js | pipeline.js
 .github/workflows/pipeline.yml
-```
-
----
-
-## Configurar grupos
-
-Em `config/grupos.json`:
-
-```json
-{
-  "id": "grupo-casa-1",
-  "nome": "Grupo Casa",
-  "group_id": "811021770682797",
-  "nicho": "casa",
-  "ativo": true,
-  "prioridade": 1
-}
-```
-
-Procure grupos que **aceitem postagem por Página**, adicione a Página ao grupo (ou ative a permissão) e mantenha o `group_id` correto.
-
----
-
-## Histórico
-
-- Cooldown de **7 dias** por oferta × grupo.
-- `registrarPublicacao` só após sucesso real do publicador.
-
----
-
-## Uso local
-
-```bash
-npm install
-cp .env.example .env
-
-npm run pipeline          # coleta + classifica + seleciona + dry-run do publicador
-PUBLICAR=false npm run publicar
-# PUBLICAR=true FACEBOOK_PAGE_ACCESS_TOKEN=... npm run publicar   # real
-```
-
----
-
-## GitHub Actions
-
-- Até 8 execuções/dia (cron UTC).
-- `workflow_dispatch` com input **publicar** (`false` por padrão).
-- Com `publicar=false`: gera seleção e dry-run.
-- Com `publicar=true` **e** Secret `FACEBOOK_PAGE_ACCESS_TOKEN`: tenta postar nos grupos selecionados.
-
----
-
-## Formato do texto
-
-```
-🔥 OFERTA DO DIA
-
-{titulo}
-
-💰 {preco}
-
-🛍️ Confira na Shopee:
-{link}
 ```
 
 ---
