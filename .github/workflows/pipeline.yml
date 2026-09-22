@@ -7,6 +7,11 @@ on:
     # 08:00, 10:00, 12:00, 14:00, 16:00, 18:00, 20:00, 22:00 BRT
     - cron: "0 11,13,15,17,19,21,23,1 * * *"
   workflow_dispatch:
+    inputs:
+      publicar:
+        description: "Publicar de verdade nos grupos que aceitam Página (true/false)"
+        required: false
+        default: "false"
 
 permissions:
   contents: write
@@ -32,18 +37,20 @@ jobs:
       - name: Syntax check
         run: npm test
 
-      - name: Run pipeline (coleta + classificação + seleção)
+      - name: Run pipeline (coleta + classificação + seleção + publicador)
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
           COLETOR_LIMIT: "40"
+          FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
+          PUBLICAR: ${{ github.event.inputs.publicar || 'false' }}
         run: npm run pipeline
 
       - name: Commit data artifacts (se houver mudanças)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/ofertas-brutas.json data/ofertas-classificadas.json data/selecao-atual.json data/historico-publicacoes.json || true
+          git add data/ofertas-brutas.json data/ofertas-classificadas.json data/selecao-atual.json data/historico-publicacoes.json data/resultado-publicacao.json || true
           if git diff --staged --quiet; then
             echo "Nenhuma alteração em data/ para commit."
           else
