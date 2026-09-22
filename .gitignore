@@ -1,0 +1,17 @@
+node_modules/
+.env
+.env.*
+!.env.example
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+*.log
+.logs/
+tmp/
+.temp/
+coverage/
+.nyc_output/
+
+# Artefatos locais de teste (mantidos no repo apenas se versionados explicitamente)
+# data/ofertas-brutas.json e data/ofertas-classificadas.json podem ser gerados no CI
