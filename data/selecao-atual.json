@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-09-23T15:24:08.399Z",
+  "gerado_em": "2026-09-23T20:51:52.424Z",
   "total_selecoes": 3,
   "grupos_ativos": 3,
   "selecoes": [
@@ -21,7 +21,7 @@
       },
       "texto": "🔥 OFERTA DO DIA\n\nParafusadeira Furadeira 25V Nakasaki Sem Fio a Bateria Profissional Kit Completo com Maleta\n\n💰 R$ 79,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/5AsiHawuV4",
       "status": "pendente",
-      "selecionado_em": "2026-09-23T15:24:08.399Z"
+      "selecionado_em": "2026-09-23T20:51:52.424Z"
     },
     {
       "grupo": {
@@ -35,13 +35,13 @@
         "titulo": "Faca Para Churrasco Profissional Luxo Personalizado Seu time",
         "preco": "58.88",
         "preco_formatado": "R$ 58,88",
-        "link": "https://s.shopee.com.br/6fhW4LrCSW",
+        "link": "https://s.shopee.com.br/W6sjyuyZ7",
         "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mfyfc5895i4l55",
         "nicho": "casa"
       },
-      "texto": "🔥 OFERTA DO DIA\n\nFaca Para Churrasco Profissional Luxo Personalizado Seu time\n\n💰 R$ 58,88\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/6fhW4LrCSW",
+      "texto": "🔥 OFERTA DO DIA\n\nFaca Para Churrasco Profissional Luxo Personalizado Seu time\n\n💰 R$ 58,88\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/W6sjyuyZ7",
       "status": "pendente",
-      "selecionado_em": "2026-09-23T15:24:08.399Z"
+      "selecionado_em": "2026-09-23T20:51:52.424Z"
     },
     {
       "grupo": {
@@ -61,7 +61,7 @@
       },
       "texto": "🔥 OFERTA DO DIA\n\nFini Melatonina 120 Unidades – Suplemento Noturno para Rotina Equilibrada\n\n💰 R$ 114,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/3B7dtv4WYk",
       "status": "pendente",
-      "selecionado_em": "2026-09-23T15:24:08.399Z"
+      "selecionado_em": "2026-09-23T20:51:52.424Z"
     }
   ],
   "aviso": "Publicação automática em grupos NÃO está implementada. Groups API oficial da Meta foi removida em abril/2024."

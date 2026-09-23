@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-09-23T15:24:08.400Z",
+  "gerado_em": "2026-09-23T20:51:52.425Z",
   "modo": "dry-run",
   "total": 3,
   "publicados": 0,
@@ -41,7 +41,7 @@
       "token_presente": false,
       "oferta_id": "22192792890",
       "titulo": "Faca Para Churrasco Profissional Luxo Personalizado Seu time",
-      "link": "https://s.shopee.com.br/6fhW4LrCSW",
+      "link": "https://s.shopee.com.br/W6sjyuyZ7",
       "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mfyfc5895i4l55",
       "nicho": "casa",
       "status": "dry-run",
@@ -50,7 +50,7 @@
         "page_id": null,
         "message_preview": "🔥 OFERTA DO DIA\n\nFaca Para Churrasco Profissional Luxo Personalizado Seu time\n\n💰 R$ 58,88\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/…",
         "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mfyfc5895i4l55",
-        "link": "https://s.shopee.com.br/6fhW4LrCSW"
+        "link": "https://s.shopee.com.br/W6sjyuyZ7"
       },
       "limitacao_api": "API oficial não disponível para este grupo/cenário. A Meta removeu a Groups API (publish_to_groups) em abril/2024. A Pages API cobre apenas publicação na própria Página (POST /{page-id}/feed), não em grupos do Facebook consumer."
     },
