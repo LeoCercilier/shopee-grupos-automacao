@@ -2,7 +2,7 @@
 
 Sistema **independente**: coleta, classificação e seleção de ofertas Shopee para grupos do Facebook por nicho.
 
-Publicação via Graph API (**opção C**) fica preparada, com `PUBLICAR=false` por padrão.
+Inclui MVP de **agente de navegador** (Playwright) para provar publicação em **1 grupo** via interface web.
 
 ---
 
@@ -10,70 +10,107 @@ Publicação via Graph API (**opção C**) fica preparada, com `PUBLICAR=false` 
 
 ```
 Fonte Shopee → Coletor → Classificação → Seleção oferta×grupo
-       → Publicador (dry-run por padrão) → Histórico (só após sucesso real)
+       → (Graph API Página→Grupo: indisponível)
+       → Agente de navegador (MVP local) → Histórico (só após sucesso real)
 ```
 
 ---
 
-## Limitação crítica da Graph API
+## Limitação da Graph API
 
 | Cenário | API oficial? |
 |---------|----------------|
-| Publicar **na Página** (`POST /{page-id}/feed`) | Sim (Pages API) |
-| Publicar **em Grupo** como usuário (`publish_to_groups`) | **Não** — removida em abril/2024 |
-| Publicar **em Grupo** como Página | **Não documentado / não suportado** na Graph API pública atual |
+| Publicar **na Página** | Sim |
+| Publicar **em Grupo** (`publish_to_groups`) | **Não** (removida abr/2024) |
+| Publicar **em Grupo** como Página | Não documentado |
 
-O módulo `src/publicador.js` **não inventa** endpoint. Em dry-run ou com `PUBLICAR=true`, registra:
-
-> **API oficial não disponível para este grupo/cenário.**
-
-Histórico **não** é atualizado sem sucesso real (hoje: zero sucessos possíveis via API oficial Página→Grupo).
+`src/publicador.js` continua registrando essa limitação. A publicação em grupos no MVP usa **navegador local**, não a API.
 
 ---
 
-## Configuração grupo → Página
+## MVP — agente de navegador (1 oferta × 1 grupo)
 
-- `config/grupos.json` — grupos + `pagina_id`
-- `config/paginas.json` — Páginas + `page_id` + nome da env do token (`token_env`)
-
-Tokens **somente** em Secrets / env, nunca no git.
-
-### Secrets sugeridos (neste repositório)
-
-- `FACEBOOK_PAGE_ACCESS_TOKEN`
-- `FACEBOOK_PAGE_ID` (opcional; também pode ir em `config/paginas.json`)
-
-`PUBLICAR=false` (padrão)
-
----
-
-## Uso
+### Instalação
 
 ```bash
 npm install
-npm run pipeline          # coleta + classificação + seleção + dry-run
-PUBLICAR=false npm run publicar
-npm test
+npx playwright install chromium
 ```
 
-Ativar publicação real no futuro (só faria sentido se a Meta restabelecer endpoint oficial):
+### 1) Login manual (uma vez)
 
-1. Configurar Secrets
-2. Preencher `page_id` em `config/paginas.json`
-3. Actions → Run workflow com `publicar=true` **ou** `PUBLICAR=true`
+```bash
+npm run browser:login
+```
 
-Hoje, mesmo com `PUBLICAR=true`, o publicador **recusa** Página→Grupo e explica a limitação.
+- Abre o Chromium com perfil em `.browser-session/` (gitignored).
+- Faça login no Facebook **manualmente** (2FA se pedir).
+- Volte ao terminal e pressione **ENTER**.
+- **Não** coloque senha no código nem no GitHub.
+
+### 2) Gerar seleção (se ainda não tiver)
+
+```bash
+npm run pipeline
+# ou: npm run coletar && npm run classificar && npm run selecionar
+```
+
+Usa `data/selecao-atual.json` (já produzido pelo seletor).
+
+### 3) Teste controlado (padrão: só preparar)
+
+```bash
+npm run browser:preparar
+```
+
+- Abre **1** seleção elegível.
+- Entra no grupo (`group_id`).
+- Abre o compositor, preenche o texto, tenta anexar imagem.
+- **Não** clica em Publicar.
+- Salva screenshot em `data/screenshots/`.
+- **Não** grava histórico.
+
+### 4) Publicar de verdade (opcional)
+
+```bash
+MODO_PUBLICACAO_BROWSER=publicar npm run browser:publicar
+```
+
+- Clica em Publicar.
+- Só chama `registrarPublicacao` se houver **confirmação** na UI.
+- Se ficar incerto, **não** marca como publicado.
+
+### Filtros opcionais
+
+```bash
+BROWSER_GRUPO_ID=987613641743046 npm run browser:preparar
+BROWSER_GRUPO_INTERNO=grupo-geral-1 npm run browser:preparar
+BROWSER_DRY_RUN=true npm run browser:teste
+```
+
+### Segurança
+
+- Sessão só em `.browser-session/` (ignorado pelo git).
+- Sem senha no repositório.
+- CAPTCHA/checkpoint → **para** e registra o motivo.
+- Não usa API privada/depreciada de grupos.
 
 ---
 
-## Estrutura
+## Estrutura relevante
 
-```
-config/grupos.json
-config/paginas.json
-src/coletor.js | classificador.js | seletor.js | publicador.js | historico.js | pipeline.js
-.github/workflows/pipeline.yml
-```
+| Papel | Arquivo |
+|-------|---------|
+| Grupos | `config/grupos.json` |
+| Coletor | `src/coletor.js` |
+| Classificador | `src/classificador.js` |
+| Seletor / “fila” atual | `src/seletor.js` → `data/selecao-atual.json` |
+| Histórico | `src/historico.js` → `data/historico-publicacoes.json` |
+| Graph API (limitado) | `src/publicador.js` |
+| Pipeline CI | `src/pipeline.js` + `.github/workflows/pipeline.yml` |
+| **Navegador MVP** | `src/navegador/*` |
+
+O workflow do GitHub Actions **não** executa o navegador (login interativo / sessão local).
 
 ---
 
