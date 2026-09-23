@@ -13,5 +13,10 @@ tmp/
 coverage/
 .nyc_output/
 
-# Artefatos locais de teste (mantidos no repo apenas se versionados explicitamente)
-# data/ofertas-brutas.json e data/ofertas-classificadas.json podem ser gerados no CI
+# Sessão do navegador (cookies/perfil) — NUNCA versionar
+.browser-session/
+
+# Evidências locais do agente
+data/screenshots/
+data/tmp/
+data/resultado-publicacao-browser.json
