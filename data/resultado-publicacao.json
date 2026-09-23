@@ -1,0 +1,84 @@
+{
+  "gerado_em": "2026-09-23T01:23:15.383Z",
+  "modo": "dry-run",
+  "total": 3,
+  "publicados": 0,
+  "api_indisponivel": 0,
+  "erros": 0,
+  "resultados": [
+    {
+      "grupo_id_interno": "grupo-geral-1",
+      "grupo_nome": "Grupo Geral",
+      "group_id": "987613641743046",
+      "pagina_config_id": "pagina-principal",
+      "pagina_nome": "Página principal (configure o Page ID real)",
+      "page_id": null,
+      "token_env": "FACEBOOK_PAGE_ACCESS_TOKEN",
+      "token_presente": false,
+      "oferta_id": "58209865798",
+      "titulo": "Glúteo Max – Fórmula Avançada para Desempenho e Estética Muscular Envio Imediato !!",
+      "link": "https://s.shopee.com.br/9zxuB3rIQC",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820l5-mnqnvlwobqptf0",
+      "nicho": "saude",
+      "status": "dry-run",
+      "preview": {
+        "group_id": "987613641743046",
+        "page_id": null,
+        "message_preview": "🔥 OFERTA DO DIA\n\nGlúteo Max – Fórmula Avançada para Desempenho e Estética Muscular Envio Imediato !!\n\n💰 R$ 24,89\n\n🛍️ Confira na Shopee:\nh…",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-820l5-mnqnvlwobqptf0",
+        "link": "https://s.shopee.com.br/9zxuB3rIQC"
+      },
+      "limitacao_api": "API oficial não disponível para este grupo/cenário. A Meta removeu a Groups API (publish_to_groups) em abril/2024. A Pages API cobre apenas publicação na própria Página (POST /{page-id}/feed), não em grupos do Facebook consumer."
+    },
+    {
+      "grupo_id_interno": "grupo-casa-1",
+      "grupo_nome": "Grupo Casa",
+      "group_id": "811021770682797",
+      "pagina_config_id": "pagina-principal",
+      "pagina_nome": "Página principal (configure o Page ID real)",
+      "page_id": null,
+      "token_env": "FACEBOOK_PAGE_ACCESS_TOKEN",
+      "token_presente": false,
+      "oferta_id": "22192792890",
+      "titulo": "Faca Para Churrasco Profissional Luxo Personalizado Seu time",
+      "link": "https://s.shopee.com.br/3qNJ3y6BA0",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mfyfc5895i4l55",
+      "nicho": "casa",
+      "status": "dry-run",
+      "preview": {
+        "group_id": "811021770682797",
+        "page_id": null,
+        "message_preview": "🔥 OFERTA DO DIA\n\nFaca Para Churrasco Profissional Luxo Personalizado Seu time\n\n💰 R$ 54,00\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/…",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mfyfc5895i4l55",
+        "link": "https://s.shopee.com.br/3qNJ3y6BA0"
+      },
+      "limitacao_api": "API oficial não disponível para este grupo/cenário. A Meta removeu a Groups API (publish_to_groups) em abril/2024. A Pages API cobre apenas publicação na própria Página (POST /{page-id}/feed), não em grupos do Facebook consumer."
+    },
+    {
+      "grupo_id_interno": "grupo-saude-1",
+      "grupo_nome": "Grupo Saúde",
+      "group_id": "404233713795205",
+      "pagina_config_id": "pagina-principal",
+      "pagina_nome": "Página principal (configure o Page ID real)",
+      "page_id": null,
+      "token_env": "FACEBOOK_PAGE_ACCESS_TOKEN",
+      "token_presente": false,
+      "oferta_id": "58209865798",
+      "titulo": "Glúteo Max – Fórmula Avançada para Desempenho e Estética Muscular Envio Imediato !!",
+      "link": "https://s.shopee.com.br/9zxuB3rIQC",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820l5-mnqnvlwobqptf0",
+      "nicho": "saude",
+      "status": "dry-run",
+      "preview": {
+        "group_id": "404233713795205",
+        "page_id": null,
+        "message_preview": "🔥 OFERTA DO DIA\n\nGlúteo Max – Fórmula Avançada para Desempenho e Estética Muscular Envio Imediato !!\n\n💰 R$ 24,89\n\n🛍️ Confira na Shopee:\nh…",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-820l5-mnqnvlwobqptf0",
+        "link": "https://s.shopee.com.br/9zxuB3rIQC"
+      },
+      "limitacao_api": "API oficial não disponível para este grupo/cenário. A Meta removeu a Groups API (publish_to_groups) em abril/2024. A Pages API cobre apenas publicação na própria Página (POST /{page-id}/feed), não em grupos do Facebook consumer."
+    }
+  ],
+  "nota": "API oficial não disponível para este grupo/cenário. A Meta removeu a Groups API (publish_to_groups) em abril/2024. A Pages API cobre apenas publicação na própria Página (POST /{page-id}/feed), não em grupos do Facebook consumer.",
+  "referencia": "Pages API: https://developers.facebook.com/docs/pages-api — publicação em /{page-id}/feed. Groups API removida: changelog Graph API v19.0 (abril/2024)."
+}
