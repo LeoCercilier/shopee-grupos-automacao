@@ -10,6 +10,7 @@
     "selecionar": "node src/seletor.js",
     "publicar": "node src/publicador.js",
     "pipeline": "node src/pipeline.js",
+    "browser:diagnostico": "node src/diagnostico-navegador.js",
     "browser:login": "node src/navegador/login.js",
     "browser:teste": "node src/navegador/publicador.js",
     "browser:preparar": "MODO_PUBLICACAO_BROWSER=preparar node src/navegador/publicador.js",
