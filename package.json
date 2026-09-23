@@ -1,8 +1,8 @@
 {
   "name": "shopee-grupos-automacao",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Automação para coleta e preparação de ofertas Shopee destinadas a grupos do Facebook por nicho",
-  "main": "src/index.js",
+  "main": "src/pipeline.js",
   "type": "commonjs",
   "scripts": {
     "coletar": "node src/coletor.js",
@@ -10,7 +10,11 @@
     "selecionar": "node src/seletor.js",
     "publicar": "node src/publicador.js",
     "pipeline": "node src/pipeline.js",
-    "test": "node --check src/coletor.js && node --check src/classificador.js && node --check src/seletor.js && node --check src/pipeline.js && node --check src/historico.js && node --check src/utils.js && node --check src/publicador.js",
+    "browser:login": "node src/navegador/login.js",
+    "browser:teste": "node src/navegador/publicador.js",
+    "browser:preparar": "MODO_PUBLICACAO_BROWSER=preparar node src/navegador/publicador.js",
+    "browser:publicar": "MODO_PUBLICACAO_BROWSER=publicar node src/navegador/publicador.js",
+    "test": "node --check src/coletor.js && node --check src/classificador.js && node --check src/seletor.js && node --check src/pipeline.js && node --check src/historico.js && node --check src/utils.js && node --check src/publicador.js && node --check src/navegador/browser.js && node --check src/navegador/facebook.js && node --check src/navegador/publicador.js && node --check src/navegador/login.js",
     "test:coleta": "node src/coletor.js"
   },
   "engines": {
@@ -21,10 +25,12 @@
     "afiliados",
     "facebook-grupos",
     "automacao",
+    "playwright",
     "github-actions"
   ],
   "license": "MIT",
   "dependencies": {
-    "@supabase/supabase-js": "^2.45.0"
+    "@supabase/supabase-js": "^2.45.0",
+    "playwright": "^1.55.0"
   }
 }
