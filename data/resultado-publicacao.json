@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-09-24T23:50:13.775Z",
+  "gerado_em": "2026-09-25T06:03:01.396Z",
   "modo": "dry-run",
   "total": 3,
   "publicados": 0,
@@ -39,18 +39,18 @@
       "page_id": null,
       "token_env": "FACEBOOK_PAGE_ACCESS_TOKEN",
       "token_presente": false,
-      "oferta_id": "22192792890",
-      "titulo": "Faca Para Churrasco Profissional Luxo Personalizado Seu time",
-      "link": "https://s.shopee.com.br/3B7esxXUGM",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mfyfc5895i4l55",
+      "oferta_id": "58206662133",
+      "titulo": "Soprador de Ar Elétrico Portátil 48V Sem Fio com 1/2 Bateria Recarregável Limpeza de Pó Jardim Carro",
+      "link": "https://s.shopee.com.br/4qFuC9KZua",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-82623-mlnsis0xxpfl17",
       "nicho": "casa",
       "status": "dry-run",
       "preview": {
         "group_id": "811021770682797",
         "page_id": null,
-        "message_preview": "🔥 OFERTA DO DIA\n\nFaca Para Churrasco Profissional Luxo Personalizado Seu time\n\n💰 R$ 58,88\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/…",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mfyfc5895i4l55",
-        "link": "https://s.shopee.com.br/3B7esxXUGM"
+        "message_preview": "🔥 OFERTA DO DIA\n\nSoprador de Ar Elétrico Portátil 48V Sem Fio com 1/2 Bateria Recarregável Limpeza de Pó Jardim Carro\n\n💰 R$ 73,99\n\n🛍️ Con…",
+        "imagem": "https://cf.shopee.com.br/file/sg-11134201-82623-mlnsis0xxpfl17",
+        "link": "https://s.shopee.com.br/4qFuC9KZua"
       },
       "limitacao_api": "API oficial não disponível para este grupo/cenário. A Meta removeu a Groups API (publish_to_groups) em abril/2024. A Pages API cobre apenas publicação na própria Página (POST /{page-id}/feed), não em grupos do Facebook consumer."
     },
@@ -65,7 +65,7 @@
       "token_presente": false,
       "oferta_id": "23394523519",
       "titulo": "Fini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original",
-      "link": "https://s.shopee.com.br/3LR55GWqvJ",
+      "link": "https://s.shopee.com.br/1gIsQKWdKp",
       "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mftu2pib3imd1e",
       "nicho": "saude",
       "status": "dry-run",
@@ -74,7 +74,7 @@
         "page_id": null,
         "message_preview": "🔥 OFERTA DO DIA\n\nFini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original\n\n💰 R$ 69,98\n\n🛍️ Confira n…",
         "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mftu2pib3imd1e",
-        "link": "https://s.shopee.com.br/3LR55GWqvJ"
+        "link": "https://s.shopee.com.br/1gIsQKWdKp"
       },
       "limitacao_api": "API oficial não disponível para este grupo/cenário. A Meta removeu a Groups API (publish_to_groups) em abril/2024. A Pages API cobre apenas publicação na própria Página (POST /{page-id}/feed), não em grupos do Facebook consumer."
     }

@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-09-24T23:50:13.771Z",
+  "gerado_em": "2026-09-25T06:03:01.390Z",
   "total": 40,
   "fonte": "https://leocercilier.github.io/shopee-achadinho/ofertas.html",
   "api": "shopee-products-v2",
@@ -17,7 +17,23 @@
       "vendas": 39,
       "avaliacao": "4.8",
       "desconto_percentual": 73,
-      "coletado_em": "2026-09-24T23:50:11.946Z",
+      "coletado_em": "2026-09-25T06:03:00.035Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "58216643793",
+      "titulo": "Cabelo Maluco Kit Acessórios Infantil Criativo para Escola Festa Penteado Menino Menina",
+      "preco": "24.9",
+      "preco_formatado": "R$ 24,90",
+      "link": "https://s.shopee.com.br/2Vry5ja1c2",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lr-ms4x6e108eme81",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820lr-ms4x6e108eme81"
+      ],
+      "vendas": 967,
+      "avaliacao": "4.9",
+      "desconto_percentual": 38,
+      "coletado_em": "2026-09-25T06:03:00.035Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -33,23 +49,7 @@
       "vendas": 1290,
       "avaliacao": "4.3",
       "desconto_percentual": 17,
-      "coletado_em": "2026-09-24T23:50:11.946Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "58216643793",
-      "titulo": "Cabelo Maluco Kit Acessórios Infantil Criativo para Escola Festa Penteado Menino Menina",
-      "preco": "28.9",
-      "preco_formatado": "R$ 28,90",
-      "link": "https://s.shopee.com.br/2Vry5ja1c2",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lr-ms4x6e108eme81",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820lr-ms4x6e108eme81"
-      ],
-      "vendas": 967,
-      "avaliacao": "4.9",
-      "desconto_percentual": 38,
-      "coletado_em": "2026-09-24T23:50:11.946Z",
+      "coletado_em": "2026-09-25T06:03:00.035Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -65,30 +65,14 @@
       "vendas": 0,
       "avaliacao": "0",
       "desconto_percentual": 0,
-      "coletado_em": "2026-09-24T23:50:11.946Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "58262181423",
-      "titulo": "Câmera Solar Inteligente 4G Dupla Tela Vigilância Externa com Detecção de Movimento",
-      "preco": "304.99",
-      "preco_formatado": "R$ 304,99",
-      "link": "https://s.shopee.com.br/1VzQttdpds",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-823qu-mp9m4zhd6o0121",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-823qu-mp9m4zhd6o0121"
-      ],
-      "vendas": 265,
-      "avaliacao": "4.7",
-      "desconto_percentual": 39,
-      "coletado_em": "2026-09-24T23:50:11.946Z",
+      "coletado_em": "2026-09-25T06:03:00.035Z",
       "fonte": "shopee-products-v2"
     },
     {
       "id": "58260416435",
       "titulo": "PlayStation 4 Slim 1 Tera ou 500GB + 1 ou 2 controles + 1 jogo original a escolha",
-      "preco": "1699.9",
-      "preco_formatado": "R$ 1.699,90",
+      "preco": "1659",
+      "preco_formatado": "R$ 1.659,00",
       "link": "https://s.shopee.com.br/1Lg0haeSyr",
       "imagem": "https://cf.shopee.com.br/file/br-11134207-820ll-mrybcxppzf2e0b",
       "imagens": [
@@ -96,8 +80,8 @@
       ],
       "vendas": 45,
       "avaliacao": "4.9",
-      "desconto_percentual": 0,
-      "coletado_em": "2026-09-24T23:50:11.946Z",
+      "desconto_percentual": 2,
+      "coletado_em": "2026-09-25T06:03:00.035Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -113,7 +97,23 @@
       "vendas": 1691,
       "avaliacao": "3.1",
       "desconto_percentual": 0,
-      "coletado_em": "2026-09-24T23:50:11.946Z",
+      "coletado_em": "2026-09-25T06:03:00.035Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "58262181423",
+      "titulo": "Câmera Solar Inteligente 4G Dupla Tela Vigilância Externa com Detecção de Movimento",
+      "preco": "304.99",
+      "preco_formatado": "R$ 304,99",
+      "link": "https://s.shopee.com.br/1VzQttdpds",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-823qu-mp9m4zhd6o0121",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-823qu-mp9m4zhd6o0121"
+      ],
+      "vendas": 265,
+      "avaliacao": "4.7",
+      "desconto_percentual": 39,
+      "coletado_em": "2026-09-25T06:03:00.035Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -129,55 +129,23 @@
       "vendas": 1771,
       "avaliacao": "4.9",
       "desconto_percentual": 14,
-      "coletado_em": "2026-09-24T23:50:11.946Z",
+      "coletado_em": "2026-09-25T06:03:00.035Z",
       "fonte": "shopee-products-v2"
     },
     {
-      "id": "23394523519",
-      "titulo": "Fini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original",
-      "preco": "69.98",
-      "preco_formatado": "R$ 69,98",
-      "link": "https://s.shopee.com.br/3LR55GWqvJ",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mftu2pib3imd1e",
+      "id": "27270066495",
+      "titulo": "Pulseira de Árvore da Sorte Aço Inoxidável Titânio Vácuo Significado da Vida Presente Férias Atividades Diárias",
+      "preco": "23.89",
+      "preco_formatado": "R$ 23,89",
+      "link": "https://s.shopee.com.br/1qcIcdVzzq",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rffm-m3ixx8tcmp5za0",
       "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-81z1k-mftu2pib3imd1e"
+        "https://cf.shopee.com.br/file/sg-11134201-7rffm-m3ixx8tcmp5za0"
       ],
-      "vendas": 406,
+      "vendas": 254,
       "avaliacao": "4.9",
-      "desconto_percentual": 0,
-      "coletado_em": "2026-09-24T23:50:11.946Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "58250856565",
-      "titulo": "Câmera De Segurança Lente Dupla IP66 Wi-Fi 360° Sensor Movimento Visão Noturna+MICROSD 16GB",
-      "preco": "149.59",
-      "preco_formatado": "R$ 149,59",
-      "link": "https://s.shopee.com.br/2qUoULYkwG",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mhcab5rq4n47dc",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-81z1k-mhcab5rq4n47dc"
-      ],
-      "vendas": 190,
-      "avaliacao": "4.8",
       "desconto_percentual": 50,
-      "coletado_em": "2026-09-24T23:50:11.946Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "58258507217",
-      "titulo": "Guarda-chuva Grande Sombrinha Reforçada Super Resistente à Água Pronta Entrega",
-      "preco": "25.99",
-      "preco_formatado": "R$ 25,99",
-      "link": "https://s.shopee.com.br/3g3vTsVaFP",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-822wo-mo5yp0ja4mbp29",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-822wo-mo5yp0ja4mbp29"
-      ],
-      "vendas": 2494,
-      "avaliacao": "4.9",
-      "desconto_percentual": 62,
-      "coletado_em": "2026-09-24T23:50:11.946Z",
+      "coletado_em": "2026-09-25T06:03:00.035Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -185,7 +153,7 @@
       "titulo": "Creme Esfoliante Profissional Dagua Natural Apricot Média Abrasão 650g",
       "preco": "62.69",
       "preco_formatado": "R$ 62,69",
-      "link": "https://s.shopee.com.br/30oEgeY7bL",
+      "link": "https://s.shopee.com.br/BU4dZcLNc",
       "imagem": "https://cf.shopee.com.br/file/sg-11134201-7qvet-lge60ye48znl96",
       "imagens": [
         "https://cf.shopee.com.br/file/sg-11134201-7qvet-lge60ye48znl96"
@@ -193,23 +161,39 @@
       "vendas": 10,
       "avaliacao": "4.9",
       "desconto_percentual": 2,
-      "coletado_em": "2026-09-24T23:50:11.946Z",
+      "coletado_em": "2026-09-25T06:03:00.035Z",
       "fonte": "shopee-products-v2"
     },
     {
-      "id": "22192792890",
-      "titulo": "Faca Para Churrasco Profissional Luxo Personalizado Seu time",
-      "preco": "58.88",
-      "preco_formatado": "R$ 58,88",
-      "link": "https://s.shopee.com.br/3B7esxXUGM",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mfyfc5895i4l55",
+      "id": "58250856565",
+      "titulo": "Câmera De Segurança Lente Dupla IP66 Wi-Fi 360° Sensor Movimento Visão Noturna+MICROSD 16GB",
+      "preco": "149.59",
+      "preco_formatado": "R$ 149,59",
+      "link": "https://s.shopee.com.br/gQLEUaRMf",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mhcab5rq4n47dc",
       "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-81z1k-mfyfc5895i4l55"
+        "https://cf.shopee.com.br/file/br-11134207-81z1k-mhcab5rq4n47dc"
       ],
-      "vendas": 429,
+      "vendas": 190,
+      "avaliacao": "4.8",
+      "desconto_percentual": 50,
+      "coletado_em": "2026-09-25T06:03:00.036Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "23394523519",
+      "titulo": "Fini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original",
+      "preco": "69.98",
+      "preco_formatado": "R$ 69,98",
+      "link": "https://s.shopee.com.br/1gIsQKWdKp",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mftu2pib3imd1e",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-81z1k-mftu2pib3imd1e"
+      ],
+      "vendas": 406,
       "avaliacao": "4.9",
-      "desconto_percentual": 11,
-      "coletado_em": "2026-09-24T23:50:11.946Z",
+      "desconto_percentual": 0,
+      "coletado_em": "2026-09-25T06:03:00.036Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -217,7 +201,7 @@
       "titulo": "Smartwatch feminino TFT à prova d'água para esportes, monitoramento do sono e chamadas Bluetooth.",
       "preco": "249",
       "preco_formatado": "R$ 249,00",
-      "link": "https://s.shopee.com.br/4qFss1R8si",
+      "link": "https://s.shopee.com.br/1AeRGcyib",
       "imagem": "https://cf.shopee.com.br/file/br-11134207-820m3-mqehnox5epz45e",
       "imagens": [
         "https://cf.shopee.com.br/file/br-11134207-820m3-mqehnox5epz45e"
@@ -225,7 +209,39 @@
       "vendas": 59,
       "avaliacao": "5",
       "desconto_percentual": 63,
-      "coletado_em": "2026-09-24T23:50:11.947Z",
+      "coletado_em": "2026-09-25T06:03:00.036Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "58261564871",
+      "titulo": "Kit Presente Spa Artesanal Geleia Sabonete Escalda Pés",
+      "preco": "31.9",
+      "preco_formatado": "R$ 31,90",
+      "link": "https://s.shopee.com.br/qjlQnZo1g",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m0-mr041wvho6is41",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820m0-mr041wvho6is41"
+      ],
+      "vendas": 457,
+      "avaliacao": "5",
+      "desconto_percentual": 0,
+      "coletado_em": "2026-09-25T06:03:00.036Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "58258507217",
+      "titulo": "Guarda-chuva Grande Sombrinha Reforçada Super Resistente à Água Pronta Entrega",
+      "preco": "25.99",
+      "preco_formatado": "R$ 25,99",
+      "link": "https://s.shopee.com.br/1BMbpPYXLm",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-822wo-mo5yp0ja4mbp29",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-822wo-mo5yp0ja4mbp29"
+      ],
+      "vendas": 2494,
+      "avaliacao": "4.9",
+      "desconto_percentual": 62,
+      "coletado_em": "2026-09-25T06:03:00.036Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -233,7 +249,7 @@
       "titulo": "Cadeira Dobrável 3 em 1 Bolsa Térmica Cooler Portátil Camping Pesca Praia Piquenique Acampamento Viagem",
       "preco": "78.99",
       "preco_formatado": "R$ 78,99",
-      "link": "https://s.shopee.com.br/2gBOI2ZOHF",
+      "link": "https://s.shopee.com.br/W6v2Bb4hi",
       "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztc-mkgbk4tr7bb5e1",
       "imagens": [
         "https://cf.shopee.com.br/file/br-11134207-81ztc-mkgbk4tr7bb5e1"
@@ -241,23 +257,7 @@
       "vendas": 16,
       "avaliacao": "5",
       "desconto_percentual": 68,
-      "coletado_em": "2026-09-24T23:50:11.947Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "58203987969",
-      "titulo": "Camera Segurança Externa Lente Dupla 4k 6mp Sirene Policial, com sirene policia + MICROSD 16GB",
-      "preco": "187.59",
-      "preco_formatado": "R$ 187,59",
-      "link": "https://s.shopee.com.br/4fwSfiRmDh",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-825zm-mjve7lxw9ddsa3",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-825zm-mjve7lxw9ddsa3"
-      ],
-      "vendas": 225,
-      "avaliacao": "4.8",
-      "desconto_percentual": 49,
-      "coletado_em": "2026-09-24T23:50:11.947Z",
+      "coletado_em": "2026-09-25T06:03:00.036Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -265,7 +265,7 @@
       "titulo": "Soprador de Ar Elétrico Portátil 48V Sem Fio com 1/2 Bateria Recarregável Limpeza de Pó Jardim Carro",
       "preco": "73.99",
       "preco_formatado": "R$ 73,99",
-      "link": "https://s.shopee.com.br/7VGfEHweZd",
+      "link": "https://s.shopee.com.br/4qFuC9KZua",
       "imagem": "https://cf.shopee.com.br/file/sg-11134201-82623-mlnsis0xxpfl17",
       "imagens": [
         "https://cf.shopee.com.br/file/sg-11134201-82623-mlnsis0xxpfl17"
@@ -273,23 +273,7 @@
       "vendas": 999,
       "avaliacao": "4.9",
       "desconto_percentual": 32,
-      "coletado_em": "2026-09-24T23:50:11.947Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "58201738271",
-      "titulo": "Refletor Grande de 122Led com Painel Solar Giratório Sensor de Movimento",
-      "preco": "66",
-      "preco_formatado": "R$ 66,00",
-      "link": "https://s.shopee.com.br/7fa5Qaw1Eg",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mi2t7ziowxz684",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-81z1k-mi2t7ziowxz684"
-      ],
-      "vendas": 304,
-      "avaliacao": "4.8",
-      "desconto_percentual": 63,
-      "coletado_em": "2026-09-24T23:50:11.947Z",
+      "coletado_em": "2026-09-25T06:03:00.036Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -305,7 +289,55 @@
       "vendas": 121,
       "avaliacao": "3.8",
       "desconto_percentual": 0,
-      "coletado_em": "2026-09-24T23:50:11.947Z",
+      "coletado_em": "2026-09-25T06:03:00.036Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "58203987969",
+      "titulo": "Camera Segurança Externa Lente Dupla 4k 6mp Sirene Policial, com sirene policia + MICROSD 16GB",
+      "preco": "187.59",
+      "preco_formatado": "R$ 187,59",
+      "link": "https://s.shopee.com.br/LnUpsbi2h",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-825zm-mjve7lxw9ddsa3",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-825zm-mjve7lxw9ddsa3"
+      ],
+      "vendas": 225,
+      "avaliacao": "4.8",
+      "desconto_percentual": 49,
+      "coletado_em": "2026-09-25T06:03:00.036Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "22192792890",
+      "titulo": "Faca Para Churrasco Profissional Luxo Personalizado Seu time",
+      "preco": "58.88",
+      "preco_formatado": "R$ 58,88",
+      "link": "https://s.shopee.com.br/113Bd6ZAgl",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mfyfc5895i4l55",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-81z1k-mfyfc5895i4l55"
+      ],
+      "vendas": 429,
+      "avaliacao": "4.9",
+      "desconto_percentual": 11,
+      "coletado_em": "2026-09-25T06:03:00.036Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "58266200560",
+      "titulo": "Chave de Impacto a Bateria KINETX 680Nm 98Vf Motor Forte sem Fio com 2 Baterias e Carregador para Rodas Automotivas",
+      "preco": "179",
+      "preco_formatado": "R$ 179,00",
+      "link": "https://s.shopee.com.br/8V9CYtO9KU",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lq-mrv8u8rna6th09",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820lq-mrv8u8rna6th09"
+      ],
+      "vendas": 623,
+      "avaliacao": "4.8",
+      "desconto_percentual": 55,
+      "coletado_em": "2026-09-25T06:03:01.390Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -321,7 +353,39 @@
       "vendas": 0,
       "avaliacao": "0",
       "desconto_percentual": 46,
-      "coletado_em": "2026-09-24T23:50:11.947Z",
+      "coletado_em": "2026-09-25T06:03:01.390Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "58201738271",
+      "titulo": "Refletor Grande de 122Led com Painel Solar Giratório Sensor de Movimento",
+      "preco": "66",
+      "preco_formatado": "R$ 66,00",
+      "link": "https://s.shopee.com.br/4fwTzqLDFZ",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mi2t7ziowxz684",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-81z1k-mi2t7ziowxz684"
+      ],
+      "vendas": 304,
+      "avaliacao": "4.8",
+      "desconto_percentual": 63,
+      "coletado_em": "2026-09-25T06:03:01.390Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "22794690094",
+      "titulo": "Power Bank 20000/30000/50000mAh Carga Rápida Display Digital 33W~66W USB Type-C",
+      "preco": "72.99",
+      "preco_formatado": "R$ 72,99",
+      "link": "https://s.shopee.com.br/gQLNP6mba",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-821g8-mh0rgqvlskjs8d",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-821g8-mh0rgqvlskjs8d"
+      ],
+      "vendas": 533,
+      "avaliacao": "4.9",
+      "desconto_percentual": 48,
+      "coletado_em": "2026-09-25T06:03:01.390Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -329,7 +393,7 @@
       "titulo": "Mesinha Manicure Profissional Completa C/ Organizador Lateral Mista",
       "preco": "189.9",
       "preco_formatado": "R$ 189,90",
-      "link": "https://s.shopee.com.br/50ZJ4KQVXn",
+      "link": "https://s.shopee.com.br/qjlZi69Gd",
       "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztu-mkut6kvhroxvef",
       "imagens": [
         "https://cf.shopee.com.br/file/br-11134207-81ztu-mkut6kvhroxvef"
@@ -337,71 +401,23 @@
       "vendas": 6,
       "avaliacao": "4.6",
       "desconto_percentual": 0,
-      "coletado_em": "2026-09-24T23:50:13.771Z",
+      "coletado_em": "2026-09-25T06:03:01.390Z",
       "fonte": "shopee-products-v2"
     },
     {
-      "id": "58200883581",
-      "titulo": "Câmera De Segurança Lente Dupla IP66 Wi-Fi 360° Sensor Movimento Visão Noturna ICSEE/YOOSEE",
-      "preco": "139.49",
-      "preco_formatado": "R$ 139,49",
-      "link": "https://s.shopee.com.br/40gmWgQoRN",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8227t-mhdgmsqlw6x47b",
+      "id": "20998008338",
+      "titulo": "Bota De Segurança Com C.A Em couro Bico PVC Unissex Butina Cano Medio",
+      "preco": "49.4",
+      "preco_formatado": "R$ 49,40",
+      "link": "https://s.shopee.com.br/LnUyn83HY",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-m5deznn3wm2ad8",
       "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-8227t-mhdgmsqlw6x47b"
+        "https://cf.shopee.com.br/file/br-11134207-7r98o-m5deznn3wm2ad8"
       ],
-      "vendas": 215,
-      "avaliacao": "4.8",
-      "desconto_percentual": 34,
-      "coletado_em": "2026-09-24T23:50:13.771Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "58266341664",
-      "titulo": "2026 Smartwatch S10 Pro 38mm/45mm/49mm Unissex - Chamadas via Bluetooth Esportivo Teste de pressão arterial",
-      "preco": "36.99",
-      "preco_formatado": "R$ 36,99",
-      "link": "https://s.shopee.com.br/4Vd37bOuQU",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lw-mrzp8llmhfr8f4",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820lw-mrzp8llmhfr8f4"
-      ],
-      "vendas": 14,
-      "avaliacao": "4.6",
-      "desconto_percentual": 58,
-      "coletado_em": "2026-09-24T23:50:13.771Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "45313071694",
-      "titulo": "Bicicleta Elétrica Scooter Mova Way 4.0 500w 48v Lítio",
-      "preco": "3999.9",
-      "preco_formatado": "R$ 3.999,90",
-      "link": "https://s.shopee.com.br/4B0CizQB6O",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-825ay-mq1yfaa5id4x7b",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-825ay-mq1yfaa5id4x7b"
-      ],
-      "vendas": 125,
-      "avaliacao": "4.7",
-      "desconto_percentual": 33,
-      "coletado_em": "2026-09-24T23:50:13.771Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "23698927394",
-      "titulo": "Doce de Leite Zero Adição de Açúcar Diet - Gran Boyadjian",
-      "preco": "35",
-      "preco_formatado": "R$ 35,00",
-      "link": "https://s.shopee.com.br/4qFtWDNdka",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-825a6-mq528udt998s9c",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-825a6-mq528udt998s9c"
-      ],
-      "vendas": 339,
+      "vendas": 466,
       "avaliacao": "4.9",
-      "desconto_percentual": 26,
-      "coletado_em": "2026-09-24T23:50:13.771Z",
+      "desconto_percentual": 18,
+      "coletado_em": "2026-09-25T06:03:01.390Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -409,7 +425,7 @@
       "titulo": "Câmera Lampada Giratória 360º Monitoramento em tempo real design discreto e moderno Conexão WiFi",
       "preco": "66.4",
       "preco_formatado": "R$ 66,40",
-      "link": "https://s.shopee.com.br/4fwTJuOH5Z",
+      "link": "https://s.shopee.com.br/W6vB67Pwb",
       "imagem": "https://cf.shopee.com.br/file/br-11134207-820lx-msk6382pdpmv49",
       "imagens": [
         "https://cf.shopee.com.br/file/br-11134207-820lx-msk6382pdpmv49"
@@ -417,55 +433,87 @@
       "vendas": 28,
       "avaliacao": "5",
       "desconto_percentual": 5,
-      "coletado_em": "2026-09-24T23:50:13.771Z",
+      "coletado_em": "2026-09-25T06:03:01.390Z",
       "fonte": "shopee-products-v2"
     },
     {
-      "id": "21698330150",
-      "titulo": "Fini Melatonina 120 Unidades – Suplemento Noturno para Rotina Equilibrada",
-      "preco": "114.99",
-      "preco_formatado": "R$ 114,99",
-      "link": "https://s.shopee.com.br/5AsjupMN4g",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mg3u1p2ot98g3f",
+      "id": "58266341664",
+      "titulo": "2026 Smartwatch S10 Pro 38mm/45mm/49mm Unissex - Chamadas via Bluetooth Esportivo Teste de pressão arterial",
+      "preco": "36.99",
+      "preco_formatado": "R$ 36,99",
+      "link": "https://s.shopee.com.br/1AeaB9JxW",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lw-mrzp8llmhfr8f4",
       "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-81z1k-mg3u1p2ot98g3f"
+        "https://cf.shopee.com.br/file/br-11134207-820lw-mrzp8llmhfr8f4"
       ],
-      "vendas": 178,
+      "vendas": 14,
+      "avaliacao": "4.6",
+      "desconto_percentual": 58,
+      "coletado_em": "2026-09-25T06:03:01.390Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "23698927394",
+      "titulo": "Doce de Leite Zero Adição de Açúcar Diet - Gran Boyadjian",
+      "preco": "35",
+      "preco_formatado": "R$ 35,00",
+      "link": "https://s.shopee.com.br/BU4mU8gcZ",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-825a6-mq528udt998s9c",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-825a6-mq528udt998s9c"
+      ],
+      "vendas": 339,
       "avaliacao": "4.9",
-      "desconto_percentual": 18,
-      "coletado_em": "2026-09-24T23:50:13.771Z",
+      "desconto_percentual": 26,
+      "coletado_em": "2026-09-25T06:03:01.390Z",
       "fonte": "shopee-products-v2"
     },
     {
-      "id": "58266200560",
-      "titulo": "Chave de Impacto a Bateria KINETX 680Nm 98Vf Motor Forte sem Fio com 2 Baterias e Carregador para Rodas Automotivas",
-      "preco": "179",
-      "preco_formatado": "R$ 179,00",
-      "link": "https://s.shopee.com.br/6L4hq95UpM",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lq-mrv8u8rna6th09",
+      "id": "45313071694",
+      "titulo": "Bicicleta Elétrica Scooter Mova Way 4.0 500w 48v Lítio",
+      "preco": "3999.9",
+      "preco_formatado": "R$ 3.999,90",
+      "link": "https://s.shopee.com.br/AKaqtAVyzY",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-825ay-mq1yfaa5id4x7b",
       "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820lq-mrv8u8rna6th09"
+        "https://cf.shopee.com.br/file/sg-11134201-825ay-mq1yfaa5id4x7b"
       ],
-      "vendas": 623,
+      "vendas": 125,
+      "avaliacao": "4.7",
+      "desconto_percentual": 33,
+      "coletado_em": "2026-09-25T06:03:01.390Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "58200883581",
+      "titulo": "Câmera De Segurança Lente Dupla IP66 Wi-Fi 360° Sensor Movimento Visão Noturna ICSEE/YOOSEE",
+      "preco": "139.49",
+      "preco_formatado": "R$ 139,49",
+      "link": "https://s.shopee.com.br/AUuH5TVLeb",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8227t-mhdgmsqlw6x47b",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-8227t-mhdgmsqlw6x47b"
+      ],
+      "vendas": 215,
       "avaliacao": "4.8",
-      "desconto_percentual": 55,
-      "coletado_em": "2026-09-24T23:50:13.771Z",
+      "desconto_percentual": 34,
+      "coletado_em": "2026-09-25T06:03:01.390Z",
       "fonte": "shopee-products-v2"
     },
     {
-      "id": "49767415380",
-      "titulo": "Body Splash Virgínia WEP1NK 200ml Feminino Autêntico Obsessed Infinity Liberté VF Golden | Unitário, Sortido ou Kit cm 4",
-      "preco": "32.99",
-      "preco_formatado": "R$ 32,99",
-      "link": "https://s.shopee.com.br/6VO82S4rUP",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lj-mtfg35wh6osh9d",
+      "id": "58211837467",
+      "titulo": "DOUBLE TASTY WHEY PROTEIN 100% POTE 900G (20g protein) - MAX",
+      "preco": "141.99",
+      "preco_formatado": "R$ 141,99",
+      "link": "https://s.shopee.com.br/9zy0UYXFfW",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m0-mozu0cnbzz7q3f",
       "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820lj-mtfg35wh6osh9d"
+        "https://cf.shopee.com.br/file/br-11134207-820m0-mozu0cnbzz7q3f"
       ],
-      "vendas": 435,
-      "avaliacao": "4.5",
-      "desconto_percentual": 50,
-      "coletado_em": "2026-09-24T23:50:13.771Z",
+      "vendas": 904,
+      "avaliacao": "4.9",
+      "desconto_percentual": 16,
+      "coletado_em": "2026-09-25T06:03:01.390Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -473,7 +521,7 @@
       "titulo": "Guarda Sol Quadrado Gigante 3M Aberto Reforçado Contra Uv Para Praia",
       "preco": "189",
       "preco_formatado": "R$ 189,00",
-      "link": "https://s.shopee.com.br/60RrRX6lVK",
+      "link": "https://s.shopee.com.br/AAHQgrWcKZ",
       "imagem": "https://cf.shopee.com.br/file/br-11134207-820mg-ms1fxtl987b8b6",
       "imagens": [
         "https://cf.shopee.com.br/file/br-11134207-820mg-ms1fxtl987b8b6"
@@ -481,7 +529,39 @@
       "vendas": 115,
       "avaliacao": "4.9",
       "desconto_percentual": 53,
-      "coletado_em": "2026-09-24T23:50:13.771Z",
+      "coletado_em": "2026-09-25T06:03:01.390Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "58215112898",
+      "titulo": "1600N.M Cordless Electric Impact Wrench Brushless 3 in 1 1/2\"with 2 Batteries Complete Kit",
+      "preco": "289",
+      "preco_formatado": "R$ 289,00",
+      "link": "https://s.shopee.com.br/9fLA5wYWLU",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820ls-mr73vhjl9l3824",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820ls-mr73vhjl9l3824"
+      ],
+      "vendas": 632,
+      "avaliacao": "4.7",
+      "desconto_percentual": 28,
+      "coletado_em": "2026-09-25T06:03:01.390Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "49767415380",
+      "titulo": "Body Splash Virgínia WEP1NK 200ml Feminino Autêntico Obsessed Infinity Liberté VF Golden | Unitário, Sortido ou Kit cm 4",
+      "preco": "32.99",
+      "preco_formatado": "R$ 32,99",
+      "link": "https://s.shopee.com.br/9peaIFXt0X",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lj-mtfg35wh6osh9d",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820lj-mtfg35wh6osh9d"
+      ],
+      "vendas": 435,
+      "avaliacao": "4.5",
+      "desconto_percentual": 50,
+      "coletado_em": "2026-09-25T06:03:01.390Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -489,7 +569,7 @@
       "titulo": "Massageador de Pescoço e Ombros Portátil 3D Com Calor Relaxante Massagem Profunda",
       "preco": "113.99",
       "preco_formatado": "R$ 113,99",
-      "link": "https://s.shopee.com.br/6AlHdq68AN",
+      "link": "https://s.shopee.com.br/9KiJhKZn1S",
       "imagem": "https://cf.shopee.com.br/file/br-11134207-820mb-mps6km6k5xc1fc",
       "imagens": [
         "https://cf.shopee.com.br/file/br-11134207-820mb-mps6km6k5xc1fc"
@@ -497,23 +577,7 @@
       "vendas": 777,
       "avaliacao": "4.9",
       "desconto_percentual": 40,
-      "coletado_em": "2026-09-24T23:50:13.771Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "22499247158",
-      "titulo": "Carregador Portátil Mini Power Bank 10000mAh Com 02 Saídas Tipo-C / Lightning",
-      "preco": "31.99",
-      "preco_formatado": "R$ 31,99",
-      "link": "https://s.shopee.com.br/5fp12v82BI",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-81zvk-mik9ovwbhszk62",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-81zvk-mik9ovwbhszk62"
-      ],
-      "vendas": 2469,
-      "avaliacao": "4.6",
-      "desconto_percentual": 45,
-      "coletado_em": "2026-09-24T23:50:13.771Z",
+      "coletado_em": "2026-09-25T06:03:01.390Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -521,7 +585,7 @@
       "titulo": "Kit Skincare Completo Rosa Mosqueta - 05 Produtos - Dermachen",
       "preco": "57.47",
       "preco_formatado": "R$ 57,47",
-      "link": "https://s.shopee.com.br/5q8RFE7OqL",
+      "link": "https://s.shopee.com.br/9V1jtdZ9gV",
       "imagem": "https://cf.shopee.com.br/file/sg-11134201-8259c-msee01glajuxe5",
       "imagens": [
         "https://cf.shopee.com.br/file/sg-11134201-8259c-msee01glajuxe5"
@@ -529,55 +593,39 @@
       "vendas": 35,
       "avaliacao": "4.9",
       "desconto_percentual": 15,
-      "coletado_em": "2026-09-24T23:50:13.771Z",
+      "coletado_em": "2026-09-25T06:03:01.390Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "22499247158",
+      "titulo": "Carregador Portátil Mini Power Bank 10000mAh Com 02 Saídas Tipo-C / Lightning",
+      "preco": "31.99",
+      "preco_formatado": "R$ 31,99",
+      "link": "https://s.shopee.com.br/905TIib3hQ",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-81zvk-mik9ovwbhszk62",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-81zvk-mik9ovwbhszk62"
+      ],
+      "vendas": 2469,
+      "avaliacao": "4.6",
+      "desconto_percentual": 45,
+      "coletado_em": "2026-09-25T06:03:01.390Z",
       "fonte": "shopee-products-v2"
     },
     {
       "id": "22998654209",
       "titulo": "Aspirador de Pó e Água + Líquidos 10 Litros 1.000W Muito Potente 127v Ou 220v - APV 1010 Vonder",
-      "preco": "293.26",
-      "preco_formatado": "R$ 293,26",
-      "link": "https://s.shopee.com.br/5LCAeJ9IrG",
+      "preco": "273.32",
+      "preco_formatado": "R$ 273,32",
+      "link": "https://s.shopee.com.br/9AOtV1aQMT",
       "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-mb4loydtmxo911",
       "imagens": [
         "https://cf.shopee.com.br/file/br-11134207-7r98o-mb4loydtmxo911"
       ],
       "vendas": 240,
       "avaliacao": "4.9",
-      "desconto_percentual": 19,
-      "coletado_em": "2026-09-24T23:50:13.771Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "58208551350",
-      "titulo": "fone de ouvido bluetooth com cancelamento de ruido, Bluetooth 5.0 Para Android e IOS",
-      "preco": "43.99",
-      "preco_formatado": "R$ 43,99",
-      "link": "https://s.shopee.com.br/5VVaqc8fWJ",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820md-mmuyewr42e4k60",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820md-mmuyewr42e4k60"
-      ],
-      "vendas": 4,
-      "avaliacao": "5",
-      "desconto_percentual": 0,
-      "coletado_em": "2026-09-24T23:50:13.771Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "23292865377",
-      "titulo": "Kit 2 Shorts Masculino Kong 2 em 1 com Compressão, Bolso para Celular e Tecido Dry Fit",
-      "preco": "62.67",
-      "preco_formatado": "R$ 62,67",
-      "link": "https://s.shopee.com.br/7fa5Qb0Q7k",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820ll-mtclwps6ujgi05",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820ll-mtclwps6ujgi05"
-      ],
-      "vendas": 2018,
-      "avaliacao": "4.9",
-      "desconto_percentual": 48,
-      "coletado_em": "2026-09-24T23:50:13.771Z",
+      "desconto_percentual": 24,
+      "coletado_em": "2026-09-25T06:03:01.390Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -585,7 +633,7 @@
       "titulo": "Volume Máximo Pernas e Glúteos - GH testo Ultra Concentrado",
       "preco": "37.73",
       "preco_formatado": "R$ 37,73",
-      "link": "https://s.shopee.com.br/7ptVctzmmn",
+      "link": "https://s.shopee.com.br/8fScu6cKNO",
       "imagem": "https://cf.shopee.com.br/file/br-11134207-820m8-mq5n267mt81vd0",
       "imagens": [
         "https://cf.shopee.com.br/file/br-11134207-820m8-mq5n267mt81vd0"
@@ -593,55 +641,7 @@
       "vendas": 2072,
       "avaliacao": "4.9",
       "desconto_percentual": 3,
-      "coletado_em": "2026-09-24T23:50:13.771Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "58217618288",
-      "titulo": "Percabonato Tira Manchas 100% Puro  Roupas Brancas E Coloridas 1KG",
-      "preco": "7.99",
-      "preco_formatado": "R$ 7,99",
-      "link": "https://s.shopee.com.br/7KxF1z1gni",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8259w-msr6bpnv0op052",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-8259w-msr6bpnv0op052"
-      ],
-      "vendas": 8,
-      "avaliacao": "4.2",
-      "desconto_percentual": 71,
-      "coletado_em": "2026-09-24T23:50:13.771Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "23899314572",
-      "titulo": "Patinete Elétrico Adulto 350W – Alta Velocidade, Bateria Longa e Suporta Até 150kg",
-      "preco": "1040",
-      "preco_formatado": "R$ 1.040,00",
-      "link": "https://s.shopee.com.br/7VGfEI13Sl",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8261h-mk3v2sfwjoqw23",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-8261h-mk3v2sfwjoqw23"
-      ],
-      "vendas": 110,
-      "avaliacao": "4.8",
-      "desconto_percentual": 45,
-      "coletado_em": "2026-09-24T23:50:13.771Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "58262186549",
-      "titulo": "Câmera Segurança Solar 4G PTZ Dupla Lente Full HD Visão Noturna Yoosee 10000mAh",
-      "preco": "304.99",
-      "preco_formatado": "R$ 304,99",
-      "link": "https://s.shopee.com.br/70KOdN2xTg",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-823py-mp9kl8xc3n63f4",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-823py-mp9kl8xc3n63f4"
-      ],
-      "vendas": 175,
-      "avaliacao": "4.9",
-      "desconto_percentual": 39,
-      "coletado_em": "2026-09-24T23:50:13.771Z",
+      "coletado_em": "2026-09-25T06:03:01.390Z",
       "fonte": "shopee-products-v2"
     }
   ]
