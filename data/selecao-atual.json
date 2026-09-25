@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-09-25T06:03:01.394Z",
+  "gerado_em": "2026-09-25T15:47:21.845Z",
   "total_selecoes": 3,
   "grupos_ativos": 3,
   "selecoes": [
@@ -21,7 +21,7 @@
       },
       "texto": "🔥 OFERTA DO DIA\n\nParafusadeira Furadeira 25V Nakasaki Sem Fio a Bateria Profissional Kit Completo com Maleta\n\n💰 R$ 79,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/20vhUobvcv",
       "status": "pendente",
-      "selecionado_em": "2026-09-25T06:03:01.394Z"
+      "selecionado_em": "2026-09-25T15:47:21.844Z"
     },
     {
       "grupo": {
@@ -31,17 +31,17 @@
         "nicho": "casa"
       },
       "oferta": {
-        "id": "58206662133",
-        "titulo": "Soprador de Ar Elétrico Portátil 48V Sem Fio com 1/2 Bateria Recarregável Limpeza de Pó Jardim Carro",
-        "preco": "73.99",
-        "preco_formatado": "R$ 73,99",
-        "link": "https://s.shopee.com.br/4qFuC9KZua",
-        "imagem": "https://cf.shopee.com.br/file/sg-11134201-82623-mlnsis0xxpfl17",
+        "id": "22192792890",
+        "titulo": "Faca Para Churrasco Profissional Luxo Personalizado Seu time",
+        "preco": "58.88",
+        "preco_formatado": "R$ 58,88",
+        "link": "https://s.shopee.com.br/2Vs0GRJEuq",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mfyfc5895i4l55",
         "nicho": "casa"
       },
-      "texto": "🔥 OFERTA DO DIA\n\nSoprador de Ar Elétrico Portátil 48V Sem Fio com 1/2 Bateria Recarregável Limpeza de Pó Jardim Carro\n\n💰 R$ 73,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/4qFuC9KZua",
+      "texto": "🔥 OFERTA DO DIA\n\nFaca Para Churrasco Profissional Luxo Personalizado Seu time\n\n💰 R$ 58,88\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/2Vs0GRJEuq",
       "status": "pendente",
-      "selecionado_em": "2026-09-25T06:03:01.394Z"
+      "selecionado_em": "2026-09-25T15:47:21.844Z"
     },
     {
       "grupo": {
@@ -55,13 +55,13 @@
         "titulo": "Fini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original",
         "preco": "69.98",
         "preco_formatado": "R$ 69,98",
-        "link": "https://s.shopee.com.br/1gIsQKWdKp",
+        "link": "https://s.shopee.com.br/3qNNqtEACy",
         "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mftu2pib3imd1e",
         "nicho": "saude"
       },
-      "texto": "🔥 OFERTA DO DIA\n\nFini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original\n\n💰 R$ 69,98\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/1gIsQKWdKp",
+      "texto": "🔥 OFERTA DO DIA\n\nFini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original\n\n💰 R$ 69,98\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/3qNNqtEACy",
       "status": "pendente",
-      "selecionado_em": "2026-09-25T06:03:01.394Z"
+      "selecionado_em": "2026-09-25T15:47:21.845Z"
     }
   ],
   "aviso": "Publicação automática em grupos NÃO está implementada. Groups API oficial da Meta foi removida em abril/2024."
