@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-09-25T15:47:21.846Z",
+  "gerado_em": "2026-09-25T20:21:47.245Z",
   "modo": "dry-run",
   "total": 3,
   "publicados": 0,
@@ -41,7 +41,7 @@
       "token_presente": false,
       "oferta_id": "22192792890",
       "titulo": "Faca Para Churrasco Profissional Luxo Personalizado Seu time",
-      "link": "https://s.shopee.com.br/2Vs0GRJEuq",
+      "link": "https://s.shopee.com.br/7ptWlhmCnO",
       "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mfyfc5895i4l55",
       "nicho": "casa",
       "status": "dry-run",
@@ -50,7 +50,7 @@
         "page_id": null,
         "message_preview": "🔥 OFERTA DO DIA\n\nFaca Para Churrasco Profissional Luxo Personalizado Seu time\n\n💰 R$ 58,88\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/…",
         "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mfyfc5895i4l55",
-        "link": "https://s.shopee.com.br/2Vs0GRJEuq"
+        "link": "https://s.shopee.com.br/7ptWlhmCnO"
       },
       "limitacao_api": "API oficial não disponível para este grupo/cenário. A Meta removeu a Groups API (publish_to_groups) em abril/2024. A Pages API cobre apenas publicação na própria Página (POST /{page-id}/feed), não em grupos do Facebook consumer."
     },
@@ -65,7 +65,7 @@
       "token_presente": false,
       "oferta_id": "23394523519",
       "titulo": "Fini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original",
-      "link": "https://s.shopee.com.br/3qNNqtEACy",
+      "link": "https://s.shopee.com.br/7KxGAmo6oH",
       "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mftu2pib3imd1e",
       "nicho": "saude",
       "status": "dry-run",
@@ -74,7 +74,7 @@
         "page_id": null,
         "message_preview": "🔥 OFERTA DO DIA\n\nFini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original\n\n💰 R$ 69,98\n\n🛍️ Confira n…",
         "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mftu2pib3imd1e",
-        "link": "https://s.shopee.com.br/3qNNqtEACy"
+        "link": "https://s.shopee.com.br/7KxGAmo6oH"
       },
       "limitacao_api": "API oficial não disponível para este grupo/cenário. A Meta removeu a Groups API (publish_to_groups) em abril/2024. A Pages API cobre apenas publicação na própria Página (POST /{page-id}/feed), não em grupos do Facebook consumer."
     }
