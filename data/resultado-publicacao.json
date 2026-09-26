@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-09-26T06:01:34.964Z",
+  "gerado_em": "2026-09-26T14:56:40.480Z",
   "modo": "dry-run",
   "total": 3,
   "publicados": 0,
@@ -15,18 +15,18 @@
       "page_id": null,
       "token_env": "FACEBOOK_PAGE_ACCESS_TOKEN",
       "token_presente": false,
-      "oferta_id": "58217601055",
-      "titulo": "Parafusadeira Furadeira 25V Nakasaki Sem Fio a Bateria Profissional Kit Completo com Maleta",
-      "link": "https://s.shopee.com.br/20vhUobvcv",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lt-msq8pkzchmh355",
-      "nicho": "ferramentas",
+      "oferta_id": "56762439947",
+      "titulo": "Adeforte Turbo + Biotina 3ml Original Vitamina Cabelos Pele Unhas",
+      "link": "https://s.shopee.com.br/3qNLgBUwuQ",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lm-mpmlibinjfgg53",
+      "nicho": "beleza",
       "status": "dry-run",
       "preview": {
         "group_id": "987613641743046",
         "page_id": null,
-        "message_preview": "🔥 OFERTA DO DIA\n\nParafusadeira Furadeira 25V Nakasaki Sem Fio a Bateria Profissional Kit Completo com Maleta\n\n💰 R$ 79,99\n\n🛍️ Confira na S…",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-820lt-msq8pkzchmh355",
-        "link": "https://s.shopee.com.br/20vhUobvcv"
+        "message_preview": "🔥 OFERTA DO DIA\n\nAdeforte Turbo + Biotina 3ml Original Vitamina Cabelos Pele Unhas\n\n💰 R$ 59,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.co…",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-820lm-mpmlibinjfgg53",
+        "link": "https://s.shopee.com.br/3qNLgBUwuQ"
       },
       "limitacao_api": "API oficial não disponível para este grupo/cenário. A Meta removeu a Groups API (publish_to_groups) em abril/2024. A Pages API cobre apenas publicação na própria Página (POST /{page-id}/feed), não em grupos do Facebook consumer."
     },
