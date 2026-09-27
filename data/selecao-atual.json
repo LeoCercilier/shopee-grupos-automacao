@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-09-27T01:17:17.675Z",
+  "gerado_em": "2026-09-27T15:36:25.884Z",
   "total_selecoes": 3,
   "grupos_ativos": 3,
   "selecoes": [
@@ -11,17 +11,17 @@
         "nicho": "geral"
       },
       "oferta": {
-        "id": "58216643793",
-        "titulo": "Cabelo Maluco Kit Acessórios Infantil Criativo para Escola Festa Penteado Menino Menina",
-        "preco": "28.9",
-        "preco_formatado": "R$ 28,90",
-        "link": "https://s.shopee.com.br/2Vry5ja1c2",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-820lr-ms4x6e108eme81",
+        "id": "56762439947",
+        "titulo": "Adeforte Turbo + Biotina 3ml Original Vitamina Cabelos Pele Unhas",
+        "preco": "59.99",
+        "preco_formatado": "R$ 59,99",
+        "link": "https://s.shopee.com.br/2qUtKseSMx",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-820lm-mpmlibinjfgg53",
         "nicho": "beleza"
       },
-      "texto": "🔥 OFERTA DO DIA\n\nCabelo Maluco Kit Acessórios Infantil Criativo para Escola Festa Penteado Menino Menina\n\n💰 R$ 28,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/2Vry5ja1c2",
+      "texto": "🔥 OFERTA DO DIA\n\nAdeforte Turbo + Biotina 3ml Original Vitamina Cabelos Pele Unhas\n\n💰 R$ 59,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/2qUtKseSMx",
       "status": "pendente",
-      "selecionado_em": "2026-09-27T01:17:17.675Z"
+      "selecionado_em": "2026-09-27T15:36:25.884Z"
     },
     {
       "grupo": {
@@ -35,13 +35,13 @@
         "titulo": "Faca Para Churrasco Profissional Luxo Personalizado Seu time",
         "preco": "58.88",
         "preco_formatado": "R$ 58,88",
-        "link": "https://s.shopee.com.br/AKatTUFsiT",
+        "link": "https://s.shopee.com.br/6VOBhcQUvp",
         "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mfyfc5895i4l55",
         "nicho": "casa"
       },
-      "texto": "🔥 OFERTA DO DIA\n\nFaca Para Churrasco Profissional Luxo Personalizado Seu time\n\n💰 R$ 58,88\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/AKatTUFsiT",
+      "texto": "🔥 OFERTA DO DIA\n\nFaca Para Churrasco Profissional Luxo Personalizado Seu time\n\n💰 R$ 58,88\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/6VOBhcQUvp",
       "status": "pendente",
-      "selecionado_em": "2026-09-27T01:17:17.675Z"
+      "selecionado_em": "2026-09-27T15:36:25.884Z"
     },
     {
       "grupo": {
@@ -55,13 +55,13 @@
         "titulo": "Fini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original",
         "preco": "69.98",
         "preco_formatado": "R$ 69,98",
-        "link": "https://s.shopee.com.br/9KiMHeJgkF",
+        "link": "https://s.shopee.com.br/7VGitSMgtv",
         "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mftu2pib3imd1e",
         "nicho": "saude"
       },
-      "texto": "🔥 OFERTA DO DIA\n\nFini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original\n\n💰 R$ 69,98\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9KiMHeJgkF",
+      "texto": "🔥 OFERTA DO DIA\n\nFini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original\n\n💰 R$ 69,98\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/7VGitSMgtv",
       "status": "pendente",
-      "selecionado_em": "2026-09-27T01:17:17.675Z"
+      "selecionado_em": "2026-09-27T15:36:25.884Z"
     }
   ],
   "aviso": "Publicação automática em grupos NÃO está implementada. Groups API oficial da Meta foi removida em abril/2024."
