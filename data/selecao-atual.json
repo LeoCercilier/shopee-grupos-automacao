@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-09-26T21:55:46.942Z",
+  "gerado_em": "2026-09-27T01:17:17.675Z",
   "total_selecoes": 3,
   "grupos_ativos": 3,
   "selecoes": [
@@ -11,17 +11,17 @@
         "nicho": "geral"
       },
       "oferta": {
-        "id": "56762439947",
-        "titulo": "Adeforte Turbo + Biotina 3ml Original Vitamina Cabelos Pele Unhas",
-        "preco": "59.99",
-        "preco_formatado": "R$ 59,99",
-        "link": "https://s.shopee.com.br/3qNLgBUwuQ",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-820lm-mpmlibinjfgg53",
+        "id": "58216643793",
+        "titulo": "Cabelo Maluco Kit Acessórios Infantil Criativo para Escola Festa Penteado Menino Menina",
+        "preco": "28.9",
+        "preco_formatado": "R$ 28,90",
+        "link": "https://s.shopee.com.br/2Vry5ja1c2",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-820lr-ms4x6e108eme81",
         "nicho": "beleza"
       },
-      "texto": "🔥 OFERTA DO DIA\n\nAdeforte Turbo + Biotina 3ml Original Vitamina Cabelos Pele Unhas\n\n💰 R$ 59,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/3qNLgBUwuQ",
+      "texto": "🔥 OFERTA DO DIA\n\nCabelo Maluco Kit Acessórios Infantil Criativo para Escola Festa Penteado Menino Menina\n\n💰 R$ 28,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/2Vry5ja1c2",
       "status": "pendente",
-      "selecionado_em": "2026-09-26T21:55:46.942Z"
+      "selecionado_em": "2026-09-27T01:17:17.675Z"
     },
     {
       "grupo": {
@@ -41,7 +41,7 @@
       },
       "texto": "🔥 OFERTA DO DIA\n\nFaca Para Churrasco Profissional Luxo Personalizado Seu time\n\n💰 R$ 58,88\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/AKatTUFsiT",
       "status": "pendente",
-      "selecionado_em": "2026-09-26T21:55:46.942Z"
+      "selecionado_em": "2026-09-27T01:17:17.675Z"
     },
     {
       "grupo": {
@@ -61,7 +61,7 @@
       },
       "texto": "🔥 OFERTA DO DIA\n\nFini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original\n\n💰 R$ 69,98\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9KiMHeJgkF",
       "status": "pendente",
-      "selecionado_em": "2026-09-26T21:55:46.942Z"
+      "selecionado_em": "2026-09-27T01:17:17.675Z"
     }
   ],
   "aviso": "Publicação automática em grupos NÃO está implementada. Groups API oficial da Meta foi removida em abril/2024."
