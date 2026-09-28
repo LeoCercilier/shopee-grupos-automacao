@@ -12,7 +12,45 @@ const { coletarOfertas } = require('./coletor');
 const { executar: classificar } = require('./classificador');
 const { selecionar } = require('./seletor');
 const { publicarSelecoes } = require('./publicador');
+const { publicarUma } = require('./navegador/publicador');
 const { nowIso } = require('./utils');
+
+function usarPublicadorNavegador() {
+  return ['navegador', 'browser'].includes(
+    String(process.env.PUBLICADOR || '').trim().toLowerCase()
+  );
+}
+
+async function executarPublicador() {
+  if (usarPublicadorNavegador()) {
+    const modo = String(
+      process.env.MODO_PUBLICACAO_BROWSER || 'preparar'
+    ).toLowerCase();
+
+    console.log('=== PUBLICADOR NAVEGADOR (SESSÃO LOCAL) ===');
+    console.log('Modo:', modo);
+
+    const resultado = await publicarUma({
+      dryRun:
+        String(process.env.BROWSER_DRY_RUN || 'false').toLowerCase() ===
+        'true',
+    });
+
+    return {
+      modo: resultado.status === 'publicado'
+        ? 'navegador-publicado'
+        : modo,
+      publicados: resultado.status === 'publicado' ? 1 : 0,
+      erros: /^erro|^bloqueio/.test(String(resultado.status || ''))
+        ? 1
+        : 0,
+      resultado,
+    };
+  }
+
+  console.log('=== PUBLICADOR GRAPH API ===');
+  return publicarSelecoes();
+}
 
 async function run() {
   console.log('========================================');
@@ -29,7 +67,7 @@ async function run() {
   const selecao = selecionar();
   console.log(`Seleções prontas: ${selecao.total_selecoes}`);
 
-  const publicacao = await publicarSelecoes();
+  const publicacao = await executarPublicador();
   console.log(
     `Publicação: modo=${publicacao.modo} publicados=${publicacao.publicados || 0} erros=${publicacao.erros || 0}`
   );
