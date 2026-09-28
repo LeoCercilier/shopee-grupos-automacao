@@ -1,48 +1,8 @@
 {
-  "gerado_em": "2026-09-28T19:08:06.531Z",
+  "gerado_em": "2026-09-28T23:47:54.728Z",
   "total_selecoes": 12,
   "grupos_ativos": 21,
   "selecoes": [
-    {
-      "grupo": {
-        "id": "auto-saude-1426918943987350",
-        "nome": "Mulheres Fitness",
-        "group_id": "1426918943987350",
-        "nicho": "saude"
-      },
-      "oferta": {
-        "id": "23394523519",
-        "titulo": "Fini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original",
-        "preco": "69.98",
-        "preco_formatado": "R$ 69,98",
-        "link": "https://s.shopee.com.br/7VGitSMgtv",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mftu2pib3imd1e",
-        "nicho": "saude"
-      },
-      "texto": "🔥 OFERTA DO DIA\n\nFini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original\n\n🌙 Suplemento em cápsulas para sua rotina noturna\n\n💰 R$ 69,98\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/7VGitSMgtv",
-      "status": "pendente",
-      "selecionado_em": "2026-09-28T19:08:06.526Z"
-    },
-    {
-      "grupo": {
-        "id": "auto-saude-258452300499795",
-        "nome": "Dicas de Saúde, Fitness e Beleza",
-        "group_id": "258452300499795",
-        "nicho": "saude"
-      },
-      "oferta": {
-        "id": "23394523519",
-        "titulo": "Fini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original",
-        "preco": "69.98",
-        "preco_formatado": "R$ 69,98",
-        "link": "https://s.shopee.com.br/7VGitSMgtv",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mftu2pib3imd1e",
-        "nicho": "saude"
-      },
-      "texto": "🔥 OFERTA DO DIA\n\nFini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original\n\n🌙 Suplemento em cápsulas para sua rotina noturna\n\n💰 R$ 69,98\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/7VGitSMgtv",
-      "status": "pendente",
-      "selecionado_em": "2026-09-28T19:08:06.526Z"
-    },
     {
       "grupo": {
         "id": "grupo-saude-1",
@@ -61,7 +21,7 @@
       },
       "texto": "🔥 OFERTA DO DIA\n\nFini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original\n\n🌙 Suplemento em cápsulas para sua rotina noturna\n\n💰 R$ 69,98\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/7VGitSMgtv",
       "status": "pendente",
-      "selecionado_em": "2026-09-28T19:08:06.527Z"
+      "selecionado_em": "2026-09-28T23:47:54.727Z"
     },
     {
       "grupo": {
@@ -81,7 +41,7 @@
       },
       "texto": "🔥 OFERTA DO DIA\n\nFini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original\n\n🌙 Suplemento em cápsulas para sua rotina noturna\n\n💰 R$ 69,98\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/7VGitSMgtv",
       "status": "pendente",
-      "selecionado_em": "2026-09-28T19:08:06.527Z"
+      "selecionado_em": "2026-09-28T23:47:54.727Z"
     },
     {
       "grupo": {
@@ -101,7 +61,127 @@
       },
       "texto": "🔥 OFERTA DO DIA\n\nFini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original\n\n🌙 Suplemento em cápsulas para sua rotina noturna\n\n💰 R$ 69,98\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/7VGitSMgtv",
       "status": "pendente",
-      "selecionado_em": "2026-09-28T19:08:06.527Z"
+      "selecionado_em": "2026-09-28T23:47:54.727Z"
+    },
+    {
+      "grupo": {
+        "id": "auto-saude-1426918943987350",
+        "nome": "Mulheres Fitness",
+        "group_id": "1426918943987350",
+        "nicho": "saude"
+      },
+      "oferta": {
+        "id": "23394523519",
+        "titulo": "Fini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original",
+        "preco": "69.98",
+        "preco_formatado": "R$ 69,98",
+        "link": "https://s.shopee.com.br/7VGitSMgtv",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mftu2pib3imd1e",
+        "nicho": "saude"
+      },
+      "texto": "🔥 OFERTA DO DIA\n\nFini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original\n\n🌙 Suplemento em cápsulas para sua rotina noturna\n\n💰 R$ 69,98\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/7VGitSMgtv",
+      "status": "pendente",
+      "selecionado_em": "2026-09-28T23:47:54.727Z"
+    },
+    {
+      "grupo": {
+        "id": "auto-saude-258452300499795",
+        "nome": "Dicas de Saúde, Fitness e Beleza",
+        "group_id": "258452300499795",
+        "nicho": "saude"
+      },
+      "oferta": {
+        "id": "23394523519",
+        "titulo": "Fini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original",
+        "preco": "69.98",
+        "preco_formatado": "R$ 69,98",
+        "link": "https://s.shopee.com.br/7VGitSMgtv",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mftu2pib3imd1e",
+        "nicho": "saude"
+      },
+      "texto": "🔥 OFERTA DO DIA\n\nFini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original\n\n🌙 Suplemento em cápsulas para sua rotina noturna\n\n💰 R$ 69,98\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/7VGitSMgtv",
+      "status": "pendente",
+      "selecionado_em": "2026-09-28T23:47:54.727Z"
+    },
+    {
+      "grupo": {
+        "id": "grupo-geral-1",
+        "nome": "Grupo Geral",
+        "group_id": "987613641743046",
+        "nicho": "geral"
+      },
+      "oferta": {
+        "id": "58216167487",
+        "titulo": "Bota Coturno Masculino Adventure De Qualidade e Barato Mega Oferta",
+        "preco": "52.99",
+        "preco_formatado": "R$ 52,99",
+        "link": "https://s.shopee.com.br/9AOw5LKK5M",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-820ma-mruiyl5o5hj8dc",
+        "nicho": "geral"
+      },
+      "texto": "🔥 OFERTA DO DIA\n\nBota Coturno Masculino Adventure De Qualidade e Barato Mega Oferta\n\n👟 Estilo e praticidade para o seu dia a dia\n\n💰 R$ 52,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9AOw5LKK5M",
+      "status": "pendente",
+      "selecionado_em": "2026-09-28T23:47:54.727Z"
+    },
+    {
+      "grupo": {
+        "id": "auto-geral-330309645451506",
+        "nome": "Bazar Belford Roxo",
+        "group_id": "330309645451506",
+        "nicho": "geral"
+      },
+      "oferta": {
+        "id": "58216167487",
+        "titulo": "Bota Coturno Masculino Adventure De Qualidade e Barato Mega Oferta",
+        "preco": "52.99",
+        "preco_formatado": "R$ 52,99",
+        "link": "https://s.shopee.com.br/9AOw5LKK5M",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-820ma-mruiyl5o5hj8dc",
+        "nicho": "geral"
+      },
+      "texto": "🔥 OFERTA DO DIA\n\nBota Coturno Masculino Adventure De Qualidade e Barato Mega Oferta\n\n👟 Estilo e praticidade para o seu dia a dia\n\n💰 R$ 52,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9AOw5LKK5M",
+      "status": "pendente",
+      "selecionado_em": "2026-09-28T23:47:54.728Z"
+    },
+    {
+      "grupo": {
+        "id": "auto-geral-2246004002209564",
+        "nome": "bazar das minas Mesquita , Edson Passos , Juscelino e Nilópolis",
+        "group_id": "2246004002209564",
+        "nicho": "geral"
+      },
+      "oferta": {
+        "id": "58216167487",
+        "titulo": "Bota Coturno Masculino Adventure De Qualidade e Barato Mega Oferta",
+        "preco": "52.99",
+        "preco_formatado": "R$ 52,99",
+        "link": "https://s.shopee.com.br/9AOw5LKK5M",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-820ma-mruiyl5o5hj8dc",
+        "nicho": "geral"
+      },
+      "texto": "🔥 OFERTA DO DIA\n\nBota Coturno Masculino Adventure De Qualidade e Barato Mega Oferta\n\n👟 Estilo e praticidade para o seu dia a dia\n\n💰 R$ 52,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9AOw5LKK5M",
+      "status": "pendente",
+      "selecionado_em": "2026-09-28T23:47:54.728Z"
+    },
+    {
+      "grupo": {
+        "id": "auto-geral-1246947868686643",
+        "nome": "BAZAR DA FEIRA DE AREIA BRANCA DE B.ROXO !!",
+        "group_id": "1246947868686643",
+        "nicho": "geral"
+      },
+      "oferta": {
+        "id": "58216167487",
+        "titulo": "Bota Coturno Masculino Adventure De Qualidade e Barato Mega Oferta",
+        "preco": "52.99",
+        "preco_formatado": "R$ 52,99",
+        "link": "https://s.shopee.com.br/9AOw5LKK5M",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-820ma-mruiyl5o5hj8dc",
+        "nicho": "geral"
+      },
+      "texto": "🔥 OFERTA DO DIA\n\nBota Coturno Masculino Adventure De Qualidade e Barato Mega Oferta\n\n👟 Estilo e praticidade para o seu dia a dia\n\n💰 R$ 52,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9AOw5LKK5M",
+      "status": "pendente",
+      "selecionado_em": "2026-09-28T23:47:54.728Z"
     },
     {
       "grupo": {
@@ -121,87 +201,7 @@
       },
       "texto": "🔥 OFERTA DO DIA\n\nBota Coturno Masculino Adventure De Qualidade e Barato Mega Oferta\n\n👟 Estilo e praticidade para o seu dia a dia\n\n💰 R$ 52,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9AOw5LKK5M",
       "status": "pendente",
-      "selecionado_em": "2026-09-28T19:08:06.527Z"
-    },
-    {
-      "grupo": {
-        "id": "auto-geral-810444759098485",
-        "nome": "bazar das minas desapega Austin e Comendador Soares",
-        "group_id": "810444759098485",
-        "nicho": "geral"
-      },
-      "oferta": {
-        "id": "58216167487",
-        "titulo": "Bota Coturno Masculino Adventure De Qualidade e Barato Mega Oferta",
-        "preco": "52.99",
-        "preco_formatado": "R$ 52,99",
-        "link": "https://s.shopee.com.br/9AOw5LKK5M",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-820ma-mruiyl5o5hj8dc",
-        "nicho": "geral"
-      },
-      "texto": "🔥 OFERTA DO DIA\n\nBota Coturno Masculino Adventure De Qualidade e Barato Mega Oferta\n\n👟 Estilo e praticidade para o seu dia a dia\n\n💰 R$ 52,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9AOw5LKK5M",
-      "status": "pendente",
-      "selecionado_em": "2026-09-28T19:08:06.529Z"
-    },
-    {
-      "grupo": {
-        "id": "auto-geral-577782666788178",
-        "nome": "bazar de Andrade Araújo ( Belford roxo)",
-        "group_id": "577782666788178",
-        "nicho": "geral"
-      },
-      "oferta": {
-        "id": "58216167487",
-        "titulo": "Bota Coturno Masculino Adventure De Qualidade e Barato Mega Oferta",
-        "preco": "52.99",
-        "preco_formatado": "R$ 52,99",
-        "link": "https://s.shopee.com.br/9AOw5LKK5M",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-820ma-mruiyl5o5hj8dc",
-        "nicho": "geral"
-      },
-      "texto": "🔥 OFERTA DO DIA\n\nBota Coturno Masculino Adventure De Qualidade e Barato Mega Oferta\n\n👟 Estilo e praticidade para o seu dia a dia\n\n💰 R$ 52,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9AOw5LKK5M",
-      "status": "pendente",
-      "selecionado_em": "2026-09-28T19:08:06.530Z"
-    },
-    {
-      "grupo": {
-        "id": "auto-geral-538063741515108",
-        "nome": "BAZAR DE FARRULA /PIAM E BELFORD ROXO",
-        "group_id": "538063741515108",
-        "nicho": "geral"
-      },
-      "oferta": {
-        "id": "58216167487",
-        "titulo": "Bota Coturno Masculino Adventure De Qualidade e Barato Mega Oferta",
-        "preco": "52.99",
-        "preco_formatado": "R$ 52,99",
-        "link": "https://s.shopee.com.br/9AOw5LKK5M",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-820ma-mruiyl5o5hj8dc",
-        "nicho": "geral"
-      },
-      "texto": "🔥 OFERTA DO DIA\n\nBota Coturno Masculino Adventure De Qualidade e Barato Mega Oferta\n\n👟 Estilo e praticidade para o seu dia a dia\n\n💰 R$ 52,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9AOw5LKK5M",
-      "status": "pendente",
-      "selecionado_em": "2026-09-28T19:08:06.530Z"
-    },
-    {
-      "grupo": {
-        "id": "auto-geral-939421462816081",
-        "nome": "Bazar das Minas de Andrade Araújo",
-        "group_id": "939421462816081",
-        "nicho": "geral"
-      },
-      "oferta": {
-        "id": "58216167487",
-        "titulo": "Bota Coturno Masculino Adventure De Qualidade e Barato Mega Oferta",
-        "preco": "52.99",
-        "preco_formatado": "R$ 52,99",
-        "link": "https://s.shopee.com.br/9AOw5LKK5M",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-820ma-mruiyl5o5hj8dc",
-        "nicho": "geral"
-      },
-      "texto": "🔥 OFERTA DO DIA\n\nBota Coturno Masculino Adventure De Qualidade e Barato Mega Oferta\n\n👟 Estilo e praticidade para o seu dia a dia\n\n💰 R$ 52,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9AOw5LKK5M",
-      "status": "pendente",
-      "selecionado_em": "2026-09-28T19:08:06.530Z"
+      "selecionado_em": "2026-09-28T23:47:54.728Z"
     },
     {
       "grupo": {
@@ -215,13 +215,13 @@
         "titulo": "Faca Para Churrasco Profissional Luxo Personalizado Seu time",
         "preco": "58.88",
         "preco_formatado": "R$ 58,88",
-        "link": "https://s.shopee.com.br/1BMhfeCV3B",
+        "link": "https://s.shopee.com.br/4qG0NgJlPO",
         "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mfyfc5895i4l55",
         "nicho": "casa"
       },
-      "texto": "🔥 OFERTA DO DIA\n\nFaca Para Churrasco Profissional Luxo Personalizado Seu time\n\n🍳 Praticidade para preparar suas refeições\n\n💰 R$ 58,88\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/1BMhfeCV3B",
+      "texto": "🔥 OFERTA DO DIA\n\nFaca Para Churrasco Profissional Luxo Personalizado Seu time\n\n🍳 Praticidade para preparar suas refeições\n\n💰 R$ 58,88\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/4qG0NgJlPO",
       "status": "pendente",
-      "selecionado_em": "2026-09-28T19:08:06.531Z"
+      "selecionado_em": "2026-09-28T23:47:54.728Z"
     },
     {
       "grupo": {
@@ -235,13 +235,13 @@
         "titulo": "Faca Para Churrasco Profissional Luxo Personalizado Seu time",
         "preco": "58.88",
         "preco_formatado": "R$ 58,88",
-        "link": "https://s.shopee.com.br/1BMhfeCV3B",
+        "link": "https://s.shopee.com.br/4qG0NgJlPO",
         "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mfyfc5895i4l55",
         "nicho": "casa"
       },
-      "texto": "🔥 OFERTA DO DIA\n\nFaca Para Churrasco Profissional Luxo Personalizado Seu time\n\n🍳 Praticidade para preparar suas refeições\n\n💰 R$ 58,88\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/1BMhfeCV3B",
+      "texto": "🔥 OFERTA DO DIA\n\nFaca Para Churrasco Profissional Luxo Personalizado Seu time\n\n🍳 Praticidade para preparar suas refeições\n\n💰 R$ 58,88\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/4qG0NgJlPO",
       "status": "pendente",
-      "selecionado_em": "2026-09-28T19:08:06.531Z"
+      "selecionado_em": "2026-09-28T23:47:54.728Z"
     }
   ],
   "aviso": "Publicação automática em grupos NÃO está implementada. Groups API oficial da Meta foi removida em abril/2024."
