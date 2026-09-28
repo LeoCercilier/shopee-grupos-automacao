@@ -20,7 +20,7 @@ const SUPABASE_URL =
 const SUPABASE_PUBLISHABLE_KEY =
   process.env.SUPABASE_PUBLISHABLE_KEY ||
   'sb_publishable_UD6ktmFQ0yW9fVIHRH7EVQ_gGsn5Al4';
-const LIMIT = Number(process.env.COLETOR_LIMIT || 40);
+const LIMIT = Number(process.env.COLETOR_LIMIT || 100);
 
 function normalizarProduto(p) {
   if (!p || typeof p !== 'object') return null;

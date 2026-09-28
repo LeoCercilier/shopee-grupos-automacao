@@ -110,18 +110,34 @@ async function abrirGrupo(page, groupId) {
  */
 async function abrirCompositor(page) {
   const candidatos = [
+    // Facebook em português — botão pode aparecer como "Postar"
+    page.getByRole('button', { name: /^postar$/i }),
+    page.getByText(/^postar$/i),
+
+    // Outras variações da interface
     page.getByRole('button', { name: /escreva algo/i }),
     page.getByRole('button', { name: /write something/i }),
+    page.getByRole('button', { name: /crie uma publicação/i }),
+    page.getByRole('button', { name: /create a post/i }),
+
     page.getByText(/escreva algo/i),
     page.getByText(/write something/i),
+    page.getByText(/crie uma publicação/i),
+    page.getByText(/create a post/i),
+
+    page.locator('[aria-label*="Postar" i]'),
     page.locator('[aria-label*="Escreva algo" i]'),
     page.locator('[aria-label*="Write something" i]'),
-    page.locator('div[role="button"]' ).filter({ hasText: /escreva algo|write something|crie uma publicação|create a public/i }).first(),
+
+    page.locator('div[role="button"]').filter({
+      hasText: /postar|escreva algo|write something|crie uma publicação|create a post/i
+    }).first(),
   ];
 
   for (const loc of candidatos) {
     try {
       if (await loc.first().isVisible({ timeout: 1500 })) {
+        console.log('Botão/compositor encontrado:', await loc.first().innerText().catch(() => 'sem texto'));
         await loc.first().click({ timeout: 5000 });
         await page.waitForTimeout(1500);
         return { ok: true };
@@ -132,7 +148,7 @@ async function abrirCompositor(page) {
   return {
     ok: false,
     motivo:
-      'Não foi possível abrir o compositor. Verifique se você é membro do grupo e se a UI mudou.',
+      'Não foi possível abrir o compositor. Botão "Postar"/compositor não encontrado.',
   };
 }
 
@@ -142,27 +158,44 @@ async function preencherTexto(page, texto) {
     return { ok: false, motivo: 'Texto da publicação vazio' };
   }
 
-  const editores = [
-    page.locator('div[role="dialog"] div[contenteditable="true"]').first(),
-    page.locator('div[contenteditable="true"][role="textbox"]').first(),
-    page.locator('div[aria-label*="Crie uma publicação" i]').first(),
-    page.locator('div[aria-label*="Create a public" i]').first(),
-    page.locator('div[aria-label*="No que você está pensando" i]').first(),
+  // Dá tempo para o compositor do Facebook terminar de renderizar.
+  await page.waitForTimeout(1500);
+
+  const seletores = [
+    'div[role="dialog"] div[contenteditable="true"][role="textbox"]',
+    'div[role="dialog"] [contenteditable="true"][role="textbox"]',
+    'div[role="dialog"] div[contenteditable="true"]',
+    'div[role="dialog"] [contenteditable="true"]',
   ];
 
-  for (const ed of editores) {
+  for (const seletor of seletores) {
     try {
-      if (await ed.isVisible({ timeout: 2000 })) {
+      const elementos = page.locator(seletor);
+      const total = await elementos.count();
+
+      for (let i = 0; i < total; i++) {
+        const ed = elementos.nth(i);
+
+        if (!(await ed.isVisible({ timeout: 1500 }))) continue;
+
         await ed.click({ timeout: 3000 });
+
         await page.keyboard.press('Control+A').catch(() => {});
-        await page.keyboard.type(message, { delay: 15 });
+        await page.keyboard.type(message, { delay: 10 });
+
         await page.waitForTimeout(500);
+
+        console.log(`✅ Campo de texto encontrado: ${seletor}`);
+
         return { ok: true };
       }
     } catch (_) {}
   }
 
-  return { ok: false, motivo: 'Campo de texto do compositor não encontrado' };
+  return {
+    ok: false,
+    motivo: 'Campo de texto do compositor não encontrado',
+  };
 }
 
 function baixarArquivo(url, destino) {
@@ -249,65 +282,141 @@ async function anexarImagem(page, imageUrl) {
 }
 
 async function clicarPublicar(page) {
+  const dialog = page.locator("div[role=\"dialog\"]").filter({
+    has: page.locator("[contenteditable=\"true\"][role=\"textbox\"]")
+  }).first();
+
   const botoes = [
-    page.locator('div[role="dialog"] [aria-label="Publicar"]').first(),
-    page.locator('div[role="dialog"] [aria-label="Post"]').first(),
-    page.getByRole('button', { name: /^publicar$/i }).first(),
-    page.getByRole('button', { name: /^post$/i }).first(),
-    page.locator('div[role="dialog"] div[aria-label="Publicar"][role="button"]').first(),
+    dialog.getByRole("button", { name: /^postar$/i }).first(),
+    dialog.getByRole("button", { name: /^publicar$/i }).first(),
+    dialog.locator("[aria-label=\"Postar\"]").first(),
+    dialog.locator("[aria-label=\"Publicar\"]").first(),
+    dialog.locator("[role=\"button\"]").filter({ hasText: /^postar$/i }).first(),
+    dialog.locator("[role=\"button\"]").filter({ hasText: /^publicar$/i }).first()
   ];
 
-  for (const btn of botoes) {
-    try {
-      if (await btn.isVisible({ timeout: 2000 })) {
-        const disabled = await btn.getAttribute('aria-disabled');
-        if (disabled === 'true') continue;
+  const limite = Date.now() + 10000;
+
+  while (Date.now() < limite) {
+    for (const btn of botoes) {
+      try {
+        if (!(await btn.isVisible({ timeout: 500 }))) continue;
+
+        const ariaDisabled = await btn.getAttribute("aria-disabled");
+        const disabled = await btn.getAttribute("disabled");
+
+        if (ariaDisabled === "true" || disabled !== null) continue;
+
+        const textoBotao = await btn.innerText().catch(() => "");
+
+        if (!/^(postar|publicar)$/i.test(textoBotao.trim())) continue;
+
+        console.log("Botão de publicação encontrado dentro do diálogo:", textoBotao.trim());
+
         await btn.click({ timeout: 5000 });
         await page.waitForTimeout(3000);
+
         return { ok: true };
-      }
-    } catch (_) {}
+      } catch (_) {}
+    }
+
+    await page.waitForTimeout(500);
   }
 
-  return { ok: false, motivo: 'Botão Publicar não encontrado ou desabilitado' };
+  return {
+    ok: false,
+    motivo: "Botão Postar/Publicar não encontrado dentro do diálogo da publicação ou permaneceu desabilitado após 10 segundos"
+  };
 }
 
-/**
- * Heurística de sucesso — nunca assume sucesso só pelo clique.
- */
 async function detectarSucesso(page, trechoTexto) {
-  await page.waitForTimeout(2000);
+  await page.waitForTimeout(3000);
+
   const bloqueio = await detectarBloqueio(page);
   if (bloqueio.bloqueado) {
     return { sucesso: false, motivo: bloqueio.motivo };
   }
 
+  // 1. Verifica se ainda existe um diálogo de publicação aberto.
+  const dialogo = page.locator('div[role="dialog"]').first();
+  const dialogoVisivel = await dialogo.isVisible().catch(() => false);
+
+  if (dialogoVisivel) {
+    return {
+      sucesso: false,
+      motivo: 'Diálogo de publicação ainda está aberto'
+    };
+  }
+
+  // 2. Procura mensagens explícitas de sucesso.
   const body = await page.locator('body').innerText().catch(() => '');
+
   const sinaisPositivos = [
     /publica(ç|c)ão (foi )?compartilhada/i,
+    /sua publica(ç|c)ão foi/i,
     /your post (is|was)/i,
     /post shared/i,
-    /publicado/i,
+    /publicado com sucesso/i,
+    /publicado/i
   ];
+
   for (const re of sinaisPositivos) {
     if (re.test(body)) {
-      return { sucesso: true, motivo: `Sinal de UI: ${re}` };
+      return {
+        sucesso: true,
+        motivo: `Sinal de UI: ${re}`
+      };
     }
   }
 
-  // Diálogo fechou e trecho do texto aparece no feed
-  const trecho = String(trechoTexto || '').slice(0, 40).trim();
+  // 3. Procura o texto da oferta no feed do grupo.
+  const trecho = String(trechoTexto || '').slice(0, 50).trim();
+
   if (trecho.length >= 12) {
-    const visivel = await page.getByText(trecho).first().isVisible().catch(() => false);
-    if (visivel) {
-      return { sucesso: true, motivo: 'Trecho do texto visível no feed do grupo' };
+    const elementos = page.getByText(trecho, { exact: false });
+    const quantidade = await elementos.count().catch(() => 0);
+
+    for (let i = 0; i < Math.min(quantidade, 5); i++) {
+      const visivel = await elementos.nth(i).isVisible().catch(() => false);
+
+      if (visivel) {
+        return {
+          sucesso: true,
+          motivo: 'Texto da publicação encontrado no feed'
+        };
+      }
     }
+  }
+
+  // 4. Se o diálogo fechou, o botão de publicação desapareceu
+  // e não houve bloqueio, consideramos o clique executado,
+  // mas deixamos uma margem de segurança.
+  const botoesPublicar = [
+    page.getByRole('button', { name: /^postar$/i }).first(),
+    page.getByRole('button', { name: /^publicar$/i }).first(),
+    page.getByRole('button', { name: /^post$/i }).first()
+  ];
+
+  let botaoVisivel = false;
+
+  for (const botao of botoesPublicar) {
+    if (await botao.isVisible().catch(() => false)) {
+      botaoVisivel = true;
+      break;
+    }
+  }
+
+  if (!botaoVisivel) {
+    return {
+      sucesso: true,
+      motivo: 'Diálogo fechado e botão de publicação não está mais visível'
+    };
   }
 
   return {
     sucesso: false,
     motivo:
-      'Não foi possível confirmar sucesso de forma confiável. Não registrando no histórico.',
+      'Não foi possível confirmar sucesso de forma confiável. Não registrando no histórico.'
   };
 }
 

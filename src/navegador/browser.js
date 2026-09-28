@@ -40,6 +40,7 @@ function encontrarChromium() {
     '/usr/bin/google-chrome',
     '/usr/bin/google-chrome-stable',
     '/snap/bin/chromium',
+    process.env.PREFIX + '/lib/chromium/chromium-launcher.sh',
   ];
 
   for (const caminho of candidatos) {
@@ -55,6 +56,8 @@ function obterArgumentosNavegador() {
   const args = [
     '--disable-notifications',
     '--disable-dev-shm-usage',
+    '--disable-gpu',
+    '--ozone-platform=x11',
   ];
 
   /*
@@ -83,7 +86,7 @@ async function criarContexto(opcoes = {}) {
     playwright = require('playwright');
   } catch (_) {
     throw new Error(
-      'Playwright não instalado. Execute: npm install'
+      'Erro real ao carregar Playwright: ' + (_.message || String(_))
     );
   }
 
