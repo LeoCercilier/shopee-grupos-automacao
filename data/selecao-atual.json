@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-09-27T23:44:32.527Z",
+  "gerado_em": "2026-09-28T06:37:20.343Z",
   "total_selecoes": 3,
   "grupos_ativos": 3,
   "selecoes": [
@@ -11,17 +11,17 @@
         "nicho": "geral"
       },
       "oferta": {
-        "id": "56762439947",
-        "titulo": "Adeforte Turbo + Biotina 3ml Original Vitamina Cabelos Pele Unhas",
-        "preco": "59.99",
-        "preco_formatado": "R$ 59,99",
-        "link": "https://s.shopee.com.br/2qUtKseSMx",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-820lm-mpmlibinjfgg53",
-        "nicho": "beleza"
+        "id": "58217601055",
+        "titulo": "Parafusadeira Furadeira 25V Nakasaki Sem Fio a Bateria Profissional Kit Completo com Maleta",
+        "preco": "79.99",
+        "preco_formatado": "R$ 79,99",
+        "link": "https://s.shopee.com.br/7fa95lM3Yu",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-820lt-msq8pkzchmh355",
+        "nicho": "ferramentas"
       },
-      "texto": "🔥 OFERTA DO DIA\n\nAdeforte Turbo + Biotina 3ml Original Vitamina Cabelos Pele Unhas\n\n💰 R$ 59,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/2qUtKseSMx",
+      "texto": "🔥 OFERTA DO DIA\n\nParafusadeira Furadeira 25V Nakasaki Sem Fio a Bateria Profissional Kit Completo com Maleta\n\n💰 R$ 79,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/7fa95lM3Yu",
       "status": "pendente",
-      "selecionado_em": "2026-09-27T23:44:32.527Z"
+      "selecionado_em": "2026-09-28T06:37:20.343Z"
     },
     {
       "grupo": {
@@ -41,7 +41,7 @@
       },
       "texto": "🔥 OFERTA DO DIA\n\nFaca Para Churrasco Profissional Luxo Personalizado Seu time\n\n💰 R$ 58,88\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/6VOBhcQUvp",
       "status": "pendente",
-      "selecionado_em": "2026-09-27T23:44:32.527Z"
+      "selecionado_em": "2026-09-28T06:37:20.343Z"
     },
     {
       "grupo": {
@@ -61,7 +61,7 @@
       },
       "texto": "🔥 OFERTA DO DIA\n\nFini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original\n\n💰 R$ 69,98\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/7VGitSMgtv",
       "status": "pendente",
-      "selecionado_em": "2026-09-27T23:44:32.527Z"
+      "selecionado_em": "2026-09-28T06:37:20.343Z"
     }
   ],
   "aviso": "Publicação automática em grupos NÃO está implementada. Groups API oficial da Meta foi removida em abril/2024."
