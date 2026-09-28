@@ -30,20 +30,16 @@ async function executarPublicador() {
     console.log('=== PUBLICADOR NAVEGADOR (SESSÃO LOCAL) ===');
     console.log('Modo:', modo);
 
-    const resultado = await publicarUma({
+    const resultado = await publicarSelecoesNavegador({
       dryRun:
         String(process.env.BROWSER_DRY_RUN || 'false').toLowerCase() ===
         'true',
     });
 
     return {
-      modo: resultado.status === 'publicado'
-        ? 'navegador-publicado'
-        : modo,
-      publicados: resultado.status === 'publicado' ? 1 : 0,
-      erros: /^erro|^bloqueio/.test(String(resultado.status || ''))
-        ? 1
-        : 0,
+      modo: resultado.modo || modo,
+      publicados: Number(resultado.publicados || 0),
+      erros: Number(resultado.erros || 0),
       resultado,
     };
   }

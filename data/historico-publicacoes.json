@@ -1,5 +1,19 @@
 {
   "versao": 1,
-  "atualizado_em": null,
-  "registros": []
+  "atualizado_em": "2026-09-28T18:50:39.286Z",
+  "registros": [
+    {
+      "grupo_id": "auto-saude-939988969766219",
+      "produto_chave": "id:23394523519",
+      "titulo": "Fini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original",
+      "link": "https://s.shopee.com.br/7VGitSMgtv",
+      "nicho": "saude",
+      "publicado_em": "2026-09-28T18:50:39.284Z",
+      "canal": "navegador",
+      "group_id": "939988969766219",
+      "modo": "publicar",
+      "evidencia": "Diálogo fechado e botão de publicação não está mais visível",
+      "screenshot": "/data/data/com.termux/files/home/shopee-grupos-automacao/data/screenshots/1790621438999-sucesso.png"
+    }
+  ]
 }
