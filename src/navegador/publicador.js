@@ -55,6 +55,79 @@ function escolherUmaSelecao(selecao) {
   return null;
 }
 
+
+async function recuperarCompositor(page, groupId, tentativa) {
+  console.log(`🔄 Recuperando compositor (tentativa ${tentativa})...`);
+
+  try {
+    await page.keyboard.press('Escape').catch(() => {});
+    await page.waitForTimeout(700);
+  } catch (_) {}
+
+  await page.goto('about:blank', {
+    waitUntil: 'domcontentloaded',
+    timeout: 15000,
+  }).catch(() => {});
+
+  const grupoRes = await abrirGrupo(page, groupId);
+
+  if (!grupoRes.ok) {
+    return {
+      ok: false,
+      motivo: grupoRes.motivo || 'Não foi possível reabrir o grupo',
+    };
+  }
+
+  const comp = await abrirCompositor(page);
+
+  if (!comp.ok) {
+    return {
+      ok: false,
+      motivo: comp.motivo || 'Não foi possível reabrir o compositor',
+    };
+  }
+
+  return { ok: true };
+}
+
+async function prepararTextoComRecuperacao(page, groupId, texto) {
+  const MAX_TENTATIVAS = 2;
+
+  for (let tentativa = 1; tentativa <= MAX_TENTATIVAS; tentativa++) {
+    const txt = await preencherTexto(page, texto);
+
+    if (txt.ok) {
+      return { ok: true, tentativa };
+    }
+
+    console.log(
+      `⚠️ Campo de texto não encontrado na tentativa ${tentativa}/${MAX_TENTATIVAS}: ${txt.motivo}`
+    );
+
+    if (tentativa < MAX_TENTATIVAS) {
+      const recuperacao = await recuperarCompositor(
+        page,
+        groupId,
+        tentativa + 1
+      );
+
+      if (!recuperacao.ok) {
+        return {
+          ok: false,
+          motivo: `${txt.motivo}; recuperação falhou: ${recuperacao.motivo}`,
+        };
+      }
+    } else {
+      return txt;
+    }
+  }
+
+  return {
+    ok: false,
+    motivo: 'Não foi possível preencher o compositor após recuperação',
+  };
+}
+
 async function publicarSelecoesNavegador({ dryRun = false } = {}) {
   // Em modo preparar/dry-run, mantém o comportamento seguro de 1 publicação.
   if (dryRun || MODO !== 'publicar') {
@@ -270,24 +343,57 @@ async function publicarUma({ dryRun = false } = {}) {
       return r;
     }
 
-    const comp = await abrirCompositor(page);
+    let comp = await abrirCompositor(page);
+
     if (!comp.ok) {
-      const shot = await capturarEvidencia(page, 'compositor');
-      const r = { ...base, status: 'erro_compositor', erro: comp.motivo, screenshot: shot };
+      console.log('⚠️ Compositor não abriu de primeira. Tentando recuperação...');
+
+      const recuperacao = await recuperarCompositor(
+        page,
+        grupo.group_id,
+        1
+      );
+
+      if (!recuperacao.ok) {
+        const shot = await capturarEvidencia(page, 'compositor');
+        const r = {
+          ...base,
+          status: 'erro_compositor',
+          erro: `${comp.motivo}; recuperação falhou: ${recuperacao.motivo}`,
+          screenshot: shot
+        };
+        writeJson(RESULTADO_FILE, r);
+        console.log('❌', r.erro);
+        await context.close();
+        return r;
+      }
+
+      comp = { ok: true };
+      console.log('✅ Compositor recuperado.');
+    }
+
+    const txt = await prepararTextoComRecuperacao(
+      page,
+      grupo.group_id,
+      texto
+    );
+
+    if (!txt.ok) {
+      const shot = await capturarEvidencia(page, 'texto');
+      const r = {
+        ...base,
+        status: 'erro_texto',
+        erro: txt.motivo,
+        screenshot: shot
+      };
       writeJson(RESULTADO_FILE, r);
       console.log('❌', r.erro);
       await context.close();
       return r;
     }
 
-    const txt = await preencherTexto(page, texto);
-    if (!txt.ok) {
-      const shot = await capturarEvidencia(page, 'texto');
-      const r = { ...base, status: 'erro_texto', erro: txt.motivo, screenshot: shot };
-      writeJson(RESULTADO_FILE, r);
-      console.log('❌', r.erro);
-      await context.close();
-      return r;
+    if (txt.tentativa > 1) {
+      console.log(`✅ Campo de texto recuperado na tentativa ${txt.tentativa}.`);
     }
 
     const img = await anexarImagem(page, oferta.imagem);
