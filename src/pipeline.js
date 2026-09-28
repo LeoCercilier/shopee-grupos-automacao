@@ -12,7 +12,7 @@ const { coletarOfertas } = require('./coletor');
 const { executar: classificar } = require('./classificador');
 const { selecionar } = require('./seletor');
 const { publicarSelecoes } = require('./publicador');
-const { publicarUma } = require('./navegador/publicador');
+const { publicarUma, publicarSelecoesNavegador } = require('./navegador/publicador');
 const { nowIso } = require('./utils');
 
 function usarPublicadorNavegador() {

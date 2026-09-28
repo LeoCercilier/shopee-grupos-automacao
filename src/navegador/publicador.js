@@ -55,6 +55,137 @@ function escolherUmaSelecao(selecao) {
   return null;
 }
 
+async function publicarSelecoesNavegador({ dryRun = false } = {}) {
+  // Em modo preparar/dry-run, mantém o comportamento seguro de 1 publicação.
+  if (dryRun || MODO !== 'publicar') {
+    const resultado = await publicarUma({ dryRun });
+
+    return {
+      modo: resultado.status === 'publicado'
+        ? 'navegador-publicado'
+        : 'navegador-preparado',
+      publicados: resultado.status === 'publicado' ? 1 : 0,
+      erros: resultado.status === 'erro' ? 1 : 0,
+      processados: 1,
+      resultados: [resultado]
+    };
+  }
+
+  const rawMax = String(
+    process.env.BROWSER_MAX_PUBLICACOES || ''
+  ).trim().toLowerCase();
+
+  const maxPublicacoes =
+    !rawMax || rawMax === 'todos' || rawMax === 'infinity'
+      ? Infinity
+      : Math.max(1, Number.parseInt(rawMax, 10) || 1);
+
+  const intervaloMs = Math.max(
+    0,
+    Number.parseInt(process.env.BROWSER_INTERVALO_MS || '5000', 10) || 5000
+  );
+
+  const resultados = [];
+  let publicados = 0;
+  let erros = 0;
+  let parouPor = 'todas_selecoes_processadas';
+
+  console.log('');
+  console.log('==============================================');
+  console.log('PUBLICADOR NAVEGADOR — MODO LOTE');
+  console.log('==============================================');
+  console.log(
+    'Limite:',
+    Number.isFinite(maxPublicacoes) ? maxPublicacoes : 'TODAS AS SELEÇÕES'
+  );
+  console.log('Intervalo entre publicações:', intervaloMs + 'ms');
+  console.log('');
+
+  while (publicados < maxPublicacoes) {
+    console.log('');
+    console.log(
+      '--- Próxima seleção (' +
+      (publicados + 1) +
+      (Number.isFinite(maxPublicacoes) ? '/' + maxPublicacoes : '') +
+      ') ---'
+    );
+
+    const resultado = await publicarUma({ dryRun: false });
+    resultados.push(resultado);
+
+    if (resultado.status === 'publicado') {
+      publicados++;
+
+      console.log(
+        '✅ Publicação confirmada:',
+        publicados
+      );
+
+      if (
+        intervaloMs > 0 &&
+        publicados < maxPublicacoes
+      ) {
+        console.log(
+          '⏳ Aguardando ' +
+          intervaloMs +
+          'ms antes da próxima publicação...'
+        );
+
+        await new Promise(resolve =>
+          setTimeout(resolve, intervaloMs)
+        );
+      }
+
+      continue;
+    }
+
+    if (
+      resultado.status === 'nenhuma_elegivel' ||
+      resultado.status === 'sem_selecao'
+    ) {
+      parouPor = 'todas_selecoes_elegiveis_processadas';
+      break;
+    }
+
+    if (
+      resultado.status === 'bloqueio' ||
+      resultado.status === 'incerto' ||
+      resultado.status === 'erro'
+    ) {
+      erros++;
+      parouPor = resultado.status;
+      console.log(
+        '🛑 Lote interrompido:',
+        resultado.status
+      );
+      break;
+    }
+
+    erros++;
+    parouPor = 'status_desconhecido';
+    break;
+  }
+
+  console.log('');
+  console.log('==============================================');
+  console.log('RESUMO DO LOTE');
+  console.log('==============================================');
+  console.log('Publicados:', publicados);
+  console.log('Erros:', erros);
+  console.log('Processados:', resultados.length);
+  console.log('Motivo da parada:', parouPor);
+  console.log('==============================================');
+
+  return {
+    modo: 'navegador-publicado',
+    publicados,
+    erros,
+    processados: resultados.length,
+    parou_por: parouPor,
+    resultados
+  };
+}
+
 async function publicarUma({ dryRun = false } = {}) {
   console.log('========================================');
   console.log(' PUBLICADOR NAVEGADOR — MVP (1×1)');
@@ -271,4 +402,8 @@ if (require.main === module) {
     });
 }
 
-module.exports = { publicarUma, escolherUmaSelecao };
+module.exports = {
+  publicarUma,
+  escolherUmaSelecao,
+  publicarSelecoesNavegador
+};
