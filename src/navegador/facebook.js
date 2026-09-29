@@ -330,46 +330,75 @@ async function clicarPublicar(page) {
 }
 
 async function detectarSucesso(page, trechoTexto) {
+  // Dá tempo para o Facebook processar o envio e exibir
+  // a confirmação/estado de análise da publicação.
   await page.waitForTimeout(3000);
 
   const bloqueio = await detectarBloqueio(page);
   if (bloqueio.bloqueado) {
-    return { sucesso: false, motivo: bloqueio.motivo };
-  }
-
-  // 1. Verifica se ainda existe um diálogo de publicação aberto.
-  const dialogo = page.locator('div[role="dialog"]').first();
-  const dialogoVisivel = await dialogo.isVisible().catch(() => false);
-
-  if (dialogoVisivel) {
     return {
       sucesso: false,
-      motivo: 'Diálogo de publicação ainda está aberto'
+      motivo: bloqueio.motivo
     };
   }
 
-  // 2. Procura mensagens explícitas de sucesso.
+  // Captura o texto visível da página.
   const body = await page.locator('body').innerText().catch(() => '');
 
+  /*
+   * IMPORTANTE:
+   * O Facebook pode aceitar a publicação e informar que ela está
+   * sendo processada/revisada. Isso já significa que o envio foi
+   * aceito, mesmo que o post ainda não apareça imediatamente no feed.
+   */
   const sinaisPositivos = [
-    /publica(ç|c)ão (foi )?compartilhada/i,
-    /sua publica(ç|c)ão foi/i,
-    /your post (is|was)/i,
+    /thanks for your post/i,
+    /thanks for your post.*being/i,
+    /your post is being/i,
+    /your post is pending/i,
+    /your post was submitted/i,
+    /your post has been submitted/i,
+    /post submitted/i,
     /post shared/i,
-    /publicado com sucesso/i,
-    /publicado/i
+    /your post (is|was) shared/i,
+
+    /obrigado pela sua publica(ç|c)ão/i,
+    /sua publica(ç|c)ão.*está sendo/i,
+    /sua publica(ç|c)ão.*enviada/i,
+    /sua publica(ç|c)ão foi enviada/i,
+    /sua publica(ç|c)ão foi compartilhada/i,
+    /publica(ç|c)ão compartilhada/i,
+    /publicado com sucesso/i
   ];
 
   for (const re of sinaisPositivos) {
     if (re.test(body)) {
       return {
         sucesso: true,
-        motivo: `Sinal de UI: ${re}`
+        motivo: `Confirmação do Facebook: ${re}`
       };
     }
   }
 
-  // 3. Procura o texto da oferta no feed do grupo.
+  // Se o diálogo ainda estiver aberto, verificamos novamente
+  // se existe alguma mensagem positiva dentro dele.
+  const dialogos = page.locator('div[role="dialog"]');
+  const quantidadeDialogos = await dialogos.count().catch(() => 0);
+
+  for (let i = 0; i < Math.min(quantidadeDialogos, 5); i++) {
+    const dialogoTexto = await dialogos.nth(i).innerText().catch(() => '');
+
+    for (const re of sinaisPositivos) {
+      if (re.test(dialogoTexto)) {
+        return {
+          sucesso: true,
+          motivo: `Confirmação dentro do diálogo: ${re}`
+        };
+      }
+    }
+  }
+
+  // 2. Procura o texto da oferta no feed do grupo.
   const trecho = String(trechoTexto || '').slice(0, 50).trim();
 
   if (trecho.length >= 12) {
@@ -388,9 +417,17 @@ async function detectarSucesso(page, trechoTexto) {
     }
   }
 
-  // 4. Se o diálogo fechou, o botão de publicação desapareceu
-  // e não houve bloqueio, consideramos o clique executado,
-  // mas deixamos uma margem de segurança.
+  /*
+   * 3. Última confirmação estrutural.
+   *
+   * Se o diálogo de publicação fechou e o botão Postar/Publicar
+   * desapareceu, o Facebook aceitou o envio.
+   *
+   * Não tratamos o simples clique como sucesso antes desta etapa.
+   */
+  const dialogo = page.locator('div[role="dialog"]').first();
+  const dialogoVisivel = await dialogo.isVisible().catch(() => false);
+
   const botoesPublicar = [
     page.getByRole('button', { name: /^postar$/i }).first(),
     page.getByRole('button', { name: /^publicar$/i }).first(),
@@ -406,7 +443,7 @@ async function detectarSucesso(page, trechoTexto) {
     }
   }
 
-  if (!botaoVisivel) {
+  if (!dialogoVisivel && !botaoVisivel) {
     return {
       sucesso: true,
       motivo: 'Diálogo fechado e botão de publicação não está mais visível'
