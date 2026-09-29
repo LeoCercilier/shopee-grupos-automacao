@@ -1,108 +1,8 @@
 {
-  "gerado_em": "2026-09-28T23:47:54.728Z",
+  "gerado_em": "2026-09-29T06:45:14.415Z",
   "total_selecoes": 12,
   "grupos_ativos": 21,
   "selecoes": [
-    {
-      "grupo": {
-        "id": "grupo-saude-1",
-        "nome": "Grupo Saúde",
-        "group_id": "404233713795205",
-        "nicho": "saude"
-      },
-      "oferta": {
-        "id": "23394523519",
-        "titulo": "Fini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original",
-        "preco": "69.98",
-        "preco_formatado": "R$ 69,98",
-        "link": "https://s.shopee.com.br/7VGitSMgtv",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mftu2pib3imd1e",
-        "nicho": "saude"
-      },
-      "texto": "🔥 OFERTA DO DIA\n\nFini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original\n\n🌙 Suplemento em cápsulas para sua rotina noturna\n\n💰 R$ 69,98\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/7VGitSMgtv",
-      "status": "pendente",
-      "selecionado_em": "2026-09-28T23:47:54.727Z"
-    },
-    {
-      "grupo": {
-        "id": "auto-saude-215184793280393",
-        "nome": "Dicas de Saúde e Longevidade",
-        "group_id": "215184793280393",
-        "nicho": "saude"
-      },
-      "oferta": {
-        "id": "23394523519",
-        "titulo": "Fini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original",
-        "preco": "69.98",
-        "preco_formatado": "R$ 69,98",
-        "link": "https://s.shopee.com.br/7VGitSMgtv",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mftu2pib3imd1e",
-        "nicho": "saude"
-      },
-      "texto": "🔥 OFERTA DO DIA\n\nFini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original\n\n🌙 Suplemento em cápsulas para sua rotina noturna\n\n💰 R$ 69,98\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/7VGitSMgtv",
-      "status": "pendente",
-      "selecionado_em": "2026-09-28T23:47:54.727Z"
-    },
-    {
-      "grupo": {
-        "id": "auto-saude-1328003397369502",
-        "nome": "Fitness Lovers 🔥",
-        "group_id": "1328003397369502",
-        "nicho": "saude"
-      },
-      "oferta": {
-        "id": "23394523519",
-        "titulo": "Fini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original",
-        "preco": "69.98",
-        "preco_formatado": "R$ 69,98",
-        "link": "https://s.shopee.com.br/7VGitSMgtv",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mftu2pib3imd1e",
-        "nicho": "saude"
-      },
-      "texto": "🔥 OFERTA DO DIA\n\nFini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original\n\n🌙 Suplemento em cápsulas para sua rotina noturna\n\n💰 R$ 69,98\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/7VGitSMgtv",
-      "status": "pendente",
-      "selecionado_em": "2026-09-28T23:47:54.727Z"
-    },
-    {
-      "grupo": {
-        "id": "auto-saude-1426918943987350",
-        "nome": "Mulheres Fitness",
-        "group_id": "1426918943987350",
-        "nicho": "saude"
-      },
-      "oferta": {
-        "id": "23394523519",
-        "titulo": "Fini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original",
-        "preco": "69.98",
-        "preco_formatado": "R$ 69,98",
-        "link": "https://s.shopee.com.br/7VGitSMgtv",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mftu2pib3imd1e",
-        "nicho": "saude"
-      },
-      "texto": "🔥 OFERTA DO DIA\n\nFini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original\n\n🌙 Suplemento em cápsulas para sua rotina noturna\n\n💰 R$ 69,98\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/7VGitSMgtv",
-      "status": "pendente",
-      "selecionado_em": "2026-09-28T23:47:54.727Z"
-    },
-    {
-      "grupo": {
-        "id": "auto-saude-258452300499795",
-        "nome": "Dicas de Saúde, Fitness e Beleza",
-        "group_id": "258452300499795",
-        "nicho": "saude"
-      },
-      "oferta": {
-        "id": "23394523519",
-        "titulo": "Fini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original",
-        "preco": "69.98",
-        "preco_formatado": "R$ 69,98",
-        "link": "https://s.shopee.com.br/7VGitSMgtv",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mftu2pib3imd1e",
-        "nicho": "saude"
-      },
-      "texto": "🔥 OFERTA DO DIA\n\nFini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original\n\n🌙 Suplemento em cápsulas para sua rotina noturna\n\n💰 R$ 69,98\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/7VGitSMgtv",
-      "status": "pendente",
-      "selecionado_em": "2026-09-28T23:47:54.727Z"
-    },
     {
       "grupo": {
         "id": "grupo-geral-1",
@@ -121,7 +21,7 @@
       },
       "texto": "🔥 OFERTA DO DIA\n\nBota Coturno Masculino Adventure De Qualidade e Barato Mega Oferta\n\n👟 Estilo e praticidade para o seu dia a dia\n\n💰 R$ 52,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9AOw5LKK5M",
       "status": "pendente",
-      "selecionado_em": "2026-09-28T23:47:54.727Z"
+      "selecionado_em": "2026-09-29T06:45:14.414Z"
     },
     {
       "grupo": {
@@ -141,7 +41,7 @@
       },
       "texto": "🔥 OFERTA DO DIA\n\nBota Coturno Masculino Adventure De Qualidade e Barato Mega Oferta\n\n👟 Estilo e praticidade para o seu dia a dia\n\n💰 R$ 52,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9AOw5LKK5M",
       "status": "pendente",
-      "selecionado_em": "2026-09-28T23:47:54.728Z"
+      "selecionado_em": "2026-09-29T06:45:14.414Z"
     },
     {
       "grupo": {
@@ -161,7 +61,7 @@
       },
       "texto": "🔥 OFERTA DO DIA\n\nBota Coturno Masculino Adventure De Qualidade e Barato Mega Oferta\n\n👟 Estilo e praticidade para o seu dia a dia\n\n💰 R$ 52,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9AOw5LKK5M",
       "status": "pendente",
-      "selecionado_em": "2026-09-28T23:47:54.728Z"
+      "selecionado_em": "2026-09-29T06:45:14.414Z"
     },
     {
       "grupo": {
@@ -181,7 +81,7 @@
       },
       "texto": "🔥 OFERTA DO DIA\n\nBota Coturno Masculino Adventure De Qualidade e Barato Mega Oferta\n\n👟 Estilo e praticidade para o seu dia a dia\n\n💰 R$ 52,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9AOw5LKK5M",
       "status": "pendente",
-      "selecionado_em": "2026-09-28T23:47:54.728Z"
+      "selecionado_em": "2026-09-29T06:45:14.414Z"
     },
     {
       "grupo": {
@@ -201,7 +101,107 @@
       },
       "texto": "🔥 OFERTA DO DIA\n\nBota Coturno Masculino Adventure De Qualidade e Barato Mega Oferta\n\n👟 Estilo e praticidade para o seu dia a dia\n\n💰 R$ 52,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9AOw5LKK5M",
       "status": "pendente",
-      "selecionado_em": "2026-09-28T23:47:54.728Z"
+      "selecionado_em": "2026-09-29T06:45:14.414Z"
+    },
+    {
+      "grupo": {
+        "id": "grupo-saude-1",
+        "nome": "Grupo Saúde",
+        "group_id": "404233713795205",
+        "nicho": "saude"
+      },
+      "oferta": {
+        "id": "23394523519",
+        "titulo": "Fini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original",
+        "preco": "64.99",
+        "preco_formatado": "R$ 64,99",
+        "link": "https://s.shopee.com.br/7VGitSMgtv",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mftu2pib3imd1e",
+        "nicho": "saude"
+      },
+      "texto": "🔥 OFERTA DO DIA\n\nFini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original\n\n🌙 Suplemento em cápsulas para sua rotina noturna\n\n💰 R$ 64,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/7VGitSMgtv",
+      "status": "pendente",
+      "selecionado_em": "2026-09-29T06:45:14.414Z"
+    },
+    {
+      "grupo": {
+        "id": "auto-saude-215184793280393",
+        "nome": "Dicas de Saúde e Longevidade",
+        "group_id": "215184793280393",
+        "nicho": "saude"
+      },
+      "oferta": {
+        "id": "23394523519",
+        "titulo": "Fini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original",
+        "preco": "64.99",
+        "preco_formatado": "R$ 64,99",
+        "link": "https://s.shopee.com.br/7VGitSMgtv",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mftu2pib3imd1e",
+        "nicho": "saude"
+      },
+      "texto": "🔥 OFERTA DO DIA\n\nFini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original\n\n🌙 Suplemento em cápsulas para sua rotina noturna\n\n💰 R$ 64,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/7VGitSMgtv",
+      "status": "pendente",
+      "selecionado_em": "2026-09-29T06:45:14.414Z"
+    },
+    {
+      "grupo": {
+        "id": "auto-saude-1328003397369502",
+        "nome": "Fitness Lovers 🔥",
+        "group_id": "1328003397369502",
+        "nicho": "saude"
+      },
+      "oferta": {
+        "id": "23394523519",
+        "titulo": "Fini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original",
+        "preco": "64.99",
+        "preco_formatado": "R$ 64,99",
+        "link": "https://s.shopee.com.br/7VGitSMgtv",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mftu2pib3imd1e",
+        "nicho": "saude"
+      },
+      "texto": "🔥 OFERTA DO DIA\n\nFini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original\n\n🌙 Suplemento em cápsulas para sua rotina noturna\n\n💰 R$ 64,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/7VGitSMgtv",
+      "status": "pendente",
+      "selecionado_em": "2026-09-29T06:45:14.414Z"
+    },
+    {
+      "grupo": {
+        "id": "auto-saude-1426918943987350",
+        "nome": "Mulheres Fitness",
+        "group_id": "1426918943987350",
+        "nicho": "saude"
+      },
+      "oferta": {
+        "id": "23394523519",
+        "titulo": "Fini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original",
+        "preco": "64.99",
+        "preco_formatado": "R$ 64,99",
+        "link": "https://s.shopee.com.br/7VGitSMgtv",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mftu2pib3imd1e",
+        "nicho": "saude"
+      },
+      "texto": "🔥 OFERTA DO DIA\n\nFini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original\n\n🌙 Suplemento em cápsulas para sua rotina noturna\n\n💰 R$ 64,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/7VGitSMgtv",
+      "status": "pendente",
+      "selecionado_em": "2026-09-29T06:45:14.415Z"
+    },
+    {
+      "grupo": {
+        "id": "auto-saude-258452300499795",
+        "nome": "Dicas de Saúde, Fitness e Beleza",
+        "group_id": "258452300499795",
+        "nicho": "saude"
+      },
+      "oferta": {
+        "id": "23394523519",
+        "titulo": "Fini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original",
+        "preco": "64.99",
+        "preco_formatado": "R$ 64,99",
+        "link": "https://s.shopee.com.br/7VGitSMgtv",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mftu2pib3imd1e",
+        "nicho": "saude"
+      },
+      "texto": "🔥 OFERTA DO DIA\n\nFini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original\n\n🌙 Suplemento em cápsulas para sua rotina noturna\n\n💰 R$ 64,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/7VGitSMgtv",
+      "status": "pendente",
+      "selecionado_em": "2026-09-29T06:45:14.415Z"
     },
     {
       "grupo": {
@@ -221,7 +221,7 @@
       },
       "texto": "🔥 OFERTA DO DIA\n\nFaca Para Churrasco Profissional Luxo Personalizado Seu time\n\n🍳 Praticidade para preparar suas refeições\n\n💰 R$ 58,88\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/4qG0NgJlPO",
       "status": "pendente",
-      "selecionado_em": "2026-09-28T23:47:54.728Z"
+      "selecionado_em": "2026-09-29T06:45:14.415Z"
     },
     {
       "grupo": {
@@ -241,7 +241,7 @@
       },
       "texto": "🔥 OFERTA DO DIA\n\nFaca Para Churrasco Profissional Luxo Personalizado Seu time\n\n🍳 Praticidade para preparar suas refeições\n\n💰 R$ 58,88\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/4qG0NgJlPO",
       "status": "pendente",
-      "selecionado_em": "2026-09-28T23:47:54.728Z"
+      "selecionado_em": "2026-09-29T06:45:14.415Z"
     }
   ],
   "aviso": "Publicação automática em grupos NÃO está implementada. Groups API oficial da Meta foi removida em abril/2024."
