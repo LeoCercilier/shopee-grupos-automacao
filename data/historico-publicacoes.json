@@ -1,6 +1,6 @@
 {
   "versao": 1,
-  "atualizado_em": "2026-09-29T15:14:29.849Z",
+  "atualizado_em": "2026-09-29T15:23:48.099Z",
   "registros": [
     {
       "grupo_id": "auto-saude-939988969766219",
@@ -365,6 +365,19 @@
       "modo": "publicar",
       "evidencia": "Confirmação do Facebook: /thanks for your post/i",
       "screenshot": "/data/data/com.termux/files/home/shopee-grupos-automacao/data/screenshots/1790694869643-sucesso.png"
+    },
+    {
+      "grupo_id": "grupo-casa-1",
+      "produto_chave": "id:58209305993",
+      "titulo": "SUPORTE BOTIJÃO DE GÁS PAREDE C/ 2 PARAFUSOS E BUCHAS REFORÇADO KIT",
+      "link": "https://s.shopee.com.br/Lnc66PKpr",
+      "nicho": "casa",
+      "publicado_em": "2026-09-29T15:23:48.097Z",
+      "canal": "navegador",
+      "group_id": "811021770682797",
+      "modo": "publicar",
+      "evidencia": "Confirmação do Facebook: /thanks for your post/i",
+      "screenshot": "/data/data/com.termux/files/home/shopee-grupos-automacao/data/screenshots/1790695427695-sucesso.png"
     }
   ]
 }
