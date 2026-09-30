@@ -3,18 +3,19 @@
 /**
  * Publicador por navegador (MVP).
  *
- * - Lê data/selecao-atual.json
+ * - Lê data/selecao-atual.json (Shopee) ou data/selecao-cursos.json (cursos)
  * - Processa SOMENTE 1 seleção (primeira elegível ou filtrada)
  * - Usa sessão local (.browser-session)
  * - Por padrão MODO=preparar: preenche o compositor e NÃO clica em Publicar
  * - Com MODO=publicar: tenta clicar e só registra histórico se houver confirmação
+ *
+ * CONTENT_TYPE=shopee (padrão) | curso — mesmo navegador, históricos separados.
  *
  * NÃO usa senha, NÃO versiona cookies, NÃO contorna CAPTCHA.
  */
 
 const path = require('path');
 const { readJson, writeJson, nowIso } = require('../utils');
-const { jaPublicadoRecentemente, registrarPublicacao } = require('../historico');
 const { criarContexto, novaPagina } = require('./browser');
 const {
   verificarSessaoLogada,
@@ -29,8 +30,35 @@ const {
 } = require('./facebook');
 
 const ROOT = path.join(__dirname, '..', '..');
-const SELECAO_FILE = path.join(ROOT, 'data', 'selecao-atual.json');
-const RESULTADO_FILE = path.join(ROOT, 'data', 'resultado-publicacao-browser.json');
+
+/**
+ * CONTENT_TYPE=shopee (padrão) | curso
+ * Permite reutilizar o mesmo publicador com seleções e históricos distintos.
+ * Não altera o comportamento padrão das ofertas Shopee.
+ */
+const CONTENT_TYPE = String(process.env.CONTENT_TYPE || 'shopee').toLowerCase();
+const IS_CURSO = CONTENT_TYPE === 'curso' || CONTENT_TYPE === 'cursos';
+
+const historicoModulo = IS_CURSO
+  ? require('../historico-cursos')
+  : require('../historico');
+const { jaPublicadoRecentemente, registrarPublicacao } = historicoModulo;
+
+const SELECAO_FILE =
+  process.env.SELECAO_FILE ||
+  path.join(
+    ROOT,
+    'data',
+    IS_CURSO ? 'selecao-cursos.json' : 'selecao-atual.json'
+  );
+
+const RESULTADO_FILE =
+  process.env.RESULTADO_FILE ||
+  path.join(
+    ROOT,
+    'data',
+    IS_CURSO ? 'resultado-publicacao-cursos.json' : 'resultado-publicacao-browser.json'
+  );
 
 const MODO = String(process.env.MODO_PUBLICACAO_BROWSER || 'preparar').toLowerCase();
 // preparar | publicar
@@ -263,6 +291,8 @@ async function publicarUma({ dryRun = false } = {}) {
   console.log('========================================');
   console.log(' PUBLICADOR NAVEGADOR — MVP (1×1)');
   console.log('========================================');
+  console.log('Tipo de conteúdo:', IS_CURSO ? 'curso' : 'shopee');
+  console.log('Seleção:', SELECAO_FILE);
   console.log('Modo:', MODO);
   console.log('Dry-run navegador:', dryRun);
 
@@ -271,7 +301,7 @@ async function publicarUma({ dryRun = false } = {}) {
     const vazio = {
       gerado_em: nowIso(),
       status: 'sem_selecao',
-      mensagem: 'data/selecao-atual.json vazio — rode o pipeline antes',
+      mensagem: `${path.basename(SELECAO_FILE)} vazio — rode a seleção correspondente antes`,
     };
     writeJson(RESULTADO_FILE, vazio);
     console.log(vazio.mensagem);
@@ -296,6 +326,7 @@ async function publicarUma({ dryRun = false } = {}) {
 
   const base = {
     gerado_em: nowIso(),
+    tipo: IS_CURSO ? 'curso' : 'shopee',
     modo: MODO,
     grupo_id_interno: grupo.id,
     grupo_nome: grupo.nome,
@@ -450,6 +481,7 @@ async function publicarUma({ dryRun = false } = {}) {
     if (conf.sucesso) {
       registrarPublicacao(grupo.id, oferta, {
         canal: 'navegador',
+        tipo: IS_CURSO ? 'curso' : 'shopee',
         group_id: grupo.group_id,
         modo: MODO,
         evidencia: conf.motivo,
