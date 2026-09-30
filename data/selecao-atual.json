@@ -1,27 +1,27 @@
 {
-  "gerado_em": "2026-09-30T01:13:59.232Z",
-  "total_selecoes": 8,
+  "gerado_em": "2026-09-30T16:46:23.712Z",
+  "total_selecoes": 7,
   "grupos_ativos": 21,
   "selecoes": [
     {
       "grupo": {
-        "id": "auto-geral-330309645451506",
-        "nome": "Bazar Belford Roxo",
-        "group_id": "330309645451506",
-        "nicho": "geral"
+        "id": "auto-saude-1426918943987350",
+        "nome": "Mulheres Fitness",
+        "group_id": "1426918943987350",
+        "nicho": "saude"
       },
       "oferta": {
-        "id": "45313071694",
-        "titulo": "Bicicleta Elétrica Scooter Mova Way 4.0 500w 48v Lítio",
-        "preco": "3999.9",
-        "preco_formatado": "R$ 3.999,90",
-        "link": "https://s.shopee.com.br/8AWTgxwem3",
-        "imagem": "https://cf.shopee.com.br/file/sg-11134201-825ay-mq1yfaa5id4x7b",
-        "nicho": "geral"
+        "id": "21698330150",
+        "titulo": "Fini Melatonina 120 Unidades – Suplemento Noturno para Rotina Equilibrada",
+        "preco": "99.89",
+        "preco_formatado": "R$ 99,89",
+        "link": "https://s.shopee.com.br/BUBtnPyAm",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mg3u1p2ot98g3f",
+        "nicho": "saude"
       },
-      "texto": "🔥 OFERTA DO DIA\n\nBicicleta Elétrica Scooter Mova Way 4.0 500w 48v Lítio\n\n✨ Confira esta oferta na Shopee\n\n💰 R$ 3.999,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/8AWTgxwem3",
+      "texto": "🔥 OFERTA DO DIA\n\nFini Melatonina 120 Unidades – Suplemento Noturno para Rotina Equilibrada\n\n🌙 Suplemento em cápsulas para sua rotina noturna\n\n💰 R$ 99,89\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/BUBtnPyAm",
       "status": "pendente",
-      "selecionado_em": "2026-09-30T01:13:59.202Z"
+      "selecionado_em": "2026-09-30T16:46:23.709Z"
     },
     {
       "grupo": {
@@ -41,7 +41,7 @@
       },
       "texto": "🔥 OFERTA DO DIA\n\nBicicleta Elétrica Scooter Mova Way 4.0 500w 48v Lítio\n\n✨ Confira esta oferta na Shopee\n\n💰 R$ 3.999,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/8AWTgxwem3",
       "status": "pendente",
-      "selecionado_em": "2026-09-30T01:13:59.205Z"
+      "selecionado_em": "2026-09-30T16:46:23.710Z"
     },
     {
       "grupo": {
@@ -61,7 +61,7 @@
       },
       "texto": "🔥 OFERTA DO DIA\n\nBicicleta Elétrica Scooter Mova Way 4.0 500w 48v Lítio\n\n✨ Confira esta oferta na Shopee\n\n💰 R$ 3.999,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/8AWTgxwem3",
       "status": "pendente",
-      "selecionado_em": "2026-09-30T01:13:59.206Z"
+      "selecionado_em": "2026-09-30T16:46:23.710Z"
     },
     {
       "grupo": {
@@ -81,7 +81,7 @@
       },
       "texto": "🔥 OFERTA DO DIA\n\nBicicleta Elétrica Scooter Mova Way 4.0 500w 48v Lítio\n\n✨ Confira esta oferta na Shopee\n\n💰 R$ 3.999,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/8AWTgxwem3",
       "status": "pendente",
-      "selecionado_em": "2026-09-30T01:13:59.207Z"
+      "selecionado_em": "2026-09-30T16:46:23.710Z"
     },
     {
       "grupo": {
@@ -101,27 +101,7 @@
       },
       "texto": "🔥 OFERTA DO DIA\n\nBicicleta Elétrica Scooter Mova Way 4.0 500w 48v Lítio\n\n✨ Confira esta oferta na Shopee\n\n💰 R$ 3.999,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/8AWTgxwem3",
       "status": "pendente",
-      "selecionado_em": "2026-09-30T01:13:59.208Z"
-    },
-    {
-      "grupo": {
-        "id": "auto-saude-1426918943987350",
-        "nome": "Mulheres Fitness",
-        "group_id": "1426918943987350",
-        "nicho": "saude"
-      },
-      "oferta": {
-        "id": "21698330150",
-        "titulo": "Fini Melatonina 120 Unidades – Suplemento Noturno para Rotina Equilibrada",
-        "preco": "99.9",
-        "preco_formatado": "R$ 99,90",
-        "link": "https://s.shopee.com.br/BUBtnPyAm",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mg3u1p2ot98g3f",
-        "nicho": "saude"
-      },
-      "texto": "🔥 OFERTA DO DIA\n\nFini Melatonina 120 Unidades – Suplemento Noturno para Rotina Equilibrada\n\n🌙 Suplemento em cápsulas para sua rotina noturna\n\n💰 R$ 99,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/BUBtnPyAm",
-      "status": "pendente",
-      "selecionado_em": "2026-09-30T01:13:59.225Z"
+      "selecionado_em": "2026-09-30T16:46:23.711Z"
     },
     {
       "grupo": {
@@ -135,13 +115,13 @@
         "titulo": "Guarda Roupas Casal Grande 8 Portas 4 Gav. Com Pés Moderno Marrom",
         "preco": "797.05",
         "preco_formatado": "R$ 797,05",
-        "link": "https://s.shopee.com.br/2BFGHTIM7E",
+        "link": "https://s.shopee.com.br/9pej0U6OmX",
         "imagem": "https://cf.shopee.com.br/file/br-11134207-820lm-moo1fbllw6wwa9",
         "nicho": "casa"
       },
-      "texto": "🔥 OFERTA DO DIA\n\nGuarda Roupas Casal Grande 8 Portas 4 Gav. Com Pés Moderno Marrom\n\n🏠 Praticidade para sua casa e rotina\n\n💰 R$ 797,05\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/2BFGHTIM7E",
+      "texto": "🔥 OFERTA DO DIA\n\nGuarda Roupas Casal Grande 8 Portas 4 Gav. Com Pés Moderno Marrom\n\n🏠 Praticidade para sua casa e rotina\n\n💰 R$ 797,05\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9pej0U6OmX",
       "status": "pendente",
-      "selecionado_em": "2026-09-30T01:13:59.229Z"
+      "selecionado_em": "2026-09-30T16:46:23.712Z"
     },
     {
       "grupo": {
@@ -155,13 +135,13 @@
         "titulo": "Guarda Roupas Casal Grande 8 Portas 4 Gav. Com Pés Moderno Marrom",
         "preco": "797.05",
         "preco_formatado": "R$ 797,05",
-        "link": "https://s.shopee.com.br/2BFGHTIM7E",
+        "link": "https://s.shopee.com.br/9pej0U6OmX",
         "imagem": "https://cf.shopee.com.br/file/br-11134207-820lm-moo1fbllw6wwa9",
         "nicho": "casa"
       },
-      "texto": "🔥 OFERTA DO DIA\n\nGuarda Roupas Casal Grande 8 Portas 4 Gav. Com Pés Moderno Marrom\n\n🏠 Praticidade para sua casa e rotina\n\n💰 R$ 797,05\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/2BFGHTIM7E",
+      "texto": "🔥 OFERTA DO DIA\n\nGuarda Roupas Casal Grande 8 Portas 4 Gav. Com Pés Moderno Marrom\n\n🏠 Praticidade para sua casa e rotina\n\n💰 R$ 797,05\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9pej0U6OmX",
       "status": "pendente",
-      "selecionado_em": "2026-09-30T01:13:59.230Z"
+      "selecionado_em": "2026-09-30T16:46:23.712Z"
     }
   ],
   "aviso": "Publicação automática em grupos NÃO está implementada. Groups API oficial da Meta foi removida em abril/2024."
