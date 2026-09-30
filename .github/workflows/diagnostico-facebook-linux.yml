@@ -1,0 +1,86 @@
+name: Diagnóstico Facebook Linux
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  facebook:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Instalar Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Instalar Xvfb
+        run: sudo apt-get update && sudo apt-get install -y xvfb
+
+      - name: Abrir Facebook e diagnosticar sessão
+        run: |
+          xvfb-run --auto-servernum node -e "
+          const { chromium } = require('playwright');
+
+          (async () => {
+            const browser = await chromium.launch({
+              headless: false,
+              args: [
+                '--no-sandbox',
+                '--disable-dev-shm-usage'
+              ]
+            });
+
+            const page = await browser.newPage();
+
+            await page.goto('https://www.facebook.com/', {
+              waitUntil: 'domcontentloaded',
+              timeout: 60000
+            });
+
+            await page.waitForTimeout(5000);
+
+            console.log('URL_FINAL:', page.url());
+            console.log('TITULO:', await page.title());
+
+            const url = page.url().toLowerCase();
+
+            if (
+              url.includes('/login') ||
+              url.includes('login.php')
+            ) {
+              console.log('FACEBOOK_SESSAO: DESLOGADO');
+            } else {
+              console.log('FACEBOOK_SESSAO: NAO_IDENTIFICADO_COMO_LOGIN');
+            }
+
+            await page.screenshot({
+              path: 'facebook-diagnostico.png',
+              fullPage: true
+            });
+
+            await browser.close();
+          })().catch(error => {
+            console.error(error);
+            process.exit(1);
+          });
+          "
+
+      - name: Salvar diagnóstico
+        uses: actions/upload-artifact@v4
+        with:
+          name: facebook-diagnostico
+          path: facebook-diagnostico.png
