@@ -1,5 +1,15 @@
 {
   "versao": 1,
-  "registros": [],
-  "atualizado_em": null
+  "registros": [
+    {
+      "grupo_id": "grupo-geral-1",
+      "produto_chave": "id:curso-energia-solar",
+      "titulo": "Energia Solar Fotovoltaica — Guia Prático Essencial",
+      "link": "https://leocercilier.github.io/checkout/",
+      "nicho": "geral",
+      "tipo": "curso",
+      "publicado_em": "2026-09-30T12:13:24.934Z"
+    }
+  ],
+  "atualizado_em": "2026-09-30T12:13:24.939Z"
 }

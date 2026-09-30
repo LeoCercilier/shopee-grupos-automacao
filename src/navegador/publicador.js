@@ -18,18 +18,29 @@
 
 const path = require('path');
 const { readJson, writeJson, nowIso } = require('../utils');
-const { criarContexto, novaPagina } = require('./browser');
+
+
 const {
-  verificarSessaoLogada,
-  abrirGrupo,
-  abrirCompositor,
-  preencherTexto,
-  anexarImagem,
-  clicarPublicar,
-  detectarSucesso,
-  capturarEvidencia,
-  detectarBloqueio,
-} = require('./facebook');
+  conectarFacebook: conectarFacebookCDP,
+  avaliar: avaliarCDP,
+  abrirGrupo: abrirGrupoCDP,
+  abrirCompositorCDP,
+  preencherTextoCDP,
+  clicarPublicarCDP,
+  confirmarPublicacaoCDP,
+  sleep: sleepCDP,
+} = require('./cdp');
+
+// Android/Termux não suporta o Playwright instalado.
+// Nesse ambiente usamos Chromium nativo através do CDP.
+const EH_TERMUX =
+  Boolean(process.env.PREFIX && process.env.PREFIX.includes('/com.termux/')) ||
+  Boolean(process.env.HOME && process.env.HOME.startsWith('/data/data/com.termux/')) ||
+  process.env.FORCAR_CDP === 'true';
+
+const USAR_CDP =
+  EH_TERMUX ||
+  String(process.env.BROWSER_ENGINE || '').toLowerCase() === 'cdp';
 
 const ROOT = path.join(__dirname, '..', '..');
 
@@ -293,6 +304,314 @@ async function publicarSelecoesNavegador({ dryRun = false } = {}) {
   };
 }
 
+
+async function publicarUmaCDP({ item, base, texto }) {
+  console.log('');
+  console.log('========================================');
+  console.log(' PUBLICADOR NAVEGADOR — CDP / TERMUX');
+  console.log('========================================');
+  console.log('Tipo:', IS_CURSO ? 'curso' : 'shopee');
+  console.log('Grupo:', item.grupo.nome);
+  console.log('Modo:', MODO);
+
+  let conexao;
+
+  try {
+    conexao = await conectarFacebookCDP();
+
+    console.log('✅ Chromium/CDP conectado');
+    console.log('Target:', conexao.target.id);
+    console.log('URL:', conexao.target.url);
+
+    // --------------------------------------------------------
+    // Verificação da sessão do Facebook
+    // --------------------------------------------------------
+
+    const sessaoRaw = await avaliarCDP(
+      conexao.Runtime,
+      `(() => {
+        const texto = document.body?.innerText || '';
+
+        return JSON.stringify({
+          url: location.href,
+          titulo: document.title,
+          facebook: location.hostname.includes('facebook.com'),
+          nome: texto.includes('Leonardo Cercilier'),
+          loginPage:
+            location.pathname.includes('/login') ||
+            texto.includes('Entrar no Facebook')
+        });
+      })()`
+    );
+
+    const sessao = JSON.parse(sessaoRaw);
+
+    console.log('');
+    console.log('=== SESSÃO ===');
+    console.log(JSON.stringify(sessao, null, 2));
+
+    if (
+      !sessao.facebook ||
+      sessao.loginPage
+    ) {
+      throw new Error(
+        'Sessão autenticada do Facebook não encontrada no Chromium/CDP'
+      );
+    }
+
+    console.log('✅ Sessão do Facebook confirmada');
+
+    // --------------------------------------------------------
+    // Abrir grupo
+    // --------------------------------------------------------
+
+    const grupoRes = await Promise.race([
+      abrirGrupoCDP(
+        conexao.Runtime,
+        item.grupo.group_id
+      ),
+      new Promise((_, reject) =>
+        setTimeout(
+          () => reject(new Error('Timeout ao abrir grupo via CDP após 15 segundos')),
+          15000
+        )
+      )
+    ]);
+
+    console.log('');
+    console.log('=== GRUPO ===');
+    console.log(JSON.stringify(grupoRes, null, 2));
+
+    console.log('✅ Grupo carregado');
+
+    // --------------------------------------------------------
+    // Abrir compositor
+    // --------------------------------------------------------
+
+    await abrirCompositorCDP(
+      conexao.Runtime,
+      conexao.Input
+    );
+
+    console.log('✅ Compositor aberto');
+    console.log('✅ Editor Lexical localizado');
+
+    // --------------------------------------------------------
+    // Inserir texto
+    // --------------------------------------------------------
+
+    const verificacao = await preencherTextoCDP(
+      conexao.Runtime,
+      conexao.Input,
+      texto
+    );
+
+    console.log('');
+    console.log('=== TEXTO INSERIDO ===');
+    console.log(JSON.stringify(verificacao, null, 2));
+
+    const textoFinal = verificacao.texto || '';
+
+    // --------------------------------------------------------
+    // Validar conteúdo
+    // --------------------------------------------------------
+
+    const validacao = {
+      editor_encontrado: Boolean(verificacao.encontrado),
+      oferta:
+        IS_CURSO
+          ? true
+          : textoFinal.includes('🔥 OFERTA DO DIA'),
+      titulo:
+        Boolean(item.oferta?.titulo) &&
+        textoFinal.includes(item.oferta.titulo),
+      preco:
+        Boolean(item.oferta?.preco) &&
+        textoFinal.includes(String(item.oferta.preco)),
+      link:
+        Boolean(item.oferta?.link) &&
+        textoFinal.includes(item.oferta.link),
+      texto_ativo: Boolean(verificacao.ativo),
+    };
+
+    console.log('');
+    console.log('=== VALIDAÇÃO ===');
+    console.log(JSON.stringify(validacao, null, 2));
+
+    if (
+      !validacao.editor_encontrado ||
+      !validacao.oferta ||
+      !validacao.titulo ||
+      !validacao.link ||
+      !validacao.texto_ativo
+    ) {
+      throw new Error(
+        'O texto foi inserido, mas a validação do conteúdo falhou'
+      );
+    }
+
+    // --------------------------------------------------------
+    // MODO PREPARAR
+    // --------------------------------------------------------
+
+    if (MODO !== 'publicar') {
+      const r = {
+        ...base,
+        status: 'preparado_manual',
+        motor: 'cdp',
+        imagem_anexada: false,
+        screenshot: null,
+        validacao,
+        historico: false,
+        mensagem:
+          'Texto preparado pelo Chromium/CDP. Publicação NÃO executada e histórico NÃO atualizado.'
+      };
+
+      writeJson(RESULTADO_FILE, r);
+
+      console.log('');
+      console.log('========================================');
+      console.log('✅ CDP FUNCIONANDO');
+      console.log('✅ FACEBOOK AUTENTICADO');
+      console.log('✅ GRUPO ABERTO');
+      console.log('✅ COMPOSITOR ABERTO');
+      console.log('✅ TEXTO INSERIDO');
+      console.log('✅ CONTEÚDO VALIDADO');
+      console.log('⛔ PUBLICAÇÃO NÃO EXECUTADA');
+      console.log('⛔ HISTÓRICO NÃO ALTERADO');
+      console.log('========================================');
+
+      console.log('⏳ Navegador ficará aberto por 60 segundos...');
+      await sleepCDP(60000);
+
+      return r;
+    }
+
+    // --------------------------------------------------------
+    // PUBLICAÇÃO REAL — 1×1
+    // --------------------------------------------------------
+
+    console.log('');
+    console.log('========================================');
+    console.log('=== PUBLICAÇÃO REAL — 1×1 ===');
+    console.log('========================================');
+
+    const clique = await clicarPublicarCDP(
+      conexao.Runtime,
+      conexao.Input
+    );
+
+    if (!clique.ok) {
+      const r = {
+        ...base,
+        status: 'erro',
+        motor: 'cdp',
+        erro: clique.motivo,
+        validacao,
+        historico: false
+      };
+
+      writeJson(RESULTADO_FILE, r);
+
+      console.error('❌', clique.motivo);
+
+      return r;
+    }
+
+    console.log('✅ Clique de publicação executado');
+
+    const confirmacao = await confirmarPublicacaoCDP(
+      conexao.Runtime,
+      item.oferta?.titulo || ''
+    );
+
+    console.log('');
+    console.log('=== CONFIRMAÇÃO ===');
+    console.log(JSON.stringify(confirmacao, null, 2));
+
+    if (!confirmacao.sucesso) {
+      const r = {
+        ...base,
+        status: 'incerto',
+        motor: 'cdp',
+        erro: confirmacao.motivo,
+        validacao,
+        confirmacao,
+        historico: false
+      };
+
+      writeJson(RESULTADO_FILE, r);
+
+      console.error(
+        '⚠️ Publicação não pôde ser confirmada.'
+      );
+      console.error(
+        '⛔ Histórico NÃO alterado.'
+      );
+
+      return r;
+    }
+
+    // --------------------------------------------------------
+    // PUBLICAÇÃO CONFIRMADA
+    // --------------------------------------------------------
+
+    const r = {
+      ...base,
+      status: 'publicado',
+      motor: 'cdp',
+      imagem_anexada: false,
+      screenshot: null,
+      validacao,
+      confirmacao,
+      historico: false,
+      mensagem:
+        'Publicação confirmada pelo Facebook.'
+    };
+
+    try {
+      registrarPublicacao(
+        item.grupo.id,
+        item.oferta
+      );
+
+      r.historico = true;
+
+      console.log('✅ Histórico registrado');
+    } catch (historicoErr) {
+      console.error(
+        '⚠️ Publicação confirmada, mas houve erro ao registrar histórico:',
+        historicoErr.message
+      );
+
+      r.historico_erro = historicoErr.message;
+    }
+
+    writeJson(RESULTADO_FILE, r);
+
+    console.log('');
+    console.log('========================================');
+    console.log('✅ PUBLICAÇÃO CONFIRMADA');
+    console.log(
+      r.historico
+        ? '✅ HISTÓRICO REGISTRADO'
+        : '⚠️ HISTÓRICO NÃO REGISTRADO'
+    );
+    console.log('========================================');
+
+    return r;
+
+  } finally {
+
+    if (conexao?.client) {
+      try {
+        await conexao.client.close();
+      } catch (_) {}
+    }
+
+  }
+}
+
 async function publicarUma({ dryRun = false } = {}) {
   console.log('========================================');
   console.log(' PUBLICADOR NAVEGADOR — MVP (1×1)');
@@ -386,6 +705,37 @@ async function publicarUma({ dryRun = false } = {}) {
     console.log('🔍 DRY-RUN', grupo.nome, oferta.titulo?.slice(0, 50));
     return r;
   }
+
+  // ========================================================
+  // TERMUX / ANDROID -> CDP
+  // Linux/GitHub -> Playwright
+  // ========================================================
+
+  if (USAR_CDP) {
+    return await publicarUmaCDP({
+      item,
+      base,
+      texto,
+    });
+  }
+
+  // Playwright somente é carregado aqui, depois do desvio CDP.
+  const {
+    criarContexto,
+    novaPagina,
+  } = require('./browser');
+
+  const {
+    verificarSessaoLogada,
+    abrirGrupo,
+    abrirCompositor,
+    preencherTexto,
+    anexarImagem,
+    clicarPublicar,
+    detectarSucesso,
+    capturarEvidencia,
+    detectarBloqueio,
+  } = require('./facebook');
 
   let context;
   try {
