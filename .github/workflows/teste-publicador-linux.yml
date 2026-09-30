@@ -30,8 +30,11 @@ jobs:
       - name: Verificar sintaxe
         run: npm test
 
+      - name: Instalar Xvfb
+        run: sudo apt-get update && sudo apt-get install -y xvfb
+
       - name: Testar publicador de cursos em dry-run
-        run: npm run curso:teste
+        run: xvfb-run --auto-servernum npm run curso:teste
 
       - name: Testar publicador Shopee em dry-run
-        run: npm run browser:teste
+        run: xvfb-run --auto-servernum npm run browser:teste
