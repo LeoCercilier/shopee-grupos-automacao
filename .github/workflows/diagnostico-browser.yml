@@ -1,0 +1,92 @@
+name: Diagnóstico Browser Linux
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Diagnóstico do sistema
+        run: |
+          echo "=== SISTEMA ==="
+          uname -a
+          echo
+          echo "=== NODE ==="
+          node --version
+          echo
+          echo "=== ARQUITETURA ==="
+          node -p "process.arch"
+          echo
+          echo "=== PLAYWRIGHT ==="
+          node -e "console.log(require('playwright/package.json').version)"
+          echo
+          echo "=== CHROMIUM ==="
+          npx playwright install --with-deps chromium
+
+      - name: Testar Playwright + Chromium
+        run: |
+          node <<'NODE'
+          const { chromium } = require('playwright');
+
+          (async () => {
+            console.log('=== TESTE PLAYWRIGHT ===');
+
+            const browser = await chromium.launch({
+              headless: true
+            });
+
+            const page = await browser.newPage();
+
+            await page.goto('https://example.com', {
+              waitUntil: 'domcontentloaded',
+              timeout: 30000
+            });
+
+            console.log('Título:', await page.title());
+            console.log('URL:', page.url());
+
+            await page.screenshot({
+              path: 'browser-test.png',
+              fullPage: true
+            });
+
+            await browser.close();
+
+            console.log('✅ Playwright + Chromium funcionando no Linux.');
+          })().catch((erro) => {
+            console.error('❌ Falha no teste:');
+            console.error(erro);
+            process.exit(1);
+          });
+          NODE
+
+      - name: Salvar screenshot
+        uses: actions/upload-artifact@v4
+        with:
+          name: browser-test
+          path: browser-test.png
+git add .github/workflows/diagnostico-browser.yml && \
+git commit -m "testa Playwright no GitHub Actions Linux" && \
+git push
+cd ~/shopee-grupos-automacao && \
+git add .github/workflows/diagnostico-browser.yml && \
+git commit -m "testa Playwright no GitHub Actions Linux" && \
+git push
