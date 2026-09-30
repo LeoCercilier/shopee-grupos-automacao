@@ -20,3 +20,7 @@ coverage/
 data/screenshots/
 data/tmp/
 data/resultado-publicacao-browser.json
+
+# Cursos (artefatos locais)
+data/resultado-publicacao-cursos.json
+data/selecao-cursos.json

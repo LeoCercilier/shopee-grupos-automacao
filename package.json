@@ -15,10 +15,14 @@
     "browser:teste": "node src/navegador/publicador.js",
     "browser:preparar": "MODO_PUBLICACAO_BROWSER=preparar node src/navegador/publicador.js",
     "browser:publicar": "MODO_PUBLICACAO_BROWSER=publicar node src/navegador/publicador.js",
-    "test": "node --check src/coletor.js && node --check src/classificador.js && node --check src/seletor.js && node --check src/pipeline.js && node --check src/historico.js && node --check src/utils.js && node --check src/publicador.js && node --check src/navegador/browser.js && node --check src/navegador/facebook.js && node --check src/navegador/publicador.js && node --check src/navegador/login.js",
+    "test": "node --check src/coletor.js && node --check src/classificador.js && node --check src/seletor.js && node --check src/pipeline.js && node --check src/historico.js && node --check src/utils.js && node --check src/publicador.js && node --check src/navegador/browser.js && node --check src/navegador/facebook.js && node --check src/navegador/publicador.js && node --check src/navegador/login.js && node --check src/historico-cursos.js && node --check src/cursos/seletor.js",
     "test:coleta": "node src/coletor.js",
     "browser:automatico": "node src/navegador/automacao.js",
-    "browser:ciclo": "node src/navegador/ciclo.js"
+    "browser:ciclo": "node src/navegador/ciclo.js",
+    "curso:selecionar": "node src/cursos/seletor.js",
+    "curso:preparar": "CONTENT_TYPE=curso MODO_PUBLICACAO_BROWSER=preparar node src/navegador/publicador.js",
+    "curso:publicar": "CONTENT_TYPE=curso MODO_PUBLICACAO_BROWSER=publicar node src/navegador/publicador.js",
+    "curso:teste": "CONTENT_TYPE=curso BROWSER_DRY_RUN=true node src/navegador/publicador.js"
   },
   "engines": {
     "node": ">=18"
