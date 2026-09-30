@@ -1,0 +1,28 @@
+{
+  "versao": 1,
+  "descricao": "Catálogo local de cursos próprios. Não misturar com ofertas Shopee.",
+  "cursos": [
+    {
+      "id": "curso-energia-solar",
+      "ativo": true,
+      "nome": "Energia Solar Fotovoltaica — Guia Prático Essencial",
+      "descricao_curta": "Do primeiro contato com o cliente até a conexão, comissionamento e manutenção. Material digital prático.",
+      "preco": "R$ 19,90",
+      "link": "https://leocercilier.github.io/checkout/",
+      "imagem": "https://leocercilier.github.io/checkout/og-cover.png",
+      "nichos": ["geral", "casa"],
+      "prioridade": 1
+    },
+    {
+      "id": "curso-ar-condicionado",
+      "ativo": true,
+      "nome": "Instalação e Manutenção de Ar-Condicionado Split",
+      "descricao_curta": "Curso progressivo para iniciantes: fundamentos, instalação, manutenção e diagnóstico. Material educacional digital.",
+      "preco": "R$ 19,90",
+      "link": "https://leocercilier.github.io/checkout/ar-condicionado.html",
+      "imagem": "https://zrycyjntfifuucrnmcuq.supabase.co/storage/v1/object/public/Og/ar-condicionado.png",
+      "nichos": ["casa", "geral"],
+      "prioridade": 2
+    }
+  ]
+}
