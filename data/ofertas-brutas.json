@@ -1,25 +1,9 @@
 {
-  "gerado_em": "2026-09-30T21:22:16.319Z",
+  "gerado_em": "2026-10-01T01:59:04.706Z",
   "total": 100,
   "fonte": "https://leocercilier.github.io/shopee-achadinho/ofertas.html",
   "api": "shopee-products-v2",
   "ofertas": [
-    {
-      "id": "58216643793",
-      "titulo": "Cabelo Maluco Kit Acessórios Infantil Criativo para Escola Festa Penteado Menino Menina",
-      "preco": "24.9",
-      "preco_formatado": "R$ 24,90",
-      "link": "https://s.shopee.com.br/20vqLdK8Hm",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lr-ms4x6e108eme81",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820lr-ms4x6e108eme81"
-      ],
-      "vendas": 1823,
-      "avaliacao": "4.8",
-      "desconto_percentual": 38,
-      "coletado_em": "2026-09-30T21:22:10.071Z",
-      "fonte": "shopee-products-v2"
-    },
     {
       "id": "23394523519",
       "titulo": "Fini Melatonina 60 Cápsulas | Sono de Qualidade, Relaxamento e Bem-Estar | Suplemento Original",
@@ -33,7 +17,7 @@
       "vendas": 487,
       "avaliacao": "4.9",
       "desconto_percentual": 7,
-      "coletado_em": "2026-09-30T21:22:10.072Z",
+      "coletado_em": "2026-10-01T01:58:55.017Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -49,7 +33,7 @@
       "vendas": 1794,
       "avaliacao": "4.9",
       "desconto_percentual": 14,
-      "coletado_em": "2026-09-30T21:22:10.072Z",
+      "coletado_em": "2026-10-01T01:58:55.017Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -65,7 +49,7 @@
       "vendas": 106,
       "avaliacao": "4.7",
       "desconto_percentual": 33,
-      "coletado_em": "2026-09-30T21:22:10.072Z",
+      "coletado_em": "2026-10-01T01:58:55.017Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -81,7 +65,7 @@
       "vendas": 849,
       "avaliacao": "4.7",
       "desconto_percentual": 50,
-      "coletado_em": "2026-09-30T21:22:10.072Z",
+      "coletado_em": "2026-10-01T01:58:55.017Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -97,7 +81,7 @@
       "vendas": 2331,
       "avaliacao": "4.9",
       "desconto_percentual": 0,
-      "coletado_em": "2026-09-30T21:22:10.072Z",
+      "coletado_em": "2026-10-01T01:58:55.017Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -113,7 +97,7 @@
       "vendas": 2825,
       "avaliacao": "4.7",
       "desconto_percentual": 35,
-      "coletado_em": "2026-09-30T21:22:10.072Z",
+      "coletado_em": "2026-10-01T01:58:55.017Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -129,7 +113,7 @@
       "vendas": 272,
       "avaliacao": "4.8",
       "desconto_percentual": 72,
-      "coletado_em": "2026-09-30T21:22:10.072Z",
+      "coletado_em": "2026-10-01T01:58:55.017Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -145,7 +129,7 @@
       "vendas": 684,
       "avaliacao": "4.9",
       "desconto_percentual": 41,
-      "coletado_em": "2026-09-30T21:22:10.072Z",
+      "coletado_em": "2026-10-01T01:58:55.017Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -161,14 +145,14 @@
       "vendas": 138,
       "avaliacao": "4.9",
       "desconto_percentual": 29,
-      "coletado_em": "2026-09-30T21:22:10.072Z",
+      "coletado_em": "2026-10-01T01:58:55.017Z",
       "fonte": "shopee-products-v2"
     },
     {
       "id": "45106201159",
       "titulo": "Scooter Elétrica Zurbe Ibiza 1000W Bateria LiFePO4 Removível 76.8V 23Ah Autonomia 50km 32km/h",
-      "preco": "9490.5",
-      "preco_formatado": "R$ 9.490,50",
+      "preco": "9990",
+      "preco_formatado": "R$ 9.990,00",
       "link": "https://s.shopee.com.br/AAHZetEN2G",
       "imagem": "https://cf.shopee.com.br/file/br-11134207-820m2-mtf71zb9f9q93c",
       "imagens": [
@@ -176,8 +160,8 @@
       ],
       "vendas": 0,
       "avaliacao": "4.6",
-      "desconto_percentual": 5,
-      "coletado_em": "2026-09-30T21:22:10.072Z",
+      "desconto_percentual": 0,
+      "coletado_em": "2026-10-01T01:58:55.017Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -193,7 +177,7 @@
       "vendas": 1727,
       "avaliacao": "4.3",
       "desconto_percentual": 12,
-      "coletado_em": "2026-09-30T21:22:10.072Z",
+      "coletado_em": "2026-10-01T01:58:55.017Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -209,7 +193,7 @@
       "vendas": 10701,
       "avaliacao": "4.7",
       "desconto_percentual": 20,
-      "coletado_em": "2026-09-30T21:22:10.072Z",
+      "coletado_em": "2026-10-01T01:58:55.017Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -225,7 +209,7 @@
       "vendas": 1493,
       "avaliacao": "4.9",
       "desconto_percentual": 51,
-      "coletado_em": "2026-09-30T21:22:10.072Z",
+      "coletado_em": "2026-10-01T01:58:55.018Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -241,7 +225,7 @@
       "vendas": 0,
       "avaliacao": "0",
       "desconto_percentual": 0,
-      "coletado_em": "2026-09-30T21:22:10.072Z",
+      "coletado_em": "2026-10-01T01:58:55.018Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -257,7 +241,7 @@
       "vendas": 400,
       "avaliacao": "4.9",
       "desconto_percentual": 11,
-      "coletado_em": "2026-09-30T21:22:10.073Z",
+      "coletado_em": "2026-10-01T01:58:55.018Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -273,7 +257,7 @@
       "vendas": 372,
       "avaliacao": "5",
       "desconto_percentual": 75,
-      "coletado_em": "2026-09-30T21:22:10.073Z",
+      "coletado_em": "2026-10-01T01:58:55.018Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -289,7 +273,7 @@
       "vendas": 1496,
       "avaliacao": "4.9",
       "desconto_percentual": 18,
-      "coletado_em": "2026-09-30T21:22:10.073Z",
+      "coletado_em": "2026-10-01T01:58:55.018Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -305,7 +289,7 @@
       "vendas": 1,
       "avaliacao": "5",
       "desconto_percentual": 0,
-      "coletado_em": "2026-09-30T21:22:10.073Z",
+      "coletado_em": "2026-10-01T01:58:55.018Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -321,7 +305,7 @@
       "vendas": 7,
       "avaliacao": "4.4",
       "desconto_percentual": 13,
-      "coletado_em": "2026-09-30T21:22:10.073Z",
+      "coletado_em": "2026-10-01T01:58:55.018Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -329,7 +313,7 @@
       "titulo": "Kit 2 Shorts Masculino Kong 2 em 1 com Compressão, Bolso para Celular e Tecido Dry Fit",
       "preco": "62.67",
       "preco_formatado": "R$ 62,67",
-      "link": "https://s.shopee.com.br/9AP0snsqkH",
+      "link": "https://s.shopee.com.br/gQUdDixD4",
       "imagem": "https://cf.shopee.com.br/file/br-11134207-820ll-mtclwps6ujgi05",
       "imagens": [
         "https://cf.shopee.com.br/file/br-11134207-820ll-mtclwps6ujgi05"
@@ -337,7 +321,7 @@
       "vendas": 2016,
       "avaliacao": "4.9",
       "desconto_percentual": 48,
-      "coletado_em": "2026-09-30T21:22:11.783Z",
+      "coletado_em": "2026-10-01T01:58:55.018Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -345,7 +329,7 @@
       "titulo": "Body Splash My Sweet Delight Barbour's Beauty 200ml Fragrância Fresca Corporal Colônia",
       "preco": "48.51",
       "preco_formatado": "R$ 48,51",
-      "link": "https://s.shopee.com.br/4fwcSDLlv2",
+      "link": "https://s.shopee.com.br/qjupWiJs7",
       "imagem": "https://cf.shopee.com.br/file/br-11134207-820lr-mq228ungk5c142",
       "imagens": [
         "https://cf.shopee.com.br/file/br-11134207-820lr-mq228ungk5c142"
@@ -353,7 +337,7 @@
       "vendas": 1344,
       "avaliacao": "4.8",
       "desconto_percentual": 38,
-      "coletado_em": "2026-09-30T21:22:11.783Z",
+      "coletado_em": "2026-10-01T01:58:57.094Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -361,7 +345,7 @@
       "titulo": "Suporte De Cabeça P/ Celular - Meudome",
       "preco": "163.9",
       "preco_formatado": "R$ 163,90",
-      "link": "https://s.shopee.com.br/3qNUGXTXZl",
+      "link": "https://s.shopee.com.br/1gJ1p3f9BI",
       "imagem": "https://cf.shopee.com.br/file/br-11134207-820ma-msu4hn6eq8li0e",
       "imagens": [
         "https://cf.shopee.com.br/file/br-11134207-820ma-msu4hn6eq8li0e"
@@ -369,7 +353,7 @@
       "vendas": 1263,
       "avaliacao": "4.9",
       "desconto_percentual": 0,
-      "coletado_em": "2026-09-30T21:22:11.783Z",
+      "coletado_em": "2026-10-01T01:58:57.094Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -377,7 +361,7 @@
       "titulo": "Câmera Lampada Giratória 360º Monitoramento em tempo real design discreto e moderno Conexão WiFi",
       "preco": "69.9",
       "preco_formatado": "R$ 69,90",
-      "link": "https://s.shopee.com.br/7AdxpaGYBl",
+      "link": "https://s.shopee.com.br/1VzbckfmWJ",
       "imagem": "https://cf.shopee.com.br/file/br-11134207-820lx-msk6382pdpmv49",
       "imagens": [
         "https://cf.shopee.com.br/file/br-11134207-820lx-msk6382pdpmv49"
@@ -385,7 +369,7 @@
       "vendas": 32,
       "avaliacao": "4.9",
       "desconto_percentual": 0,
-      "coletado_em": "2026-09-30T21:22:11.783Z",
+      "coletado_em": "2026-10-01T01:58:57.094Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -393,7 +377,7 @@
       "titulo": "2026 Smartwatch S10 Pro 38mm/45mm/49mm Unissex - Chamadas via Bluetooth Esportivo Teste de pressão arterial",
       "preco": "36.99",
       "preco_formatado": "R$ 36,99",
-      "link": "https://s.shopee.com.br/6fhhEfISCg",
+      "link": "https://s.shopee.com.br/2LYicHcbpU",
       "imagem": "https://cf.shopee.com.br/file/br-11134207-820lw-mrzp8llmhfr8f4",
       "imagens": [
         "https://cf.shopee.com.br/file/br-11134207-820lw-mrzp8llmhfr8f4"
@@ -401,7 +385,7 @@
       "vendas": 29,
       "avaliacao": "4.7",
       "desconto_percentual": 58,
-      "coletado_em": "2026-09-30T21:22:11.783Z",
+      "coletado_em": "2026-10-01T01:58:57.094Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -409,7 +393,7 @@
       "titulo": "Magnésio e Inositol 210g Melatonina 0,21mg Body Action - Original",
       "preco": "67.9",
       "preco_formatado": "R$ 67,90",
-      "link": "https://s.shopee.com.br/6q17QyHorj",
+      "link": "https://s.shopee.com.br/3B7pboZR8j",
       "imagem": "https://cf.shopee.com.br/file/br-11134211-81z1k-mfu1g0m4r9c7c3",
       "imagens": [
         "https://cf.shopee.com.br/file/br-11134211-81z1k-mfu1g0m4r9c7c3"
@@ -417,7 +401,7 @@
       "vendas": 1325,
       "avaliacao": "4.9",
       "desconto_percentual": 20,
-      "coletado_em": "2026-09-30T21:22:11.783Z",
+      "coletado_em": "2026-10-01T01:58:57.094Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -433,7 +417,7 @@
       "vendas": 37,
       "avaliacao": "4.8",
       "desconto_percentual": 0,
-      "coletado_em": "2026-09-30T21:22:11.783Z",
+      "coletado_em": "2026-10-01T01:58:57.094Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -441,7 +425,7 @@
       "titulo": "Seringa Insulina 0,5ml Fixa Agulha Fina Ultrafina 0,30mm x 8mm Graduada Estéril Descartável 50ui",
       "preco": "34.9",
       "preco_formatado": "R$ 34,90",
-      "link": "https://s.shopee.com.br/7ptecoE0px",
+      "link": "https://s.shopee.com.br/2BFIPydFAV",
       "imagem": "https://cf.shopee.com.br/file/br-11134207-820l4-mscv9hdlihvr29",
       "imagens": [
         "https://cf.shopee.com.br/file/br-11134207-820l4-mscv9hdlihvr29"
@@ -449,7 +433,7 @@
       "vendas": 801,
       "avaliacao": "4.9",
       "desconto_percentual": 0,
-      "coletado_em": "2026-09-30T21:22:11.783Z",
+      "coletado_em": "2026-10-01T01:58:57.094Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -457,7 +441,7 @@
       "titulo": "Kit Click Cadence - Sanduicheira e Cafeteira Single Up",
       "preco": "199",
       "preco_formatado": "R$ 199,00",
-      "link": "https://s.shopee.com.br/7KxO1tFuqs",
+      "link": "https://s.shopee.com.br/30oPPVa4Tg",
       "imagem": "https://cf.shopee.com.br/file/sg-11134201-825ar-mslqc0prmhaifc",
       "imagens": [
         "https://cf.shopee.com.br/file/sg-11134201-825ar-mslqc0prmhaifc"
@@ -465,7 +449,7 @@
       "vendas": 222,
       "avaliacao": "5",
       "desconto_percentual": 13,
-      "coletado_em": "2026-09-30T21:22:11.783Z",
+      "coletado_em": "2026-10-01T01:58:57.094Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -481,7 +465,7 @@
       "vendas": 607,
       "avaliacao": "4.9",
       "desconto_percentual": 62,
-      "coletado_em": "2026-09-30T21:22:11.783Z",
+      "coletado_em": "2026-10-01T01:58:57.094Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -489,7 +473,7 @@
       "titulo": "Kit 2 Conjuntos Academia Feminina – Top + Short Cintura Alta e Modeladora",
       "preco": "70.9",
       "preco_formatado": "R$ 70,90",
-      "link": "https://s.shopee.com.br/5fpA2pMGEa",
+      "link": "https://s.shopee.com.br/2gBZ0tbL9e",
       "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-md6n9drlrbjma6",
       "imagens": [
         "https://cf.shopee.com.br/file/br-11134207-7r98o-md6n9drlrbjma6"
@@ -497,7 +481,7 @@
       "vendas": 984,
       "avaliacao": "4.9",
       "desconto_percentual": 14,
-      "coletado_em": "2026-09-30T21:22:11.783Z",
+      "coletado_em": "2026-10-01T01:58:57.094Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -505,7 +489,7 @@
       "titulo": "Carregador Portátil Mini Power Bank 10000mAh Com 02 Saídas Tipo-C / Lightning",
       "preco": "31.99",
       "preco_formatado": "R$ 31,99",
-      "link": "https://s.shopee.com.br/5LCJeDNWuY",
+      "link": "https://s.shopee.com.br/3g46CjXX7s",
       "imagem": "https://cf.shopee.com.br/file/sg-11134201-81zvk-mik9ovwbhszk62",
       "imagens": [
         "https://cf.shopee.com.br/file/sg-11134201-81zvk-mik9ovwbhszk62"
@@ -513,7 +497,7 @@
       "vendas": 3019,
       "avaliacao": "4.6",
       "desconto_percentual": 45,
-      "coletado_em": "2026-09-30T21:22:11.783Z",
+      "coletado_em": "2026-10-01T01:58:57.094Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -529,7 +513,7 @@
       "vendas": 1094,
       "avaliacao": "4.8",
       "desconto_percentual": 52,
-      "coletado_em": "2026-09-30T21:22:11.783Z",
+      "coletado_em": "2026-10-01T01:58:57.094Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -545,7 +529,7 @@
       "vendas": 32233,
       "avaliacao": "4.9",
       "desconto_percentual": 72,
-      "coletado_em": "2026-09-30T21:22:11.783Z",
+      "coletado_em": "2026-10-01T01:58:57.095Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -561,7 +545,7 @@
       "vendas": 47,
       "avaliacao": "4.8",
       "desconto_percentual": 0,
-      "coletado_em": "2026-09-30T21:22:11.783Z",
+      "coletado_em": "2026-10-01T01:58:57.095Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -577,7 +561,7 @@
       "vendas": 1171,
       "avaliacao": "4.7",
       "desconto_percentual": 60,
-      "coletado_em": "2026-09-30T21:22:11.784Z",
+      "coletado_em": "2026-10-01T01:58:57.095Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -593,7 +577,7 @@
       "vendas": 36,
       "avaliacao": "4.5",
       "desconto_percentual": 41,
-      "coletado_em": "2026-09-30T21:22:11.784Z",
+      "coletado_em": "2026-10-01T01:58:57.095Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -609,7 +593,7 @@
       "vendas": 8,
       "avaliacao": "4.8",
       "desconto_percentual": 38,
-      "coletado_em": "2026-09-30T21:22:11.784Z",
+      "coletado_em": "2026-10-01T01:58:57.095Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -625,7 +609,7 @@
       "vendas": 289,
       "avaliacao": "4.8",
       "desconto_percentual": 32,
-      "coletado_em": "2026-09-30T21:22:11.784Z",
+      "coletado_em": "2026-10-01T01:58:57.095Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -641,7 +625,23 @@
       "vendas": 0,
       "avaliacao": "4.9",
       "desconto_percentual": 41,
-      "coletado_em": "2026-09-30T21:22:11.784Z",
+      "coletado_em": "2026-10-01T01:58:57.095Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "23195164105",
+      "titulo": "kit 03 BODY SPLASH MASCULINO ENIGMA 200ML - PERFUME AMADEIRADO FRESCO",
+      "preco": "47.9",
+      "preco_formatado": "R$ 47,90",
+      "link": "https://s.shopee.com.br/9V1sbs7fSV",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820l4-mrdm8rujcv7r7a",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820l4-mrdm8rujcv7r7a"
+      ],
+      "vendas": 152,
+      "avaliacao": "3.9",
+      "desconto_percentual": 0,
+      "coletado_em": "2026-10-01T01:58:57.095Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -649,7 +649,7 @@
       "titulo": "CREATINA EM GOMA SABOR MORANGO MONOHIDRATADA 60UN",
       "preco": "69.99",
       "preco_formatado": "R$ 69,99",
-      "link": "https://s.shopee.com.br/2BFGHU4Xtr",
+      "link": "https://s.shopee.com.br/1BMlE8h3C9",
       "imagem": "https://cf.shopee.com.br/file/br-11134207-820me-mogszi53s5xh57",
       "imagens": [
         "https://cf.shopee.com.br/file/br-11134207-820me-mogszi53s5xh57"
@@ -657,7 +657,7 @@
       "vendas": 31,
       "avaliacao": "4.7",
       "desconto_percentual": 0,
-      "coletado_em": "2026-09-30T21:22:13.280Z",
+      "coletado_em": "2026-10-01T01:58:59.323Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -665,7 +665,7 @@
       "titulo": "Body splash Perfume Deo Colônia Flooratta Red 200ML",
       "preco": "24.5",
       "preco_formatado": "R$ 24,50",
-      "link": "https://s.shopee.com.br/5q8aF8Lctd",
+      "link": "https://s.shopee.com.br/2qUzDCahoh",
       "imagem": "https://cf.shopee.com.br/file/br-11134207-820le-mo5m3lm7da841f",
       "imagens": [
         "https://cf.shopee.com.br/file/br-11134207-820le-mo5m3lm7da841f"
@@ -673,7 +673,7 @@
       "vendas": 1164,
       "avaliacao": "4.3",
       "desconto_percentual": 81,
-      "coletado_em": "2026-09-30T21:22:13.280Z",
+      "coletado_em": "2026-10-01T01:58:59.323Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -689,7 +689,7 @@
       "vendas": 10874,
       "avaliacao": "4.9",
       "desconto_percentual": 29,
-      "coletado_em": "2026-09-30T21:22:13.280Z",
+      "coletado_em": "2026-10-01T01:58:59.323Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -705,7 +705,7 @@
       "vendas": 50,
       "avaliacao": "4.8",
       "desconto_percentual": 40,
-      "coletado_em": "2026-09-30T21:22:13.280Z",
+      "coletado_em": "2026-10-01T01:58:59.323Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -721,39 +721,7 @@
       "vendas": 317,
       "avaliacao": "4.9",
       "desconto_percentual": 33,
-      "coletado_em": "2026-09-30T21:22:13.280Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "23195164105",
-      "titulo": "kit 03 BODY SPLASH MASCULINO ENIGMA 200ML - PERFUME AMADEIRADO FRESCO",
-      "preco": "47.9",
-      "preco_formatado": "R$ 47,90",
-      "link": "https://s.shopee.com.br/9V1sbs7fSV",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820l4-mrdm8rujcv7r7a",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820l4-mrdm8rujcv7r7a"
-      ],
-      "vendas": 152,
-      "avaliacao": "3.8",
-      "desconto_percentual": 0,
-      "coletado_em": "2026-09-30T21:22:13.280Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "22494941454",
-      "titulo": "Kit Facial Kokeshi Completo 3 Passos Hidratação e Colágeno",
-      "preco": "59.9",
-      "preco_formatado": "R$ 59,90",
-      "link": "https://s.shopee.com.br/1VzbBUtYfT",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lx-mqbygibr40sg7a",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820lx-mqbygibr40sg7a"
-      ],
-      "vendas": 7605,
-      "avaliacao": "4.9",
-      "desconto_percentual": 30,
-      "coletado_em": "2026-09-30T21:22:13.280Z",
+      "coletado_em": "2026-10-01T01:58:59.323Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -769,14 +737,30 @@
       "vendas": 1066,
       "avaliacao": "4.9",
       "desconto_percentual": 71,
-      "coletado_em": "2026-09-30T21:22:13.280Z",
+      "coletado_em": "2026-10-01T01:58:59.323Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "22494941454",
+      "titulo": "Kit Facial Kokeshi Completo 3 Passos Hidratação e Colágeno",
+      "preco": "59.9",
+      "preco_formatado": "R$ 59,90",
+      "link": "https://s.shopee.com.br/1VzbBUtYfT",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lx-mqbygibr40sg7a",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820lx-mqbygibr40sg7a"
+      ],
+      "vendas": 7605,
+      "avaliacao": "4.9",
+      "desconto_percentual": 30,
+      "coletado_em": "2026-10-01T01:58:59.323Z",
       "fonte": "shopee-products-v2"
     },
     {
       "id": "58217594272",
       "titulo": "Parafusadeira Furadeira de Impacto 60V Brushless  Nakasaki 55Nm Profissional + Maleta",
-      "preco": "130.99",
-      "preco_formatado": "R$ 130,99",
+      "preco": "155.99",
+      "preco_formatado": "R$ 155,99",
       "link": "https://s.shopee.com.br/2Vs8NKpkdh",
       "imagem": "https://cf.shopee.com.br/file/br-11134207-820m3-msq8pkzcrgg7b0",
       "imagens": [
@@ -784,8 +768,8 @@
       ],
       "vendas": 91,
       "avaliacao": "4.9",
-      "desconto_percentual": 66,
-      "coletado_em": "2026-09-30T21:22:13.280Z",
+      "desconto_percentual": 59,
+      "coletado_em": "2026-10-01T01:58:59.323Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -801,7 +785,7 @@
       "vendas": 1754,
       "avaliacao": "4.8",
       "desconto_percentual": 36,
-      "coletado_em": "2026-09-30T21:22:13.280Z",
+      "coletado_em": "2026-10-01T01:58:59.324Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -817,7 +801,7 @@
       "vendas": 319,
       "avaliacao": "4.6",
       "desconto_percentual": 5,
-      "coletado_em": "2026-09-30T21:22:13.280Z",
+      "coletado_em": "2026-10-01T01:58:59.324Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -833,7 +817,7 @@
       "vendas": 335,
       "avaliacao": "4.7",
       "desconto_percentual": 5,
-      "coletado_em": "2026-09-30T21:22:13.280Z",
+      "coletado_em": "2026-10-01T01:58:59.324Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -849,7 +833,7 @@
       "vendas": 94,
       "avaliacao": "4.8",
       "desconto_percentual": 33,
-      "coletado_em": "2026-09-30T21:22:13.280Z",
+      "coletado_em": "2026-10-01T01:58:59.324Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -865,7 +849,7 @@
       "vendas": 1268,
       "avaliacao": "4.9",
       "desconto_percentual": 23,
-      "coletado_em": "2026-09-30T21:22:13.280Z",
+      "coletado_em": "2026-10-01T01:58:59.324Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -881,7 +865,7 @@
       "vendas": 566,
       "avaliacao": "4.8",
       "desconto_percentual": 38,
-      "coletado_em": "2026-09-30T21:22:13.280Z",
+      "coletado_em": "2026-10-01T01:58:59.324Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -897,7 +881,7 @@
       "vendas": 107,
       "avaliacao": "4.8",
       "desconto_percentual": 28,
-      "coletado_em": "2026-09-30T21:22:13.280Z",
+      "coletado_em": "2026-10-01T01:58:59.324Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -913,7 +897,7 @@
       "vendas": 2969,
       "avaliacao": "4.7",
       "desconto_percentual": 17,
-      "coletado_em": "2026-09-30T21:22:13.280Z",
+      "coletado_em": "2026-10-01T01:58:59.324Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -929,7 +913,7 @@
       "vendas": 404,
       "avaliacao": "4.8",
       "desconto_percentual": 0,
-      "coletado_em": "2026-09-30T21:22:13.280Z",
+      "coletado_em": "2026-10-01T01:58:59.324Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -945,7 +929,7 @@
       "vendas": 45,
       "avaliacao": "4.8",
       "desconto_percentual": 0,
-      "coletado_em": "2026-09-30T21:22:13.281Z",
+      "coletado_em": "2026-10-01T01:58:59.324Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -961,23 +945,7 @@
       "vendas": 76,
       "avaliacao": "4.2",
       "desconto_percentual": 0,
-      "coletado_em": "2026-09-30T21:22:13.281Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "21099598473",
-      "titulo": "Whey Ultra Protein Refil 900g - FTW",
-      "preco": "59.99",
-      "preco_formatado": "R$ 59,99",
-      "link": "https://s.shopee.com.br/1LgAzBuC0Q",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztc-mj9xdvlpne2ue8",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-81ztc-mj9xdvlpne2ue8"
-      ],
-      "vendas": 4086,
-      "avaliacao": "4.9",
-      "desconto_percentual": 8,
-      "coletado_em": "2026-09-30T21:22:14.840Z",
+      "coletado_em": "2026-10-01T01:58:59.324Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -993,7 +961,327 @@
       "vendas": 13486,
       "avaliacao": "4.9",
       "desconto_percentual": 51,
-      "coletado_em": "2026-09-30T21:22:14.840Z",
+      "coletado_em": "2026-10-01T01:58:59.324Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "58264595993",
+      "titulo": "Psyllium + Chá Verde | 60 Cápsulas | Envio Rápido | Fórmula Premium",
+      "preco": "24.79",
+      "preco_formatado": "R$ 24,79",
+      "link": "https://s.shopee.com.br/W74QujaXx",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-82592-mquue4jw5jwi88",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-82592-mquue4jw5jwi88"
+      ],
+      "vendas": 273,
+      "avaliacao": "4.9",
+      "desconto_percentual": 0,
+      "coletado_em": "2026-10-01T01:59:01.480Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "58260485680",
+      "titulo": "Boné Brasil 22 Bordado Premium Aba Curva Ajustável Amarelo Unissex",
+      "preco": "69.9",
+      "preco_formatado": "R$ 69,90",
+      "link": "https://s.shopee.com.br/1AnpzlUYs",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-825a0-msa0cayukop39b",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-825a0-msa0cayukop39b"
+      ],
+      "vendas": 871,
+      "avaliacao": "4.9",
+      "desconto_percentual": 0,
+      "coletado_em": "2026-10-01T01:59:01.480Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "18198149969",
+      "titulo": "Conjunto Academia Feminino Alta Compressão Fitness Top e Short com Bolso",
+      "preco": "35",
+      "preco_formatado": "R$ 35,00",
+      "link": "https://s.shopee.com.br/BUE2IkrDv",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-mdnugrvunc8ped",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-7r98o-mdnugrvunc8ped"
+      ],
+      "vendas": 910,
+      "avaliacao": "4.8",
+      "desconto_percentual": 26,
+      "coletado_em": "2026-10-01T01:59:01.480Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "53267687943",
+      "titulo": "Aparador De Cerca Viva e Grama 48V Knakasaki 2 Baterias Sem Fio com 2 Lâminas De Jardin",
+      "preco": "119.99",
+      "preco_formatado": "R$ 119,99",
+      "link": "https://s.shopee.com.br/113L1phgX6",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lq-msvyuid0xssn1a",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820lq-msvyuid0xssn1a"
+      ],
+      "vendas": 33,
+      "avaliacao": "4.7",
+      "desconto_percentual": 70,
+      "coletado_em": "2026-10-01T01:59:01.480Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "58257143488",
+      "titulo": "COMBO Creatina em Goma: Sabores Maçã Verde ou Morango (60 unid. cada)",
+      "preco": "69.99",
+      "preco_formatado": "R$ 69,99",
+      "link": "https://s.shopee.com.br/1qcS1MeVqL",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820mb-mlz1rlqedc0660",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820mb-mlz1rlqedc0660"
+      ],
+      "vendas": 188,
+      "avaliacao": "4.5",
+      "desconto_percentual": 0,
+      "coletado_em": "2026-10-01T01:59:01.480Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "23098691256",
+      "titulo": "Kit 12 Chaves Combinadas com Catraca Aço Cromo Vanádio Placado Espelho Resistente, 6mm a 19mm para Oficina Mecânica",
+      "preco": "144.99",
+      "preco_formatado": "R$ 144,99",
+      "link": "https://s.shopee.com.br/1LgBQRgPrG",
+      "imagem": "https://cf.shopee.com.br/file/br-11134201-820ld-mqpxcp8kyqrlcd",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134201-820ld-mqpxcp8kyqrlcd"
+      ],
+      "vendas": 252,
+      "avaliacao": "4.9",
+      "desconto_percentual": 52,
+      "coletado_em": "2026-10-01T01:59:01.480Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "22393485784",
+      "titulo": "Jogo De Frigideira Rotoprint Antiaderente 3 Peças",
+      "preco": "50.6",
+      "preco_formatado": "R$ 50,60",
+      "link": "https://s.shopee.com.br/20vsDfdsVS",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7reqe-m8hum901ty1z01",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-7reqe-m8hum901ty1z01"
+      ],
+      "vendas": 1504,
+      "avaliacao": "4.8",
+      "desconto_percentual": 49,
+      "coletado_em": "2026-10-01T01:59:01.481Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "51550815223",
+      "titulo": "Scooter Quadriciclo Elétrico Motorizada Conforto e Desempenho Lumus Power Lite",
+      "preco": "3885",
+      "preco_formatado": "R$ 3.885,00",
+      "link": "https://s.shopee.com.br/9KiT7qcr7P",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mgns3vjnng1w7a",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-81z1k-mgns3vjnng1w7a"
+      ],
+      "vendas": 15,
+      "avaliacao": "4.9",
+      "desconto_percentual": 15,
+      "coletado_em": "2026-10-01T01:59:01.481Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "19198522799",
+      "titulo": "Saco de Pancada VALENTINI 120 cm - Treino Boxe Muay Thai  - Alta Resistencia + Luva Bate Saco Preta",
+      "preco": "128.9",
+      "preco_formatado": "R$ 128,90",
+      "link": "https://s.shopee.com.br/6VOHkdndrs",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lc-mor5jemh9a0w73",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820lc-mor5jemh9a0w73"
+      ],
+      "vendas": 301,
+      "avaliacao": "4.9",
+      "desconto_percentual": 19,
+      "coletado_em": "2026-10-01T01:59:01.481Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "44518001780",
+      "titulo": "Martelete Furadeira de Impacto Rompedor Nakasaki Profissional 40V com 2 Baterias e Maleta",
+      "preco": "199",
+      "preco_formatado": "R$ 199,00",
+      "link": "https://s.shopee.com.br/6L4rYKoHCr",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m7-mt8e8o337zsy3b",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820m7-mt8e8o337zsy3b"
+      ],
+      "vendas": 7,
+      "avaliacao": "4.5",
+      "desconto_percentual": 48,
+      "coletado_em": "2026-10-01T01:59:01.481Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "58261256957",
+      "titulo": "Escolha Seu Kit Definição Natural Salon Line Completo",
+      "preco": "75.98",
+      "preco_formatado": "R$ 75,98",
+      "link": "https://s.shopee.com.br/6AlRM1ouXq",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820l7-mol68ig91dl2d3",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820l7-mol68ig91dl2d3"
+      ],
+      "vendas": 24,
+      "avaliacao": "5",
+      "desconto_percentual": 0,
+      "coletado_em": "2026-10-01T01:59:01.481Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "57962513475",
+      "titulo": "Jaqueta Corta Vento Monster Unissex Com Capuz Casual Esportivo Academia Leve Street Proteção Vento",
+      "preco": "62.94",
+      "preco_formatado": "R$ 62,94",
+      "link": "https://s.shopee.com.br/60S19ipXsp",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lu-mpt84pmvdurn6b",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820lu-mpt84pmvdurn6b"
+      ],
+      "vendas": 61,
+      "avaliacao": "4.7",
+      "desconto_percentual": 37,
+      "coletado_em": "2026-10-01T01:59:01.481Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "58216002751",
+      "titulo": "Meia Infantil Divertida 25 ao 40 3D Cano Alto Menina Menino Colorida Confortável Personagens Criativos",
+      "preco": "19.2",
+      "preco_formatado": "R$ 19,20",
+      "link": "https://s.shopee.com.br/5q8axPqBDo",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lu-mtpdqm22nbi915",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820lu-mtpdqm22nbi915"
+      ],
+      "vendas": 220,
+      "avaliacao": "4.9",
+      "desconto_percentual": 41,
+      "coletado_em": "2026-10-01T01:59:01.481Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "58266200560",
+      "titulo": "Chave de Impacto a Bateria KINETX 880Nm 68Vf Motor Forte sem Fio com 2 Baterias e Carregador para Rodas Automotivas",
+      "preco": "188.9",
+      "preco_formatado": "R$ 188,90",
+      "link": "https://s.shopee.com.br/5fpAl6qoYn",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lq-mtq1rh5a0zy82c",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820lq-mtq1rh5a0zy82c"
+      ],
+      "vendas": 883,
+      "avaliacao": "4.8",
+      "desconto_percentual": 37,
+      "coletado_em": "2026-10-01T01:59:01.481Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "23598129360",
+      "titulo": "Kit 3 Progressivas Marroquinas Liss Única",
+      "preco": "149.9",
+      "preco_formatado": "R$ 149,90",
+      "link": "https://s.shopee.com.br/5VVkYnrRtm",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-m51sd2l4q8at0f",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-7r98o-m51sd2l4q8at0f"
+      ],
+      "vendas": 54,
+      "avaliacao": "4.8",
+      "desconto_percentual": 37,
+      "coletado_em": "2026-10-01T01:59:01.481Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "23499391520",
+      "titulo": "2 Calças Legging com Bolso Lateral Suplex Cós Alto Largo Academia Crossfit Verão Fitness",
+      "preco": "35.99",
+      "preco_formatado": "R$ 35,99",
+      "link": "https://s.shopee.com.br/5LCKMUs5El",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8226t-mhhqouwtadj495",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-8226t-mhhqouwtadj495"
+      ],
+      "vendas": 262,
+      "avaliacao": "4.6",
+      "desconto_percentual": 10,
+      "coletado_em": "2026-10-01T01:59:01.481Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "58263812820",
+      "titulo": "Jaqueta Corta Vento Impermeável Masculina Premium com Capuz 100% Poliéster Leve Motorsports Edition",
+      "preco": "74.95",
+      "preco_formatado": "R$ 74,95",
+      "link": "https://s.shopee.com.br/7ptfL5iZAG",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-825ao-mqcvxmzidkp7aa",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-825ao-mqcvxmzidkp7aa"
+      ],
+      "vendas": 1127,
+      "avaliacao": "4.6",
+      "desconto_percentual": 50,
+      "coletado_em": "2026-10-01T01:59:01.481Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "49367708365",
+      "titulo": "Martelete Rompedor Profissional Nakasaki 7Kg 1500W SDS Plus Furadeira Impacto 3 Funções + Acessórios",
+      "preco": "354.99",
+      "preco_formatado": "R$ 354,99",
+      "link": "https://s.shopee.com.br/7faF8mjCVF",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lf-msykmjoniy2s17",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820lf-msykmjoniy2s17"
+      ],
+      "vendas": 13,
+      "avaliacao": "5",
+      "desconto_percentual": 1,
+      "coletado_em": "2026-10-01T01:59:01.481Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "20899335444",
+      "titulo": "KIT SHAMPOO V-FLOC CERA TOK FINAL VEXUS VONIXX PRETINHO VINTEX",
+      "preco": "105.16",
+      "preco_formatado": "R$ 105,16",
+      "link": "https://s.shopee.com.br/7VGowTjpqE",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820l4-mqhng85dpgch30",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820l4-mqhng85dpgch30"
+      ],
+      "vendas": 488,
+      "avaliacao": "4.9",
+      "desconto_percentual": 24,
+      "coletado_em": "2026-10-01T01:59:01.481Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "23198865297",
+      "titulo": "Fatiador de cozinha multifuncional profissional em aço inoxidável 16 em 1/3 em 1  fatiador de vegetais/frutas/legumes",
+      "preco": "26.99",
+      "preco_formatado": "R$ 26,99",
+      "link": "https://s.shopee.com.br/7KxOkAkTBD",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mei0j64uiwoy0c",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-81z1k-mei0j64uiwoy0c"
+      ],
+      "vendas": 976,
+      "avaliacao": "4.8",
+      "desconto_percentual": 73,
+      "coletado_em": "2026-10-01T01:59:01.481Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -1009,151 +1297,7 @@
       "vendas": 765,
       "avaliacao": "4.9",
       "desconto_percentual": 0,
-      "coletado_em": "2026-09-30T21:22:14.840Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "23499391520",
-      "titulo": "2 Calças Legging com Bolso Lateral Suplex Cós Alto Largo Academia Crossfit Verão Fitness",
-      "preco": "35.99",
-      "preco_formatado": "R$ 35,99",
-      "link": "https://s.shopee.com.br/2BFGzlzqDo",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8226t-mhhqouwtadj495",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-8226t-mhhqouwtadj495"
-      ],
-      "vendas": 262,
-      "avaliacao": "4.6",
-      "desconto_percentual": 10,
-      "coletado_em": "2026-09-30T21:22:14.840Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "58216002751",
-      "titulo": "Meia Infantil Divertida 25 ao 40 3D Cano Alto Menina Menino Colorida Confortável Personagens Criativos",
-      "preco": "19.2",
-      "preco_formatado": "R$ 19,20",
-      "link": "https://s.shopee.com.br/9AP2DGZ85T",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lu-mtpdqm22nbi915",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820lu-mtpdqm22nbi915"
-      ],
-      "vendas": 220,
-      "avaliacao": "4.9",
-      "desconto_percentual": 41,
-      "coletado_em": "2026-09-30T21:22:14.840Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "49367708365",
-      "titulo": "Martelete Rompedor Profissional Nakasaki 7Kg 1500W SDS Plus Furadeira Impacto 3 Funções + Acessórios",
-      "preco": "354.99",
-      "preco_formatado": "R$ 354,99",
-      "link": "https://s.shopee.com.br/80D4p7dZSG",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lf-msykmjoniy2s17",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820lf-msykmjoniy2s17"
-      ],
-      "vendas": 13,
-      "avaliacao": "5",
-      "desconto_percentual": 1,
-      "coletado_em": "2026-09-30T21:22:14.840Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "58263812820",
-      "titulo": "Jaqueta Corta Vento Impermeável Masculina Premium com Capuz 100% Poliéster Leve Motorsports Edition",
-      "preco": "74.95",
-      "preco_formatado": "R$ 74,95",
-      "link": "https://s.shopee.com.br/8AWV1Qcw7J",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-825ao-mqcvxmzidkp7aa",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-825ao-mqcvxmzidkp7aa"
-      ],
-      "vendas": 1127,
-      "avaliacao": "4.6",
-      "desconto_percentual": 50,
-      "coletado_em": "2026-09-30T21:22:14.840Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "20899335444",
-      "titulo": "KIT SHAMPOO V-FLOC CERA TOK FINAL VEXUS VONIXX PRETINHO VINTEX",
-      "preco": "105.16",
-      "preco_formatado": "R$ 105,16",
-      "link": "https://s.shopee.com.br/8KpvDjcImM",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820l4-mqhng85dpgch30",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820l4-mqhng85dpgch30"
-      ],
-      "vendas": 488,
-      "avaliacao": "4.9",
-      "desconto_percentual": 24,
-      "coletado_em": "2026-09-30T21:22:14.840Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "23198865297",
-      "titulo": "Fatiador de cozinha multifuncional profissional em aço inoxidável 16 em 1/3 em 1  fatiador de vegetais/frutas/legumes",
-      "preco": "26.99",
-      "preco_formatado": "R$ 26,99",
-      "link": "https://s.shopee.com.br/8V9LQ2bfRP",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mei0j64uiwoy0c",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-81z1k-mei0j64uiwoy0c"
-      ],
-      "vendas": 976,
-      "avaliacao": "4.8",
-      "desconto_percentual": 73,
-      "coletado_em": "2026-09-30T21:22:14.840Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "22898373049",
-      "titulo": "Espelho Orgânico 120X50cm e 95x40cm Lapidado Moderno Grande Forms C/ SUPORTE ou LED TOUCH (FORM SUPORTE) OU LED",
-      "preco": "78.99",
-      "preco_formatado": "R$ 78,99",
-      "link": "https://s.shopee.com.br/2BFHsOzmIC",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820ll-mslrmo2fppfq1b",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820ll-mslrmo2fppfq1b"
-      ],
-      "vendas": 4348,
-      "avaliacao": "4.9",
-      "desconto_percentual": 33,
-      "coletado_em": "2026-09-30T21:22:14.840Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "22392814689",
-      "titulo": "Conjunto Feminino Academia Suplex Poliamida Top e Short Com Elástico No Cós AVA Fitness",
-      "preco": "64.9",
-      "preco_formatado": "R$ 64,90",
-      "link": "https://s.shopee.com.br/20vrg60PdB",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rcc0-lrhx4f6jzig815",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-7rcc0-lrhx4f6jzig815"
-      ],
-      "vendas": 1045,
-      "avaliacao": "4.9",
-      "desconto_percentual": 59,
-      "coletado_em": "2026-09-30T21:22:14.840Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "58215282951",
-      "titulo": "Toca-discos de vinil com alto-falantes, modelo retrô, acionamento por correia, prato giratório com 3 velocidades, reprod",
-      "preco": "375",
-      "preco_formatado": "R$ 375,00",
-      "link": "https://s.shopee.com.br/2Vs8H0yVcI",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8259g-mra1f4q3da874e",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-8259g-mra1f4q3da874e"
-      ],
-      "vendas": 148,
-      "avaliacao": "4.9",
-      "desconto_percentual": 75,
-      "coletado_em": "2026-09-30T21:22:14.840Z",
+      "coletado_em": "2026-10-01T01:59:04.705Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -1169,7 +1313,55 @@
       "vendas": 1967,
       "avaliacao": "4.9",
       "desconto_percentual": 63,
-      "coletado_em": "2026-09-30T21:22:14.840Z",
+      "coletado_em": "2026-10-01T01:59:04.705Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "22898373049",
+      "titulo": "Espelho Orgânico 120X50cm e 95x40cm Lapidado Moderno Grande Forms C/ SUPORTE ou LED TOUCH (FORM SUPORTE) OU LED",
+      "preco": "78.99",
+      "preco_formatado": "R$ 78,99",
+      "link": "https://s.shopee.com.br/2BFHsOzmIC",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820ll-mslrmo2fppfq1b",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820ll-mslrmo2fppfq1b"
+      ],
+      "vendas": 4348,
+      "avaliacao": "4.9",
+      "desconto_percentual": 33,
+      "coletado_em": "2026-10-01T01:59:04.705Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "22392814689",
+      "titulo": "Conjunto Feminino Academia Suplex Poliamida Top e Short Com Elástico No Cós AVA Fitness",
+      "preco": "64.9",
+      "preco_formatado": "R$ 64,90",
+      "link": "https://s.shopee.com.br/20vrg60PdB",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rcc0-lrhx4f6jzig815",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-7rcc0-lrhx4f6jzig815"
+      ],
+      "vendas": 1045,
+      "avaliacao": "4.9",
+      "desconto_percentual": 59,
+      "coletado_em": "2026-10-01T01:59:04.705Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "58215282951",
+      "titulo": "Toca-discos de vinil com alto-falantes, modelo retrô, acionamento por correia, prato giratório com 3 velocidades, reprod",
+      "preco": "375",
+      "preco_formatado": "R$ 375,00",
+      "link": "https://s.shopee.com.br/2Vs8H0yVcI",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8259g-mra1f4q3da874e",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-8259g-mra1f4q3da874e"
+      ],
+      "vendas": 148,
+      "avaliacao": "4.9",
+      "desconto_percentual": 75,
+      "coletado_em": "2026-10-01T01:59:04.705Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -1185,23 +1377,7 @@
       "vendas": 6236,
       "avaliacao": "5",
       "desconto_percentual": 9,
-      "coletado_em": "2026-09-30T21:22:14.840Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "22792663277",
-      "titulo": "Shorts Masculino 2 em 1 Dry Fit Academia Corrida Bermuda de Compressão com Bolso Celular Kong",
-      "preco": "35.9",
-      "preco_formatado": "R$ 35,90",
-      "link": "https://s.shopee.com.br/1LgAss2wz7",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820li-mtpi0naggzk25a",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820li-mtpi0naggzk25a"
-      ],
-      "vendas": 477,
-      "avaliacao": "4.9",
-      "desconto_percentual": 60,
-      "coletado_em": "2026-09-30T21:22:14.840Z",
+      "coletado_em": "2026-10-01T01:59:04.705Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -1217,7 +1393,23 @@
       "vendas": 1129,
       "avaliacao": "4.6",
       "desconto_percentual": 45,
-      "coletado_em": "2026-09-30T21:22:14.840Z",
+      "coletado_em": "2026-10-01T01:59:04.705Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "22792663277",
+      "titulo": "Shorts Masculino 2 em 1 Dry Fit Academia Corrida Bermuda de Compressão com Bolso Celular Kong",
+      "preco": "35.9",
+      "preco_formatado": "R$ 35,90",
+      "link": "https://s.shopee.com.br/1LgAss2wz7",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820li-mtpi0naggzk25a",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820li-mtpi0naggzk25a"
+      ],
+      "vendas": 477,
+      "avaliacao": "4.9",
+      "desconto_percentual": 60,
+      "coletado_em": "2026-10-01T01:59:04.705Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -1233,7 +1425,7 @@
       "vendas": 33595,
       "avaliacao": "5",
       "desconto_percentual": 52,
-      "coletado_em": "2026-09-30T21:22:14.840Z",
+      "coletado_em": "2026-10-01T01:59:04.705Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -1249,7 +1441,7 @@
       "vendas": 2801,
       "avaliacao": "4.9",
       "desconto_percentual": 41,
-      "coletado_em": "2026-09-30T21:22:14.840Z",
+      "coletado_em": "2026-10-01T01:59:04.705Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -1265,7 +1457,7 @@
       "vendas": 502,
       "avaliacao": "4.9",
       "desconto_percentual": 48,
-      "coletado_em": "2026-09-30T21:22:14.840Z",
+      "coletado_em": "2026-10-01T01:59:04.705Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -1281,71 +1473,7 @@
       "vendas": 225,
       "avaliacao": "4.9",
       "desconto_percentual": 27,
-      "coletado_em": "2026-09-30T21:22:14.840Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "58261704601",
-      "titulo": "KIT 4 Shorts 2 em 1 Masculino Dry Fit Academia Corrida Fitness Compressão Bolso Celular Musculação",
-      "preco": "129",
-      "preco_formatado": "R$ 129,00",
-      "link": "https://s.shopee.com.br/8pmAUCtZt0",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820mb-mow174ntwd8gda",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820mb-mow174ntwd8gda"
-      ],
-      "vendas": 5768,
-      "avaliacao": "4.8",
-      "desconto_percentual": 0,
-      "coletado_em": "2026-09-30T21:22:16.318Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "58217066581",
-      "titulo": "Massageador elétrico portátil pescoço calmante intensidade de 3 velocidades + aquecimento infravermelho",
-      "preco": "99.99",
-      "preco_formatado": "R$ 99,99",
-      "link": "https://s.shopee.com.br/5q8aePUrWo",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8257u-mseba6acpkht7c",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-8257u-mseba6acpkht7c"
-      ],
-      "vendas": 1305,
-      "avaliacao": "4.9",
-      "desconto_percentual": 38,
-      "coletado_em": "2026-09-30T21:22:16.318Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "22293819530",
-      "titulo": "Vestido Longo Com FORO e BOJO, Feminino Com manga Variados super confortáveis e leves qualidade e durabilidade",
-      "preco": "85.99",
-      "preco_formatado": "R$ 85,99",
-      "link": "https://s.shopee.com.br/5fpAS6VUrn",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-mbaadmixtnrj1b",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-7r98o-mbaadmixtnrj1b"
-      ],
-      "vendas": 96,
-      "avaliacao": "4.9",
-      "desconto_percentual": 0,
-      "coletado_em": "2026-09-30T21:22:16.318Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "20420779647",
-      "titulo": "Churrasqueira a Bafo Portátil para Pescaria Viagens Camping Material Resistente",
-      "preco": "79.99",
-      "preco_formatado": "R$ 79,99",
-      "link": "https://s.shopee.com.br/7VGodTOW9A",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-mc55mc5rhodjb3",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-7r98o-mc55mc5rhodjb3"
-      ],
-      "vendas": 700,
-      "avaliacao": "4.7",
-      "desconto_percentual": 47,
-      "coletado_em": "2026-09-30T21:22:16.318Z",
+      "coletado_em": "2026-10-01T01:59:04.705Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -1361,7 +1489,39 @@
       "vendas": 206,
       "avaliacao": "4.9",
       "desconto_percentual": 10,
-      "coletado_em": "2026-09-30T21:22:16.318Z",
+      "coletado_em": "2026-10-01T01:59:04.705Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "22293819530",
+      "titulo": "Vestido Longo Com FORO e BOJO, Feminino Com manga Variados super confortáveis e leves qualidade e durabilidade",
+      "preco": "85.99",
+      "preco_formatado": "R$ 85,99",
+      "link": "https://s.shopee.com.br/5fpAS6VUrn",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-mbaadmixtnrj1b",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-7r98o-mbaadmixtnrj1b"
+      ],
+      "vendas": 96,
+      "avaliacao": "4.9",
+      "desconto_percentual": 0,
+      "coletado_em": "2026-10-01T01:59:04.705Z",
+      "fonte": "shopee-products-v2"
+    },
+    {
+      "id": "20420779647",
+      "titulo": "Churrasqueira a Bafo Portátil para Pescaria Viagens Camping Material Resistente",
+      "preco": "79.99",
+      "preco_formatado": "R$ 79,99",
+      "link": "https://s.shopee.com.br/7VGodTOW9A",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-mc55mc5rhodjb3",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-7r98o-mc55mc5rhodjb3"
+      ],
+      "vendas": 700,
+      "avaliacao": "4.7",
+      "desconto_percentual": 47,
+      "coletado_em": "2026-10-01T01:59:04.705Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -1377,7 +1537,7 @@
       "vendas": 285,
       "avaliacao": "4.9",
       "desconto_percentual": 44,
-      "coletado_em": "2026-09-30T21:22:16.318Z",
+      "coletado_em": "2026-10-01T01:59:04.705Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -1393,7 +1553,7 @@
       "vendas": 7804,
       "avaliacao": "4.9",
       "desconto_percentual": 71,
-      "coletado_em": "2026-09-30T21:22:16.318Z",
+      "coletado_em": "2026-10-01T01:59:04.706Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -1409,7 +1569,7 @@
       "vendas": 270,
       "avaliacao": "4.8",
       "desconto_percentual": 28,
-      "coletado_em": "2026-09-30T21:22:16.318Z",
+      "coletado_em": "2026-10-01T01:59:04.706Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -1425,7 +1585,7 @@
       "vendas": 14,
       "avaliacao": "5",
       "desconto_percentual": 0,
-      "coletado_em": "2026-09-30T21:22:16.318Z",
+      "coletado_em": "2026-10-01T01:59:04.706Z",
       "fonte": "shopee-products-v2"
     },
     {
@@ -1441,167 +1601,7 @@
       "vendas": 84,
       "avaliacao": "4.7",
       "desconto_percentual": 0,
-      "coletado_em": "2026-09-30T21:22:16.318Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "22693688637",
-      "titulo": "Balança Digital De Vidro até 180Kg Portátil Corporal",
-      "preco": "30.93",
-      "preco_formatado": "R$ 30,93",
-      "link": "https://s.shopee.com.br/70KY2YQQAB",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820l7-mr092rpnk5j87a",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820l7-mr092rpnk5j87a"
-      ],
-      "vendas": 9300,
-      "avaliacao": "4.9",
-      "desconto_percentual": 45,
-      "coletado_em": "2026-09-30T21:22:16.318Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "23899314572",
-      "titulo": "Patinete Elétrico Adulto 350W – Alta Velocidade, Bateria Longa e Suporta Até 150kg",
-      "preco": "1040",
-      "preco_formatado": "R$ 1.040,00",
-      "link": "https://s.shopee.com.br/8pmCDvJRRY",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8261h-mk3v2sfwjoqw23",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-8261h-mk3v2sfwjoqw23"
-      ],
-      "vendas": 77,
-      "avaliacao": "4.8",
-      "desconto_percentual": 45,
-      "coletado_em": "2026-09-30T21:22:16.318Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "23994288266",
-      "titulo": "Percarbonato 100% Puro Tira Manchas Roupas Brancas e Coloridas",
-      "preco": "17.9",
-      "preco_formatado": "R$ 17,90",
-      "link": "https://s.shopee.com.br/8fSm1cK4mX",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lm-mohh8j4tjpc0e3",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820lm-mohh8j4tjpc0e3"
-      ],
-      "vendas": 35448,
-      "avaliacao": "4.9",
-      "desconto_percentual": 40,
-      "coletado_em": "2026-09-30T21:22:16.318Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "46560301686",
-      "titulo": "Comedouro e Bebedouro Automático para Gatos e Cães Premium 1L Jelplast",
-      "preco": "60.9",
-      "preco_formatado": "R$ 60,90",
-      "link": "https://s.shopee.com.br/9AP2cXIAle",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820ma-mo396acb8ttwdd",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820ma-mo396acb8ttwdd"
-      ],
-      "vendas": 148,
-      "avaliacao": "4.9",
-      "desconto_percentual": 6,
-      "coletado_em": "2026-09-30T21:22:16.319Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "21698313823",
-      "titulo": "Conjunto Camiseta + Short Moletom Estampado Milano Itália Street Camiseta Malha Linha Premium + Short Mauricinho",
-      "preco": "54.9",
-      "preco_formatado": "R$ 54,90",
-      "link": "https://s.shopee.com.br/905cQEIo6d",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-824hj-mepsa1xyky6bcd",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-824hj-mepsa1xyky6bcd"
-      ],
-      "vendas": 399,
-      "avaliacao": "4.7",
-      "desconto_percentual": 45,
-      "coletado_em": "2026-09-30T21:22:16.319Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "49610072279",
-      "titulo": "Climatizador Ar Ventisol Portátil Turbo Evaporativo 16 Litros 5 em 1 Umidificador CLIN16 PRO 130W",
-      "preco": "429.99",
-      "preco_formatado": "R$ 429,99",
-      "link": "https://s.shopee.com.br/8AWVQhLynU",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m6-mnwvrm5408oy0a",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820m6-mnwvrm5408oy0a"
-      ],
-      "vendas": 484,
-      "avaliacao": "4.9",
-      "desconto_percentual": 46,
-      "coletado_em": "2026-09-30T21:22:16.319Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "20498140657",
-      "titulo": "Mop Girátorio Cleaner Profissional – Balde com Centrífuga 14L + Refil Duplo e Cabo Reforçado - MN",
-      "preco": "69.9",
-      "preco_formatado": "R$ 69,90",
-      "link": "https://s.shopee.com.br/80D5EOMc8T",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-mbnxm1i5f5ndcc",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-7r98o-mbnxm1i5f5ndcc"
-      ],
-      "vendas": 8821,
-      "avaliacao": "4.9",
-      "desconto_percentual": 42,
-      "coletado_em": "2026-09-30T21:22:16.319Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "23998289187",
-      "titulo": "Computador Gamer Intel Core I5 8gb Ram SSD 120GB Gamer GT 210 + Monitor 15\"",
-      "preco": "1214.99",
-      "preco_formatado": "R$ 1.214,99",
-      "link": "https://s.shopee.com.br/8V9LpJKi7a",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-md692wsu81dt58",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-7r98o-md692wsu81dt58"
-      ],
-      "vendas": 82,
-      "avaliacao": "4.8",
-      "desconto_percentual": 10,
-      "coletado_em": "2026-09-30T21:22:16.319Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "51613258322",
-      "titulo": "Kit Camisa de Compressão + Short Dri-fit Masculino Camiseta Academia Treino BASICO Corrida",
-      "preco": "47.79",
-      "preco_formatado": "R$ 47,79",
-      "link": "https://s.shopee.com.br/8Kpvd0LLSZ",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8259n-mq5bb1g9iozl97",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-8259n-mq5bb1g9iozl97"
-      ],
-      "vendas": 360,
-      "avaliacao": "4.6",
-      "desconto_percentual": 68,
-      "coletado_em": "2026-09-30T21:22:16.319Z",
-      "fonte": "shopee-products-v2"
-    },
-    {
-      "id": "22997415978",
-      "titulo": "Chapa de Hambúrguer para Fogão com Cabo de Madeira",
-      "preco": "39.79",
-      "preco_formatado": "R$ 39,79",
-      "link": "https://s.shopee.com.br/AAHZoNEMjw",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lt3squx5ejpbb7",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-7r98o-lt3squx5ejpbb7"
-      ],
-      "vendas": 1288,
-      "avaliacao": "4.8",
-      "desconto_percentual": 6,
-      "coletado_em": "2026-09-30T21:22:16.319Z",
+      "coletado_em": "2026-10-01T01:59:04.706Z",
       "fonte": "shopee-products-v2"
     }
   ]
