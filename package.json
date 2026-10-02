@@ -15,7 +15,7 @@
     "browser:teste": "node src/navegador/publicador.js",
     "browser:preparar": "MODO_PUBLICACAO_BROWSER=preparar node src/navegador/publicador.js",
     "browser:publicar": "MODO_PUBLICACAO_BROWSER=publicar node src/navegador/publicador.js",
-    "test": "node --check src/coletor.js && node --check src/classificador.js && node --check src/seletor.js && node --check src/pipeline.js && node --check src/historico.js && node --check src/utils.js && node --check src/publicador.js && node --check src/navegador/browser.js && node --check src/navegador/facebook.js && node --check src/navegador/publicador.js && node --check src/navegador/login.js && node --check src/historico-cursos.js && node --check src/cursos/seletor.js && node --check src/afiliados/identidade.js && node --check src/afiliados/cache.js && node --check src/afiliados/fila.js && node --check src/afiliados/resolver.js && node --check src/afiliados/exportar-pendentes.js && node --check src/afiliados/importar-csv.js && node --check src/afiliados/enfileirar-selecao.js",
+    "test": "node --check src/coletor.js && node --check src/classificador.js && node --check src/seletor.js && node --check src/pipeline.js && node --check src/historico.js && node --check src/utils.js && node --check src/publicador.js && node --check src/navegador/browser.js && node --check src/navegador/facebook.js && node --check src/navegador/publicador.js && node --check src/navegador/login.js && node --check src/historico-cursos.js && node --check src/cursos/seletor.js && node --check src/afiliados/identidade.js && node --check src/afiliados/cache.js && node --check src/afiliados/fila.js && node --check src/afiliados/resolver.js && node --check src/afiliados/exportar-pendentes.js && node --check src/afiliados/importar-csv.js && node --check src/afiliados/enfileirar-selecao.js && node --check src/afiliados/processar-lotes.js",
     "test:coleta": "node src/coletor.js",
     "browser:automatico": "node src/navegador/automacao.js",
     "browser:ciclo": "node src/navegador/ciclo.js",
@@ -25,7 +25,8 @@
     "curso:teste": "CONTENT_TYPE=curso BROWSER_DRY_RUN=true node src/navegador/publicador.js",
     "afiliados:enfileirar": "node src/afiliados/enfileirar-selecao.js",
     "afiliados:exportar": "node src/afiliados/exportar-pendentes.js",
-    "afiliados:importar-csv": "node src/afiliados/importar-csv.js"
+    "afiliados:importar-csv": "node src/afiliados/importar-csv.js",
+    "afiliados:processar-lotes": "node src/afiliados/processar-lotes.js"
   },
   "engines": {
     "node": ">=18"
