@@ -10,6 +10,8 @@
  * - Com MODO=publicar: tenta clicar e só registra histórico se houver confirmação
  *
  * CONTENT_TYPE=shopee (padrão) | curso — mesmo navegador, históricos separados.
+ * Ofertas Shopee exigem link afiliado confirmado em data/links-afiliados.json
+ * (EXIGIR_LINK_AFILIADO=true por padrão).
  *
  * NÃO usa senha, NÃO versiona cookies, NÃO contorna CAPTCHA.
  */
@@ -31,11 +33,6 @@ const {
 
 const ROOT = path.join(__dirname, '..', '..');
 
-/**
- * CONTENT_TYPE=shopee (padrão) | curso
- * Permite reutilizar o mesmo publicador com seleções e históricos distintos.
- * Não altera o comportamento padrão das ofertas Shopee.
- */
 const CONTENT_TYPE = String(process.env.CONTENT_TYPE || 'shopee').toLowerCase();
 const IS_CURSO = CONTENT_TYPE === 'curso' || CONTENT_TYPE === 'cursos';
 
@@ -63,6 +60,11 @@ const RESULTADO_FILE =
 const MODO = String(process.env.MODO_PUBLICACAO_BROWSER || 'preparar').toLowerCase();
 // preparar | publicar
 
+// Camada de links afiliados (apenas Shopee; cursos não usam)
+const { resolverLinkAfiliado, aplicarLinkNoTexto } = require('../afiliados/resolver');
+const EXIGIR_AFILIADO =
+  String(process.env.EXIGIR_LINK_AFILIADO || 'true').toLowerCase() !== 'false';
+
 function escolherUmaSelecao(selecao) {
   const lista = (selecao && selecao.selecoes) || [];
   const filtroGrupo = process.env.BROWSER_GRUPO_ID || '';
@@ -82,7 +84,6 @@ function escolherUmaSelecao(selecao) {
   }
   return null;
 }
-
 
 async function recuperarCompositor(page, groupId, tentativa) {
   console.log(`🔄 Recuperando compositor (tentativa ${tentativa})...`);
@@ -157,7 +158,6 @@ async function prepararTextoComRecuperacao(page, groupId, texto) {
 }
 
 async function publicarSelecoesNavegador({ dryRun = false } = {}) {
-  // Em modo preparar/dry-run, mantém o comportamento seguro de 1 publicação.
   if (dryRun || MODO !== 'publicar') {
     const resultado = await publicarUma({ dryRun });
 
@@ -248,6 +248,12 @@ async function publicarSelecoesNavegador({ dryRun = false } = {}) {
       break;
     }
 
+    // Sem link afiliado: enfileira e tenta próxima seleção (não interrompe o lote)
+    if (resultado.status === 'sem_link_afiliado') {
+      console.log('⏭  Sem afiliado — seguindo para próxima seleção da fila');
+      continue;
+    }
+
     if (
       resultado.status === 'bloqueio' ||
       resultado.status === 'incerto' ||
@@ -321,8 +327,40 @@ async function publicarUma({ dryRun = false } = {}) {
   }
 
   const grupo = item.grupo;
-  const oferta = item.oferta;
-  const texto = item.texto || '';
+  let oferta = item.oferta;
+  let texto = item.texto || '';
+
+  // Gate: ofertas Shopee só publicam com link afiliado confirmado no cache
+  if (!IS_CURSO && EXIGIR_AFILIADO) {
+    const afiliado = resolverLinkAfiliado(oferta);
+    if (!afiliado.ok) {
+      const r = {
+        gerado_em: nowIso(),
+        tipo: 'shopee',
+        modo: MODO,
+        status: 'sem_link_afiliado',
+        grupo_id_interno: grupo && grupo.id,
+        grupo_nome: grupo && grupo.nome,
+        group_id: grupo && grupo.group_id,
+        oferta_id: oferta && oferta.id,
+        titulo: oferta && oferta.titulo,
+        link_original: oferta && oferta.link,
+        motivo: afiliado.motivo,
+        mensagem:
+          'Publicação bloqueada: não há link afiliado confirmado no cache. ' +
+          'Enfileirado em data/fila-links-afiliados.json. ' +
+          'Importe o CSV do Portal (npm run afiliados:importar-csv).',
+      };
+      writeJson(RESULTADO_FILE, r);
+      console.log('🚫', r.mensagem);
+      console.log('   Motivo:', r.motivo, '|', (oferta && oferta.titulo || '').slice(0, 60));
+      return r;
+    }
+    const linkAntigo = oferta.link;
+    oferta = { ...oferta, link: afiliado.link_afiliado };
+    texto = aplicarLinkNoTexto(texto, linkAntigo, afiliado.link_afiliado);
+    console.log('✅ Link afiliado confirmado no cache');
+  }
 
   const base = {
     gerado_em: nowIso(),
@@ -464,7 +502,6 @@ async function publicarUma({ dryRun = false } = {}) {
       return r;
     }
 
-    // MODO=publicar
     const pub = await clicarPublicar(page);
     if (!pub.ok) {
       const shot = await capturarEvidencia(page, 'botao-publicar');
