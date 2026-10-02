@@ -2,6 +2,7 @@
 
 /**
  * Helpers de DOM / sessão para conversão Shopee no navegador.
+ * Matching conservador: preferir sem correspondência a associação errada.
  */
 
 const path = require('path');
@@ -46,7 +47,6 @@ async function detectarBloqueioShopee(page) {
     bodyText = await page.locator('body').innerText({ timeout: 4000 });
   } catch (_) {}
   const blob = `${url}\n${title}\n${bodyText.slice(0, 6000)}`;
-
   for (const re of BLOQUEIOS_SHOPEE) {
     if (re.test(blob)) {
       return {
@@ -55,24 +55,20 @@ async function detectarBloqueioShopee(page) {
       };
     }
   }
-
   if (/\/buyer\/login|\/seller\/login|accounts\.shopee|login\?/i.test(url)) {
     return {
       bloqueado: true,
       motivo: 'Página de login Shopee detectada. Faça login manual na sessão .browser-session/ e tente de novo.',
     };
   }
-
   return { bloqueado: false };
 }
 
 async function verificarSessaoShopee(page, shopeeUrl) {
   await page.goto(shopeeUrl, { waitUntil: 'domcontentloaded', timeout: 90000 });
   await page.waitForLoadState('networkidle', { timeout: 30000 }).catch(() => {});
-
   const bloqueio = await detectarBloqueioShopee(page);
   if (bloqueio.bloqueado) return { ok: false, ...bloqueio };
-
   const url = page.url() || '';
   if (/login/i.test(url) && !/offer|affiliate|convert|custom/i.test(url)) {
     return {
@@ -125,105 +121,136 @@ function extrairUrlsDeTexto(texto) {
   return [...new Set(found.map((u) => u.replace(/[),.;]+$/, '')))];
 }
 
-function pareceAfiliadoOuEncurtado(url) {
+function extrairIdsDeUrl(url) {
+  const out = { itemId: null, shopId: null };
+  if (!url) return out;
+  try {
+    const u = new URL(url);
+    const pth = u.pathname || '';
+    let m = pth.match(/\/product\/(\d+)\/(\d+)/i);
+    if (m) { out.shopId = m[1]; out.itemId = m[2]; return out; }
+    m = pth.match(/-i\.(\d+)\.(\d+)/i);
+    if (m) { out.shopId = m[1]; out.itemId = m[2]; return out; }
+    const origin = u.searchParams.get('origin_link') || '';
+    if (origin) {
+      try { return extrairIdsDeUrl(decodeURIComponent(origin)); } catch (_) {}
+    }
+  } catch (_) {}
+  return out;
+}
+
+function pareceResultadoAfiliado(url, urlOriginal) {
+  if (!url || typeof url !== 'string') return false;
+  if (!/^https?:\/\//i.test(url)) return false;
   try {
     const u = new URL(url);
     const h = u.hostname.toLowerCase();
-    return (
-      h === 's.shopee.com.br' ||
-      h.endsWith('.s.shopee.com.br') ||
-      h === 'shope.ee' ||
-      /affiliate_id=|an_redir|uls_trackid/i.test(url)
-    );
+    const isShopee =
+      h === 's.shopee.com.br' || h.endsWith('.s.shopee.com.br') ||
+      h === 'shope.ee' || h === 'shopee.com.br' || h.endsWith('.shopee.com.br');
+    if (!isShopee) return false;
+    if (urlOriginal && normalizarUrl(url) === normalizarUrl(urlOriginal)) return false;
+    if (urlOriginal && url.trim() === String(urlOriginal).trim()) return false;
+    if (/affiliate_id=|an_redir|uls_trackid|utm_source=an_/i.test(url)) return true;
+    if ((h === 's.shopee.com.br' || h === 'shope.ee') && /origin_link=/i.test(url)) return true;
+    return false;
   } catch (_) {
     return false;
   }
 }
 
+function pareceAfiliadoOuEncurtado(url, urlOriginal) {
+  return pareceResultadoAfiliado(url, urlOriginal);
+}
+
+function originalBateComEnvio(url, enviados) {
+  for (const e of enviados) {
+    if (e.link_original === url) return e;
+    if (normalizarUrl(e.link_original) === normalizarUrl(url)) return e;
+    const idsUrl = extrairIdsDeUrl(url);
+    const idsEnv = extrairIdsDeUrl(e.link_original);
+    if (idsUrl.itemId && idsEnv.itemId && idsUrl.itemId === idsEnv.itemId) return e;
+    if (e.produto_id && idsUrl.itemId && String(e.produto_id) === String(idsUrl.itemId)) return e;
+  }
+  return null;
+}
+
 async function lerResultadosDoDom(page, enviados) {
   const body = await page.locator('body').innerText({ timeout: 5000 }).catch(() => '');
-  const todasUrls = extrairUrlsDeTexto(body);
   const pares = [];
-  const rows = page.locator('table tr, [role="row"], .ant-table-row, li');
+  const usadosChave = new Set();
+  const usadosAfil = new Set();
+
+  const adicionarPar = (env, afiliado, metodo) => {
+    if (!env || !afiliado) return false;
+    if (usadosChave.has(env.chave)) return false;
+    if (usadosAfil.has(afiliado)) return false;
+    if (!pareceResultadoAfiliado(afiliado, env.link_original)) return false;
+    pares.push({ original: env.link_original, afiliado, metodo, chave: env.chave });
+    usadosChave.add(env.chave);
+    usadosAfil.add(afiliado);
+    return true;
+  };
+
+  const rows = page.locator('table tr, [role="row"], .ant-table-row, li, [class*="result"] > *, [class*="Result"] > *');
   const rowCount = await rows.count().catch(() => 0);
-  for (let i = 0; i < Math.min(rowCount, 40); i++) {
+  for (let i = 0; i < Math.min(rowCount, 60); i++) {
     const rowText = await rows.nth(i).innerText().catch(() => '');
     const urls = extrairUrlsDeTexto(rowText);
-    if (urls.length >= 2) {
-      const orig = urls.find((u) =>
-        enviados.some((e) => normalizarUrl(e.link_original) === normalizarUrl(u) || e.link_original === u)
-      );
-      const afil = urls.find((u) => u !== orig && pareceAfiliadoOuEncurtado(u));
-      if (orig && afil) pares.push({ original: orig, afiliado: afil, metodo: 'dom-linha' });
+    if (urls.length < 1) continue;
+    let env = null;
+    for (const u of urls) { env = originalBateComEnvio(u, enviados); if (env) break; }
+    if (!env) {
+      for (const e of enviados) {
+        if (e.produto_id && rowText.includes(String(e.produto_id))) { env = e; break; }
+        const ids = extrairIdsDeUrl(e.link_original);
+        if (ids.itemId && rowText.includes(ids.itemId)) { env = e; break; }
+      }
     }
-  }
-  if (pares.length > 0) return { ok: true, pares, metodo: 'dom-linha', todasUrls };
-
-  const dialog = page.locator('[role="dialog"], .ant-modal, .modal, [class*="Modal"]');
-  if (await dialog.first().isVisible({ timeout: 2000 }).catch(() => false)) {
-    const dText = await dialog.first().innerText().catch(() => '');
-    const dUrls = extrairUrlsDeTexto(dText).filter(pareceAfiliadoOuEncurtado);
-    if (dUrls.length === enviados.length) {
-      return {
-        ok: true,
-        pares: enviados.map((e, idx) => ({
-          original: e.link_original,
-          afiliado: dUrls[idx],
-          metodo: 'ordem-modal',
-          chave: e.chave,
-        })),
-        metodo: 'ordem-modal',
-        aviso: 'Matching por ordem no modal (último recurso)',
-        todasUrls: dUrls,
-      };
-    }
-    if (dUrls.length > 0) {
-      return {
-        ok: false,
-        motivo: 'matching_ambiguo',
-        detalhes: `Modal com ${dUrls.length} links afiliados para ${enviados.length} enviados`,
-        todasUrls: dUrls,
-      };
-    }
-  }
-
-  const afiliados = todasUrls.filter(pareceAfiliadoOuEncurtado);
-  const enviadosSet = new Set(enviados.map((e) => e.link_original));
-  const novos = afiliados.filter((u) => !enviadosSet.has(u));
-
-  if (novos.length === enviados.length) {
-    return {
-      ok: true,
-      pares: enviados.map((e, idx) => ({
-        original: e.link_original,
-        afiliado: novos[idx],
-        metodo: 'ordem-body',
-        chave: e.chave,
-      })),
-      metodo: 'ordem-body',
-      aviso: 'Matching por ordem no body (último recurso)',
-      todasUrls: novos,
-    };
+    if (!env) continue;
+    const candidatos = urls.filter((u) => pareceResultadoAfiliado(u, env.link_original));
+    if (candidatos.length === 1) adicionarPar(env, candidatos[0], 'dom-linha');
   }
 
   for (const env of enviados) {
+    if (usadosChave.has(env.chave)) continue;
     const idx = body.indexOf(env.link_original);
-    if (idx >= 0) {
-      const slice = body.slice(idx, idx + 500);
-      const urls = extrairUrlsDeTexto(slice).filter((u) => u !== env.link_original && pareceAfiliadoOuEncurtado(u));
-      if (urls.length === 1) {
-        pares.push({ original: env.link_original, afiliado: urls[0], metodo: 'proximidade-texto', chave: env.chave });
-      }
-    }
+    if (idx < 0) continue;
+    const slice = body.slice(idx, idx + 800);
+    const urls = extrairUrlsDeTexto(slice).filter((u) => pareceResultadoAfiliado(u, env.link_original));
+    if (urls.length === 1) adicionarPar(env, urls[0], 'proximidade-texto');
   }
-  if (pares.length === enviados.length) return { ok: true, pares, metodo: 'proximidade-texto', todasUrls };
+
+  for (const env of enviados) {
+    if (usadosChave.has(env.chave)) continue;
+    const ids = extrairIdsDeUrl(env.link_original);
+    const idKey = env.produto_id || ids.itemId;
+    if (!idKey) continue;
+    const idIdx = body.indexOf(String(idKey));
+    if (idIdx < 0) continue;
+    const slice = body.slice(Math.max(0, idIdx - 200), idIdx + 600);
+    const urls = extrairUrlsDeTexto(slice).filter((u) => pareceResultadoAfiliado(u, env.link_original));
+    if (urls.length === 1) adicionarPar(env, urls[0], 'id-produto-dom');
+  }
+
+  if (pares.length === 0) {
+    return {
+      ok: false,
+      motivo: 'matching_ambiguo',
+      detalhes: `sem_correspondencia_segura enviados=${enviados.length}`,
+      pares: [],
+    };
+  }
 
   return {
-    ok: false,
-    motivo: 'matching_ambiguo',
-    detalhes: `Não foi possível associar com segurança. Enviados=${enviados.length}, afiliados_vistos=${novos.length}`,
-    todasUrls: novos,
-    pares_parciais: pares,
+    ok: true,
+    parcial: pares.length < enviados.length,
+    pares,
+    metodo: 'conservador',
+    detalhes:
+      pares.length < enviados.length
+        ? `associados=${pares.length}/${enviados.length} (restante sem correspondência segura)`
+        : `associados=${pares.length}/${enviados.length}`,
   };
 }
 
@@ -235,5 +262,8 @@ module.exports = {
   localizarBotaoConverter,
   lerResultadosDoDom,
   extrairUrlsDeTexto,
+  extrairIdsDeUrl,
+  pareceResultadoAfiliado,
   pareceAfiliadoOuEncurtado,
+  originalBateComEnvio,
 };
