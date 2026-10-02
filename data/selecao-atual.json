@@ -1,8 +1,108 @@
 {
-  "gerado_em": "2026-10-01T23:04:22.308Z",
+  "gerado_em": "2026-10-02T21:15:53.695Z",
   "total_selecoes": 8,
   "grupos_ativos": 21,
   "selecoes": [
+    {
+      "grupo": {
+        "id": "grupo-geral-1",
+        "nome": "Grupo Geral",
+        "group_id": "987613641743046",
+        "nicho": "geral"
+      },
+      "oferta": {
+        "id": "22198784845",
+        "titulo": "Guarda-Chuva Grande Automático - Fibra de Vidro Blackout para Proteção UV, Reforçado para Tempestade！",
+        "preco": "21.98",
+        "preco_formatado": "R$ 21,98",
+        "link": "https://s.shopee.com.br/3g49ElngD3",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-820ln-mo0jmaiwmsxwca",
+        "nicho": "geral"
+      },
+      "texto": "🔥 OFERTA DO DIA\n\nGuarda-Chuva Grande Automático - Fibra de Vidro Blackout para Proteção UV, Reforçado para Tempestade！\n\n✨ Confira esta oferta na Shopee\n\n💰 R$ 21,98\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/3g49ElngD3",
+      "status": "pendente",
+      "selecionado_em": "2026-10-02T21:15:53.691Z"
+    },
+    {
+      "grupo": {
+        "id": "auto-geral-330309645451506",
+        "nome": "Bazar Belford Roxo",
+        "group_id": "330309645451506",
+        "nicho": "geral"
+      },
+      "oferta": {
+        "id": "22198784845",
+        "titulo": "Guarda-Chuva Grande Automático - Fibra de Vidro Blackout para Proteção UV, Reforçado para Tempestade！",
+        "preco": "21.98",
+        "preco_formatado": "R$ 21,98",
+        "link": "https://s.shopee.com.br/3g49ElngD3",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-820ln-mo0jmaiwmsxwca",
+        "nicho": "geral"
+      },
+      "texto": "🔥 OFERTA DO DIA\n\nGuarda-Chuva Grande Automático - Fibra de Vidro Blackout para Proteção UV, Reforçado para Tempestade！\n\n✨ Confira esta oferta na Shopee\n\n💰 R$ 21,98\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/3g49ElngD3",
+      "status": "pendente",
+      "selecionado_em": "2026-10-02T21:15:53.691Z"
+    },
+    {
+      "grupo": {
+        "id": "auto-geral-2246004002209564",
+        "nome": "bazar das minas Mesquita , Edson Passos , Juscelino e Nilópolis",
+        "group_id": "2246004002209564",
+        "nicho": "geral"
+      },
+      "oferta": {
+        "id": "22198784845",
+        "titulo": "Guarda-Chuva Grande Automático - Fibra de Vidro Blackout para Proteção UV, Reforçado para Tempestade！",
+        "preco": "21.98",
+        "preco_formatado": "R$ 21,98",
+        "link": "https://s.shopee.com.br/3g49ElngD3",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-820ln-mo0jmaiwmsxwca",
+        "nicho": "geral"
+      },
+      "texto": "🔥 OFERTA DO DIA\n\nGuarda-Chuva Grande Automático - Fibra de Vidro Blackout para Proteção UV, Reforçado para Tempestade！\n\n✨ Confira esta oferta na Shopee\n\n💰 R$ 21,98\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/3g49ElngD3",
+      "status": "pendente",
+      "selecionado_em": "2026-10-02T21:15:53.691Z"
+    },
+    {
+      "grupo": {
+        "id": "auto-geral-1246947868686643",
+        "nome": "BAZAR DA FEIRA DE AREIA BRANCA DE B.ROXO !!",
+        "group_id": "1246947868686643",
+        "nicho": "geral"
+      },
+      "oferta": {
+        "id": "22198784845",
+        "titulo": "Guarda-Chuva Grande Automático - Fibra de Vidro Blackout para Proteção UV, Reforçado para Tempestade！",
+        "preco": "21.98",
+        "preco_formatado": "R$ 21,98",
+        "link": "https://s.shopee.com.br/3g49ElngD3",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-820ln-mo0jmaiwmsxwca",
+        "nicho": "geral"
+      },
+      "texto": "🔥 OFERTA DO DIA\n\nGuarda-Chuva Grande Automático - Fibra de Vidro Blackout para Proteção UV, Reforçado para Tempestade！\n\n✨ Confira esta oferta na Shopee\n\n💰 R$ 21,98\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/3g49ElngD3",
+      "status": "pendente",
+      "selecionado_em": "2026-10-02T21:15:53.692Z"
+    },
+    {
+      "grupo": {
+        "id": "auto-geral-1639640282968613",
+        "nome": "bazar de Belford Roxo só delas",
+        "group_id": "1639640282968613",
+        "nicho": "geral"
+      },
+      "oferta": {
+        "id": "22198784845",
+        "titulo": "Guarda-Chuva Grande Automático - Fibra de Vidro Blackout para Proteção UV, Reforçado para Tempestade！",
+        "preco": "21.98",
+        "preco_formatado": "R$ 21,98",
+        "link": "https://s.shopee.com.br/3g49ElngD3",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-820ln-mo0jmaiwmsxwca",
+        "nicho": "geral"
+      },
+      "texto": "🔥 OFERTA DO DIA\n\nGuarda-Chuva Grande Automático - Fibra de Vidro Blackout para Proteção UV, Reforçado para Tempestade！\n\n✨ Confira esta oferta na Shopee\n\n💰 R$ 21,98\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/3g49ElngD3",
+      "status": "pendente",
+      "selecionado_em": "2026-10-02T21:15:53.692Z"
+    },
     {
       "grupo": {
         "id": "auto-saude-1426918943987350",
@@ -15,113 +115,13 @@
         "titulo": "Fini Melatonina 120 Unidades – Suplemento Noturno para Rotina Equilibrada",
         "preco": "99.89",
         "preco_formatado": "R$ 99,89",
-        "link": "https://s.shopee.com.br/7KxPDYey6R",
+        "link": "https://s.shopee.com.br/2gBc2vrUEx",
         "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mg3u1p2ot98g3f",
         "nicho": "saude"
       },
-      "texto": "🔥 OFERTA DO DIA\n\nFini Melatonina 120 Unidades – Suplemento Noturno para Rotina Equilibrada\n\n🌙 Suplemento em cápsulas para sua rotina noturna\n\n💰 R$ 99,89\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/7KxPDYey6R",
+      "texto": "🔥 OFERTA DO DIA\n\nFini Melatonina 120 Unidades – Suplemento Noturno para Rotina Equilibrada\n\n🌙 Suplemento em cápsulas para sua rotina noturna\n\n💰 R$ 99,89\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/2gBc2vrUEx",
       "status": "pendente",
-      "selecionado_em": "2026-10-01T23:04:22.307Z"
-    },
-    {
-      "grupo": {
-        "id": "grupo-geral-1",
-        "nome": "Grupo Geral",
-        "group_id": "987613641743046",
-        "nicho": "geral"
-      },
-      "oferta": {
-        "id": "58262972685",
-        "titulo": "Massageador de Pescoço e Ombros Portátil 3D Com Calor Relaxante Massagem Profunda",
-        "preco": "103.99",
-        "preco_formatado": "R$ 103,99",
-        "link": "https://s.shopee.com.br/7VGpPreKlS",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-820mb-mps6km6k5xc1fc",
-        "nicho": "geral"
-      },
-      "texto": "🔥 OFERTA DO DIA\n\nMassageador de Pescoço e Ombros Portátil 3D Com Calor Relaxante Massagem Profunda\n\n✨ Confira esta oferta na Shopee\n\n💰 R$ 103,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/7VGpPreKlS",
-      "status": "pendente",
-      "selecionado_em": "2026-10-01T23:04:22.307Z"
-    },
-    {
-      "grupo": {
-        "id": "auto-geral-330309645451506",
-        "nome": "Bazar Belford Roxo",
-        "group_id": "330309645451506",
-        "nicho": "geral"
-      },
-      "oferta": {
-        "id": "58262972685",
-        "titulo": "Massageador de Pescoço e Ombros Portátil 3D Com Calor Relaxante Massagem Profunda",
-        "preco": "103.99",
-        "preco_formatado": "R$ 103,99",
-        "link": "https://s.shopee.com.br/7VGpPreKlS",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-820mb-mps6km6k5xc1fc",
-        "nicho": "geral"
-      },
-      "texto": "🔥 OFERTA DO DIA\n\nMassageador de Pescoço e Ombros Portátil 3D Com Calor Relaxante Massagem Profunda\n\n✨ Confira esta oferta na Shopee\n\n💰 R$ 103,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/7VGpPreKlS",
-      "status": "pendente",
-      "selecionado_em": "2026-10-01T23:04:22.307Z"
-    },
-    {
-      "grupo": {
-        "id": "auto-geral-2246004002209564",
-        "nome": "bazar das minas Mesquita , Edson Passos , Juscelino e Nilópolis",
-        "group_id": "2246004002209564",
-        "nicho": "geral"
-      },
-      "oferta": {
-        "id": "58262972685",
-        "titulo": "Massageador de Pescoço e Ombros Portátil 3D Com Calor Relaxante Massagem Profunda",
-        "preco": "103.99",
-        "preco_formatado": "R$ 103,99",
-        "link": "https://s.shopee.com.br/7VGpPreKlS",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-820mb-mps6km6k5xc1fc",
-        "nicho": "geral"
-      },
-      "texto": "🔥 OFERTA DO DIA\n\nMassageador de Pescoço e Ombros Portátil 3D Com Calor Relaxante Massagem Profunda\n\n✨ Confira esta oferta na Shopee\n\n💰 R$ 103,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/7VGpPreKlS",
-      "status": "pendente",
-      "selecionado_em": "2026-10-01T23:04:22.307Z"
-    },
-    {
-      "grupo": {
-        "id": "auto-geral-1246947868686643",
-        "nome": "BAZAR DA FEIRA DE AREIA BRANCA DE B.ROXO !!",
-        "group_id": "1246947868686643",
-        "nicho": "geral"
-      },
-      "oferta": {
-        "id": "58262972685",
-        "titulo": "Massageador de Pescoço e Ombros Portátil 3D Com Calor Relaxante Massagem Profunda",
-        "preco": "103.99",
-        "preco_formatado": "R$ 103,99",
-        "link": "https://s.shopee.com.br/7VGpPreKlS",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-820mb-mps6km6k5xc1fc",
-        "nicho": "geral"
-      },
-      "texto": "🔥 OFERTA DO DIA\n\nMassageador de Pescoço e Ombros Portátil 3D Com Calor Relaxante Massagem Profunda\n\n✨ Confira esta oferta na Shopee\n\n💰 R$ 103,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/7VGpPreKlS",
-      "status": "pendente",
-      "selecionado_em": "2026-10-01T23:04:22.307Z"
-    },
-    {
-      "grupo": {
-        "id": "auto-geral-1639640282968613",
-        "nome": "bazar de Belford Roxo só delas",
-        "group_id": "1639640282968613",
-        "nicho": "geral"
-      },
-      "oferta": {
-        "id": "58262972685",
-        "titulo": "Massageador de Pescoço e Ombros Portátil 3D Com Calor Relaxante Massagem Profunda",
-        "preco": "103.99",
-        "preco_formatado": "R$ 103,99",
-        "link": "https://s.shopee.com.br/7VGpPreKlS",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-820mb-mps6km6k5xc1fc",
-        "nicho": "geral"
-      },
-      "texto": "🔥 OFERTA DO DIA\n\nMassageador de Pescoço e Ombros Portátil 3D Com Calor Relaxante Massagem Profunda\n\n✨ Confira esta oferta na Shopee\n\n💰 R$ 103,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/7VGpPreKlS",
-      "status": "pendente",
-      "selecionado_em": "2026-10-01T23:04:22.308Z"
+      "selecionado_em": "2026-10-02T21:15:53.694Z"
     },
     {
       "grupo": {
@@ -131,17 +131,17 @@
         "nicho": "casa"
       },
       "oferta": {
-        "id": "58211330527",
-        "titulo": "Guarda Roupas Casal Grande 8 Portas 4 Gav. Com Pés Moderno Marrom",
-        "preco": "839.11",
-        "preco_formatado": "R$ 839,11",
-        "link": "https://s.shopee.com.br/30oQS7fQGf",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-820lm-moo1fbllw6wwa9",
+        "id": "23198865297",
+        "titulo": "Fatiador de cozinha multifuncional profissional em aço inoxidável 16 em 1/3 em 1  fatiador de vegetais/frutas/legumes",
+        "preco": "26.99",
+        "preco_formatado": "R$ 26,99",
+        "link": "https://s.shopee.com.br/AUuTEyPzCS",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mei0j64uiwoy0c",
         "nicho": "casa"
       },
-      "texto": "🔥 OFERTA DO DIA\n\nGuarda Roupas Casal Grande 8 Portas 4 Gav. Com Pés Moderno Marrom\n\n🏠 Praticidade para sua casa e rotina\n\n💰 R$ 839,11\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/30oQS7fQGf",
+      "texto": "🔥 OFERTA DO DIA\n\nFatiador de cozinha multifuncional profissional em aço inoxidável 16 em 1/3 em 1  fatiador de vegetais/frutas/legumes\n\n🍳 Praticidade para preparar suas refeições\n\n💰 R$ 26,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/AUuTEyPzCS",
       "status": "pendente",
-      "selecionado_em": "2026-10-01T23:04:22.308Z"
+      "selecionado_em": "2026-10-02T21:15:53.695Z"
     },
     {
       "grupo": {
@@ -151,17 +151,17 @@
         "nicho": "casa"
       },
       "oferta": {
-        "id": "58211330527",
-        "titulo": "Guarda Roupas Casal Grande 8 Portas 4 Gav. Com Pés Moderno Marrom",
-        "preco": "839.11",
-        "preco_formatado": "R$ 839,11",
-        "link": "https://s.shopee.com.br/30oQS7fQGf",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-820lm-moo1fbllw6wwa9",
+        "id": "23198865297",
+        "titulo": "Fatiador de cozinha multifuncional profissional em aço inoxidável 16 em 1/3 em 1  fatiador de vegetais/frutas/legumes",
+        "preco": "26.99",
+        "preco_formatado": "R$ 26,99",
+        "link": "https://s.shopee.com.br/AUuTEyPzCS",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mei0j64uiwoy0c",
         "nicho": "casa"
       },
-      "texto": "🔥 OFERTA DO DIA\n\nGuarda Roupas Casal Grande 8 Portas 4 Gav. Com Pés Moderno Marrom\n\n🏠 Praticidade para sua casa e rotina\n\n💰 R$ 839,11\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/30oQS7fQGf",
+      "texto": "🔥 OFERTA DO DIA\n\nFatiador de cozinha multifuncional profissional em aço inoxidável 16 em 1/3 em 1  fatiador de vegetais/frutas/legumes\n\n🍳 Praticidade para preparar suas refeições\n\n💰 R$ 26,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/AUuTEyPzCS",
       "status": "pendente",
-      "selecionado_em": "2026-10-01T23:04:22.308Z"
+      "selecionado_em": "2026-10-02T21:15:53.695Z"
     }
   ],
   "aviso": "Publicação automática em grupos NÃO está implementada. Groups API oficial da Meta foi removida em abril/2024."
