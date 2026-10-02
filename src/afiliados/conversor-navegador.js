@@ -2,8 +2,7 @@
 
 /**
  * Conversão de links Shopee → afiliado via interface web (Playwright).
- * NÃO usa API; NÃO contorna CAPTCHA; sessão em .browser-session/
- * URL obrigatória: SHOPEE_CONVERSAO_URL
+ * Dry-run (SHOPEE_CONVERSAO_DRY_RUN=true): não altera fila nem cache.
  */
 
 const path = require('path');
@@ -16,6 +15,7 @@ const {
   marcarConvertido,
   marcarEmProcessamento,
   marcarErro,
+  recuperarAbandonados,
 } = require('./fila');
 const { normalizarUrl } = require('./identidade');
 const { coletarPendentes } = require('./processar-lotes');
@@ -42,6 +42,8 @@ const DRY_RUN =
 
 const SHOPEE_URL = String(process.env.SHOPEE_CONVERSAO_URL || '').trim();
 
+const STATUS_FALHA_GLOBAL = new Set(['erro_config', 'erro_sessao', 'bloqueio', 'erro']);
+
 function exigirUrlConversao() {
   if (!SHOPEE_URL) {
     throw new Error(
@@ -49,11 +51,14 @@ function exigirUrlConversao() {
     );
   }
   try {
-    // eslint-disable-next-line no-new
     new URL(SHOPEE_URL);
   } catch (_) {
     throw new Error(`SHOPEE_CONVERSAO_URL inválida: ${SHOPEE_URL}`);
   }
+}
+
+function isFalhaGlobal(status) {
+  return STATUS_FALHA_GLOBAL.has(String(status || ''));
 }
 
 async function converterLote(page, itens) {
@@ -71,17 +76,21 @@ async function converterLote(page, itens) {
   await campo.fill('').catch(() => {});
   await campo.fill(itens.map((i) => i.link_original).join('\n'));
 
+  const botao = await localizarBotaoConverter(page);
+
   if (DRY_RUN) {
     return {
       ok: true,
       dryRun: true,
       pares: [],
+      campo_ok: true,
+      botao_ok: Boolean(botao),
       screenshot: await capturarEvidencia(page, 'shopee-dry-run'),
-      mensagem: 'DRY-RUN: preenchido; Converter não clicado',
+      mensagem:
+        'DRY-RUN não destrutivo: campo preenchido; Converter NÃO clicado; fila/cache NÃO alterados',
     };
   }
 
-  const botao = await localizarBotaoConverter(page);
   if (!botao) {
     return {
       ok: false,
@@ -108,14 +117,16 @@ async function converterLote(page, itens) {
   }
 
   const leitura = await lerResultadosDoDom(page, itens);
-  if (!leitura.ok) {
+  if (!leitura.ok && (!leitura.pares || leitura.pares.length === 0)) {
     return { ...leitura, screenshot: await capturarEvidencia(page, 'shopee-matching') };
   }
 
   return {
     ok: true,
-    pares: leitura.pares,
+    parcial: Boolean(leitura.parcial),
+    pares: leitura.pares || [],
     metodo: leitura.metodo,
+    detalhes: leitura.detalhes,
     aviso: leitura.aviso || null,
     screenshot: await capturarEvidencia(page, 'shopee-sucesso'),
   };
@@ -124,6 +135,7 @@ async function converterLote(page, itens) {
 function gravarPares(itens, pares) {
   const mapa = new Map();
   for (const p of pares) {
+    if (p.chave) mapa.set(`chave:${p.chave}`, p);
     mapa.set(normalizarUrl(p.original), p);
     mapa.set(p.original, p);
   }
@@ -131,12 +143,12 @@ function gravarPares(itens, pares) {
   const falhas = [];
   for (const item of itens) {
     const par =
+      mapa.get(`chave:${item.chave}`) ||
       mapa.get(item.link_original) ||
-      mapa.get(normalizarUrl(item.link_original)) ||
-      pares.find((p) => p.chave === item.chave);
+      mapa.get(normalizarUrl(item.link_original));
     if (!par || !par.afiliado || !/^https?:\/\//i.test(par.afiliado)) {
-      marcarErro(item.chave, 'matching_ambiguo_ou_sem_resultado');
-      falhas.push({ chave: item.chave, motivo: 'sem_par' });
+      marcarErro(item.chave, 'sem_correspondencia_segura');
+      falhas.push({ chave: item.chave, motivo: 'sem_correspondencia_segura' });
       continue;
     }
     try {
@@ -176,16 +188,36 @@ async function converterPendentes({ incluirClassificadas = false } = {}) {
   }
   console.log('URL:', SHOPEE_URL);
 
-  const pendentes = coletarPendentes({ incluirClassificadas });
-  for (const p of pendentes) {
-    enfileirar(
-      { id: p.produto_id, link: p.link_original, titulo: p.titulo },
-      'conversor-navegador'
-    );
+  if (!DRY_RUN) {
+    const rec = recuperarAbandonados();
+    if (rec.recuperados.length) {
+      console.log(
+        `Recuperados de em_processamento (timeout ${rec.timeoutMin}min): ${rec.recuperados.length}`
+      );
+    }
+  }
+
+  if (!DRY_RUN) {
+    const pendentesColeta = coletarPendentes({ incluirClassificadas });
+    for (const p of pendentesColeta) {
+      enfileirar(
+        { id: p.produto_id, link: p.link_original, titulo: p.titulo },
+        'conversor-navegador'
+      );
+    }
   }
 
   const vistoUrl = new Set();
   let filaPendentes = listarPendentes().filter((i) => i.link_original);
+  if (DRY_RUN && filaPendentes.length === 0) {
+    filaPendentes = coletarPendentes({ incluirClassificadas }).map((p) => ({
+      chave: p.chave,
+      produto_id: p.produto_id,
+      titulo: p.titulo,
+      link_original: p.link_original,
+      status: 'pendente',
+    }));
+  }
   filaPendentes = filaPendentes.filter((i) => {
     const n = normalizarUrl(i.link_original) || i.link_original;
     if (vistoUrl.has(n)) return false;
@@ -203,6 +235,7 @@ async function converterPendentes({ incluirClassificadas = false } = {}) {
       status: 'nada_a_converter',
       pendentes: 0,
       convertidos: 0,
+      dry_run: DRY_RUN,
     };
     writeJson(RESULTADO_FILE, r);
     console.log('Nenhum link pendente. Shopee não será aberta.');
@@ -247,14 +280,18 @@ async function converterPendentes({ incluirClassificadas = false } = {}) {
       console.log(`Lote: ${li + 1}/${lotes.length}`);
       console.log(`URLs enviadas: ${lote.length}`);
 
-      for (const item of lote) marcarEmProcessamento(item.chave);
+      if (!DRY_RUN) {
+        for (const item of lote) marcarEmProcessamento(item.chave);
+      }
 
       await page.goto(SHOPEE_URL, { waitUntil: 'domcontentloaded', timeout: 90000 });
       await page.waitForLoadState('networkidle', { timeout: 20000 }).catch(() => {});
 
       const bloqueio = await detectarBloqueioShopee(page);
       if (bloqueio.bloqueado) {
-        for (const item of lote) marcarErro(item.chave, bloqueio.motivo);
+        if (!DRY_RUN) {
+          for (const item of lote) marcarErro(item.chave, bloqueio.motivo);
+        }
         resumo.erros += lote.length;
         resumo.status = 'bloqueio';
         resumo.erro = bloqueio.motivo;
@@ -270,20 +307,15 @@ async function converterPendentes({ incluirClassificadas = false } = {}) {
           indice: li + 1,
           status: 'dry-run',
           enviados: lote.length,
+          campo_ok: resultadoLote.campo_ok,
+          botao_ok: resultadoLote.botao_ok,
           screenshot: resultadoLote.screenshot,
         });
-        console.log('🔍 DRY-RUN lote ok — sem clicar Converter');
-        for (const item of lote) {
-          marcarErro(item.chave, 'dry_run_nao_convertido');
-          enfileirar(
-            { id: item.produto_id, link: item.link_original, titulo: item.titulo },
-            'dry_run'
-          );
-        }
-        continue;
+        console.log('🔍 DRY-RUN não destrutivo — fila/cache intactos; Converter não clicado');
+        break;
       }
 
-      if (!resultadoLote.ok) {
+      if (!resultadoLote.ok && (!resultadoLote.pares || resultadoLote.pares.length === 0)) {
         for (const item of lote) {
           marcarErro(item.chave, resultadoLote.motivo || resultadoLote.detalhes || 'erro_lote');
         }
@@ -297,40 +329,53 @@ async function converterPendentes({ incluirClassificadas = false } = {}) {
           screenshot: resultadoLote.screenshot,
         });
         console.log('❌ Lote falhou:', resultadoLote.motivo || resultadoLote.mensagem);
-        if (/bloqueio|login|captcha|checkpoint/i.test(String(resultadoLote.motivo || ''))) break;
+        if (/bloqueio|login|captcha|checkpoint/i.test(String(resultadoLote.motivo || ''))) {
+          resumo.status = 'bloqueio';
+          break;
+        }
         continue;
       }
 
       const { gravados, falhas } = gravarPares(lote, resultadoLote.pares || []);
       resumo.convertidos += gravados.length;
       resumo.erros += falhas.length;
+      resumo.ambiguos += falhas.filter((f) => f.motivo === 'sem_correspondencia_segura').length;
       resumo.lotes.push({
         indice: li + 1,
-        status: 'ok',
+        status: gravados.length ? 'ok' : 'erro',
         metodo: resultadoLote.metodo,
-        aviso: resultadoLote.aviso,
+        detalhes: resultadoLote.detalhes,
         gravados: gravados.length,
         falhas: falhas.length,
         itens: gravados,
       });
       console.log(`Conversões confirmadas: ${gravados.length}`);
-      console.log(`Matching: ${gravados.length}/${lote.length}`);
-      console.log(`Erros: ${falhas.length}`);
+      console.log(`Matching seguro: ${gravados.length}/${lote.length}`);
+      console.log(`Sem correspondência: ${falhas.length}`);
     }
 
-    resumo.status = resumo.status || 'concluido';
+    if (DRY_RUN) {
+      resumo.status = 'dry_run';
+      console.log('');
+      console.log('✅ Teste não destrutivo concluído (dry-run). Nenhuma conversão gravada.');
+    } else {
+      resumo.status = resumo.status || 'concluido';
+    }
+
     writeJson(RESULTADO_FILE, resumo);
     console.log('');
     console.log('Resumo conversão:', {
+      status: resumo.status,
       convertidos: resumo.convertidos,
       erros: resumo.erros,
       ambiguos: resumo.ambiguos,
+      dry_run: DRY_RUN,
     });
     await context.close().catch(() => {});
     return resumo;
   } catch (err) {
     if (context) await context.close().catch(() => {});
-    const r = { gerado_em: nowIso(), status: 'erro', erro: err.message };
+    const r = { gerado_em: nowIso(), status: 'erro', erro: err.message, dry_run: DRY_RUN };
     writeJson(RESULTADO_FILE, r);
     console.error('❌ Conversão Shopee falhou:', err.message);
     return r;
@@ -341,8 +386,7 @@ if (require.main === module) {
   const incluirClassificadas = process.argv.includes('--todas');
   converterPendentes({ incluirClassificadas })
     .then((r) => {
-      const bad = ['erro', 'erro_sessao', 'bloqueio', 'erro_config'].includes(r.status);
-      process.exit(bad ? 1 : 0);
+      process.exit(isFalhaGlobal(r.status) ? 1 : 0);
     })
     .catch((err) => {
       console.error(err);
@@ -353,4 +397,7 @@ if (require.main === module) {
 module.exports = {
   converterPendentes,
   LOTE_SIZE,
+  isFalhaGlobal,
+  STATUS_FALHA_GLOBAL,
+  DRY_RUN,
 };
