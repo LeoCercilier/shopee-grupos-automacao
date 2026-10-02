@@ -24,3 +24,8 @@ data/resultado-publicacao-browser.json
 # Cursos (artefatos locais)
 data/resultado-publicacao-cursos.json
 data/selecao-cursos.json
+
+# Afiliados — artefatos locais de import/export
+data/exports/
+data/imports/
+data/relatorio-afiliados-selecao.json
