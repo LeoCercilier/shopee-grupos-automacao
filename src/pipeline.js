@@ -2,10 +2,10 @@
 
 /**
  * Pipeline principal do projeto.
- * Executa: coletor → classificador → seletor → publicador (opcional).
+ * Executa: coletor → classificador → seletor → [conversão afiliado] → publicador.
  *
- * Publicação real só ocorre com PUBLICAR=true e FACEBOOK_PAGE_ACCESS_TOKEN.
- * Por padrão o publicador roda em dry-run.
+ * Conversão Shopee (navegador): AFILIADOS_CONVERTER=true + SHOPEE_CONVERSAO_URL
+ * Publicação navegador: PUBLICADOR=navegador (sessão local .browser-session/)
  */
 
 const { coletarOfertas } = require('./coletor');
@@ -13,6 +13,7 @@ const { executar: classificar } = require('./classificador');
 const { selecionar } = require('./seletor');
 const { publicarSelecoes } = require('./publicador');
 const { publicarUma, publicarSelecoesNavegador } = require('./navegador/publicador');
+const { converterPendentes } = require('./afiliados/conversor-navegador');
 const { nowIso } = require('./utils');
 
 function usarPublicadorNavegador() {
@@ -63,6 +64,27 @@ async function run() {
   const selecao = selecionar();
   console.log(`Seleções prontas: ${selecao.total_selecoes}`);
 
+  // Conversão Shopee via navegador (opcional; requer sessão local + SHOPEE_CONVERSAO_URL)
+  let conversao = { status: 'pulado' };
+  const converterAuto =
+    String(process.env.AFILIADOS_CONVERTER || '').toLowerCase() === 'true' ||
+    String(process.env.AFILIADOS_CONVERTER || '').toLowerCase() === '1';
+  if (converterAuto) {
+    console.log('=== ETAPA CONVERSÃO AFILIADOS (NAVEGADOR) ===');
+    conversao = await converterPendentes({
+      incluirClassificadas:
+        String(process.env.AFILIADOS_INCLUIR_CLASSIFICADAS || '').toLowerCase() ===
+        'true',
+    });
+    console.log(
+      `Conversão: status=${conversao.status} convertidos=${conversao.convertidos || 0} erros=${conversao.erros || 0}`
+    );
+  } else {
+    console.log(
+      'Conversão Shopee automática desligada (defina AFILIADOS_CONVERTER=true para ativar).'
+    );
+  }
+
   const publicacao = await executarPublicador();
   console.log(
     `Publicação: modo=${publicacao.modo} publicados=${publicacao.publicados || 0} erros=${publicacao.erros || 0}`
@@ -80,6 +102,8 @@ async function run() {
     coleta_total: coleta.total,
     classificadas_total: classificadas.total,
     selecoes_total: selecao.total_selecoes,
+    conversao_status: conversao.status,
+    conversao_convertidos: conversao.convertidos || 0,
     publicacao_modo: publicacao.modo,
     publicados: publicacao.publicados || 0,
     erros_publicacao: publicacao.erros || 0,

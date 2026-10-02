@@ -75,6 +75,16 @@ function marcarConvertido(chave, linkAfiliado) {
   return item;
 }
 
+function marcarEmProcessamento(chave) {
+  const data = carregarFila();
+  const item = data.itens.find((i) => i.chave === chave);
+  if (!item) return null;
+  item.status = STATUS.EM_PROCESSAMENTO;
+  item.atualizado_em = nowIso();
+  salvarFila(data);
+  return item;
+}
+
 function marcarErro(chave, erro) {
   const data = carregarFila();
   const item = data.itens.find((i) => i.chave === chave);
@@ -98,6 +108,7 @@ module.exports = {
   salvarFila,
   enfileirar,
   marcarConvertido,
+  marcarEmProcessamento,
   marcarErro,
   listarPendentes,
 };
