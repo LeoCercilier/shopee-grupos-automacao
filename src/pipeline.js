@@ -12,8 +12,11 @@ const { coletarOfertas } = require('./coletor');
 const { executar: classificar } = require('./classificador');
 const { selecionar } = require('./seletor');
 const { publicarSelecoes } = require('./publicador');
-const { publicarUma, publicarSelecoesNavegador } = require('./navegador/publicador');
-const { converterPendentes } = require('./afiliados/conversor-navegador');
+const { publicarSelecoesNavegador } = require('./navegador/publicador');
+const {
+  converterPendentes,
+  isFalhaGlobal,
+} = require('./afiliados/conversor-navegador');
 const { nowIso } = require('./utils');
 
 function usarPublicadorNavegador() {
@@ -64,11 +67,11 @@ async function run() {
   const selecao = selecionar();
   console.log(`Seleções prontas: ${selecao.total_selecoes}`);
 
-  // Conversão Shopee via navegador (opcional; requer sessão local + SHOPEE_CONVERSAO_URL)
   let conversao = { status: 'pulado' };
   const converterAuto =
     String(process.env.AFILIADOS_CONVERTER || '').toLowerCase() === 'true' ||
     String(process.env.AFILIADOS_CONVERTER || '').toLowerCase() === '1';
+
   if (converterAuto) {
     console.log('=== ETAPA CONVERSÃO AFILIADOS (NAVEGADOR) ===');
     conversao = await converterPendentes({
@@ -85,7 +88,25 @@ async function run() {
     );
   }
 
-  const publicacao = await executarPublicador();
+  let publicacao = { modo: 'pulado', publicados: 0, erros: 0 };
+
+  if (converterAuto && isFalhaGlobal(conversao.status)) {
+    console.log('');
+    console.log(
+      '⛔ Conversão Shopee falhou de forma bloqueante. Publicação Shopee deste ciclo cancelada.'
+    );
+    console.log(`   Motivo: ${conversao.erro || conversao.status}`);
+    console.log('   Itens permanecem pendentes para a próxima tentativa.');
+    publicacao = {
+      modo: 'cancelado_conversao',
+      publicados: 0,
+      erros: 0,
+      motivo: conversao.erro || conversao.status,
+    };
+  } else {
+    publicacao = await executarPublicador();
+  }
+
   console.log(
     `Publicação: modo=${publicacao.modo} publicados=${publicacao.publicados || 0} erros=${publicacao.erros || 0}`
   );
@@ -93,8 +114,9 @@ async function run() {
   console.log('----------------------------------------');
   if (publicacao.modo === 'dry-run') {
     console.log('Dry-run: nenhum post foi enviado ao Facebook.');
-    console.log('Para publicar de verdade: PUBLICAR=true + FACEBOOK_PAGE_ACCESS_TOKEN');
-    console.log('(somente em grupos que aceitam postagem da Página)');
+  }
+  if (publicacao.modo === 'cancelado_conversao') {
+    console.log('Publicação Shopee não executada por falha na conversão de afiliados.');
   }
   console.log('========================================');
 

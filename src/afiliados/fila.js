@@ -15,6 +15,11 @@ const STATUS = {
   IGNORADO: 'ignorado',
 };
 
+const TIMEOUT_MIN = Math.max(
+  1,
+  Number.parseInt(process.env.AFILIADOS_PROCESSAMENTO_TIMEOUT_MIN || '15', 10) || 15
+);
+
 function carregarFila() {
   const data = readJson(FILA_FILE, { versao: 1, itens: [] });
   if (!Array.isArray(data.itens)) data.itens = [];
@@ -36,13 +41,17 @@ function enfileirar(oferta, motivo = 'sem_link_afiliado_confirmado') {
     if (existente.status === STATUS.CONVERTIDO) {
       return { ok: true, item: existente, ja_existia: true };
     }
-    if (existente.status === STATUS.PENDENTE || existente.status === STATUS.EM_PROCESSAMENTO) {
+    if (
+      existente.status === STATUS.PENDENTE ||
+      existente.status === STATUS.EM_PROCESSAMENTO
+    ) {
       return { ok: true, item: existente, ja_existia: true };
     }
     existente.status = STATUS.PENDENTE;
     existente.motivo = motivo;
     existente.atualizado_em = nowIso();
     existente.tentativas = (existente.tentativas || 0) + 1;
+    delete existente.processamento_em;
     salvarFila(data);
     return { ok: true, item: existente, reenfileirado: true };
   }
@@ -71,6 +80,7 @@ function marcarConvertido(chave, linkAfiliado) {
   item.status = STATUS.CONVERTIDO;
   item.link_afiliado = linkAfiliado;
   item.atualizado_em = nowIso();
+  delete item.processamento_em;
   salvarFila(data);
   return item;
 }
@@ -80,6 +90,7 @@ function marcarEmProcessamento(chave) {
   const item = data.itens.find((i) => i.chave === chave);
   if (!item) return null;
   item.status = STATUS.EM_PROCESSAMENTO;
+  item.processamento_em = nowIso();
   item.atualizado_em = nowIso();
   salvarFila(data);
   return item;
@@ -93,8 +104,33 @@ function marcarErro(chave, erro) {
   item.erro = String(erro || '');
   item.atualizado_em = nowIso();
   item.tentativas = (item.tentativas || 0) + 1;
+  delete item.processamento_em;
   salvarFila(data);
   return item;
+}
+
+function recuperarAbandonados({ timeoutMin = TIMEOUT_MIN, agora = Date.now() } = {}) {
+  const data = carregarFila();
+  const limiteMs = timeoutMin * 60 * 1000;
+  const recuperados = [];
+
+  for (const item of data.itens) {
+    if (item.status !== STATUS.EM_PROCESSAMENTO) continue;
+    const ts = item.processamento_em || item.atualizado_em;
+    if (!ts) continue;
+    const t = Date.parse(ts);
+    if (Number.isNaN(t)) continue;
+    if (agora - t < limiteMs) continue;
+
+    item.status = STATUS.PENDENTE;
+    item.motivo = 'recuperado_timeout_processamento';
+    item.atualizado_em = nowIso();
+    delete item.processamento_em;
+    recuperados.push(item.chave);
+  }
+
+  if (recuperados.length) salvarFila(data);
+  return { recuperados, timeoutMin };
 }
 
 function listarPendentes() {
@@ -104,11 +140,13 @@ function listarPendentes() {
 module.exports = {
   FILA_FILE,
   STATUS,
+  TIMEOUT_MIN,
   carregarFila,
   salvarFila,
   enfileirar,
   marcarConvertido,
   marcarEmProcessamento,
   marcarErro,
+  recuperarAbandonados,
   listarPendentes,
 };
