@@ -29,3 +29,5 @@ data/selecao-cursos.json
 data/exports/
 data/imports/
 data/relatorio-afiliados-selecao.json
+
+data/resultado-conversao-navegador.json
