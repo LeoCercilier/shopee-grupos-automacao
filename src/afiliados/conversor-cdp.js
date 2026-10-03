@@ -152,9 +152,20 @@ async function avaliar(ws, expression, returnByValue = true) {
   );
 
   if (result.exceptionDetails) {
+    const ex = result.exceptionDetails.exception || {};
+
     throw new Error(
-      result.exceptionDetails.text ||
-        'Erro Runtime.evaluate'
+      [
+        result.exceptionDetails.text,
+        ex.name,
+        ex.message,
+        ex.description,
+        result.exceptionDetails.stackTrace?.callFrames
+          ?.map((f) => `${f.functionName || '<anon>'} @ ${f.url || ''}:${f.lineNumber + 1}:${f.columnNumber + 1}`)
+          .join('\\n')
+      ]
+        .filter(Boolean)
+        .join(' | ')
     );
   }
 
