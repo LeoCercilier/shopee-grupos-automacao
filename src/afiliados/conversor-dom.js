@@ -132,21 +132,75 @@ async function localizarCampoLinks(page) {
 }
 
 async function diagnosticarCamposLinks(page) {
-  const encontrados = [];
+  const diagnostico = {
+    url: '',
+    title: '',
+    frames: [],
+  };
+
+  try {
+    diagnostico.url = page.url();
+  } catch (_) {}
+
+  try {
+    diagnostico.title = await page.title().catch(() => '');
+  } catch (_) {}
 
   for (const [fi, frame] of page.frames().entries()) {
+    const infoFrame = {
+      index: fi,
+      url: '',
+      campos: [],
+      textboxes: [],
+      botoes: [],
+      contenteditables: [],
+      textos_visiveis: [],
+    };
+
     try {
-      const campos = frame.locator('input, textarea, [contenteditable="true"]');
+      infoFrame.url = frame.url();
+    } catch (_) {}
+
+    try {
+      const campos = frame.locator(
+        'input, textarea, [contenteditable="true"]'
+      );
       const n = await campos.count().catch(() => 0);
 
       for (let i = 0; i < Math.min(n, 50); i++) {
         const el = campos.nth(i);
-        if (!(await el.isVisible({ timeout: 500 }).catch(() => false))) continue;
 
-        encontrados.push({
-          frame: fi,
+        if (!(await el.isVisible({ timeout: 500 }).catch(() => false))) {
+          continue;
+        }
+
+        infoFrame.campos.push({
           tag: await el.evaluate((node) => node.tagName).catch(() => ''),
           type: await el.getAttribute('type').catch(() => ''),
+          role: await el.getAttribute('role').catch(() => ''),
+          placeholder: await el.getAttribute('placeholder').catch(() => ''),
+          aria_label: await el.getAttribute('aria-label').catch(() => ''),
+          name: await el.getAttribute('name').catch(() => ''),
+          id: await el.getAttribute('id').catch(() => ''),
+          value: await el.inputValue().catch(() => ''),
+        });
+      }
+    } catch (_) {}
+
+    try {
+      const loc = frame.getByRole('textbox');
+      const n = await loc.count().catch(() => 0);
+
+      for (let i = 0; i < Math.min(n, 30); i++) {
+        const el = loc.nth(i);
+
+        if (!(await el.isVisible({ timeout: 500 }).catch(() => false))) {
+          continue;
+        }
+
+        infoFrame.textboxes.push({
+          tag: await el.evaluate((node) => node.tagName).catch(() => ''),
+          role: await el.getAttribute('role').catch(() => ''),
           placeholder: await el.getAttribute('placeholder').catch(() => ''),
           aria_label: await el.getAttribute('aria-label').catch(() => ''),
           name: await el.getAttribute('name').catch(() => ''),
@@ -154,10 +208,78 @@ async function diagnosticarCamposLinks(page) {
         });
       }
     } catch (_) {}
+
+    try {
+      const botoes = frame.getByRole('button');
+      const n = await botoes.count().catch(() => 0);
+
+      for (let i = 0; i < Math.min(n, 50); i++) {
+        const el = botoes.nth(i);
+
+        if (!(await el.isVisible({ timeout: 500 }).catch(() => false))) {
+          continue;
+        }
+
+        infoFrame.botoes.push({
+          texto: (await el.innerText().catch(() => '')).trim().slice(0, 200),
+          aria_label: await el.getAttribute('aria-label').catch(() => ''),
+          title: await el.getAttribute('title').catch(() => ''),
+          id: await el.getAttribute('id').catch(() => ''),
+          class: await el.getAttribute('class').catch(() => ''),
+        });
+      }
+    } catch (_) {}
+
+    try {
+      const loc = frame.locator('[contenteditable]');
+      const n = await loc.count().catch(() => 0);
+
+      for (let i = 0; i < Math.min(n, 30); i++) {
+        const el = loc.nth(i);
+
+        if (!(await el.isVisible({ timeout: 500 }).catch(() => false))) {
+          continue;
+        }
+
+        infoFrame.contenteditables.push({
+          tag: await el.evaluate((node) => node.tagName).catch(() => ''),
+          contenteditable: await el.getAttribute('contenteditable').catch(() => ''),
+          role: await el.getAttribute('role').catch(() => ''),
+          aria_label: await el.getAttribute('aria-label').catch(() => ''),
+          placeholder: await el.getAttribute('placeholder').catch(() => ''),
+          class: await el.getAttribute('class').catch(() => ''),
+        });
+      }
+    } catch (_) {}
+
+    try {
+      const texto = await frame.locator('body').innerText().catch(() => '');
+
+      if (texto) {
+        infoFrame.textos_visiveis = texto
+          .split('\n')
+          .map((linha) => linha.trim())
+          .filter(Boolean)
+          .filter((linha) =>
+            /link|custom|personalizado|obter|gerar|produto|shopee|oferta|cole|paste/i.test(
+              linha
+            )
+          )
+          .slice(0, 100);
+      }
+    } catch (_) {}
+
+    diagnostico.frames.push(infoFrame);
   }
 
-  console.log('🔎 Campos visíveis detectados:', JSON.stringify(encontrados));
-  return encontrados;
+  console.log('🔎 DIAGNÓSTICO SHOPEE — URL:', diagnostico.url);
+  console.log('🔎 DIAGNÓSTICO SHOPEE — TITLE:', diagnostico.title);
+  console.log(
+    '🔎 DIAGNÓSTICO SHOPEE — FRAMES:',
+    JSON.stringify(diagnostico.frames, null, 2)
+  );
+
+  return diagnostico;
 }
 
 async function localizarBotaoConverter(page) {
