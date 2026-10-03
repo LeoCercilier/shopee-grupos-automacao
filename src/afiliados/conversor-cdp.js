@@ -190,6 +190,28 @@ function validarLink(link) {
   }
 }
 
+function validarLinkCandidatoConversao(link) {
+  try {
+    const u = new URL(String(link || '').trim());
+
+    if (!/^https?:$/.test(u.protocol)) return false;
+
+    const host = u.hostname.toLowerCase();
+
+    if (host === 'affiliate.shopee.com.br') {
+      return false;
+    }
+
+    return (
+      host === 's.shopee.com.br' ||
+      host === 'shopee.com.br' ||
+      host.endsWith('.shopee.com.br')
+    );
+  } catch (_) {
+    return false;
+  }
+}
+
 function extrairLinhas(texto) {
   return String(texto || '')
     .split(/\r?\n/)
@@ -360,6 +382,13 @@ async function executarLote(ws, itens) {
 
   const antes = await diagnosticar(ws);
 
+  const textareasAntes = new Set(
+    (antes.textareas || [])
+      .map((x) => String(x.value || '').trim())
+      .filter(Boolean)
+  );
+
+
   if (!/^https:\/\/affiliate\.shopee\.com\.br\/offer\/custom_link/i.test(
     antes.url
   )) {
@@ -420,7 +449,7 @@ async function executarLote(ws, itens) {
 
       if (!campo) return false;
 
-      const valor = ${JSON.stringify(enviados.join('\\n'))};
+      const valor = ${JSON.stringify(enviados.join('\n'))};
 
       const setter =
         Object.getOwnPropertyDescriptor(
@@ -590,33 +619,43 @@ async function executarLote(ws, itens) {
   const candidatos = [];
 
   /*
-   * A Shopee pode renderizar os links personalizados fora do textarea.
-   * Capturamos textarea, input, anchor e URLs presentes no texto do DOM.
-   * A associação continua sendo feita exclusivamente pelo matcher
-   * estrutural; nunca pela posição dos resultados.
+   * Após a conversão, o Custom Link mantém o textarea de entrada
+   * e renderiza os links gerados em outro textarea.
+   *
+   * Não varrer o DOM inteiro: isso captura URLs de navegação,
+   * breadcrumbs, Central de Ajuda e outros elementos que não são
+   * resultado da conversão.
+   *
+   * A saída válida deve estar em textarea e ser diferente das URLs
+   * enviadas neste lote.
    */
-  const fontesResultado = [
-    ...(depois.urls || []),
-    ...(depois.anchors || []),
-    ...(depois.inputs || []).map((x) => x.value || ''),
-    ...(depois.textareas || []).map((x) => x.value || '')
-  ];
-
-  for (const fonte of fontesResultado) {
-    const linhas = extrairLinhas(fonte);
-
-    for (const linha of linhas) {
-      if (validarLink(linha)) candidatos.push(linha);
-    }
-  }
-
   const enviadosNorm = new Set(
     enviados.map(normalizarUrlLocal)
   );
 
-  const unicos = [...new Set(candidatos)].filter(
-    (link) => !enviadosNorm.has(normalizarUrlLocal(link))
-  );
+  const textareasResultado = (depois.textareas || [])
+    .map((x) => String(x.value || '').trim())
+    .filter(Boolean)
+    .filter((valor) => !textareasAntes.has(valor));
+
+  for (const valor of textareasResultado) {
+    const linhas = extrairLinhas(valor);
+
+    for (const linha of linhas) {
+      if (!validarLinkCandidatoConversao(linha)) continue;
+
+      const normalizado = normalizarUrlLocal(linha);
+
+      if (!normalizado || enviadosNorm.has(normalizado)) {
+        continue;
+      }
+
+      candidatos.push(linha);
+    }
+  }
+
+  const unicos = [...new Set(candidatos)];
+
 
   if (unicos.length === 0) {
     return {
@@ -624,6 +663,7 @@ async function executarLote(ws, itens) {
       motivo: 'resultado_links_nao_encontrado',
     };
   }
+
 
   /*
    * Para lote de 1 link, a evidência de associação será:
