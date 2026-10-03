@@ -217,8 +217,19 @@ async function diagnosticar(ws) {
       };
 
       const extrairUrls = (texto) => {
-        const encontrados = String(texto || '').match(/https?:\/\/[^\s"'<>]+/gi) || [];
-        return encontrados.map((x) => x.replace(/[),.;]+$/, '')).filter(Boolean);
+        const encontrados = String(texto || '')
+          .split(/\s+/)
+          .map((x) => x.trim().replace(/^[([{"']+|[),.;}"']+$/g, ''))
+          .filter(Boolean);
+
+        return encontrados.filter((x) => {
+          try {
+            const u = new URL(x);
+            return u.protocol === 'http:' || u.protocol === 'https:';
+          } catch (_) {
+            return false;
+          }
+        });
       };
 
       const elementos = [...document.querySelectorAll("*")].filter(vis);
