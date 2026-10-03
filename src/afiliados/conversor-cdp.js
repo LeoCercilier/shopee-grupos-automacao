@@ -243,7 +243,18 @@ async function diagnosticar(ws) {
        */
       const resultado_blocos = [...document.querySelectorAll('a')]
         .filter(vis)
-        .filter((a) => /^https?:\\/\\/(?:s\\.shopee\\.com\\.br|(?:[^/]+\\.)?shopee\\.com\\.br)/i.test(a.href))
+        .filter((a) => {
+          try {
+            const host = new URL(a.href).hostname.toLowerCase();
+            return (
+              host === 's.shopee.com.br' ||
+              host === 'shopee.com.br' ||
+              host.endsWith('.shopee.com.br')
+            );
+          } catch (_) {
+            return false;
+          }
+        })
         .map((a) => {
           const ancestrais = [];
           let node = a;
