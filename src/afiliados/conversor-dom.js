@@ -191,7 +191,114 @@ function originalBateComEnvio(url, enviados) {
   return null;
 }
 
+
+async function lerResultadosCustomLinkTextarea(page, enviados) {
+  const textareas = page.locator('textarea:visible');
+  const count = await textareas.count().catch(() => 0);
+
+  if (count < 2) {
+    return { encontrado: false };
+  }
+
+  const output = await textareas.nth(1).inputValue().catch(() => '');
+  const linhas = output
+    .split(/\r?\n/)
+    .map((x) => x.trim())
+    .filter(Boolean);
+
+  if (linhas.length !== enviados.length) {
+    return {
+      encontrado: true,
+      ok: false,
+      motivo: `matching_ambiguo: textarea de saída contém ${linhas.length} links para ${enviados.length} enviados`,
+    };
+  }
+
+  const usados = new Set();
+  const pares = [];
+
+  for (let i = 0; i < enviados.length; i++) {
+    const afiliado = linhas[i];
+
+    if (!/^https:\/\//i.test(afiliado)) {
+      return {
+        encontrado: true,
+        ok: false,
+        motivo: 'matching_ambiguo: resultado não é HTTPS',
+      };
+    }
+
+    let host;
+    try {
+      host = new URL(afiliado).hostname.toLowerCase();
+    } catch (_) {
+      return {
+        encontrado: true,
+        ok: false,
+        motivo: 'matching_ambiguo: resultado não é URL válida',
+      };
+    }
+
+    if (host !== 's.shopee.com.br' && host !== 'shope.ee') {
+      return {
+        encontrado: true,
+        ok: false,
+        motivo: 'matching_ambiguo: resultado não é link curto Shopee',
+      };
+    }
+
+    if (normalizarUrl(afiliado) === normalizarUrl(enviados[i].link_original)) {
+      return {
+        encontrado: true,
+        ok: false,
+        motivo: 'matching_ambiguo: resultado idêntico ao link original',
+      };
+    }
+
+    if (usados.has(afiliado)) {
+      return {
+        encontrado: true,
+        ok: false,
+        motivo: 'matching_ambiguo: links afiliados duplicados',
+      };
+    }
+
+    usados.add(afiliado);
+
+    pares.push({
+      original: enviados[i].link_original,
+      afiliado,
+      metodo: 'custom-link-textarea-ordem',
+      chave: enviados[i].chave,
+    });
+  }
+
+  return {
+    encontrado: true,
+    ok: true,
+    parcial: false,
+    pares,
+    metodo: 'custom-link-textarea-ordem',
+    detalhes: `associados=${pares.length}/${enviados.length}`,
+  };
+}
+
 async function lerResultadosDoDom(page, enviados) {
+  const custom = await lerResultadosCustomLinkTextarea(page, enviados);
+
+  if (custom.encontrado) {
+    if (!custom.ok) {
+      return {
+        ok: false,
+        motivo: 'matching_ambiguo',
+        detalhes: custom.motivo,
+        pares: [],
+      };
+    }
+
+    return custom;
+  }
+
   const pares = [];
   const usadosChave = new Set();
   const usadosAfil = new Set();
