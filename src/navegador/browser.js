@@ -1,4 +1,4 @@
-'use strict'; 
+'use strict';
 
 /**
  * Gerencia o navegador Playwright com perfil persistente.
@@ -7,12 +7,15 @@
  * - Linux
  * - COGO / ambiente Linux no Android
  * - computador Linux
+ * - GitHub Actions (sessão via BROWSER_STORAGE_STATE_B64)
  *
- * A sessão fica em .browser-session/ e nunca deve ser versionada.
+ * A sessão local fica em .browser-session/ e nunca deve ser versionada.
+ * Em CI, use o Secret BROWSER_STORAGE_STATE_B64 (storageState Playwright em base64).
  */
 
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
 const { ensureDir } = require('../utils');
 
 const ROOT = path.join(__dirname, '..', '..');
@@ -44,12 +47,47 @@ function encontrarChromium() {
   ];
 
   for (const caminho of candidatos) {
-    if (fs.existsSync(caminho)) {
+    if (caminho && fs.existsSync(caminho)) {
       return caminho;
     }
   }
 
   return null;
+}
+
+/**
+ * Decodifica BROWSER_STORAGE_STATE_B64 (storageState Playwright em JSON base64).
+ * Não grava cookies/tokens em disco versionado — apenas retorna o objeto em memória.
+ * Retorna null se a variável não estiver definida.
+ */
+function obterStorageStateDeEnv() {
+  const b64 = String(process.env.BROWSER_STORAGE_STATE_B64 || '').trim();
+  if (!b64) return null;
+
+  let json;
+  try {
+    json = Buffer.from(b64, 'base64').toString('utf8');
+  } catch (err) {
+    throw new Error(
+      'BROWSER_STORAGE_STATE_B64 inválido (base64): ' + (err.message || String(err))
+    );
+  }
+
+  let state;
+  try {
+    state = JSON.parse(json);
+  } catch (err) {
+    throw new Error(
+      'BROWSER_STORAGE_STATE_B64 não é JSON válido de storageState: ' +
+        (err.message || String(err))
+    );
+  }
+
+  if (!state || typeof state !== 'object') {
+    throw new Error('BROWSER_STORAGE_STATE_B64: storageState deve ser um objeto JSON.');
+  }
+
+  return state;
 }
 
 function obterArgumentosNavegador() {
@@ -70,13 +108,23 @@ function obterArgumentosNavegador() {
     String(process.env.BROWSER_NO_SANDBOX || 'false').toLowerCase() === 'true';
 
   if (semSandbox) {
-    args.push(
-      '--no-sandbox',
-      '--disable-setuid-sandbox'
-    );
+    args.push('--no-sandbox', '--disable-setuid-sandbox');
   }
 
   return args;
+}
+
+/**
+ * Diretório do perfil persistente.
+ * Com storageState de CI, usa diretório temporário para não misturar com .browser-session local.
+ */
+function obterUserDataDir(storageState) {
+  if (storageState) {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'sga-browser-'));
+    return dir;
+  }
+  ensureDir(SESSION_DIR);
+  return SESSION_DIR;
 }
 
 async function criarContexto(opcoes = {}) {
@@ -90,18 +138,22 @@ async function criarContexto(opcoes = {}) {
     );
   }
 
-  ensureDir(SESSION_DIR);
   ensureDir(SCREENSHOTS_DIR);
+
+  const storageState =
+    opcoes.storageState != null
+      ? opcoes.storageState
+      : obterStorageStateDeEnv();
 
   const headless =
     opcoes.headless != null
       ? Boolean(opcoes.headless)
-      : String(
-          process.env.BROWSER_HEADLESS || 'false'
-        ).toLowerCase() === 'true';
+      : String(process.env.BROWSER_HEADLESS || 'false').toLowerCase() ===
+        'true';
 
-  const executablePath =
-    opcoes.executablePath || encontrarChromium();
+  const executablePath = opcoes.executablePath || encontrarChromium();
+
+  const userDataDir = obterUserDataDir(storageState);
 
   const opcoesChromium = {
     headless,
@@ -114,6 +166,11 @@ async function criarContexto(opcoes = {}) {
     args: obterArgumentosNavegador(),
     acceptDownloads: true,
   };
+
+  if (storageState) {
+    opcoesChromium.storageState = storageState;
+    console.log('🔐 storageState carregado de BROWSER_STORAGE_STATE_B64 (em memória).');
+  }
 
   /*
    * Se existir Chromium instalado pelo sistema,
@@ -131,27 +188,21 @@ async function criarContexto(opcoes = {}) {
   } else {
     console.log('⚠️ Nenhum Chromium do sistema encontrado.');
     console.log('');
-    console.log(
-      'Instale um Chromium compatível ou defina:'
-    );
-    console.log(
-      'BROWSER_EXECUTABLE_PATH=/caminho/para/chromium'
-    );
+    console.log('Instale um Chromium compatível ou defina:');
+    console.log('BROWSER_EXECUTABLE_PATH=/caminho/para/chromium');
     console.log('');
   }
 
   if (
-    String(process.env.BROWSER_NO_SANDBOX || 'false').toLowerCase() ===
-    'true'
+    String(process.env.BROWSER_NO_SANDBOX || 'false').toLowerCase() === 'true'
   ) {
     console.log('⚠️ Chromium executando sem sandbox.');
   }
 
-  const context =
-    await playwright.chromium.launchPersistentContext(
-      SESSION_DIR,
-      opcoesChromium
-    );
+  const context = await playwright.chromium.launchPersistentContext(
+    userDataDir,
+    opcoesChromium
+  );
 
   return context;
 }
@@ -171,10 +222,7 @@ function caminhoScreenshot(nome) {
     .replace(/[^a-zA-Z0-9_-]/g, '_')
     .slice(0, 80);
 
-  return path.join(
-    SCREENSHOTS_DIR,
-    `${Date.now()}-${safe}.png`
-  );
+  return path.join(SCREENSHOTS_DIR, `${Date.now()}-${safe}.png`);
 }
 
 module.exports = {
@@ -184,4 +232,5 @@ module.exports = {
   novaPagina,
   caminhoScreenshot,
   encontrarChromium,
+  obterStorageStateDeEnv,
 };

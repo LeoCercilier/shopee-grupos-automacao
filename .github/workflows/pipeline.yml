@@ -19,7 +19,7 @@ permissions:
 jobs:
   pipeline:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
 
     steps:
       - name: Checkout
@@ -34,23 +34,46 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+
       - name: Syntax check
         run: npm test
 
-      - name: Run pipeline (coleta + classificação + seleção + publicador)
+      - name: Run pipeline (coleta + classificação + seleção + conversão dry-run + publicador)
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
           COLETOR_LIMIT: "100"
           FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
           PUBLICAR: ${{ github.event.inputs.publicar || 'false' }}
+          # Conversão afiliados (navegador) — dry-run seguro nesta etapa
+          AFILIADOS_CONVERTER: "true"
+          AFILIADOS_INCLUIR_CLASSIFICADAS: "false"
+          SHOPEE_CONVERSAO_URL: ${{ secrets.SHOPEE_CONVERSAO_URL }}
+          SHOPEE_CONVERSAO_DRY_RUN: "true"
+          BROWSER_STORAGE_STATE_B64: ${{ secrets.BROWSER_STORAGE_STATE_B64 }}
+          BROWSER_HEADLESS: "true"
+          BROWSER_NO_SANDBOX: "true"
+          # Publicação browser em modo preparar (não publica)
+          PUBLICADOR: "navegador"
+          MODO_PUBLICACAO_BROWSER: "preparar"
+          EXIGIR_LINK_AFILIADO: "true"
         run: npm run pipeline
 
       - name: Commit data artifacts (se houver mudanças)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/ofertas-brutas.json data/ofertas-classificadas.json data/selecao-atual.json data/historico-publicacoes.json data/resultado-publicacao.json || true
+          git add \
+            data/ofertas-brutas.json \
+            data/ofertas-classificadas.json \
+            data/selecao-atual.json \
+            data/historico-publicacoes.json \
+            data/resultado-publicacao.json \
+            data/fila-links-afiliados.json \
+            data/links-afiliados.json \
+            || true
           if git diff --staged --quiet; then
             echo "Nenhuma alteração em data/ para commit."
           else
