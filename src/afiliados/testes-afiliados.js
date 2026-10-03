@@ -132,6 +132,7 @@ try {
   assert.strictEqual(dry.DRY_RUN, true);
   ok('DRY_RUN true via env');
   delete process.env.SHOPEE_CONVERSAO_DRY_RUN;
+  delete process.env.BROWSER_DRY_RUN;
   delete require.cache[require.resolve('./conversor-navegador')];
   const norm = require('./conversor-navegador');
   assert.strictEqual(norm.DRY_RUN, false);

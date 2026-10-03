@@ -868,38 +868,51 @@ async function executarLote(ws, itens) {
   }
 
   /*
-   * Lotes de 2–5 links continuam usando somente evidência estrutural.
-   * Nunca associar resultados pela posição.
+   * Lotes de 2–5 links:
+   *
+   * O Custom Link da Shopee apresenta os resultados no modal na mesma
+   * ordem dos links enviados. Portanto:
+   *
+   * original[0] -> resultado[0]
+   * original[1] -> resultado[1]
+   * ...
+   *
+   * A associação por ordem é aceita SOMENTE para os resultados capturados
+   * dos textareas novos do modal. Nunca usamos URLs genéricas do body.
+   *
+   * Antes de gravar qualquer conversão, validamos TODOS os pares:
+   * - quantidade de resultados == quantidade de originais;
+   * - URL de saída válida;
+   * - saída diferente da entrada;
+   * - destino da entrada resolvido;
+   * - destino da saída resolvido;
+   * - mesma oferta (shop_id + item_id).
+   *
+   * Se qualquer item falhar, o lote inteiro é rejeitado e nada é gravado.
    */
+  if (unicos.length !== itens.length) {
+    return {
+      ok: false,
+      motivo: 'matching_ambiguo',
+      candidatos: unicos.length,
+      esperados: itens.length,
+    };
+  }
+
   const conversoes = [];
-  const usados = new Set();
 
-  for (const item of itens) {
-    const matches = unicos.filter((link) =>
-      correspondeEstruturalmente(link, item)
-    );
+  for (let indice = 0; indice < itens.length; indice += 1) {
+    const item = itens[indice];
+    const afiliado = unicos[indice];
 
-    if (matches.length !== 1) {
+    if (!validarLinkCandidatoConversao(afiliado)) {
       return {
         ok: false,
-        motivo: 'matching_ambiguo',
+        motivo: 'link_afiliado_invalido',
         chave: item.chave,
-        candidatos: matches.length,
+        indice,
       };
     }
-
-    const afiliado = matches[0];
-
-    if (usados.has(afiliado)) {
-      return {
-        ok: false,
-        motivo: 'matching_ambiguo',
-        chave: item.chave,
-        candidatos: 2,
-      };
-    }
-
-    usados.add(afiliado);
 
     if (
       normalizarUrlLocal(item.link_original) ===
@@ -909,23 +922,66 @@ async function executarLote(ws, itens) {
         ok: false,
         motivo: 'link_nao_convertido',
         chave: item.chave,
+        indice,
       };
     }
+
+    console.log(
+      `Validando destino ${indice + 1}/${itens.length}: ${item.chave}`
+    );
+
+    const destinoOrigem = await resolverDestino(
+      item.link_original
+    );
+
+    if (!destinoOrigem) {
+      return {
+        ok: false,
+        motivo: 'destino_origem_nao_resolvido',
+        chave: item.chave,
+        indice,
+      };
+    }
+
+    const destinoSaida = await resolverDestino(afiliado);
+
+    if (!destinoSaida) {
+      return {
+        ok: false,
+        motivo: 'destino_saida_nao_resolvido',
+        chave: item.chave,
+        indice,
+        link_afiliado: afiliado,
+      };
+    }
+
+    console.log(`Destino origem: ${destinoOrigem}`);
+    console.log(`Destino saída:  ${destinoSaida}`);
+
+    if (!mesmaOferta(destinoOrigem, destinoSaida)) {
+      return {
+        ok: false,
+        motivo: 'destino_oferta_diferente',
+        chave: item.chave,
+        indice,
+        destino_origem: destinoOrigem,
+        destino_saida: destinoSaida,
+      };
+    }
+
+    console.log('✓ Destino confirmado: mesma oferta.');
 
     conversoes.push({
       item,
       link_afiliado: afiliado,
+      destino_origem: destinoOrigem,
+      destino_saida: destinoSaida,
     });
   }
 
-  if (conversoes.length !== itens.length) {
-    return {
-      ok: false,
-      motivo: 'matching_ambiguo',
-      candidatos: conversoes.length,
-    };
-  }
-
+  /*
+   * Somente depois de validar TODOS os pares do lote fazemos as gravações.
+   */
   for (const conversao of conversoes) {
     const oferta = {
       id: conversao.item.produto_id,
@@ -938,6 +994,8 @@ async function executarLote(ws, itens) {
       conversao.link_afiliado,
       {
         origem: 'cdp-local',
+        destino_origem: conversao.destino_origem,
+        destino_saida: conversao.destino_saida,
       }
     );
 
@@ -954,6 +1012,8 @@ async function executarLote(ws, itens) {
       chave: x.item.chave,
       original: x.item.link_original,
       afiliado: x.link_afiliado,
+      destino_origem: x.destino_origem,
+      destino_saida: x.destino_saida,
     })),
   };
 }
