@@ -1,5 +1,18 @@
 {
   "versao": 1,
-  "itens": [],
-  "atualizado_em": null
+  "itens": [
+    {
+      "chave": "id:22198784845",
+      "produto_id": "22198784845",
+      "titulo": "Guarda-Chuva Grande Automático - Fibra de Vidro Blackout para Proteção UV, Reforçado para Tempestade！",
+      "link_original": "https://s.shopee.com.br/3VkjBEbDRM",
+      "link_original_norm": "https://s.shopee.com.br/3vkjbebdrm",
+      "status": "pendente",
+      "motivo": "sem_link_afiliado_confirmado_no_cache",
+      "tentativas": 0,
+      "criado_em": "2026-10-03T14:19:20.455Z",
+      "atualizado_em": "2026-10-03T14:19:20.455Z"
+    }
+  ],
+  "atualizado_em": "2026-10-03T14:19:20.455Z"
 }
