@@ -252,56 +252,7 @@ async function diagnosticar(ws) {
        * - outros links/inputs/textareas contidos no bloco;
        * - atributos data-*.
        */
-      const resultado_blocos = [...document.querySelectorAll('a')]
-        .filter(vis)
-        .filter((a) => {
-          try {
-            const host = new URL(a.href).hostname.toLowerCase();
-            return (
-              host === 's.shopee.com.br' ||
-              host === 'shopee.com.br' ||
-              host.endsWith('.shopee.com.br')
-            );
-          } catch (_) {
-            return false;
-          }
-        })
-        .map((a) => {
-          const ancestrais = [];
-          let node = a;
-
-          for (let nivel = 0; nivel < 5 && node; nivel++, node = node.parentElement) {
-            const texto = (node.innerText || node.textContent || '').trim();
-
-            const urlsDoBloco = [
-              ...[...node.querySelectorAll('a')].map((x) => x.href || ''),
-              ...[...node.querySelectorAll('input, textarea')].map((x) => x.value || ''),
-            ].flatMap(extrairUrls);
-
-            const data = {};
-            for (const attr of [...node.attributes || []]) {
-              if (attr.name.startsWith('data-')) {
-                data[attr.name] = attr.value;
-              }
-            }
-
-            ancestrais.push({
-              nivel,
-              tag: node.tagName || '',
-              id: node.id || '',
-              className: typeof node.className === 'string' ? node.className : '',
-              texto: texto.slice(0, 1200),
-              urls: [...new Set(urlsDoBloco)],
-              data
-            });
-          }
-
-          return {
-            href: a.href || '',
-            texto: (a.innerText || a.textContent || '').trim(),
-            ancestrais
-          };
-        });
+      const resultado_blocos = [];
 
       return {
         url: location.href,
