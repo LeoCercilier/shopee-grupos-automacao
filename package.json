@@ -29,7 +29,8 @@
     "afiliados:processar-lotes": "node src/afiliados/processar-lotes.js",
     "afiliados:converter": "node src/afiliados/conversor-navegador.js",
     "afiliados:converter:teste": "SHOPEE_CONVERSAO_DRY_RUN=true node src/afiliados/conversor-navegador.js",
-    "test:afiliados": "node src/afiliados/testes-afiliados.js"
+    "test:afiliados": "node src/afiliados/testes-afiliados.js",
+    "afiliados:cdp": "node src/afiliados/conversor-cdp.js"
   },
   "engines": {
     "node": ">=18"
