@@ -80,21 +80,84 @@ async function verificarSessaoShopee(page, shopeeUrl) {
 }
 
 async function localizarCampoLinks(page) {
-  const candidatos = [
-    page.getByPlaceholder(/link da shopee|shopee link|link personalizado|cole.*link|paste.*link|product link/i),
-    page.locator('textarea').first(),
-    page.getByRole('textbox').first(),
-    page.locator('textarea[placeholder*="link" i]'),
-    page.locator('input[type="text"][placeholder*="link" i]'),
-    page.locator('[contenteditable="true"]').first(),
-  ];
-  for (const loc of candidatos) {
+  const frames = page.frames();
+
+  for (const frame of frames) {
+    const candidatos = [
+      frame.getByPlaceholder(/link da shopee|shopee link|link personalizado|cole.*link|paste.*link|product link/i),
+      frame.locator('textarea[placeholder*="link" i]'),
+      frame.locator('input[type="text"][placeholder*="link" i]'),
+      frame.locator('input[name*="link" i], textarea[name*="link" i]'),
+      frame.locator('input[id*="link" i], textarea[id*="link" i]'),
+      frame.locator('[aria-label*="link" i]'),
+      frame.locator('[contenteditable="true"]'),
+    ];
+
+    for (const loc of candidatos) {
+      try {
+        const n = await loc.count().catch(() => 0);
+        for (let i = 0; i < n; i++) {
+          const el = loc.nth(i);
+          if (await el.isVisible({ timeout: 1000 }).catch(() => false)) {
+            return el;
+          }
+        }
+      } catch (_) {}
+    }
+
+    // Fallback por label/texto associado a um campo.
     try {
-      const el = loc.first();
-      if (await el.isVisible({ timeout: 1500 }).catch(() => false)) return el;
+      const campos = frame.locator('input, textarea, [contenteditable="true"]');
+      const n = await campos.count().catch(() => 0);
+
+      for (let i = 0; i < n; i++) {
+        const el = campos.nth(i);
+        if (!(await el.isVisible({ timeout: 500 }).catch(() => false))) continue;
+
+        const meta = [
+          await el.getAttribute('placeholder').catch(() => ''),
+          await el.getAttribute('aria-label').catch(() => ''),
+          await el.getAttribute('name').catch(() => ''),
+          await el.getAttribute('id').catch(() => ''),
+        ].join(' ');
+
+        if (/link|shopee|personalizado|custom/i.test(meta)) {
+          return el;
+        }
+      }
     } catch (_) {}
   }
+
   return null;
+}
+
+async function diagnosticarCamposLinks(page) {
+  const encontrados = [];
+
+  for (const [fi, frame] of page.frames().entries()) {
+    try {
+      const campos = frame.locator('input, textarea, [contenteditable="true"]');
+      const n = await campos.count().catch(() => 0);
+
+      for (let i = 0; i < Math.min(n, 50); i++) {
+        const el = campos.nth(i);
+        if (!(await el.isVisible({ timeout: 500 }).catch(() => false))) continue;
+
+        encontrados.push({
+          frame: fi,
+          tag: await el.evaluate((node) => node.tagName).catch(() => ''),
+          type: await el.getAttribute('type').catch(() => ''),
+          placeholder: await el.getAttribute('placeholder').catch(() => ''),
+          aria_label: await el.getAttribute('aria-label').catch(() => ''),
+          name: await el.getAttribute('name').catch(() => ''),
+          id: await el.getAttribute('id').catch(() => ''),
+        });
+      }
+    } catch (_) {}
+  }
+
+  console.log('🔎 Campos visíveis detectados:', JSON.stringify(encontrados));
+  return encontrados;
 }
 
 async function localizarBotaoConverter(page) {
@@ -370,4 +433,5 @@ module.exports = {
   pareceAfiliadoOuEncurtado,
   originalBateComEnvio,
   afiliadoApontaParaOriginal,
+  diagnosticarCamposLinks,
 };

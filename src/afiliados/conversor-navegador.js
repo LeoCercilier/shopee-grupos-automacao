@@ -27,6 +27,7 @@ const {
   detectarBloqueioShopee,
   verificarSessaoShopee,
   localizarCampoLinks,
+  diagnosticarCamposLinks,
   localizarBotaoConverter,
   lerResultadosDoDom,
 } = require('./conversor-dom');
@@ -88,6 +89,7 @@ function persistirResultado(obj) {
 async function converterLote(page, itens) {
   const campo = await localizarCampoLinks(page);
   if (!campo) {
+    await diagnosticarCamposLinks(page);
     return {
       ok: false,
       motivo: 'campo_links_nao_encontrado',
