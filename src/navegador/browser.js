@@ -168,7 +168,6 @@ async function criarContexto(opcoes = {}) {
   };
 
   if (storageState) {
-    opcoesChromium.storageState = storageState;
     console.log('🔐 storageState carregado de BROWSER_STORAGE_STATE_B64 (em memória).');
   }
 
@@ -203,6 +202,53 @@ async function criarContexto(opcoes = {}) {
     userDataDir,
     opcoesChromium
   );
+
+  if (storageState) {
+    const cookies = Array.isArray(storageState.cookies)
+      ? storageState.cookies
+      : [];
+
+    if (cookies.length > 0) {
+      await context.addCookies(cookies);
+    }
+
+    const origins = Array.isArray(storageState.origins)
+      ? storageState.origins
+      : [];
+
+    if (origins.length > 0) {
+      await context.addInitScript((states) => {
+        try {
+          const origemAtual = window.location.origin;
+          const origem = states.find(
+            (item) => item && item.origin === origemAtual
+          );
+
+          if (!origem || !Array.isArray(origem.localStorage)) {
+            return;
+          }
+
+          for (const entrada of origem.localStorage) {
+            if (!entrada || typeof entrada.name !== 'string') {
+              continue;
+            }
+
+            window.localStorage.setItem(
+              entrada.name,
+              String(entrada.value == null ? '' : entrada.value)
+            );
+          }
+        } catch (_) {
+          // Não interromper a navegação se o storage ainda não estiver disponível.
+        }
+      }, origins);
+    }
+
+    console.log(
+      '🔐 Sessão autenticada aplicada:',
+      `${cookies.length} cookies e ${origins.length} origens de localStorage.`
+    );
+  }
 
   return context;
 }

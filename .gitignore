@@ -31,3 +31,5 @@ data/imports/
 data/relatorio-afiliados-selecao.json
 
 data/resultado-conversao-navegador.json
+storage-state.json
+storage-state.b64
