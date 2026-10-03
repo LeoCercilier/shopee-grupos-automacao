@@ -42,8 +42,6 @@ jobs:
 
       - name: Diagnóstico Chromium Shopee
         env:
-          BROWSER_HEADLESS: "true"
-          BROWSER_NO_SANDBOX: "true"
           BROWSER_STORAGE_STATE_B64: ${{ secrets.BROWSER_STORAGE_STATE_B64 }}
         run: |
           echo "=== AMBIENTE ==="
@@ -60,34 +58,17 @@ jobs:
 
           echo
           echo "=== PLAYWRIGHT ==="
-          node - <<'NODE'
-          const fs = require('fs');
-          const p = require('playwright/package.json');
-          console.log('playwright:', p.version);
-          NODE
+          node -e "console.log('playwright:', require('playwright/package.json').version)"
 
           echo
           echo "=== CONFIG BROWSER ==="
-          echo "BROWSER_HEADLESS=$BROWSER_HEADLESS"
-          echo "BROWSER_NO_SANDBOX=$BROWSER_NO_SANDBOX"
+          echo "BROWSER_HEADLESS=true"
+          echo "BROWSER_NO_SANDBOX=true"
 
           echo
           echo "=== STORAGE STATE ==="
           if [ -n "$BROWSER_STORAGE_STATE_B64" ]; then
-            python - <<'PY2'
-import base64, json, os
-
-raw = base64.b64decode(os.environ["BROWSER_STORAGE_STATE_B64"])
-d = json.loads(raw)
-
-print("storageState bytes:", len(raw))
-print("cookies:", len(d.get("cookies", [])))
-print("origins:", len(d.get("origins", [])))
-print("localStorage:", sum(
-    len(o.get("localStorage", []))
-    for o in d.get("origins", [])
-))
-PY2
+            python -c 'import base64,json,os; d=json.loads(base64.b64decode(os.environ["BROWSER_STORAGE_STATE_B64"])); print("storageState bytes:", len(base64.b64decode(os.environ["BROWSER_STORAGE_STATE_B64"]))); print("cookies:", len(d.get("cookies", []))); print("origins:", len(d.get("origins", []))); print("localStorage:", sum(len(o.get("localStorage", [])) for o in d.get("origins", [])))'
           else
             echo "storageState ausente"
           fi
