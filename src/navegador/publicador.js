@@ -28,6 +28,7 @@ const {
   preencherTextoCDP,
   clicarPublicarCDP,
   confirmarPublicacaoCDP,
+  anexarImagemCDP,
   sleep: sleepCDP,
 } = require('./cdp');
 
@@ -396,6 +397,21 @@ async function publicarUmaCDP({ item, base, texto }) {
     console.log('✅ Compositor aberto');
     console.log('✅ Editor Lexical localizado');
 
+    const imagem = await anexarImagemCDP(
+      conexao,
+      item.oferta?.imagem
+    );
+
+    console.log('');
+    console.log('=== IMAGEM ===');
+    console.log(JSON.stringify(imagem, null, 2));
+
+    if (item.oferta?.imagem && !imagem.anexado) {
+      throw new Error(
+        `Upload da imagem falhou: ${imagem.motivo}`
+      );
+    }
+
     // --------------------------------------------------------
     // Inserir texto
     // --------------------------------------------------------
@@ -421,7 +437,7 @@ async function publicarUmaCDP({ item, base, texto }) {
       oferta:
         IS_CURSO
           ? true
-          : textoFinal.includes('🔥 OFERTA DO DIA'),
+          : textoFinal.includes('#pub'),
       titulo:
         Boolean(item.oferta?.titulo) &&
         textoFinal.includes(item.oferta.titulo),
@@ -712,8 +728,13 @@ async function publicarUma({ dryRun = false } = {}) {
   // ========================================================
 
   if (USAR_CDP) {
+    const itemPublicacao = {
+      ...item,
+      oferta,
+    };
+
     return await publicarUmaCDP({
-      item,
+      item: itemPublicacao,
       base,
       texto,
     });

@@ -31,6 +31,20 @@ function gerarSubtitulo(oferta) {
   const titulo = String(oferta.titulo || '').trim();
   const t = titulo.toLowerCase();
 
+  const subtituloExistente = [
+    oferta.subtitulo,
+    oferta.descricao_curta,
+    oferta.descricao_curta_produto,
+  ]
+    .map((valor) => String(valor || '').trim())
+    .find((valor) => valor.length >= 8);
+
+  if (subtituloExistente) {
+    return subtituloExistente.startsWith('✨')
+      ? subtituloExistente
+      : `✨ ${subtituloExistente}`;
+  }
+
   const regras = [
     { palavras: ['siàge', 'siage'], texto: '✨ Reconstrução profunda para os cuidados com os cabelos' },
     {
@@ -162,12 +176,12 @@ function gerarSubtitulo(oferta) {
     return '🐾 Para a rotina do seu pet';
   }
 
-  return '✨ Confira esta oferta na Shopee';
+  return '✨ Mais praticidade para sua rotina';
 }
 
 function montarTextoPublicacao(oferta) {
   return [
-    '🔥 OFERTA DO DIA',
+    '🔥',
     '',
     oferta.titulo || '',
     '',
@@ -177,6 +191,8 @@ function montarTextoPublicacao(oferta) {
     '',
     '🛍️ Confira na Shopee:',
     oferta.link || '',
+    '',
+    '#pub',
   ].join('\n');
 }
 
@@ -281,6 +297,9 @@ function selecionar({ maxPorGrupo = 1, maxTotal = Infinity } = {}) {
           link: oferta.link,
           imagem: oferta.imagem,
           nicho: oferta.nicho,
+          subtitulo: oferta.subtitulo || null,
+          descricao_curta: oferta.descricao_curta || null,
+          descricao_curta_produto: oferta.descricao_curta_produto || null,
         },
         texto: montarTextoPublicacao(oferta),
         status: 'pendente',

@@ -312,6 +312,419 @@ async function abrirCompositorCDP(Runtime, Input) {
 }
 
 
+
+
+async function anexarImagemCDP(conexao, imagem) {
+  const fs = require('fs');
+  const path = require('path');
+
+  if (!imagem) {
+    return {
+      ok: true,
+      anexado: false,
+      motivo: 'Oferta sem imagem'
+    };
+  }
+
+  const DOM = conexao.client.DOM;
+  const Runtime = conexao.Runtime;
+
+  let arquivo = null;
+  let diretorioTemp = null;
+
+  try {
+    await DOM.enable();
+
+    // --------------------------------------------------------
+    // Baixar a imagem para um arquivo local temporário
+    // --------------------------------------------------------
+
+    diretorioTemp = path.join(
+      process.cwd(),
+      '.tmp-facebook-image'
+    );
+
+    fs.mkdirSync(diretorioTemp, { recursive: true });
+
+    const extensao = (() => {
+      try {
+        const url = new URL(String(imagem));
+        const ext = path.extname(url.pathname).toLowerCase();
+
+        if (['.jpg', '.jpeg', '.png', '.webp', '.gif', '.heic', '.heif'].includes(ext)) {
+          return ext;
+        }
+      } catch (_) {}
+
+      return '.jpg';
+    })();
+
+    arquivo = path.join(
+      diretorioTemp,
+      `oferta-${Date.now()}${extensao}`
+    );
+
+    if (/^data:/i.test(String(imagem))) {
+      const match = String(imagem).match(/^data:[^;]+;base64,(.+)$/);
+
+      if (!match) {
+        throw new Error('Imagem data: inválida');
+      }
+
+      fs.writeFileSync(
+        arquivo,
+        Buffer.from(match[1], 'base64')
+      );
+    } else {
+      const resposta = await fetch(String(imagem), {
+        redirect: 'follow'
+      });
+
+      if (!resposta.ok) {
+        throw new Error(
+          `Falha ao baixar imagem: HTTP ${resposta.status}`
+        );
+      }
+
+      const buffer = Buffer.from(
+        await resposta.arrayBuffer()
+      );
+
+      if (!buffer.length) {
+        throw new Error('Imagem baixada está vazia');
+      }
+
+      fs.writeFileSync(arquivo, buffer);
+    }
+
+    const tamanho = fs.statSync(arquivo).size;
+
+    if (!tamanho) {
+      throw new Error('Arquivo temporário da imagem está vazio');
+    }
+
+    console.log(`🖼️ Imagem baixada: ${tamanho} bytes`);
+
+    // --------------------------------------------------------
+    // Encontrar o input de arquivo associado ao compositor
+    // --------------------------------------------------------
+
+    // --------------------------------------------------------
+    // Encontrar diretamente o input[type=file] do compositor.
+    //
+    // Não usar índice vindo de Runtime.evaluate para mapear
+    // nodeId: Runtime e DOM podem apresentar árvores diferentes.
+    // --------------------------------------------------------
+
+    let documento = await DOM.getDocument({
+      depth: -1,
+      pierce: true
+    });
+
+    let dialogos = await DOM.querySelectorAll({
+      nodeId: documento.root.nodeId,
+      selector: 'div[role="dialog"]'
+    });
+
+    let nodeId = null;
+
+    // Primeiro: procurar dentro dos diálogos já existentes.
+    for (const dialogNodeId of (dialogos.nodeIds || [])) {
+      const inputs = await DOM.querySelectorAll({
+        nodeId: dialogNodeId,
+        selector: 'input[type="file"]'
+      });
+
+      if (inputs.nodeIds && inputs.nodeIds.length) {
+        nodeId = inputs.nodeIds[0];
+        console.log('📎 Input de imagem encontrado dentro do diálogo');
+        break;
+      }
+    }
+
+    // Segundo: se não encontrou, clicar no botão Foto/vídeo
+    // dentro do compositor e procurar novamente.
+    if (!nodeId) {
+      console.log(
+        'ℹ️ Input não encontrado; procurando botão Foto/vídeo...'
+      );
+
+      const cliqueFoto = await avaliar(Runtime, `(() => {
+        const dialogos = [
+          ...document.querySelectorAll('div[role="dialog"]')
+        ];
+
+        for (const dialog of dialogos) {
+          const candidatos = [
+            ...dialog.querySelectorAll(
+              '[aria-label*="Foto" i], ' +
+              '[aria-label*="Photo" i], ' +
+              '[aria-label*="vídeo" i], ' +
+              '[aria-label*="video" i]'
+            )
+          ];
+
+          for (const el of candidatos) {
+            const style = getComputedStyle(el);
+            const rect = el.getBoundingClientRect();
+
+            if (
+              style.display !== 'none' &&
+              style.visibility !== 'hidden' &&
+              rect.width > 0 &&
+              rect.height > 0
+            ) {
+              el.click();
+
+              return JSON.stringify({
+                ok: true,
+                tag: el.tagName,
+                aria: el.getAttribute('aria-label')
+              });
+            }
+          }
+        }
+
+        return JSON.stringify({
+          ok: false,
+          motivo: 'Botão Foto/vídeo não encontrado'
+        });
+      })()`);
+
+      console.log(
+        '📷 Resultado clique Foto/vídeo:',
+        cliqueFoto
+      );
+
+      await sleep(1000);
+
+      documento = await DOM.getDocument({
+        depth: -1,
+        pierce: true
+      });
+
+      dialogos = await DOM.querySelectorAll({
+        nodeId: documento.root.nodeId,
+        selector: 'div[role="dialog"]'
+      });
+
+      for (const dialogNodeId of (dialogos.nodeIds || [])) {
+        const inputs = await DOM.querySelectorAll({
+          nodeId: dialogNodeId,
+          selector: 'input[type="file"]'
+        });
+
+        if (inputs.nodeIds && inputs.nodeIds.length) {
+          nodeId = inputs.nodeIds[0];
+
+          console.log(
+            '📎 Input de imagem encontrado após Foto/vídeo'
+          );
+
+          break;
+        }
+      }
+    }
+
+    if (!nodeId) {
+      throw new Error(
+        'Input[type=file] não encontrado dentro do diálogo do compositor'
+      );
+    }
+
+    // --------------------------------------------------------
+    // Entregar arquivo diretamente ao input[type=file]
+    // --------------------------------------------------------
+
+    await DOM.setFileInputFiles({
+      nodeId,
+      files: [arquivo]
+    });
+
+    console.log('📤 Arquivo entregue ao input[type=file]');
+
+    // --------------------------------------------------------
+    // DIAGNÓSTICO PÓS-UPLOAD
+    // --------------------------------------------------------
+
+    await sleep(8000);
+
+    const diagnosticoUpload = await avaliar(Runtime, `(() => {
+      try {
+        const inputs = Array.from(
+          document.querySelectorAll('input[type="file"]')
+        ).map((el, index) => ({
+          index,
+          files: el.files ? el.files.length : 0,
+          accept: el.getAttribute('accept') || '',
+          aria: el.getAttribute('aria-label') || ''
+        }));
+
+        const imgs = Array.from(
+          document.querySelectorAll('img')
+        ).filter(el => {
+          try {
+            const r = el.getBoundingClientRect();
+            return r.width > 40 && r.height > 40;
+          } catch (_) {
+            return false;
+          }
+        }).length;
+
+        const videos = Array.from(
+          document.querySelectorAll('video')
+        ).filter(el => {
+          try {
+            const r = el.getBoundingClientRect();
+            return r.width > 40 && r.height > 40;
+          } catch (_) {
+            return false;
+          }
+        }).length;
+
+        const canvases = Array.from(
+          document.querySelectorAll('canvas')
+        ).filter(el => {
+          try {
+            return el.width > 40 && el.height > 40;
+          } catch (_) {
+            return false;
+          }
+        }).length;
+
+        const bodyTexto = String(
+          document.body && document.body.innerText || ''
+        );
+
+        return JSON.stringify({
+          ok: true,
+          inputs,
+          imagensVisiveis: imgs,
+          videosVisiveis: videos,
+          canvasesVisiveis: canvases,
+          indiciosTexto:
+            /remover foto|remove photo|editar foto|edit photo|foto adicionada|photo added|adicionar foto|add photo/i
+              .test(bodyTexto)
+        });
+      } catch (erro) {
+        return JSON.stringify({
+          ok: false,
+          erro: String(
+            erro && erro.message || erro
+          )
+        });
+      }
+    })()`);
+
+    console.log('');
+    console.log('=== DIAGNÓSTICO PÓS-UPLOAD ===');
+    console.log(diagnosticoUpload);
+
+    // --------------------------------------------------------
+    // Confirmar que o Facebook recebeu/processou a imagem
+    // --------------------------------------------------------
+
+    let confirmado = false;
+
+    for (let tentativa = 0; tentativa < 20; tentativa++) {
+      await sleep(500);
+
+      const estado = await avaliar(Runtime, `(() => {
+        const inputs = [
+          ...document.querySelectorAll('input[type="file"]')
+        ];
+
+        const recebeuArquivo = inputs.some(
+          el => el.files && el.files.length > 0
+        );
+
+        const imagens = [
+          ...document.querySelectorAll('img')
+        ].filter(img => {
+          const r = img.getBoundingClientRect();
+
+          return (
+            r.width > 40 &&
+            r.height > 40 &&
+            r.bottom > 0 &&
+            r.top < window.innerHeight
+          );
+        });
+
+        const textos = document.body.innerText || '';
+
+        const indicioPreview =
+          /remover foto|remove photo|editar foto|edit photo|foto adicionada|photo added/i.test(textos);
+
+        return JSON.stringify({
+          recebeuArquivo,
+          imagensVisiveis: imagens.length,
+          indicioPreview
+        });
+      })()`);
+
+      let info;
+
+      try {
+        info = JSON.parse(estado);
+      } catch (_) {
+        info = {};
+      }
+
+      if (
+        info.recebeuArquivo ||
+        info.indicioPreview
+      ) {
+        confirmado = true;
+        break;
+      }
+    }
+
+    if (!confirmado) {
+      throw new Error(
+        'Facebook não confirmou o recebimento/preview da imagem'
+      );
+    }
+
+    console.log('✅ Imagem recebida pelo Facebook');
+
+    return {
+      ok: true,
+      anexado: true,
+      arquivo_temporario: true,
+      motivo: 'upload confirmado pelo Facebook'
+    };
+
+  } catch (erro) {
+    return {
+      ok: false,
+      anexado: false,
+      motivo: erro.message || String(erro)
+    };
+
+  } finally {
+    // --------------------------------------------------------
+    // Limpar arquivo temporário
+    // --------------------------------------------------------
+
+    try {
+      if (arquivo && fs.existsSync(arquivo)) {
+        fs.unlinkSync(arquivo);
+      }
+    } catch (_) {}
+
+    try {
+      if (
+        diretorioTemp &&
+        fs.existsSync(diretorioTemp) &&
+        fs.readdirSync(diretorioTemp).length === 0
+      ) {
+        fs.rmdirSync(diretorioTemp);
+      }
+    } catch (_) {}
+  }
+}
+
 async function localizarBotaoPublicar(Runtime) {
   const resultado = await avaliar(Runtime, `(() => {
     const elementos = [...document.querySelectorAll(
@@ -602,6 +1015,7 @@ module.exports = {
   abrirCompositorCDP,
   preencherTextoCDP,
   localizarBotaoPublicar,
+  anexarImagemCDP,
   clicarPublicarCDP,
   confirmarPublicacaoCDP,
   sleep
