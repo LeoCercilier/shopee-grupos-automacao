@@ -230,6 +230,57 @@ async function diagnosticar(ws) {
         ...textos.flatMap(extrairUrls)
       ];
 
+      /*
+       * Diagnóstico estrutural dos links gerados.
+       *
+       * Não cria associação entre original e afiliado.
+       * Apenas preserva o contexto DOM em que cada link aparece:
+       * - elemento A;
+       * - ancestrais próximos;
+       * - texto do bloco;
+       * - outros links/inputs/textareas contidos no bloco;
+       * - atributos data-*.
+       */
+      const resultado_blocos = [...document.querySelectorAll('a')]
+        .filter(vis)
+        .filter((a) => /^https?:\\/\\/(?:s\\.shopee\\.com\\.br|(?:[^/]+\\.)?shopee\\.com\\.br)/i.test(a.href))
+        .map((a) => {
+          const ancestrais = [];
+          let node = a;
+
+          for (let nivel = 0; nivel < 5 && node; nivel++, node = node.parentElement) {
+            const texto = (node.innerText || node.textContent || '').trim();
+
+            const urlsDoBloco = [
+              ...[...node.querySelectorAll('a')].map((x) => x.href || ''),
+              ...[...node.querySelectorAll('input, textarea')].map((x) => x.value || ''),
+            ].flatMap(extrairUrls);
+
+            const data = {};
+            for (const attr of [...node.attributes || []]) {
+              if (attr.name.startsWith('data-')) {
+                data[attr.name] = attr.value;
+              }
+            }
+
+            ancestrais.push({
+              nivel,
+              tag: node.tagName || '',
+              id: node.id || '',
+              className: typeof node.className === 'string' ? node.className : '',
+              texto: texto.slice(0, 1200),
+              urls: [...new Set(urlsDoBloco)],
+              data
+            });
+          }
+
+          return {
+            href: a.href || '',
+            texto: (a.innerText || a.textContent || '').trim(),
+            ancestrais
+          };
+        });
+
       return {
         url: location.href,
         title: document.title,
@@ -246,6 +297,7 @@ async function diagnosticar(ws) {
         })),
         anchors: [...new Set(links)],
         urls: [...new Set(urls)],
+        resultado_blocos,
         buttons: [...document.querySelectorAll("button")].filter(vis).map((e) => ({
           type: e.type || '',
           text: (e.innerText || e.textContent || '').trim()
@@ -299,6 +351,7 @@ async function executarLote(ws, itens) {
       dry_run: true,
       enviados,
       motivo: 'dry_run_sem_clique',
+      diagnostico: antes.resultado_blocos || [],
     };
   }
 
