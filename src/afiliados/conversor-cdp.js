@@ -1082,7 +1082,18 @@ async function main() {
   }
 }
 
-main().catch((err) => {
-  console.error('❌ Conversor CDP:', err.message);
-  process.exit(1);
-});
+module.exports = {
+  obterPaginaCustomLink,
+  executarLote,
+  cdp,
+  avaliar,
+  MAX_LOTE,
+  DRY_RUN,
+};
+
+if (require.main === module) {
+  main().catch((err) => {
+    console.error('❌ Conversor CDP:', err.message);
+    process.exit(1);
+  });
+}

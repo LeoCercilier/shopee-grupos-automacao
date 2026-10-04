@@ -7,7 +7,11 @@
 
 const path = require('path');
 const { writeJson, nowIso } = require('../utils');
-const { criarContexto, novaPagina } = require('../navegador/browser');
+const WebSocket = require('ws');
+const {
+  obterPaginaCustomLink,
+  executarLote: executarLoteCDP,
+} = require('./conversor-cdp');
 const { buscar, registrarConvertido, listarConvertidos } = require('./cache');
 const {
   listarPendentes,
@@ -24,8 +28,6 @@ const { normalizarUrl } = require('./identidade');
 const { coletarPendentes } = require('./processar-lotes');
 const {
   capturarEvidencia,
-  detectarBloqueioShopee,
-  verificarSessaoShopee,
   localizarCampoLinks,
   diagnosticarCamposLinks,
   localizarBotaoConverter,
@@ -84,118 +86,6 @@ function isFalhaGlobal(status) {
 function persistirResultado(obj) {
   if (DRY_RUN) return;
   writeJson(RESULTADO_FILE, obj);
-}
-
-async function converterLote(page, itens) {
-  const campo = await localizarCampoLinks(page);
-  if (!campo) {
-    await diagnosticarCamposLinks(page);
-    return {
-      ok: false,
-      motivo: 'campo_links_nao_encontrado',
-      screenshot: await capturarEvidencia(page, 'shopee-sem-campo'),
-      mensagem: 'Campo de links não encontrado. Verifique SHOPEE_CONVERSAO_URL.',
-    };
-  }
-
-  await campo.click({ timeout: 5000 }).catch(() => {});
-  await campo.fill('').catch(() => {});
-  await campo.fill(itens.map((i) => i.link_original).join('\n'));
-
-  const botao = await localizarBotaoConverter(page);
-
-  if (DRY_RUN) {
-    return {
-      ok: true,
-      dryRun: true,
-      pares: [],
-      campo_ok: true,
-      botao_ok: Boolean(botao),
-      screenshot: await capturarEvidencia(page, 'shopee-dry-run'),
-      mensagem:
-        'DRY-RUN não destrutivo: campo preenchido; Converter NÃO clicado; fila/cache NÃO alterados',
-    };
-  }
-
-  if (!botao) {
-    return {
-      ok: false,
-      motivo: 'botao_converter_nao_encontrado',
-      screenshot: await capturarEvidencia(page, 'shopee-sem-botao'),
-    };
-  }
-
-  await botao.click();
-  await page.waitForTimeout(1500);
-  await page
-    .locator('[role="dialog"], .ant-modal, table, [class*="result"], [class*="success"]')
-    .first()
-    .waitFor({ state: 'visible', timeout: 20000 })
-    .catch(() => {});
-
-  const bloqueio = await detectarBloqueioShopee(page);
-  if (bloqueio.bloqueado) {
-    return {
-      ok: false,
-      ...bloqueio,
-      screenshot: await capturarEvidencia(page, 'shopee-bloqueio'),
-    };
-  }
-
-  const leitura = await lerResultadosDoDom(page, itens);
-  if (!leitura.ok && (!leitura.pares || leitura.pares.length === 0)) {
-    return { ...leitura, screenshot: await capturarEvidencia(page, 'shopee-matching') };
-  }
-
-  return {
-    ok: true,
-    parcial: Boolean(leitura.parcial),
-    pares: leitura.pares || [],
-    metodo: leitura.metodo,
-    detalhes: leitura.detalhes,
-    aviso: leitura.aviso || null,
-    screenshot: await capturarEvidencia(page, 'shopee-sucesso'),
-  };
-}
-
-function gravarPares(itens, pares) {
-  const mapa = new Map();
-  for (const p of pares) {
-    if (p.chave) mapa.set('chave:' + p.chave, p);
-    mapa.set(normalizarUrl(p.original), p);
-    mapa.set(p.original, p);
-  }
-  const gravados = [];
-  const falhas = [];
-  for (const item of itens) {
-    const par =
-      mapa.get('chave:' + item.chave) ||
-      mapa.get(item.link_original) ||
-      mapa.get(normalizarUrl(item.link_original));
-    if (!par || !par.afiliado || !/^https?:\/\//i.test(par.afiliado)) {
-      devolverParaPendente(item.chave, 'sem_correspondencia_segura');
-      falhas.push({ chave: item.chave, motivo: 'sem_correspondencia_segura' });
-      continue;
-    }
-    try {
-      registrarConvertido(
-        { id: item.produto_id, link: item.link_original, titulo: item.titulo },
-        par.afiliado,
-        { origem: 'navegador-shopee', extra: { metodo_matching: par.metodo || 'desconhecido' } }
-      );
-      marcarConvertido(item.chave, par.afiliado);
-      gravados.push({
-        chave: item.chave,
-        original: item.link_original,
-        afiliado: par.afiliado,
-        metodo: par.metodo,
-      });
-    } catch (err) {
-      devolverParaPendente(item.chave, err.message);
-      falhas.push({ chave: item.chave, motivo: err.message });
-    }
-  }
-  return { gravados, falhas };
 }
 
 async function converterPendentes({ incluirClassificadas = false } = {}) {
@@ -279,21 +169,21 @@ async function converterPendentes({ incluirClassificadas = false } = {}) {
     lotes: [],
   };
 
-  let context;
+  let ws;
   try {
-    context = await criarContexto();
-    const page = await novaPagina(context);
+    const pagina = await obterPaginaCustomLink();
 
-    const sessao = await verificarSessaoShopee(page, SHOPEE_URL);
-    if (!sessao.ok) {
-      resumo.status = 'erro_sessao';
-      resumo.erro = sessao.motivo;
-      resumo.screenshot = await capturarEvidencia(page, 'shopee-sessao');
-      persistirResultado(resumo);
-      console.log('❌', sessao.motivo);
-      await context.close().catch(() => {});
-      return resumo;
-    }
+    console.log('Aba Shopee Custom Link encontrada:');
+    console.log('  ' + pagina.url);
+
+    ws = new WebSocket(pagina.webSocketDebuggerUrl);
+
+    await new Promise((resolve, reject) => {
+      ws.once('open', resolve);
+      ws.once('error', reject);
+    });
+
+    console.log('✅ Conexão CDP estabelecida com o Chromium existente.');
 
     for (let li = 0; li < lotes.length; li++) {
       const lote = lotes[li];
@@ -305,96 +195,84 @@ async function converterPendentes({ incluirClassificadas = false } = {}) {
         for (const item of lote) marcarEmProcessamento(item.chave);
       }
 
-      try {
-        await page.goto(SHOPEE_URL, { waitUntil: 'domcontentloaded', timeout: 90000 });
-        await page.waitForLoadState('networkidle', { timeout: 20000 }).catch(() => {});
-      } catch (navErr) {
-        if (!DRY_RUN) devolverLotePendente(lote, navErr.message);
-        resumo.status = 'falha_navegacao';
-        resumo.erro = navErr.message;
-        console.log('❌ Falha de navegação:', navErr.message);
-        break;
-      }
+      const resultadoLote = await executarLoteCDP(ws, lote);
 
-      const bloqueio = await detectarBloqueioShopee(page);
-      if (bloqueio.bloqueado) {
-        if (!DRY_RUN) devolverLotePendente(lote, bloqueio.motivo);
-        resumo.status = 'bloqueio';
-        resumo.erro = bloqueio.motivo;
-        resumo.screenshot = await capturarEvidencia(page, 'shopee-bloqueio-lote');
-        console.log('⛔', bloqueio.motivo);
-        console.log('Itens devolvidos para pendente (falha global).');
-        break;
-      }
-
-      const resultadoLote = await converterLote(page, lote);
-
-      if (resultadoLote.dryRun) {
+      if (resultadoLote.dry_run) {
         resumo.lotes.push({
           indice: li + 1,
           status: 'dry-run',
           enviados: lote.length,
-          campo_ok: resultadoLote.campo_ok,
-          botao_ok: resultadoLote.botao_ok,
-          screenshot: resultadoLote.screenshot,
+          motivo: resultadoLote.motivo,
+          diagnostico: resultadoLote.diagnostico,
         });
         console.log('🔍 DRY-RUN não destrutivo — fila/cache intactos; Converter não clicado');
         break;
       }
 
-      if (!resultadoLote.ok && (!resultadoLote.pares || resultadoLote.pares.length === 0)) {
-        const motivo = resultadoLote.motivo || resultadoLote.detalhes || 'erro_lote';
+      if (!resultadoLote.ok) {
+        const motivo = resultadoLote.motivo || 'erro_lote';
+        const motivoTexto = String(motivo);
+
         const estrutural =
-          MOTIVOS_FALHA_ESTRUTURAL.has(String(resultadoLote.motivo || '')) ||
-          /bloqueio|login|captcha|checkpoint/i.test(String(motivo));
+          MOTIVOS_FALHA_ESTRUTURAL.has(motivoTexto) ||
+          /bloqueio|login|captcha|checkpoint|pagina_custom_link|campo_links|botao_obter_link|falha_preenchimento/i.test(
+            motivoTexto
+          );
 
         if (estrutural) {
           if (!DRY_RUN) devolverLotePendente(lote, motivo);
-          resumo.status = MOTIVOS_FALHA_ESTRUTURAL.has(String(resultadoLote.motivo || ''))
-            ? String(resultadoLote.motivo)
+
+          resumo.status = MOTIVOS_FALHA_ESTRUTURAL.has(motivoTexto)
+            ? motivoTexto
             : 'bloqueio';
+
           resumo.erro = motivo;
+
           resumo.lotes.push({
             indice: li + 1,
             status: 'falha_global',
             motivo,
             detalhes: resultadoLote.detalhes,
-            screenshot: resultadoLote.screenshot,
+            diagnostico: resultadoLote.diagnostico,
           });
+
           console.log('❌ Falha estrutural/global:', motivo);
           console.log('Itens devolvidos para pendente.');
           break;
         }
 
         if (!DRY_RUN) devolverLotePendente(lote, motivo);
+
         resumo.ambiguos += lote.length;
+
         resumo.lotes.push({
           indice: li + 1,
           status: 'matching_ambiguo',
           motivo,
           detalhes: resultadoLote.detalhes,
-          screenshot: resultadoLote.screenshot,
+          diagnostico: resultadoLote.diagnostico,
         });
+
         console.log('❌ Lote sem correspondência segura:', motivo);
         continue;
       }
 
-      const { gravados, falhas } = gravarPares(lote, resultadoLote.pares || []);
-      resumo.convertidos += gravados.length;
-      resumo.erros += falhas.length;
-      resumo.ambiguos += falhas.filter((f) => f.motivo === 'sem_correspondencia_segura').length;
+      const convertidosLote = resultadoLote.conversoes || [];
+
+      resumo.convertidos += convertidosLote.length;
+
       resumo.lotes.push({
         indice: li + 1,
-        status: gravados.length ? 'ok' : 'erro',
-        metodo: resultadoLote.metodo,
+        status: 'ok',
+        metodo: 'cdp-local',
         detalhes: resultadoLote.detalhes,
-        gravados: gravados.length,
-        falhas: falhas.length,
-        itens: gravados,
+        gravados: convertidosLote.length,
+        falhas: 0,
+        itens: convertidosLote,
       });
-      console.log('Conversões confirmadas: ' + gravados.length);
-      console.log('Matching seguro: ' + gravados.length + '/' + lote.length);
-      console.log('Sem correspondência: ' + falhas.length);
+
+      console.log('Conversões confirmadas: ' + convertidosLote.length);
+      console.log('Matching seguro: ' + convertidosLote.length + '/' + lote.length);
     }
 
     if (DRY_RUN) {
@@ -417,10 +295,14 @@ async function converterPendentes({ incluirClassificadas = false } = {}) {
       ambiguos: resumo.ambiguos,
       dry_run: DRY_RUN,
     });
-    await context.close().catch(() => {});
+    if (ws) {
+      ws.close();
+    }
     return resumo;
   } catch (err) {
-    if (context) await context.close().catch(() => {});
+    if (ws) {
+      ws.close();
+    }
     if (!DRY_RUN) {
       try {
         for (const it of carregarFila().itens) {
