@@ -54,6 +54,14 @@ function registrarConvertido(oferta, linkAfiliado, meta = {}) {
     throw new Error('link_afiliado inválido');
   }
 
+  const afiliadoNorm = normalizarUrl(linkAfiliado);
+  const originalNorm = normalizarUrl(oferta && oferta.link);
+  if (afiliadoNorm && originalNorm && afiliadoNorm === originalNorm) {
+    throw new Error(
+      'link_afiliado idêntico ao link original — conversão não confirmada'
+    );
+  }
+
   data.registros[chave] = {
     produto_id: oferta.id ? String(oferta.id) : null,
     link_original: oferta.link || null,
@@ -80,10 +88,9 @@ function listarConvertidos() {
 }
 
 module.exports = {
-  CACHE_FILE,
-  carregarCache,
-  salvarCache,
   buscar,
   registrarConvertido,
   listarConvertidos,
+  carregarCache,
+  CACHE_FILE,
 };
