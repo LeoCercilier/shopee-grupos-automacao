@@ -1,123 +1,8 @@
 {
-  "gerado_em": "2026-10-12T06:50:16.177Z",
+  "gerado_em": "2026-10-12T20:04:44.650Z",
   "total_selecoes": 12,
   "grupos_ativos": 21,
   "selecoes": [
-    {
-      "grupo": {
-        "id": "grupo-geral-1",
-        "nome": "Grupo Geral",
-        "group_id": "987613641743046",
-        "nicho": "geral"
-      },
-      "oferta": {
-        "id": "58269112139",
-        "titulo": "Sombrinha Automática Abre/Fecha Reforçada Contra Vento Proteção Solar Blackout  KL-301",
-        "preco": "23.98",
-        "preco_formatado": "R$ 23,98",
-        "link": "https://s.shopee.com.br/AKbGbbrNwG",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-820m2-mtm5fwgbxts324",
-        "nicho": "geral",
-        "subtitulo": null,
-        "descricao_curta": null,
-        "descricao_curta_produto": null
-      },
-      "texto": "🔥\n\nSombrinha Automática Abre/Fecha Reforçada Contra Vento Proteção Solar Blackout  KL-301\n\n✨ Mais praticidade para sua rotina\n\n💰 R$ 23,98\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/AKbGbbrNwG\n\n#pub",
-      "status": "pendente",
-      "selecionado_em": "2026-10-12T06:50:16.175Z"
-    },
-    {
-      "grupo": {
-        "id": "auto-geral-330309645451506",
-        "nome": "Bazar Belford Roxo",
-        "group_id": "330309645451506",
-        "nicho": "geral"
-      },
-      "oferta": {
-        "id": "58269112139",
-        "titulo": "Sombrinha Automática Abre/Fecha Reforçada Contra Vento Proteção Solar Blackout  KL-301",
-        "preco": "23.98",
-        "preco_formatado": "R$ 23,98",
-        "link": "https://s.shopee.com.br/AKbGbbrNwG",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-820m2-mtm5fwgbxts324",
-        "nicho": "geral",
-        "subtitulo": null,
-        "descricao_curta": null,
-        "descricao_curta_produto": null
-      },
-      "texto": "🔥\n\nSombrinha Automática Abre/Fecha Reforçada Contra Vento Proteção Solar Blackout  KL-301\n\n✨ Mais praticidade para sua rotina\n\n💰 R$ 23,98\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/AKbGbbrNwG\n\n#pub",
-      "status": "pendente",
-      "selecionado_em": "2026-10-12T06:50:16.175Z"
-    },
-    {
-      "grupo": {
-        "id": "auto-geral-2246004002209564",
-        "nome": "bazar das minas Mesquita , Edson Passos , Juscelino e Nilópolis",
-        "group_id": "2246004002209564",
-        "nicho": "geral"
-      },
-      "oferta": {
-        "id": "58269112139",
-        "titulo": "Sombrinha Automática Abre/Fecha Reforçada Contra Vento Proteção Solar Blackout  KL-301",
-        "preco": "23.98",
-        "preco_formatado": "R$ 23,98",
-        "link": "https://s.shopee.com.br/AKbGbbrNwG",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-820m2-mtm5fwgbxts324",
-        "nicho": "geral",
-        "subtitulo": null,
-        "descricao_curta": null,
-        "descricao_curta_produto": null
-      },
-      "texto": "🔥\n\nSombrinha Automática Abre/Fecha Reforçada Contra Vento Proteção Solar Blackout  KL-301\n\n✨ Mais praticidade para sua rotina\n\n💰 R$ 23,98\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/AKbGbbrNwG\n\n#pub",
-      "status": "pendente",
-      "selecionado_em": "2026-10-12T06:50:16.175Z"
-    },
-    {
-      "grupo": {
-        "id": "auto-geral-1246947868686643",
-        "nome": "BAZAR DA FEIRA DE AREIA BRANCA DE B.ROXO !!",
-        "group_id": "1246947868686643",
-        "nicho": "geral"
-      },
-      "oferta": {
-        "id": "58269112139",
-        "titulo": "Sombrinha Automática Abre/Fecha Reforçada Contra Vento Proteção Solar Blackout  KL-301",
-        "preco": "23.98",
-        "preco_formatado": "R$ 23,98",
-        "link": "https://s.shopee.com.br/AKbGbbrNwG",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-820m2-mtm5fwgbxts324",
-        "nicho": "geral",
-        "subtitulo": null,
-        "descricao_curta": null,
-        "descricao_curta_produto": null
-      },
-      "texto": "🔥\n\nSombrinha Automática Abre/Fecha Reforçada Contra Vento Proteção Solar Blackout  KL-301\n\n✨ Mais praticidade para sua rotina\n\n💰 R$ 23,98\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/AKbGbbrNwG\n\n#pub",
-      "status": "pendente",
-      "selecionado_em": "2026-10-12T06:50:16.175Z"
-    },
-    {
-      "grupo": {
-        "id": "auto-geral-1639640282968613",
-        "nome": "bazar de Belford Roxo só delas",
-        "group_id": "1639640282968613",
-        "nicho": "geral"
-      },
-      "oferta": {
-        "id": "58269112139",
-        "titulo": "Sombrinha Automática Abre/Fecha Reforçada Contra Vento Proteção Solar Blackout  KL-301",
-        "preco": "23.98",
-        "preco_formatado": "R$ 23,98",
-        "link": "https://s.shopee.com.br/AKbGbbrNwG",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-820m2-mtm5fwgbxts324",
-        "nicho": "geral",
-        "subtitulo": null,
-        "descricao_curta": null,
-        "descricao_curta_produto": null
-      },
-      "texto": "🔥\n\nSombrinha Automática Abre/Fecha Reforçada Contra Vento Proteção Solar Blackout  KL-301\n\n✨ Mais praticidade para sua rotina\n\n💰 R$ 23,98\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/AKbGbbrNwG\n\n#pub",
-      "status": "pendente",
-      "selecionado_em": "2026-10-12T06:50:16.175Z"
-    },
     {
       "grupo": {
         "id": "grupo-saude-1",
@@ -139,7 +24,7 @@
       },
       "texto": "🔥\n\nWhey Protein Gourmet 907g ZERO ADIÇÃO DE AÇÚCARES Pote FN Forbis Escolha seu sabor\n\n💚 Uma opção para sua rotina de cuidados\n\n💰 R$ 59,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9APJDSvpJB\n\n#pub",
       "status": "pendente",
-      "selecionado_em": "2026-10-12T06:50:16.176Z"
+      "selecionado_em": "2026-10-12T20:04:44.647Z"
     },
     {
       "grupo": {
@@ -162,7 +47,7 @@
       },
       "texto": "🔥\n\nWhey Protein Gourmet 907g ZERO ADIÇÃO DE AÇÚCARES Pote FN Forbis Escolha seu sabor\n\n💚 Uma opção para sua rotina de cuidados\n\n💰 R$ 59,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9APJDSvpJB\n\n#pub",
       "status": "pendente",
-      "selecionado_em": "2026-10-12T06:50:16.176Z"
+      "selecionado_em": "2026-10-12T20:04:44.648Z"
     },
     {
       "grupo": {
@@ -185,7 +70,7 @@
       },
       "texto": "🔥\n\nWhey Protein Gourmet 907g ZERO ADIÇÃO DE AÇÚCARES Pote FN Forbis Escolha seu sabor\n\n💚 Uma opção para sua rotina de cuidados\n\n💰 R$ 59,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9APJDSvpJB\n\n#pub",
       "status": "pendente",
-      "selecionado_em": "2026-10-12T06:50:16.176Z"
+      "selecionado_em": "2026-10-12T20:04:44.648Z"
     },
     {
       "grupo": {
@@ -208,7 +93,7 @@
       },
       "texto": "🔥\n\nWhey Protein Gourmet 907g ZERO ADIÇÃO DE AÇÚCARES Pote FN Forbis Escolha seu sabor\n\n💚 Uma opção para sua rotina de cuidados\n\n💰 R$ 59,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9APJDSvpJB\n\n#pub",
       "status": "pendente",
-      "selecionado_em": "2026-10-12T06:50:16.177Z"
+      "selecionado_em": "2026-10-12T20:04:44.648Z"
     },
     {
       "grupo": {
@@ -231,7 +116,122 @@
       },
       "texto": "🔥\n\nWhey Protein Gourmet 907g ZERO ADIÇÃO DE AÇÚCARES Pote FN Forbis Escolha seu sabor\n\n💚 Uma opção para sua rotina de cuidados\n\n💰 R$ 59,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9APJDSvpJB\n\n#pub",
       "status": "pendente",
-      "selecionado_em": "2026-10-12T06:50:16.177Z"
+      "selecionado_em": "2026-10-12T20:04:44.648Z"
+    },
+    {
+      "grupo": {
+        "id": "grupo-geral-1",
+        "nome": "Grupo Geral",
+        "group_id": "987613641743046",
+        "nicho": "geral"
+      },
+      "oferta": {
+        "id": "22193060864",
+        "titulo": "Macaquinho feminino Tercido Alfaiataria Coleção Nova",
+        "preco": "74.77",
+        "preco_formatado": "R$ 74,77",
+        "link": "https://s.shopee.com.br/qkCs1Mi3l",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lvn65iy7oja6fb",
+        "nicho": "geral",
+        "subtitulo": null,
+        "descricao_curta": null,
+        "descricao_curta_produto": null
+      },
+      "texto": "🔥\n\nMacaquinho feminino Tercido Alfaiataria Coleção Nova\n\n✨ Mais praticidade para sua rotina\n\n💰 R$ 74,77\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/qkCs1Mi3l\n\n#pub",
+      "status": "pendente",
+      "selecionado_em": "2026-10-12T20:04:44.648Z"
+    },
+    {
+      "grupo": {
+        "id": "auto-geral-330309645451506",
+        "nome": "Bazar Belford Roxo",
+        "group_id": "330309645451506",
+        "nicho": "geral"
+      },
+      "oferta": {
+        "id": "22193060864",
+        "titulo": "Macaquinho feminino Tercido Alfaiataria Coleção Nova",
+        "preco": "74.77",
+        "preco_formatado": "R$ 74,77",
+        "link": "https://s.shopee.com.br/qkCs1Mi3l",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lvn65iy7oja6fb",
+        "nicho": "geral",
+        "subtitulo": null,
+        "descricao_curta": null,
+        "descricao_curta_produto": null
+      },
+      "texto": "🔥\n\nMacaquinho feminino Tercido Alfaiataria Coleção Nova\n\n✨ Mais praticidade para sua rotina\n\n💰 R$ 74,77\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/qkCs1Mi3l\n\n#pub",
+      "status": "pendente",
+      "selecionado_em": "2026-10-12T20:04:44.648Z"
+    },
+    {
+      "grupo": {
+        "id": "auto-geral-2246004002209564",
+        "nome": "bazar das minas Mesquita , Edson Passos , Juscelino e Nilópolis",
+        "group_id": "2246004002209564",
+        "nicho": "geral"
+      },
+      "oferta": {
+        "id": "22193060864",
+        "titulo": "Macaquinho feminino Tercido Alfaiataria Coleção Nova",
+        "preco": "74.77",
+        "preco_formatado": "R$ 74,77",
+        "link": "https://s.shopee.com.br/qkCs1Mi3l",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lvn65iy7oja6fb",
+        "nicho": "geral",
+        "subtitulo": null,
+        "descricao_curta": null,
+        "descricao_curta_produto": null
+      },
+      "texto": "🔥\n\nMacaquinho feminino Tercido Alfaiataria Coleção Nova\n\n✨ Mais praticidade para sua rotina\n\n💰 R$ 74,77\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/qkCs1Mi3l\n\n#pub",
+      "status": "pendente",
+      "selecionado_em": "2026-10-12T20:04:44.649Z"
+    },
+    {
+      "grupo": {
+        "id": "auto-geral-1246947868686643",
+        "nome": "BAZAR DA FEIRA DE AREIA BRANCA DE B.ROXO !!",
+        "group_id": "1246947868686643",
+        "nicho": "geral"
+      },
+      "oferta": {
+        "id": "22193060864",
+        "titulo": "Macaquinho feminino Tercido Alfaiataria Coleção Nova",
+        "preco": "74.77",
+        "preco_formatado": "R$ 74,77",
+        "link": "https://s.shopee.com.br/qkCs1Mi3l",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lvn65iy7oja6fb",
+        "nicho": "geral",
+        "subtitulo": null,
+        "descricao_curta": null,
+        "descricao_curta_produto": null
+      },
+      "texto": "🔥\n\nMacaquinho feminino Tercido Alfaiataria Coleção Nova\n\n✨ Mais praticidade para sua rotina\n\n💰 R$ 74,77\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/qkCs1Mi3l\n\n#pub",
+      "status": "pendente",
+      "selecionado_em": "2026-10-12T20:04:44.649Z"
+    },
+    {
+      "grupo": {
+        "id": "auto-geral-1639640282968613",
+        "nome": "bazar de Belford Roxo só delas",
+        "group_id": "1639640282968613",
+        "nicho": "geral"
+      },
+      "oferta": {
+        "id": "22193060864",
+        "titulo": "Macaquinho feminino Tercido Alfaiataria Coleção Nova",
+        "preco": "74.77",
+        "preco_formatado": "R$ 74,77",
+        "link": "https://s.shopee.com.br/qkCs1Mi3l",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lvn65iy7oja6fb",
+        "nicho": "geral",
+        "subtitulo": null,
+        "descricao_curta": null,
+        "descricao_curta_produto": null
+      },
+      "texto": "🔥\n\nMacaquinho feminino Tercido Alfaiataria Coleção Nova\n\n✨ Mais praticidade para sua rotina\n\n💰 R$ 74,77\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/qkCs1Mi3l\n\n#pub",
+      "status": "pendente",
+      "selecionado_em": "2026-10-12T20:04:44.649Z"
     },
     {
       "grupo": {
@@ -241,20 +241,20 @@
         "nicho": "casa"
       },
       "oferta": {
-        "id": "18319457137",
-        "titulo": "Cozinha Infantil Kit Geladeira Fogão Armarios Microondas E Utensilios Menina Encantada",
-        "preco": "170.99",
-        "preco_formatado": "R$ 170,99",
-        "link": "https://s.shopee.com.br/1gJJrYJXMs",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-820lf-mqxp15wm76rp98",
+        "id": "27968827694",
+        "titulo": "Tábua De Corte 304 Aço Inoxidável Antibacteriana À Prova De Mofo 46 cm tábua de cozinha",
+        "preco": "24.79",
+        "preco_formatado": "R$ 24,79",
+        "link": "https://s.shopee.com.br/6Alk6NiIq3",
+        "imagem": "https://cf.shopee.com.br/file/cn-11134207-7ras8-m31syvxotyp390",
         "nicho": "casa",
         "subtitulo": null,
         "descricao_curta": null,
         "descricao_curta_produto": null
       },
-      "texto": "🔥\n\nCozinha Infantil Kit Geladeira Fogão Armarios Microondas E Utensilios Menina Encantada\n\n🍳 Praticidade para preparar suas refeições\n\n💰 R$ 170,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/1gJJrYJXMs\n\n#pub",
+      "texto": "🔥\n\nTábua De Corte 304 Aço Inoxidável Antibacteriana À Prova De Mofo 46 cm tábua de cozinha\n\n🍳 Praticidade para preparar suas refeições\n\n💰 R$ 24,79\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/6Alk6NiIq3\n\n#pub",
       "status": "pendente",
-      "selecionado_em": "2026-10-12T06:50:16.177Z"
+      "selecionado_em": "2026-10-12T20:04:44.650Z"
     },
     {
       "grupo": {
@@ -264,20 +264,20 @@
         "nicho": "casa"
       },
       "oferta": {
-        "id": "18319457137",
-        "titulo": "Cozinha Infantil Kit Geladeira Fogão Armarios Microondas E Utensilios Menina Encantada",
-        "preco": "170.99",
-        "preco_formatado": "R$ 170,99",
-        "link": "https://s.shopee.com.br/1gJJrYJXMs",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-820lf-mqxp15wm76rp98",
+        "id": "27968827694",
+        "titulo": "Tábua De Corte 304 Aço Inoxidável Antibacteriana À Prova De Mofo 46 cm tábua de cozinha",
+        "preco": "24.79",
+        "preco_formatado": "R$ 24,79",
+        "link": "https://s.shopee.com.br/6Alk6NiIq3",
+        "imagem": "https://cf.shopee.com.br/file/cn-11134207-7ras8-m31syvxotyp390",
         "nicho": "casa",
         "subtitulo": null,
         "descricao_curta": null,
         "descricao_curta_produto": null
       },
-      "texto": "🔥\n\nCozinha Infantil Kit Geladeira Fogão Armarios Microondas E Utensilios Menina Encantada\n\n🍳 Praticidade para preparar suas refeições\n\n💰 R$ 170,99\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/1gJJrYJXMs\n\n#pub",
+      "texto": "🔥\n\nTábua De Corte 304 Aço Inoxidável Antibacteriana À Prova De Mofo 46 cm tábua de cozinha\n\n🍳 Praticidade para preparar suas refeições\n\n💰 R$ 24,79\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/6Alk6NiIq3\n\n#pub",
       "status": "pendente",
-      "selecionado_em": "2026-10-12T06:50:16.177Z"
+      "selecionado_em": "2026-10-12T20:04:44.650Z"
     }
   ],
   "aviso": "Publicação automática em grupos NÃO está implementada. Groups API oficial da Meta foi removida em abril/2024."
