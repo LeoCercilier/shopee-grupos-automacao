@@ -1,8 +1,123 @@
 {
-  "gerado_em": "2026-10-12T20:04:44.650Z",
+  "gerado_em": "2026-10-13T02:20:09.636Z",
   "total_selecoes": 12,
   "grupos_ativos": 21,
   "selecoes": [
+    {
+      "grupo": {
+        "id": "grupo-geral-1",
+        "nome": "Grupo Geral",
+        "group_id": "987613641743046",
+        "nicho": "geral"
+      },
+      "oferta": {
+        "id": "58214510741",
+        "titulo": "Conjunto Fitness Feminino Cós Alto Top com Bojo Sem Transparência Academia",
+        "preco": "74.9",
+        "preco_formatado": "R$ 74,90",
+        "link": "https://s.shopee.com.br/2LZ1x7FkGc",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-820l9-mtdyzvdy3oci2e",
+        "nicho": "geral",
+        "subtitulo": null,
+        "descricao_curta": null,
+        "descricao_curta_produto": null
+      },
+      "texto": "🔥\n\nConjunto Fitness Feminino Cós Alto Top com Bojo Sem Transparência Academia\n\n✨ Mais praticidade para sua rotina\n\n💰 R$ 74,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/2LZ1x7FkGc\n\n#pub",
+      "status": "pendente",
+      "selecionado_em": "2026-10-13T02:20:09.633Z"
+    },
+    {
+      "grupo": {
+        "id": "auto-geral-330309645451506",
+        "nome": "Bazar Belford Roxo",
+        "group_id": "330309645451506",
+        "nicho": "geral"
+      },
+      "oferta": {
+        "id": "58214510741",
+        "titulo": "Conjunto Fitness Feminino Cós Alto Top com Bojo Sem Transparência Academia",
+        "preco": "74.9",
+        "preco_formatado": "R$ 74,90",
+        "link": "https://s.shopee.com.br/2LZ1x7FkGc",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-820l9-mtdyzvdy3oci2e",
+        "nicho": "geral",
+        "subtitulo": null,
+        "descricao_curta": null,
+        "descricao_curta_produto": null
+      },
+      "texto": "🔥\n\nConjunto Fitness Feminino Cós Alto Top com Bojo Sem Transparência Academia\n\n✨ Mais praticidade para sua rotina\n\n💰 R$ 74,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/2LZ1x7FkGc\n\n#pub",
+      "status": "pendente",
+      "selecionado_em": "2026-10-13T02:20:09.633Z"
+    },
+    {
+      "grupo": {
+        "id": "auto-geral-2246004002209564",
+        "nome": "bazar das minas Mesquita , Edson Passos , Juscelino e Nilópolis",
+        "group_id": "2246004002209564",
+        "nicho": "geral"
+      },
+      "oferta": {
+        "id": "58214510741",
+        "titulo": "Conjunto Fitness Feminino Cós Alto Top com Bojo Sem Transparência Academia",
+        "preco": "74.9",
+        "preco_formatado": "R$ 74,90",
+        "link": "https://s.shopee.com.br/2LZ1x7FkGc",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-820l9-mtdyzvdy3oci2e",
+        "nicho": "geral",
+        "subtitulo": null,
+        "descricao_curta": null,
+        "descricao_curta_produto": null
+      },
+      "texto": "🔥\n\nConjunto Fitness Feminino Cós Alto Top com Bojo Sem Transparência Academia\n\n✨ Mais praticidade para sua rotina\n\n💰 R$ 74,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/2LZ1x7FkGc\n\n#pub",
+      "status": "pendente",
+      "selecionado_em": "2026-10-13T02:20:09.633Z"
+    },
+    {
+      "grupo": {
+        "id": "auto-geral-1246947868686643",
+        "nome": "BAZAR DA FEIRA DE AREIA BRANCA DE B.ROXO !!",
+        "group_id": "1246947868686643",
+        "nicho": "geral"
+      },
+      "oferta": {
+        "id": "58214510741",
+        "titulo": "Conjunto Fitness Feminino Cós Alto Top com Bojo Sem Transparência Academia",
+        "preco": "74.9",
+        "preco_formatado": "R$ 74,90",
+        "link": "https://s.shopee.com.br/2LZ1x7FkGc",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-820l9-mtdyzvdy3oci2e",
+        "nicho": "geral",
+        "subtitulo": null,
+        "descricao_curta": null,
+        "descricao_curta_produto": null
+      },
+      "texto": "🔥\n\nConjunto Fitness Feminino Cós Alto Top com Bojo Sem Transparência Academia\n\n✨ Mais praticidade para sua rotina\n\n💰 R$ 74,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/2LZ1x7FkGc\n\n#pub",
+      "status": "pendente",
+      "selecionado_em": "2026-10-13T02:20:09.633Z"
+    },
+    {
+      "grupo": {
+        "id": "auto-geral-1639640282968613",
+        "nome": "bazar de Belford Roxo só delas",
+        "group_id": "1639640282968613",
+        "nicho": "geral"
+      },
+      "oferta": {
+        "id": "58214510741",
+        "titulo": "Conjunto Fitness Feminino Cós Alto Top com Bojo Sem Transparência Academia",
+        "preco": "74.9",
+        "preco_formatado": "R$ 74,90",
+        "link": "https://s.shopee.com.br/2LZ1x7FkGc",
+        "imagem": "https://cf.shopee.com.br/file/br-11134207-820l9-mtdyzvdy3oci2e",
+        "nicho": "geral",
+        "subtitulo": null,
+        "descricao_curta": null,
+        "descricao_curta_produto": null
+      },
+      "texto": "🔥\n\nConjunto Fitness Feminino Cós Alto Top com Bojo Sem Transparência Academia\n\n✨ Mais praticidade para sua rotina\n\n💰 R$ 74,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/2LZ1x7FkGc\n\n#pub",
+      "status": "pendente",
+      "selecionado_em": "2026-10-13T02:20:09.634Z"
+    },
     {
       "grupo": {
         "id": "grupo-saude-1",
@@ -15,16 +130,16 @@
         "titulo": "Whey Protein Gourmet 907g ZERO ADIÇÃO DE AÇÚCARES Pote FN Forbis Escolha seu sabor",
         "preco": "59.9",
         "preco_formatado": "R$ 59,90",
-        "link": "https://s.shopee.com.br/9APJDSvpJB",
+        "link": "https://s.shopee.com.br/W7NlkMizL",
         "imagem": "https://cf.shopee.com.br/file/br-11134207-820lx-mm0vtfpp1j44db",
         "nicho": "saude",
         "subtitulo": null,
         "descricao_curta": null,
         "descricao_curta_produto": null
       },
-      "texto": "🔥\n\nWhey Protein Gourmet 907g ZERO ADIÇÃO DE AÇÚCARES Pote FN Forbis Escolha seu sabor\n\n💚 Uma opção para sua rotina de cuidados\n\n💰 R$ 59,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9APJDSvpJB\n\n#pub",
+      "texto": "🔥\n\nWhey Protein Gourmet 907g ZERO ADIÇÃO DE AÇÚCARES Pote FN Forbis Escolha seu sabor\n\n💚 Uma opção para sua rotina de cuidados\n\n💰 R$ 59,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/W7NlkMizL\n\n#pub",
       "status": "pendente",
-      "selecionado_em": "2026-10-12T20:04:44.647Z"
+      "selecionado_em": "2026-10-13T02:20:09.634Z"
     },
     {
       "grupo": {
@@ -38,16 +153,16 @@
         "titulo": "Whey Protein Gourmet 907g ZERO ADIÇÃO DE AÇÚCARES Pote FN Forbis Escolha seu sabor",
         "preco": "59.9",
         "preco_formatado": "R$ 59,90",
-        "link": "https://s.shopee.com.br/9APJDSvpJB",
+        "link": "https://s.shopee.com.br/W7NlkMizL",
         "imagem": "https://cf.shopee.com.br/file/br-11134207-820lx-mm0vtfpp1j44db",
         "nicho": "saude",
         "subtitulo": null,
         "descricao_curta": null,
         "descricao_curta_produto": null
       },
-      "texto": "🔥\n\nWhey Protein Gourmet 907g ZERO ADIÇÃO DE AÇÚCARES Pote FN Forbis Escolha seu sabor\n\n💚 Uma opção para sua rotina de cuidados\n\n💰 R$ 59,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9APJDSvpJB\n\n#pub",
+      "texto": "🔥\n\nWhey Protein Gourmet 907g ZERO ADIÇÃO DE AÇÚCARES Pote FN Forbis Escolha seu sabor\n\n💚 Uma opção para sua rotina de cuidados\n\n💰 R$ 59,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/W7NlkMizL\n\n#pub",
       "status": "pendente",
-      "selecionado_em": "2026-10-12T20:04:44.648Z"
+      "selecionado_em": "2026-10-13T02:20:09.635Z"
     },
     {
       "grupo": {
@@ -61,16 +176,16 @@
         "titulo": "Whey Protein Gourmet 907g ZERO ADIÇÃO DE AÇÚCARES Pote FN Forbis Escolha seu sabor",
         "preco": "59.9",
         "preco_formatado": "R$ 59,90",
-        "link": "https://s.shopee.com.br/9APJDSvpJB",
+        "link": "https://s.shopee.com.br/W7NlkMizL",
         "imagem": "https://cf.shopee.com.br/file/br-11134207-820lx-mm0vtfpp1j44db",
         "nicho": "saude",
         "subtitulo": null,
         "descricao_curta": null,
         "descricao_curta_produto": null
       },
-      "texto": "🔥\n\nWhey Protein Gourmet 907g ZERO ADIÇÃO DE AÇÚCARES Pote FN Forbis Escolha seu sabor\n\n💚 Uma opção para sua rotina de cuidados\n\n💰 R$ 59,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9APJDSvpJB\n\n#pub",
+      "texto": "🔥\n\nWhey Protein Gourmet 907g ZERO ADIÇÃO DE AÇÚCARES Pote FN Forbis Escolha seu sabor\n\n💚 Uma opção para sua rotina de cuidados\n\n💰 R$ 59,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/W7NlkMizL\n\n#pub",
       "status": "pendente",
-      "selecionado_em": "2026-10-12T20:04:44.648Z"
+      "selecionado_em": "2026-10-13T02:20:09.635Z"
     },
     {
       "grupo": {
@@ -84,16 +199,16 @@
         "titulo": "Whey Protein Gourmet 907g ZERO ADIÇÃO DE AÇÚCARES Pote FN Forbis Escolha seu sabor",
         "preco": "59.9",
         "preco_formatado": "R$ 59,90",
-        "link": "https://s.shopee.com.br/9APJDSvpJB",
+        "link": "https://s.shopee.com.br/W7NlkMizL",
         "imagem": "https://cf.shopee.com.br/file/br-11134207-820lx-mm0vtfpp1j44db",
         "nicho": "saude",
         "subtitulo": null,
         "descricao_curta": null,
         "descricao_curta_produto": null
       },
-      "texto": "🔥\n\nWhey Protein Gourmet 907g ZERO ADIÇÃO DE AÇÚCARES Pote FN Forbis Escolha seu sabor\n\n💚 Uma opção para sua rotina de cuidados\n\n💰 R$ 59,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9APJDSvpJB\n\n#pub",
+      "texto": "🔥\n\nWhey Protein Gourmet 907g ZERO ADIÇÃO DE AÇÚCARES Pote FN Forbis Escolha seu sabor\n\n💚 Uma opção para sua rotina de cuidados\n\n💰 R$ 59,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/W7NlkMizL\n\n#pub",
       "status": "pendente",
-      "selecionado_em": "2026-10-12T20:04:44.648Z"
+      "selecionado_em": "2026-10-13T02:20:09.635Z"
     },
     {
       "grupo": {
@@ -107,131 +222,16 @@
         "titulo": "Whey Protein Gourmet 907g ZERO ADIÇÃO DE AÇÚCARES Pote FN Forbis Escolha seu sabor",
         "preco": "59.9",
         "preco_formatado": "R$ 59,90",
-        "link": "https://s.shopee.com.br/9APJDSvpJB",
+        "link": "https://s.shopee.com.br/W7NlkMizL",
         "imagem": "https://cf.shopee.com.br/file/br-11134207-820lx-mm0vtfpp1j44db",
         "nicho": "saude",
         "subtitulo": null,
         "descricao_curta": null,
         "descricao_curta_produto": null
       },
-      "texto": "🔥\n\nWhey Protein Gourmet 907g ZERO ADIÇÃO DE AÇÚCARES Pote FN Forbis Escolha seu sabor\n\n💚 Uma opção para sua rotina de cuidados\n\n💰 R$ 59,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/9APJDSvpJB\n\n#pub",
+      "texto": "🔥\n\nWhey Protein Gourmet 907g ZERO ADIÇÃO DE AÇÚCARES Pote FN Forbis Escolha seu sabor\n\n💚 Uma opção para sua rotina de cuidados\n\n💰 R$ 59,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/W7NlkMizL\n\n#pub",
       "status": "pendente",
-      "selecionado_em": "2026-10-12T20:04:44.648Z"
-    },
-    {
-      "grupo": {
-        "id": "grupo-geral-1",
-        "nome": "Grupo Geral",
-        "group_id": "987613641743046",
-        "nicho": "geral"
-      },
-      "oferta": {
-        "id": "22193060864",
-        "titulo": "Macaquinho feminino Tercido Alfaiataria Coleção Nova",
-        "preco": "74.77",
-        "preco_formatado": "R$ 74,77",
-        "link": "https://s.shopee.com.br/qkCs1Mi3l",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lvn65iy7oja6fb",
-        "nicho": "geral",
-        "subtitulo": null,
-        "descricao_curta": null,
-        "descricao_curta_produto": null
-      },
-      "texto": "🔥\n\nMacaquinho feminino Tercido Alfaiataria Coleção Nova\n\n✨ Mais praticidade para sua rotina\n\n💰 R$ 74,77\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/qkCs1Mi3l\n\n#pub",
-      "status": "pendente",
-      "selecionado_em": "2026-10-12T20:04:44.648Z"
-    },
-    {
-      "grupo": {
-        "id": "auto-geral-330309645451506",
-        "nome": "Bazar Belford Roxo",
-        "group_id": "330309645451506",
-        "nicho": "geral"
-      },
-      "oferta": {
-        "id": "22193060864",
-        "titulo": "Macaquinho feminino Tercido Alfaiataria Coleção Nova",
-        "preco": "74.77",
-        "preco_formatado": "R$ 74,77",
-        "link": "https://s.shopee.com.br/qkCs1Mi3l",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lvn65iy7oja6fb",
-        "nicho": "geral",
-        "subtitulo": null,
-        "descricao_curta": null,
-        "descricao_curta_produto": null
-      },
-      "texto": "🔥\n\nMacaquinho feminino Tercido Alfaiataria Coleção Nova\n\n✨ Mais praticidade para sua rotina\n\n💰 R$ 74,77\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/qkCs1Mi3l\n\n#pub",
-      "status": "pendente",
-      "selecionado_em": "2026-10-12T20:04:44.648Z"
-    },
-    {
-      "grupo": {
-        "id": "auto-geral-2246004002209564",
-        "nome": "bazar das minas Mesquita , Edson Passos , Juscelino e Nilópolis",
-        "group_id": "2246004002209564",
-        "nicho": "geral"
-      },
-      "oferta": {
-        "id": "22193060864",
-        "titulo": "Macaquinho feminino Tercido Alfaiataria Coleção Nova",
-        "preco": "74.77",
-        "preco_formatado": "R$ 74,77",
-        "link": "https://s.shopee.com.br/qkCs1Mi3l",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lvn65iy7oja6fb",
-        "nicho": "geral",
-        "subtitulo": null,
-        "descricao_curta": null,
-        "descricao_curta_produto": null
-      },
-      "texto": "🔥\n\nMacaquinho feminino Tercido Alfaiataria Coleção Nova\n\n✨ Mais praticidade para sua rotina\n\n💰 R$ 74,77\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/qkCs1Mi3l\n\n#pub",
-      "status": "pendente",
-      "selecionado_em": "2026-10-12T20:04:44.649Z"
-    },
-    {
-      "grupo": {
-        "id": "auto-geral-1246947868686643",
-        "nome": "BAZAR DA FEIRA DE AREIA BRANCA DE B.ROXO !!",
-        "group_id": "1246947868686643",
-        "nicho": "geral"
-      },
-      "oferta": {
-        "id": "22193060864",
-        "titulo": "Macaquinho feminino Tercido Alfaiataria Coleção Nova",
-        "preco": "74.77",
-        "preco_formatado": "R$ 74,77",
-        "link": "https://s.shopee.com.br/qkCs1Mi3l",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lvn65iy7oja6fb",
-        "nicho": "geral",
-        "subtitulo": null,
-        "descricao_curta": null,
-        "descricao_curta_produto": null
-      },
-      "texto": "🔥\n\nMacaquinho feminino Tercido Alfaiataria Coleção Nova\n\n✨ Mais praticidade para sua rotina\n\n💰 R$ 74,77\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/qkCs1Mi3l\n\n#pub",
-      "status": "pendente",
-      "selecionado_em": "2026-10-12T20:04:44.649Z"
-    },
-    {
-      "grupo": {
-        "id": "auto-geral-1639640282968613",
-        "nome": "bazar de Belford Roxo só delas",
-        "group_id": "1639640282968613",
-        "nicho": "geral"
-      },
-      "oferta": {
-        "id": "22193060864",
-        "titulo": "Macaquinho feminino Tercido Alfaiataria Coleção Nova",
-        "preco": "74.77",
-        "preco_formatado": "R$ 74,77",
-        "link": "https://s.shopee.com.br/qkCs1Mi3l",
-        "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lvn65iy7oja6fb",
-        "nicho": "geral",
-        "subtitulo": null,
-        "descricao_curta": null,
-        "descricao_curta_produto": null
-      },
-      "texto": "🔥\n\nMacaquinho feminino Tercido Alfaiataria Coleção Nova\n\n✨ Mais praticidade para sua rotina\n\n💰 R$ 74,77\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/qkCs1Mi3l\n\n#pub",
-      "status": "pendente",
-      "selecionado_em": "2026-10-12T20:04:44.649Z"
+      "selecionado_em": "2026-10-13T02:20:09.635Z"
     },
     {
       "grupo": {
@@ -241,20 +241,20 @@
         "nicho": "casa"
       },
       "oferta": {
-        "id": "27968827694",
-        "titulo": "Tábua De Corte 304 Aço Inoxidável Antibacteriana À Prova De Mofo 46 cm tábua de cozinha",
-        "preco": "24.79",
-        "preco_formatado": "R$ 24,79",
-        "link": "https://s.shopee.com.br/6Alk6NiIq3",
-        "imagem": "https://cf.shopee.com.br/file/cn-11134207-7ras8-m31syvxotyp390",
+        "id": "23194398000",
+        "titulo": "Copo Termico inox Personalizado Time Brasileiros + Seu Nome gravação a laser",
+        "preco": "38.9",
+        "preco_formatado": "R$ 38,90",
+        "link": "https://s.shopee.com.br/AAHtHVlvNN",
+        "imagem": "https://cf.shopee.com.br/file/sg-11134201-824g5-mej2joz7xlvn9e",
         "nicho": "casa",
         "subtitulo": null,
         "descricao_curta": null,
         "descricao_curta_produto": null
       },
-      "texto": "🔥\n\nTábua De Corte 304 Aço Inoxidável Antibacteriana À Prova De Mofo 46 cm tábua de cozinha\n\n🍳 Praticidade para preparar suas refeições\n\n💰 R$ 24,79\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/6Alk6NiIq3\n\n#pub",
+      "texto": "🔥\n\nCopo Termico inox Personalizado Time Brasileiros + Seu Nome gravação a laser\n\n🏠 Praticidade para sua casa e rotina\n\n💰 R$ 38,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/AAHtHVlvNN\n\n#pub",
       "status": "pendente",
-      "selecionado_em": "2026-10-12T20:04:44.650Z"
+      "selecionado_em": "2026-10-13T02:20:09.635Z"
     },
     {
       "grupo": {
@@ -264,20 +264,20 @@
         "nicho": "casa"
       },
       "oferta": {
-        "id": "27968827694",
-        "titulo": "Tábua De Corte 304 Aço Inoxidável Antibacteriana À Prova De Mofo 46 cm tábua de cozinha",
-        "preco": "24.79",
-        "preco_formatado": "R$ 24,79",
-        "link": "https://s.shopee.com.br/6Alk6NiIq3",
-        "imagem": "https://cf.shopee.com.br/file/cn-11134207-7ras8-m31syvxotyp390",
+        "id": "23194398000",
+        "titulo": "Copo Termico inox Personalizado Time Brasileiros + Seu Nome gravação a laser",
+        "preco": "38.9",
+        "preco_formatado": "R$ 38,90",
+        "link": "https://s.shopee.com.br/AAHtHVlvNN",
+        "imagem": "https://cf.shopee.com.br/file/sg-11134201-824g5-mej2joz7xlvn9e",
         "nicho": "casa",
         "subtitulo": null,
         "descricao_curta": null,
         "descricao_curta_produto": null
       },
-      "texto": "🔥\n\nTábua De Corte 304 Aço Inoxidável Antibacteriana À Prova De Mofo 46 cm tábua de cozinha\n\n🍳 Praticidade para preparar suas refeições\n\n💰 R$ 24,79\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/6Alk6NiIq3\n\n#pub",
+      "texto": "🔥\n\nCopo Termico inox Personalizado Time Brasileiros + Seu Nome gravação a laser\n\n🏠 Praticidade para sua casa e rotina\n\n💰 R$ 38,90\n\n🛍️ Confira na Shopee:\nhttps://s.shopee.com.br/AAHtHVlvNN\n\n#pub",
       "status": "pendente",
-      "selecionado_em": "2026-10-12T20:04:44.650Z"
+      "selecionado_em": "2026-10-13T02:20:09.636Z"
     }
   ],
   "aviso": "Publicação automática em grupos NÃO está implementada. Groups API oficial da Meta foi removida em abril/2024."
