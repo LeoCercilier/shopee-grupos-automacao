@@ -1,12 +1,13 @@
 {
-  "gerado_em": "2026-10-24T05:16:48.488Z",
+  "gerado_em": "2026-10-24T14:11:58.655Z",
   "total": 100,
   "contagem_por_nicho": {
-    "geral": 37,
-    "casa": 10,
-    "eletronicos": 22,
-    "pets": 16,
-    "moda": 14,
+    "geral": 43,
+    "casa": 9,
+    "eletronicos": 18,
+    "moda": 17,
+    "ferramentas": 4,
+    "pets": 8,
     "beleza": 1
   },
   "ofertas": [
@@ -23,10 +24,10 @@
       "vendas": 213,
       "avaliacao": "4.8",
       "desconto_percentual": 0,
-      "coletado_em": "2026-10-24T05:16:39.552Z",
+      "coletado_em": "2026-10-24T14:11:49.498Z",
       "fonte": "shopee-products-v2",
       "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
+      "classificado_em": "2026-10-24T14:11:58.654Z"
     },
     {
       "id": "23799864261",
@@ -41,82 +42,10 @@
       "vendas": 14,
       "avaliacao": "4.7",
       "desconto_percentual": 8,
-      "coletado_em": "2026-10-24T05:16:39.552Z",
+      "coletado_em": "2026-10-24T14:11:49.498Z",
       "fonte": "shopee-products-v2",
       "nicho": "casa",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "58220075428",
-      "titulo": "Lagarto Maluco Mola Mais Reforçada Resistente Lagartixo Moto",
-      "preco": "29.4",
-      "preco_formatado": "R$ 29,40",
-      "link": "https://s.shopee.com.br/20wSMTkeeJ",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m8-mufciz1lyd4z6f",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820m8-mufciz1lyd4z6f"
-      ],
-      "vendas": 5,
-      "avaliacao": "3",
-      "desconto_percentual": 51,
-      "coletado_em": "2026-10-24T05:16:39.552Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "48618606503",
-      "titulo": "tinchiling12 Em Cascata LED Luz De Parede Mágica De Natal Brilho Branco Quente Fácil Pendurar Decoração Do Feriado Para",
-      "preco": "39.99",
-      "preco_formatado": "R$ 39,99",
-      "link": "https://s.shopee.com.br/1gJbxrlvKH",
-      "imagem": "https://cf.shopee.com.br/file/cn-11134207-820l4-mtqc0d7n1qm860",
-      "imagens": [
-        "https://cf.shopee.com.br/file/cn-11134207-820l4-mtqc0d7n1qm860"
-      ],
-      "vendas": 0,
-      "avaliacao": "0",
-      "desconto_percentual": 53,
-      "coletado_em": "2026-10-24T05:16:39.552Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "eletronicos",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "41634682540",
-      "titulo": "Kit 5 Ursinho Pelúcia Pendente De Natal Enfeite Para Árvore Decoração Natalina",
-      "preco": "60.99",
-      "preco_formatado": "R$ 60,99",
-      "link": "https://s.shopee.com.br/1LgltiG5Fz",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lr-mtfiv8xymtc1b8",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820lr-mtfiv8xymtc1b8"
-      ],
-      "vendas": 284,
-      "avaliacao": "4.9",
-      "desconto_percentual": 23,
-      "coletado_em": "2026-10-24T05:16:39.552Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "pets",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "58218623745",
-      "titulo": "Bolinha de Natal Personalizada com Foto em Acrílico 6,5cm com Neve | Enfeite de Natal para Árvore | Kit 3 5 8 ou 10",
-      "preco": "19.5",
-      "preco_formatado": "R$ 19,50",
-      "link": "https://s.shopee.com.br/1W0BnnaGso",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820mf-mtdt1fo57gg360",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820mf-mtdt1fo57gg360"
-      ],
-      "vendas": 140,
-      "avaliacao": "5",
-      "desconto_percentual": 15,
-      "coletado_em": "2026-10-24T05:16:39.552Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
+      "classificado_em": "2026-10-24T14:11:58.654Z"
     },
     {
       "id": "58214750985",
@@ -131,136 +60,10 @@
       "vendas": 28,
       "avaliacao": "4.8",
       "desconto_percentual": 5,
-      "coletado_em": "2026-10-24T05:16:39.552Z",
+      "coletado_em": "2026-10-24T14:11:49.498Z",
       "fonte": "shopee-products-v2",
       "nicho": "eletronicos",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "58267719064",
-      "titulo": "22M Cordão de Luz Solar LED Natal Estrela Floco de Neve Árvore Decoração para Jardim e Varanda",
-      "preco": "45",
-      "preco_formatado": "R$ 45,00",
-      "link": "https://s.shopee.com.br/1W0C61FRv0",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820mb-msv7hhk4hds754",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820mb-msv7hhk4hds754"
-      ],
-      "vendas": 366,
-      "avaliacao": "4.8",
-      "desconto_percentual": 50,
-      "coletado_em": "2026-10-24T05:16:39.552Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "eletronicos",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "22797891574",
-      "titulo": "Enfeite De Natal Globo De Neve Vidro 8cm Decoração Natalina",
-      "preco": "29.99",
-      "preco_formatado": "R$ 29,99",
-      "link": "https://s.shopee.com.br/20wSgwDXuB",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8257y-mtsbpfu4wglh58",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-8257y-mtsbpfu4wglh58"
-      ],
-      "vendas": 74,
-      "avaliacao": "4.9",
-      "desconto_percentual": 40,
-      "coletado_em": "2026-10-24T05:16:39.552Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "pets",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "41584717212",
-      "titulo": "Kit Sousplast Jogo Americano Caminho De Mesa Natalino Natal Mesa Posta Sofisticação Sublimação Digital Tecido Premium",
-      "preco": "27.9",
-      "preco_formatado": "R$ 27,90",
-      "link": "https://s.shopee.com.br/2VsjHrBdtE",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m9-mttmiteg9dds35",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820m9-mttmiteg9dds35"
-      ],
-      "vendas": 53,
-      "avaliacao": "4.8",
-      "desconto_percentual": 32,
-      "coletado_em": "2026-10-24T05:16:39.553Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "23399863976",
-      "titulo": "Kit 5 Toalha Lavabo Decoração Natal Natalina 100% Algodão 26x47cm",
-      "preco": "37.9",
-      "preco_formatado": "R$ 37,90",
-      "link": "https://s.shopee.com.br/2LZJ5YCHED",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820ls-mtz9fwuluoe8a2",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820ls-mtz9fwuluoe8a2"
-      ],
-      "vendas": 37,
-      "avaliacao": "4.4",
-      "desconto_percentual": 46,
-      "coletado_em": "2026-10-24T05:16:39.553Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "casa",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "58269809706",
-      "titulo": "Boné Brasil Bordado Alto Relevo Qualidade Premium",
-      "preco": "69.9",
-      "preco_formatado": "R$ 69,90",
-      "link": "https://s.shopee.com.br/2BFstFCuZC",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820ma-mtyfzpajej9c0b",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820ma-mtyfzpajej9c0b"
-      ],
-      "vendas": 136,
-      "avaliacao": "4.9",
-      "desconto_percentual": 0,
-      "coletado_em": "2026-10-24T05:16:39.553Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "moda",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "23098944281",
-      "titulo": "QUEIMA DE ESTOQUE - Mesa de Jantar Quadrada Industrial – Design de Madeira p/ 4 Lugares",
-      "preco": "180.45",
-      "preco_formatado": "R$ 180,45",
-      "link": "https://s.shopee.com.br/W7euBJFwu",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mf3vq9d3vxtx8d",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-81z1k-mf3vq9d3vxtx8d"
-      ],
-      "vendas": 88,
-      "avaliacao": "4.8",
-      "desconto_percentual": 12,
-      "coletado_em": "2026-10-24T05:16:39.553Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "48068353443",
-      "titulo": "Cordões Decorativo de Natal Decoração Cordão Dourado Para Arvore de Natal 2 metros Enfeites Natalinos Bolas Natalinas",
-      "preco": "19.85",
-      "preco_formatado": "R$ 19,85",
-      "link": "https://s.shopee.com.br/LoEhsJtHt",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m6-muhuvgd43egye2",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820m6-muhuvgd43egye2"
-      ],
-      "vendas": 36,
-      "avaliacao": "4.7",
-      "desconto_percentual": 40,
-      "coletado_em": "2026-10-24T05:16:39.553Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "pets",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
+      "classificado_em": "2026-10-24T14:11:58.654Z"
     },
     {
       "id": "58217716573",
@@ -275,107 +78,53 @@
       "vendas": 16,
       "avaliacao": "4.8",
       "desconto_percentual": 59,
-      "coletado_em": "2026-10-24T05:16:39.553Z",
+      "coletado_em": "2026-10-24T14:11:49.499Z",
       "fonte": "shopee-products-v2",
       "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
+      "classificado_em": "2026-10-24T14:11:58.654Z"
     },
     {
-      "id": "23498042511",
-      "titulo": "kit Árvore de Natal 1,5m Cheia Decorada 300 Galhos Verde Pé de Ferro 150cm Premium Pisca Led Laço Quente",
-      "preco": "127.96",
-      "preco_formatado": "R$ 127,96",
-      "link": "https://s.shopee.com.br/1BOJGL9xr",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lv-mu9g7lett4ar5e",
+      "id": "58269809706",
+      "titulo": "Boné Brasil Bordado Alto Relevo Qualidade Premium",
+      "preco": "69.9",
+      "preco_formatado": "R$ 69,90",
+      "link": "https://s.shopee.com.br/2BFstFCuZC",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820ma-mtyfzpajej9c0b",
       "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820lv-mu9g7lett4ar5e"
+        "https://cf.shopee.com.br/file/br-11134207-820ma-mtyfzpajej9c0b"
       ],
-      "vendas": 266,
+      "vendas": 136,
       "avaliacao": "4.9",
-      "desconto_percentual": 43,
-      "coletado_em": "2026-10-24T05:16:39.553Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "eletronicos",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "58270596328",
-      "titulo": "Guarda Sol Gigante 2,4m Uv Praia Piscina Respirável Verão",
-      "preco": "98.9",
-      "preco_formatado": "R$ 98,90",
-      "link": "https://s.shopee.com.br/1BNLhPGib6",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-825ag-mucphf3iaoei76",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-825ag-mucphf3iaoei76"
-      ],
-      "vendas": 3,
-      "avaliacao": "5",
-      "desconto_percentual": 48,
-      "coletado_em": "2026-10-24T05:16:39.553Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "48216232287",
-      "titulo": "Árvore de Natal Nevada 1,80m com 320 Galhos Árvore de Natal 180cm Branca Volumosa",
-      "preco": "134.9",
-      "preco_formatado": "R$ 134,90",
-      "link": "https://s.shopee.com.br/113vV6HLw5",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8259o-ms09o3e32qyw6d",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-8259o-ms09o3e32qyw6d"
-      ],
-      "vendas": 22,
-      "avaliacao": "4.7",
-      "desconto_percentual": 59,
-      "coletado_em": "2026-10-24T05:16:39.553Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "47956792417",
-      "titulo": "Boneca móvel com articulação de aranha verde, boneca de ação, presente de aniversário",
-      "preco": "64.99",
-      "preco_formatado": "R$ 64,99",
-      "link": "https://s.shopee.com.br/qkVInHzH4",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8260g-mlg0sognyux03a",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-8260g-mlg0sognyux03a"
-      ],
-      "vendas": 378,
-      "avaliacao": "4.8",
-      "desconto_percentual": 53,
-      "coletado_em": "2026-10-24T05:16:39.553Z",
+      "desconto_percentual": 0,
+      "coletado_em": "2026-10-24T14:11:49.499Z",
       "fonte": "shopee-products-v2",
       "nicho": "moda",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
+      "classificado_em": "2026-10-24T14:11:58.654Z"
     },
     {
-      "id": "22893267017",
-      "titulo": "Árvore De Natal Pinheiro 210cm 600 Galhos Cheia Premium Verde",
-      "preco": "64.9",
-      "preco_formatado": "R$ 64,90",
-      "link": "https://s.shopee.com.br/8pmmpUwKf7",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820ll-mseahc66bsp164",
+      "id": "58268909323",
+      "titulo": "Kit Ferramentas Eletrica Parafusadeira Martelete Esmerilhadeira Lixadeira Furadeira Chave Impacto",
+      "preco": "548.99",
+      "preco_formatado": "R$ 548,99",
+      "link": "https://s.shopee.com.br/8KqXQorHcd",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lx-mtia13qcn01vb8",
       "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820ll-mseahc66bsp164"
+        "https://cf.shopee.com.br/file/br-11134207-820lx-mtia13qcn01vb8"
       ],
-      "vendas": 1867,
-      "avaliacao": "4.8",
-      "desconto_percentual": 35,
-      "coletado_em": "2026-10-24T05:16:39.553Z",
+      "vendas": 17,
+      "avaliacao": "5",
+      "desconto_percentual": 66,
+      "coletado_em": "2026-10-24T14:11:49.499Z",
       "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
+      "nicho": "ferramentas",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
     },
     {
       "id": "58269711985",
       "titulo": "Kit de capuz removível para protetor contra vento e água para motocicleta, com botas",
       "preco": "31.49",
       "preco_formatado": "R$ 31,49",
-      "link": "https://s.shopee.com.br/906D1nvhKA",
+      "link": "https://s.shopee.com.br/AAIBcBkIu0",
       "imagem": "https://cf.shopee.com.br/file/br-11134207-820mg-mtvq2x5s9bszf4",
       "imagens": [
         "https://cf.shopee.com.br/file/br-11134207-820mg-mtvq2x5s9bszf4"
@@ -383,323 +132,17 @@
       "vendas": 294,
       "avaliacao": "4.7",
       "desconto_percentual": 41,
-      "coletado_em": "2026-10-24T05:16:41.562Z",
+      "coletado_em": "2026-10-24T14:11:49.499Z",
       "fonte": "shopee-products-v2",
       "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "58217438255",
-      "titulo": "Kit 100 Bolas +1 Estrela Pendentes Árvore Natal Decoração Enfeites Bolinhas Premium Lisas/Glitter/Fosca Vermelho/Dourado",
-      "preco": "39.9",
-      "preco_formatado": "R$ 39,90",
-      "link": "https://s.shopee.com.br/9V2TcitnJJ",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820mc-msn34j9o6z9i5f",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820mc-msn34j9o6z9i5f"
-      ],
-      "vendas": 28,
-      "avaliacao": "4.9",
-      "desconto_percentual": 60,
-      "coletado_em": "2026-10-24T05:16:41.562Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "pets",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "55012380829",
-      "titulo": "Mangueira De LED Solar Pisca Pisca Impermeável Cordão Luz Para Jardim Quintal Natal 50-300LED",
-      "preco": "42.94",
-      "preco_formatado": "R$ 42,94",
-      "link": "https://s.shopee.com.br/9APdE6v3zD",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-824jg-mpl080xhijgsae",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-824jg-mpl080xhijgsae"
-      ],
-      "vendas": 223,
-      "avaliacao": "4.9",
-      "desconto_percentual": 53,
-      "coletado_em": "2026-10-24T05:16:41.562Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "eletronicos",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "55415924122",
-      "titulo": "3 Pçs Artesanal Ferro ArtElk Cervos Decoração Do Jardim De Natal & Luz LED Brilhante Glitter Rena Casa Ao Ar Livre Quint",
-      "preco": "184.2",
-      "preco_formatado": "R$ 184,20",
-      "link": "https://s.shopee.com.br/9Kj3QPuQeG",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8257x-mrtusyz1p2ww16",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-8257x-mrtusyz1p2ww16"
-      ],
-      "vendas": 2,
-      "avaliacao": "5",
-      "desconto_percentual": 20,
-      "coletado_em": "2026-10-24T05:16:41.562Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "eletronicos",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "58218488885",
-      "titulo": "Conjunto Capa de Chuva Motoboy 2 Peças Impermeável Jaqueta e Calça com Capuz Viseira e Refletivo",
-      "preco": "47.8",
-      "preco_formatado": "R$ 47,80",
-      "link": "https://s.shopee.com.br/9fLtp1t9yM",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-825bb-mtb2r1heyeiu45",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-825bb-mtb2r1heyeiu45"
-      ],
-      "vendas": 29,
-      "avaliacao": "4.6",
-      "desconto_percentual": 47,
-      "coletado_em": "2026-10-24T05:16:41.562Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "moda",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "20999446851",
-      "titulo": "Árvore Natal 1,80m Pinheiro 146 Enfeites 450 Galhos e Led Pisca Pisca Enfeite Decorada Kit Completo Arvore 180cm Cheia",
-      "preco": "217.89",
-      "preco_formatado": "R$ 217,89",
-      "link": "https://s.shopee.com.br/AAIAPwrFxV",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lg-ms4ed541fthja0",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820lg-ms4ed541fthja0"
-      ],
-      "vendas": 25,
-      "avaliacao": "4.8",
-      "desconto_percentual": 1,
-      "coletado_em": "2026-10-24T05:16:41.562Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "eletronicos",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "22195203917",
-      "titulo": "Banco Banqueta De Musculação E Academia Regulável 8 Estágio Preto ADKING",
-      "preco": "379",
-      "preco_formatado": "R$ 379,00",
-      "link": "https://s.shopee.com.br/9pfK1KsWdP",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820ma-mrhq5f5c9x518c",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820ma-mrhq5f5c9x518c"
-      ],
-      "vendas": 43,
-      "avaliacao": "4.7",
-      "desconto_percentual": 37,
-      "coletado_em": "2026-10-24T05:16:41.562Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "52067240770",
-      "titulo": "Kit Jarra de Vidro 1,6L com Tampa e 6 Taças Diamond 320ml Conjunto 7 Peças",
-      "preco": "33.49",
-      "preco_formatado": "R$ 33,49",
-      "link": "https://s.shopee.com.br/9zykDdrtIS",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lu-mtoj55i1wp36c1",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820lu-mtoj55i1wp36c1"
-      ],
-      "vendas": 22,
-      "avaliacao": "4.7",
-      "desconto_percentual": 58,
-      "coletado_em": "2026-10-24T05:16:41.562Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "47354393721",
-      "titulo": "National Lovito Férias Vestido Feminino para Primavera/verão LBL32338",
-      "preco": "41.5",
-      "preco_formatado": "R$ 41,50",
-      "link": "https://s.shopee.com.br/AKbacFqccY",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-82609-mjqhq3hgfyf58d",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-82609-mjqhq3hgfyf58d"
-      ],
-      "vendas": 117,
-      "avaliacao": "4.6",
-      "desconto_percentual": 30,
-      "coletado_em": "2026-10-24T05:16:41.562Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "moda",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "22699684273",
-      "titulo": "Árvore De Natal Pinheiro 1.80m 2.10m 2.40m 3.00m Super Cheia Premium Luxo Galhos Cheios Verde",
-      "preco": "169.9",
-      "preco_formatado": "R$ 169,90",
-      "link": "https://s.shopee.com.br/113vV6Q9Yn",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m5-msgd4t6cum869e",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820m5-msgd4t6cum869e"
-      ],
-      "vendas": 166,
-      "avaliacao": "4.8",
-      "desconto_percentual": 40,
-      "coletado_em": "2026-10-24T05:16:41.562Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "22699788471",
-      "titulo": "Kit 5 Luzes LED Solares Efeito Fogos de Artifício | 450 LEDs com Controle Remoto | Decoração de Natal e Festas",
-      "preco": "65.88",
-      "preco_formatado": "R$ 65,88",
-      "link": "https://s.shopee.com.br/AUv0oYpzHb",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8258s-mtf4361l9wxzc5",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-8258s-mtf4361l9wxzc5"
-      ],
-      "vendas": 50,
-      "avaliacao": "5",
-      "desconto_percentual": 34,
-      "coletado_em": "2026-10-24T05:16:41.562Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "eletronicos",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "49116997789",
-      "titulo": "Kit Copo Natalino 680ml com Tampa e Canudo LED – Copo de Natal Reutilizável com Luz Colorida | Unitário, Kit 3 ou Kit 5",
-      "preco": "21.99",
-      "preco_formatado": "R$ 21,99",
-      "link": "https://s.shopee.com.br/1BNLhPPWDo",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lc-msh6xoixb6rpf0",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820lc-msh6xoixb6rpf0"
-      ],
-      "vendas": 30,
-      "avaliacao": "5",
-      "desconto_percentual": 16,
-      "coletado_em": "2026-10-24T05:16:41.563Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "eletronicos",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "45700264946",
-      "titulo": "Decorações De Natal Para Casa Papai Noel Boneca De Pelúcia 30cm Navidad Festa Decoração Enfeites Presente De Ano Novo",
-      "preco": "63",
-      "preco_formatado": "R$ 63,00",
-      "link": "https://s.shopee.com.br/qkVInQmtm",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-825b5-mgc7p41x8mbsa0",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-825b5-mgc7p41x8mbsa0"
-      ],
-      "vendas": 168,
-      "avaliacao": "4.9",
-      "desconto_percentual": 40,
-      "coletado_em": "2026-10-24T05:16:41.563Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "casa",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "10997135504",
-      "titulo": "Árvore De Natal 1,50m Branca Decoração Natalina",
-      "preco": "99.99",
-      "preco_formatado": "R$ 99,99",
-      "link": "https://s.shopee.com.br/LoEhsSguj",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lp-msy4kt04yoed79",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820lp-msy4kt04yoed79"
-      ],
-      "vendas": 4,
-      "avaliacao": "4.8",
-      "desconto_percentual": 33,
-      "coletado_em": "2026-10-24T05:16:41.563Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "pets",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "26691641409",
-      "titulo": "OFERTA Pisca Pisca 110V 100 Leds 10M ou 50 Leds 5M Luz Árvore Natal Multiuso Decoração Janela",
-      "preco": "12.9",
-      "preco_formatado": "R$ 12,90",
-      "link": "https://s.shopee.com.br/gR56URQEl",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mf8qrdeajxtx3d",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-81z1k-mf8qrdeajxtx3d"
-      ],
-      "vendas": 12,
-      "avaliacao": "4.9",
-      "desconto_percentual": 68,
-      "coletado_em": "2026-10-24T05:16:41.563Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "eletronicos",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "23195180881",
-      "titulo": "Kit Edredom 5 Peças Lais Algodão Elegância e Sofisticação para o Seu Quarto",
-      "preco": "199.99",
-      "preco_formatado": "R$ 199,99",
-      "link": "https://s.shopee.com.br/W7euBS3Zk",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8258s-mt5orjt8dblxe1",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-8258s-mt5orjt8dblxe1"
-      ],
-      "vendas": 24,
-      "avaliacao": "4.4",
-      "desconto_percentual": 0,
-      "coletado_em": "2026-10-24T05:16:41.563Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "46416304631",
-      "titulo": "Espelho Flame Com Moldura Em Couro 100x35 90x40 70x30 50x25 Hall Sala Closet",
-      "preco": "49",
-      "preco_formatado": "R$ 49,00",
-      "link": "https://s.shopee.com.br/BUoVZTKFi",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m8-ms35tbxdrqiu49",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820m8-ms35tbxdrqiu49"
-      ],
-      "vendas": 4860,
-      "avaliacao": "4.8",
-      "desconto_percentual": 82,
-      "coletado_em": "2026-10-24T05:16:41.563Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "23592287404",
-      "titulo": "Árvore Natal Verde 150cm 220 Galhos Decoração Natalina Pinheiro Pinheirinho Premium",
-      "preco": "59.89",
-      "preco_formatado": "R$ 59,89",
-      "link": "https://s.shopee.com.br/4qGdlv5yuH",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-825bd-mul0yky9qgoxba",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-825bd-mul0yky9qgoxba"
-      ],
-      "vendas": 322,
-      "avaliacao": "4.9",
-      "desconto_percentual": 33,
-      "coletado_em": "2026-10-24T05:16:41.563Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "pets",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
+      "classificado_em": "2026-10-24T14:11:58.654Z"
     },
     {
       "id": "58250606467",
       "titulo": "Sapateira com Portas Basculantes Vertical Armário para Quarto Sapato Sala Tênis Hall Entrada",
       "preco": "176.99",
       "preco_formatado": "R$ 176,99",
-      "link": "https://s.shopee.com.br/1BOJGTxah",
+      "link": "https://s.shopee.com.br/9zylPskwEz",
       "imagem": "https://cf.shopee.com.br/file/br-11134207-820ma-mrbmnfcv8mpw53",
       "imagens": [
         "https://cf.shopee.com.br/file/br-11134207-820ma-mrbmnfcv8mpw53"
@@ -707,143 +150,161 @@
       "vendas": 909,
       "avaliacao": "4.4",
       "desconto_percentual": 39,
-      "coletado_em": "2026-10-24T05:16:41.563Z",
+      "coletado_em": "2026-10-24T14:11:49.499Z",
       "fonte": "shopee-products-v2",
       "nicho": "moda",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
+      "classificado_em": "2026-10-24T14:11:58.654Z"
     },
     {
-      "id": "22692591560",
-      "titulo": "Pisca Pisca 10Metros 100Leds Luz Coloridos 110V 220V Para Iluminação De Natal E Decoração De Festa",
-      "preco": "14.9",
-      "preco_formatado": "R$ 14,90",
-      "link": "https://s.shopee.com.br/4qGe49G64v",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lnhq3sox65zg0d",
+      "id": "23098944281",
+      "titulo": "QUEIMA DE ESTOQUE - Mesa de Jantar Quadrada Industrial – Design de Madeira p/ 4 Lugares",
+      "preco": "180.45",
+      "preco_formatado": "R$ 180,45",
+      "link": "https://s.shopee.com.br/AUv20nj2E6",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mf3vq9d3vxtx8d",
       "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-7r98o-lnhq3sox65zg0d"
+        "https://cf.shopee.com.br/file/br-11134207-81z1k-mf3vq9d3vxtx8d"
       ],
-      "vendas": 280,
+      "vendas": 88,
       "avaliacao": "4.8",
-      "desconto_percentual": 70,
-      "coletado_em": "2026-10-24T05:16:41.563Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "eletronicos",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "53617827403",
-      "titulo": "Camisa Camiseta Blusa Proteção Solar UV Aparecida Black REDFISH BRASIL Longa Dry Fit Feminina",
-      "preco": "59.9",
-      "preco_formatado": "R$ 59,90",
-      "link": "https://s.shopee.com.br/8fTMdBwy04",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820mg-mtie4kpddg5caa",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820mg-mtie4kpddg5caa"
-      ],
-      "vendas": 4,
-      "avaliacao": "5",
-      "desconto_percentual": 20,
-      "coletado_em": "2026-10-24T05:16:43.865Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "moda",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "58167686255",
-      "titulo": "Fz 1 Conjunto De Decorações Aconchegantes De Varanda De Inverno , Enfeite De Natal Rústico Iluminado , Fácil De Pendurar",
-      "preco": "78.51",
-      "preco_formatado": "R$ 78,51",
-      "link": "https://s.shopee.com.br/8fTMKxeBn8",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8258q-msycmiyak4xwa0",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-8258q-msycmiyak4xwa0"
-      ],
-      "vendas": 3,
-      "avaliacao": "1",
-      "desconto_percentual": 50,
-      "coletado_em": "2026-10-24T05:16:43.865Z",
+      "desconto_percentual": 12,
+      "coletado_em": "2026-10-24T14:11:49.499Z",
       "fonte": "shopee-products-v2",
       "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
+      "classificado_em": "2026-10-24T14:11:58.654Z"
     },
     {
-      "id": "58215540854",
-      "titulo": "Cortina de LED Fada Cordão de Luz Janela Estrelas Guirlanda de Natal Alimentada por USB",
-      "preco": "29.9",
-      "preco_formatado": "R$ 29,90",
-      "link": "https://s.shopee.com.br/4B0xGvIdQr",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lw-ms0dqfdvrqx3f5",
+      "id": "48216232287",
+      "titulo": "Árvore de Natal Nevada 1,80m com 320 Galhos Árvore de Natal 180cm Branca Volumosa",
+      "preco": "134.9",
+      "preco_formatado": "R$ 134,90",
+      "link": "https://s.shopee.com.br/AKbboUjfZ5",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8259o-ms09o3e32qyw6d",
       "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820lw-ms0dqfdvrqx3f5"
+        "https://cf.shopee.com.br/file/sg-11134201-8259o-ms09o3e32qyw6d"
       ],
-      "vendas": 933,
-      "avaliacao": "4.8",
-      "desconto_percentual": 50,
-      "coletado_em": "2026-10-24T05:16:43.865Z",
+      "vendas": 22,
+      "avaliacao": "4.7",
+      "desconto_percentual": 59,
+      "coletado_em": "2026-10-24T14:11:49.499Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "48618606503",
+      "titulo": "tinchiling12 Em Cascata LED Luz De Parede Mágica De Natal Brilho Branco Quente Fácil Pendurar Decoração Do Feriado Para",
+      "preco": "39.99",
+      "preco_formatado": "R$ 39,99",
+      "link": "https://s.shopee.com.br/9V2UoxmqFw",
+      "imagem": "https://cf.shopee.com.br/file/cn-11134207-820l4-mtqc0d7n1qm860",
+      "imagens": [
+        "https://cf.shopee.com.br/file/cn-11134207-820l4-mtqc0d7n1qm860"
+      ],
+      "vendas": 0,
+      "avaliacao": "0",
+      "desconto_percentual": 53,
+      "coletado_em": "2026-10-24T14:11:49.499Z",
       "fonte": "shopee-products-v2",
       "nicho": "eletronicos",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
+      "classificado_em": "2026-10-24T14:11:58.654Z"
     },
     {
-      "id": "58218340252",
-      "titulo": "Nativa SPA Body Splash – Encontre o Aroma que Combina com Seu Estilo",
-      "preco": "19.9",
-      "preco_formatado": "R$ 19,90",
-      "link": "https://s.shopee.com.br/50a4GSFSjy",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-82590-mt84ny8fg8w851",
+      "id": "41634682540",
+      "titulo": "Kit 5 Ursinho Pelúcia Pendente De Natal Enfeite Para Árvore Decoração Natalina",
+      "preco": "60.99",
+      "preco_formatado": "R$ 60,99",
+      "link": "https://s.shopee.com.br/9Kj4cenTav",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lr-mtfiv8xymtc1b8",
       "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-82590-mt84ny8fg8w851"
+        "https://cf.shopee.com.br/file/br-11134207-820lr-mtfiv8xymtc1b8"
       ],
-      "vendas": 35,
-      "avaliacao": "3.1",
-      "desconto_percentual": 0,
-      "coletado_em": "2026-10-24T05:16:43.865Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "beleza",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "21799541706",
-      "titulo": "Camisa Camiseta Masculino e Feminino Cavalo Muladeiros Proteçao solar UV",
-      "preco": "19.96",
-      "preco_formatado": "R$ 19,96",
-      "link": "https://s.shopee.com.br/5AtUSlEpP1",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rdyd-m1e9tmouv3b209",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-7rdyd-m1e9tmouv3b209"
-      ],
-      "vendas": 382,
-      "avaliacao": "4.9",
-      "desconto_percentual": 60,
-      "coletado_em": "2026-10-24T05:16:43.866Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "moda",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "58267734668",
-      "titulo": "Árvore De Natal 1,50M Branca Decoração Natalina",
-      "preco": "99.99",
-      "preco_formatado": "R$ 99,99",
-      "link": "https://s.shopee.com.br/40hX4cJGlo",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lp-msy4kt04yoed79",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820lp-msy4kt04yoed79"
-      ],
-      "vendas": 10,
+      "vendas": 284,
       "avaliacao": "4.9",
       "desconto_percentual": 23,
-      "coletado_em": "2026-10-24T05:16:43.866Z",
+      "coletado_em": "2026-10-24T14:11:49.499Z",
       "fonte": "shopee-products-v2",
       "nicho": "pets",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "52006889522",
+      "titulo": "Saco Secador para Pet - Secagem Rápida 15-30min, Pelos Secos, Anti-Ansiedade, Para Cães e Gatos, Lavável, Reutilizável",
+      "preco": "29.46",
+      "preco_formatado": "R$ 29,46",
+      "link": "https://s.shopee.com.br/9pfLDZlZa2",
+      "imagem": "https://cf.shopee.com.br/file/cn-11134207-820l4-mn6yr6hggqv6b3",
+      "imagens": [
+        "https://cf.shopee.com.br/file/cn-11134207-820l4-mn6yr6hggqv6b3"
+      ],
+      "vendas": 127,
+      "avaliacao": "4.8",
+      "desconto_percentual": 0,
+      "coletado_em": "2026-10-24T14:11:49.499Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "pets",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "51367659090",
+      "titulo": "Guirlanda Plaquinha Decorativa MDF Mini Jesus Maria Efeito 3D Ore Confie Decoração Natal Enfeite Porta Natalina Pendurar",
+      "preco": "27.98",
+      "preco_formatado": "R$ 27,98",
+      "link": "https://s.shopee.com.br/9fLv1GmCv1",
+      "imagem": "https://cf.shopee.com.br/file/br-11134201-820lc-mtxcyzdq0wsjcc",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134201-820lc-mtxcyzdq0wsjcc"
+      ],
+      "vendas": 50,
+      "avaliacao": "4.9",
+      "desconto_percentual": 0,
+      "coletado_em": "2026-10-24T14:11:49.499Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "pets",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "58209299886",
+      "titulo": "Capa Para Cobrir Moto Protetora Couro Impermeável Sol Chuva Uv Forro",
+      "preco": "48.9",
+      "preco_formatado": "R$ 48,90",
+      "link": "https://s.shopee.com.br/qkWV2JpqK",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lk-mnc04gpzjnd08d",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820lk-mnc04gpzjnd08d"
+      ],
+      "vendas": 2357,
+      "avaliacao": "4.9",
+      "desconto_percentual": 51,
+      "coletado_em": "2026-10-24T14:11:49.499Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "58218488885",
+      "titulo": "Conjunto Capa de Chuva Motoboy 2 Peças Impermeável Jaqueta e Calça com Capuz Viseira e Refletivo",
+      "preco": "47.8",
+      "preco_formatado": "R$ 47,80",
+      "link": "https://s.shopee.com.br/gR6IjKTBJ",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-825bb-mtb2r1heyeiu45",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-825bb-mtb2r1heyeiu45"
+      ],
+      "vendas": 29,
+      "avaliacao": "4.6",
+      "desconto_percentual": 47,
+      "coletado_em": "2026-10-24T14:11:49.499Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "moda",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
     },
     {
       "id": "45106201159",
       "titulo": "Scooter Elétrica Zurbe Ibiza 1000W Bateria LiFePO4 Removível 76.8V 23Ah Autonomia 50km 32km/h",
       "preco": "9990",
       "preco_formatado": "R$ 9.990,00",
-      "link": "https://s.shopee.com.br/6L5SSOdLNC",
+      "link": "https://s.shopee.com.br/1BNMteIZAQ",
       "imagem": "https://cf.shopee.com.br/file/br-11134207-820m2-mtf71zb9f9q93c",
       "imagens": [
         "https://cf.shopee.com.br/file/br-11134207-820m2-mtf71zb9f9q93c"
@@ -851,262 +312,64 @@
       "vendas": 0,
       "avaliacao": "4.6",
       "desconto_percentual": 0,
-      "coletado_em": "2026-10-24T05:16:43.866Z",
+      "coletado_em": "2026-10-24T14:11:49.499Z",
       "fonte": "shopee-products-v2",
       "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
+      "classificado_em": "2026-10-24T14:11:58.654Z"
     },
     {
-      "id": "29045753594",
-      "titulo": "Decoração Plana De Mesa Para Cena De Natal , Presépio Acrílico 2D , Enfeite De Prateleira Encantador , Escritório Domést",
-      "preco": "35.35",
-      "preco_formatado": "R$ 35,35",
-      "link": "https://s.shopee.com.br/6VOsehci2F",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-825ao-mswqq8ve8xzdb9",
+      "id": "22797891574",
+      "titulo": "Enfeite De Natal Globo De Neve Vidro 8cm Decoração Natalina",
+      "preco": "29.99",
+      "preco_formatado": "R$ 29,99",
+      "link": "https://s.shopee.com.br/113whLJCVP",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8257y-mtsbpfu4wglh58",
       "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-825ao-mswqq8ve8xzdb9"
+        "https://cf.shopee.com.br/file/sg-11134201-8257y-mtsbpfu4wglh58"
       ],
-      "vendas": 6,
-      "avaliacao": "5",
-      "desconto_percentual": 50,
-      "coletado_em": "2026-10-24T05:16:43.866Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "casa",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "58268465498",
-      "titulo": "Pisca Pisca Strobo Cordão 10/20/30m Enfeites de Natal Decoração Luzes Casa Lojas Fio de LED Natalino",
-      "preco": "32.99",
-      "preco_formatado": "R$ 32,99",
-      "link": "https://s.shopee.com.br/5LCvGYh9P2",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8258g-mtaeyr990l4wf5",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-8258g-mtaeyr990l4wf5"
-      ],
-      "vendas": 641,
+      "vendas": 74,
       "avaliacao": "4.9",
-      "desconto_percentual": 50,
-      "coletado_em": "2026-10-24T05:16:43.866Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "eletronicos",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "58220335559",
-      "titulo": "Kit Árvore de Natal com Fita Decorativa 1,50m 1,80m Árvore Verde Premium Enfeite Natalino Completo para Casa Sala Festa",
-      "preco": "45",
-      "preco_formatado": "R$ 45,00",
-      "link": "https://s.shopee.com.br/5VWLSrgW45",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m8-mu900vh5ibk2e6",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820m8-mu900vh5ibk2e6"
-      ],
-      "vendas": 0,
-      "avaliacao": "0",
-      "desconto_percentual": 55,
-      "coletado_em": "2026-10-24T05:16:43.866Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "casa",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "58220286076",
-      "titulo": "Lona Transparente de PVC Reforçado – Impermeável,Durável e Proteção Solar – Com Ilhós – Jardim,Portas,Janelas e Varandas",
-      "preco": "69.89",
-      "preco_formatado": "R$ 69,89",
-      "link": "https://s.shopee.com.br/5fplfAfsj8",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lw-mu7jw2statc390",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820lw-mu7jw2statc390"
-      ],
-      "vendas": 6,
-      "avaliacao": "5",
-      "desconto_percentual": 47,
-      "coletado_em": "2026-10-24T05:16:43.866Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "casa",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "22099904497",
-      "titulo": "kit Feliz Natal 4 peças capa de almofadas para decoração Natalina PROMOÇÃO",
-      "preco": "17.9",
-      "preco_formatado": "R$ 17,90",
-      "link": "https://s.shopee.com.br/5q9BrTfFOB",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8259m-mscrx8vsw1ky55",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-8259m-mscrx8vsw1ky55"
-      ],
-      "vendas": 0,
-      "avaliacao": "0",
-      "desconto_percentual": 0,
-      "coletado_em": "2026-10-24T05:16:43.866Z",
+      "desconto_percentual": 40,
+      "coletado_em": "2026-10-24T14:11:49.499Z",
       "fonte": "shopee-products-v2",
       "nicho": "pets",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
+      "classificado_em": "2026-10-24T14:11:58.654Z"
     },
     {
-      "id": "23394433423",
-      "titulo": "Conjunto Capa de Chuva PLUS SIZE Masculino Motoqueiro Motoboy PVC Proteção 100% Impermeável  - ExtraGrande G5",
-      "preco": "67.99",
-      "preco_formatado": "R$ 67,99",
-      "link": "https://s.shopee.com.br/4qGefdj3Q0",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820l5-mpgvy55kbtvq9a",
+      "id": "48068353443",
+      "titulo": "Cordões Decorativo de Natal Decoração Cordão Dourado Para Arvore de Natal 2 metros Enfeites Natalinos Bolas Natalinas",
+      "preco": "19.85",
+      "preco_formatado": "R$ 19,85",
+      "link": "https://s.shopee.com.br/BUphoMNCG",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m6-muhuvgd43egye2",
       "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820l5-mpgvy55kbtvq9a"
+        "https://cf.shopee.com.br/file/br-11134207-820m6-muhuvgd43egye2"
       ],
-      "vendas": 236,
-      "avaliacao": "4.9",
-      "desconto_percentual": 0,
-      "coletado_em": "2026-10-24T05:16:43.866Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.487Z"
-    },
-    {
-      "id": "58216186902",
-      "titulo": "Kit 12 Peças Duralex Opaline 6 Pratos Petala Fundo Vidro Branco e 6 Xícaras Robust Canelada Buffet",
-      "preco": "69.89",
-      "preco_formatado": "R$ 69,89",
-      "link": "https://s.shopee.com.br/4fxETKjgkz",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lg-mruqmy6ar1tz21",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820lg-mruqmy6ar1tz21"
-      ],
-      "vendas": 112,
-      "avaliacao": "4.9",
-      "desconto_percentual": 22,
-      "coletado_em": "2026-10-24T05:16:43.866Z",
+      "vendas": 36,
+      "avaliacao": "4.7",
+      "desconto_percentual": 40,
+      "coletado_em": "2026-10-24T14:11:49.499Z",
       "fonte": "shopee-products-v2",
       "nicho": "pets",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
+      "classificado_em": "2026-10-24T14:11:58.654Z"
     },
     {
-      "id": "57068297282",
-      "titulo": "Luz De Projeção De Árvore De Natal , Projetor LED Plug-And-Play USB Com 6 Cenas Festivas , Lâmpada Flexível De Pescoço D",
-      "preco": "25.99",
-      "preco_formatado": "R$ 25,99",
-      "link": "https://s.shopee.com.br/5AtV4Fhmk6",
-      "imagem": "https://cf.shopee.com.br/file/cn-11134207-820l4-mtg1vu2re8zof0",
+      "id": "47354393721",
+      "titulo": "National Lovito Férias Vestido Feminino para Primavera/verão LBL32338",
+      "preco": "41.5",
+      "preco_formatado": "R$ 41,50",
+      "link": "https://s.shopee.com.br/1BPVVN0XF",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-82609-mjqhq3hgfyf58d",
       "imagens": [
-        "https://cf.shopee.com.br/file/cn-11134207-820l4-mtg1vu2re8zof0"
+        "https://cf.shopee.com.br/file/sg-11134201-82609-mjqhq3hgfyf58d"
       ],
-      "vendas": 9,
-      "avaliacao": "4.1",
-      "desconto_percentual": 74,
-      "coletado_em": "2026-10-24T05:16:43.866Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "eletronicos",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "51817688583",
-      "titulo": "Kit 4 Capas de Almofada Estampadas Natalinas 45x45cm",
-      "preco": "49.2",
-      "preco_formatado": "R$ 49,20",
-      "link": "https://s.shopee.com.br/50a4rwiQ55",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820la-msyvcpa10l51bf",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820la-msyvcpa10l51bf"
-      ],
-      "vendas": 16,
+      "vendas": 117,
       "avaliacao": "4.6",
       "desconto_percentual": 30,
-      "coletado_em": "2026-10-24T05:16:43.866Z",
+      "coletado_em": "2026-10-24T14:11:49.499Z",
       "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "58270231450",
-      "titulo": "Árvore de Natal com Nomes Personalizados",
-      "preco": "34.9",
-      "preco_formatado": "R$ 34,90",
-      "link": "https://s.shopee.com.br/4B0xsPlalw",
-      "imagem": "https://cf.shopee.com.br/file/br-11134201-820l5-mu5arm2c035v37",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134201-820l5-mu5arm2c035v37"
-      ],
-      "vendas": 13,
-      "avaliacao": "5",
-      "desconto_percentual": 0,
-      "coletado_em": "2026-10-24T05:16:43.866Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "56861631343",
-      "titulo": "Conjunto de Relógio de Pulso Digital Sweet Heart para Meninas - Presente de Aniversário & Volta às Aulas Perfeito,",
-      "preco": "14.09",
-      "preco_formatado": "R$ 14,09",
-      "link": "https://s.shopee.com.br/40hXg6mE6v",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134253-823q1-mozxts732adn6c",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134253-823q1-mozxts732adn6c"
-      ],
-      "vendas": 259,
-      "avaliacao": "4.7",
-      "desconto_percentual": 50,
-      "coletado_em": "2026-10-24T05:16:43.866Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "eletronicos",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "22699020276",
-      "titulo": "Cascata de Luz 400 LEDs Branco Frio 10m 8 Funções Natal Festas 110v",
-      "preco": "68.94",
-      "preco_formatado": "R$ 68,94",
-      "link": "https://s.shopee.com.br/4VdoH1kK62",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mfn568l50l5087",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-81z1k-mfn568l50l5087"
-      ],
-      "vendas": 44,
-      "avaliacao": "4.8",
-      "desconto_percentual": 31,
-      "coletado_em": "2026-10-24T05:16:43.866Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "eletronicos",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "22397737339",
-      "titulo": "Kit 04 Capa De Almofada 45cm x 45cm Decorativa Natal Areia",
-      "preco": "34.99",
-      "preco_formatado": "R$ 34,99",
-      "link": "https://s.shopee.com.br/4LKO4ikxR1",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lc-mts651e2vkld22",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820lc-mts651e2vkld22"
-      ],
-      "vendas": 747,
-      "avaliacao": "4.5",
-      "desconto_percentual": 16,
-      "coletado_em": "2026-10-24T05:16:43.866Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "41874811115",
-      "titulo": "Árvore de Natal Pinheiro 2,10m 1150 Galhos Cheia Verde Luxo Tradicional",
-      "preco": "99.89",
-      "preco_formatado": "R$ 99,89",
-      "link": "https://s.shopee.com.br/5VWKZ93RYb",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m4-mudhhj680zk346",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820m4-mudhhj680zk346"
-      ],
-      "vendas": 244,
-      "avaliacao": "4.8",
-      "desconto_percentual": 63,
-      "coletado_em": "2026-10-24T05:16:46.184Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
+      "nicho": "moda",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
     },
     {
       "id": "58215216165",
@@ -1121,683 +384,107 @@
       "vendas": 501,
       "avaliacao": "4.9",
       "desconto_percentual": 50,
-      "coletado_em": "2026-10-24T05:16:46.184Z",
+      "coletado_em": "2026-10-24T14:11:51.745Z",
       "fonte": "shopee-products-v2",
       "nicho": "eletronicos",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
+      "classificado_em": "2026-10-24T14:11:58.654Z"
     },
     {
-      "id": "45868320453",
-      "titulo": "Garrafa Térmica Nórdica Berlim Café 1L Cabo De Madeira Luxo Mesa Posta Canelado Dourado",
-      "preco": "54.9",
-      "preco_formatado": "R$ 54,90",
-      "link": "https://s.shopee.com.br/6fiHxHz0Bw",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820l8-mtfqfhd5f1tu1b",
+      "id": "23493174538",
+      "titulo": "Roçadeira Aparador Cortador De Grama Elétrico Recarregável Com Rodas 2 Baterias de Lítio kit completo",
+      "preco": "167.9",
+      "preco_formatado": "R$ 167,90",
+      "link": "https://s.shopee.com.br/113whLS07c",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lw-mpxs829vhqm8eb",
       "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820l8-mtfqfhd5f1tu1b"
+        "https://cf.shopee.com.br/file/br-11134207-820lw-mpxs829vhqm8eb"
       ],
-      "vendas": 458,
-      "avaliacao": "4.8",
-      "desconto_percentual": 50,
-      "coletado_em": "2026-10-24T05:16:46.184Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "eletronicos",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "58209299886",
-      "titulo": "Capa Para Cobrir Moto Protetora Couro Impermeável Sol Chuva Uv Forro",
-      "preco": "48.9",
-      "preco_formatado": "R$ 48,90",
-      "link": "https://s.shopee.com.br/6VOrkyzdWl",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lk-mnc04gpzjnd08d",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820lk-mnc04gpzjnd08d"
-      ],
-      "vendas": 2357,
-      "avaliacao": "4.9",
-      "desconto_percentual": 51,
-      "coletado_em": "2026-10-24T05:16:46.184Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "22194731113",
-      "titulo": "Kit Balão Metalizado 2027 40cm 70cm Feliz Ano Novo Prata Dourado Decoração Ano Novo Réveillon Festa",
-      "preco": "19.8",
-      "preco_formatado": "R$ 19,80",
-      "link": "https://s.shopee.com.br/2gC7v6QWDw",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lk-mueznxcbnair46",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820lk-mueznxcbnair46"
-      ],
-      "vendas": 200,
-      "avaliacao": "4.9",
-      "desconto_percentual": 31,
-      "coletado_em": "2026-10-24T05:16:46.184Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "pets",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "58266409974",
-      "titulo": "Presépio De natal nascimento de Jesus  Manjedoura Decoração Enfeite Para natal Mdf",
-      "preco": "25.28",
-      "preco_formatado": "R$ 25,28",
-      "link": "https://s.shopee.com.br/8fTMKy0OTF",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m7-mt9px3bn5pmq4b",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820m7-mt9px3bn5pmq4b"
-      ],
-      "vendas": 961,
-      "avaliacao": "4.4",
-      "desconto_percentual": 0,
-      "coletado_em": "2026-10-24T05:16:46.184Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "pets",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "22699677517",
-      "titulo": "SKYBOARD Bicicleta Elétrica Familiar 3 Lugares Assento Bebê 1-3 Anos Dupla Proteção Cesto 110x92x30cm 48V12Ah",
-      "preco": "2599",
-      "preco_formatado": "R$ 2.599,00",
-      "link": "https://s.shopee.com.br/W7fVgCkXj",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820ly-mt7jh4zro1dx47",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820ly-mt7jh4zro1dx47"
-      ],
-      "vendas": 39,
+      "vendas": 503,
       "avaliacao": "4.7",
-      "desconto_percentual": 54,
-      "coletado_em": "2026-10-24T05:16:46.184Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "55718837165",
-      "titulo": "Boné Telinha Trucker 22 Estampa Brasil DTF Masculino Feminino Aba Curva",
-      "preco": "29",
-      "preco_formatado": "R$ 29,00",
-      "link": "https://s.shopee.com.br/gR5hzC7Cm",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-82589-mu00fxl647b784",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-82589-mu00fxl647b784"
-      ],
-      "vendas": 25,
-      "avaliacao": "4.9",
-      "desconto_percentual": 0,
-      "coletado_em": "2026-10-24T05:16:46.184Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "moda",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "19599312357",
-      "titulo": "Gorro de Natal Papai Noel Luxo Decoração Árvore Enfeite Personalizado Premium Ideal Para Festas e Fotos",
-      "preco": "28.95",
-      "preco_formatado": "R$ 28,95",
-      "link": "https://s.shopee.com.br/qkVuIBTrp",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lc-mulawynchpmp38",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820lc-mulawynchpmp38"
-      ],
-      "vendas": 95,
-      "avaliacao": "4.9",
-      "desconto_percentual": 45,
-      "coletado_em": "2026-10-24T05:16:46.184Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "pets",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "58220420128",
-      "titulo": "Mini Motosserra Elétrica Portátil Sem Fio 33cm 21V com Bateria para Poda de Árvores Jardim e Corte de Lenha",
-      "preco": "99.99",
-      "preco_formatado": "R$ 99,99",
-      "link": "https://s.shopee.com.br/113w6bAqWs",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-82582-muamp0730j5w91",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-82582-muamp0730j5w91"
-      ],
-      "vendas": 1,
-      "avaliacao": "5",
-      "desconto_percentual": 50,
-      "coletado_em": "2026-10-24T05:16:46.185Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "casa",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "22299013128",
-      "titulo": "Capa De Chuva Motoqueiro Motoboy Moto Conjunto Impermeável",
-      "preco": "95",
-      "preco_formatado": "R$ 95,00",
-      "link": "https://s.shopee.com.br/1BNMIuADBv",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-824jc-mfmztuhn24uk93",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-824jc-mfmztuhn24uk93"
-      ],
-      "vendas": 49,
-      "avaliacao": "4.9",
-      "desconto_percentual": 0,
-      "coletado_em": "2026-10-24T05:16:46.185Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "23697593504",
-      "titulo": "Capa Chuva Sapato Premium Protetor Pé Tênis Moto Adulto Impermeável Motoqueiro Calçado",
-      "preco": "23.99",
-      "preco_formatado": "R$ 23,99",
-      "link": "https://s.shopee.com.br/1LgmVD9Zqy",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lwk0nro3aahebd",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-7r98o-lwk0nro3aahebd"
-      ],
-      "vendas": 20,
-      "avaliacao": "4.8",
-      "desconto_percentual": 60,
-      "coletado_em": "2026-10-24T05:16:46.185Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "moda",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "21026666513",
-      "titulo": "Pluma grande 4 metros nevada guirlanda natal",
-      "preco": "13.99",
-      "preco_formatado": "R$ 13,99",
-      "link": "https://s.shopee.com.br/1W0ChW8wW1",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mflgcfxo2l8l93",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-81z1k-mflgcfxo2l8l93"
-      ],
-      "vendas": 6,
-      "avaliacao": "4.4",
-      "desconto_percentual": 44,
-      "coletado_em": "2026-10-24T05:16:46.185Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "55702430893",
-      "titulo": "Revitalizador de farol remove amarelado e aspecto fosco",
-      "preco": "16",
-      "preco_formatado": "R$ 16,00",
-      "link": "https://s.shopee.com.br/1gJctp8JB4",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mht87kjg5b7qd2",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-81z1k-mht87kjg5b7qd2"
-      ],
-      "vendas": 8317,
-      "avaliacao": "4.7",
-      "desconto_percentual": 46,
-      "coletado_em": "2026-10-24T05:16:46.185Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "58269112139",
-      "titulo": "Sombrinha Automática Abre/Fecha Reforçada Contra Vento Proteção Solar Blackout  KL-301",
-      "preco": "23.98",
-      "preco_formatado": "R$ 23,98",
-      "link": "https://s.shopee.com.br/1qd3687fq7",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m2-mtm5fwgbxts324",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820m2-mtm5fwgbxts324"
-      ],
-      "vendas": 310,
-      "avaliacao": "4.5",
-      "desconto_percentual": 60,
-      "coletado_em": "2026-10-24T05:16:46.185Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "58265090018",
-      "titulo": "Toalha de Mesa Natalino Oxford Fio Tinto 4 / 6 / 8 Lugares – Elegante, Resistente e Fácil de Limpar",
-      "preco": "32.5",
-      "preco_formatado": "R$ 32,50",
-      "link": "https://s.shopee.com.br/20wTIR72VA",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820ld-mqxpfrfgxkw706",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820ld-mqxpfrfgxkw706"
-      ],
-      "vendas": 756,
-      "avaliacao": "4.9",
-      "desconto_percentual": 39,
-      "coletado_em": "2026-10-24T05:16:46.185Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "casa",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "49017632640",
-      "titulo": "BEC 10 Unidades De Madeira Natural 2D Plana Papai Noel Enfeites Pendurados Pingente De Natal Fofo Para Árvore Decoração",
-      "preco": "9.72",
-      "preco_formatado": "R$ 9,72",
-      "link": "https://s.shopee.com.br/2BFtUk6PAD",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8258s-msuw1cyredqh0c",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-8258s-msuw1cyredqh0c"
-      ],
-      "vendas": 37,
-      "avaliacao": "4.9",
-      "desconto_percentual": 73,
-      "coletado_em": "2026-10-24T05:16:46.185Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "pets",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "58267720195",
-      "titulo": "Bicicleta Elétrica Dobrável Para Adultos Com Pedalada Assistida Suporte De Celular Com Carregamento Máxima De 30km 400W",
-      "preco": "2199.88",
-      "preco_formatado": "R$ 2.199,88",
-      "link": "https://s.shopee.com.br/2LZJh35lpG",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820ll-multb0j1dam9e1",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820ll-multb0j1dam9e1"
-      ],
-      "vendas": 0,
-      "avaliacao": "5",
-      "desconto_percentual": 66,
-      "coletado_em": "2026-10-24T05:16:46.185Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "eletronicos",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "58261800318",
-      "titulo": "Capa de Chuva Longa Unissex Impermeável Total - Para Moto Elétrica e Moto a Bateria-Tamanho XL",
-      "preco": "45.9",
-      "preco_formatado": "R$ 45,90",
-      "link": "https://s.shopee.com.br/2VsjtM58UJ",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lx-mpukyexfz7k27b",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820lx-mpukyexfz7k27b"
-      ],
-      "vendas": 209,
-      "avaliacao": "4.9",
-      "desconto_percentual": 62,
-      "coletado_em": "2026-10-24T05:16:46.185Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "55260497129",
-      "titulo": "Kit Estética Automotiva Vonixx V-Floc Tok Final Intense 240ml Pneu Pretinho Pano Pincel E Aplicador",
-      "preco": "119.92",
-      "preco_formatado": "R$ 119,92",
-      "link": "https://s.shopee.com.br/2gCA5f4V9M",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lt-mqhpbloq1q0x0e",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820lt-mqhpbloq1q0x0e"
-      ],
-      "vendas": 2367,
-      "avaliacao": "4.9",
-      "desconto_percentual": 8,
-      "coletado_em": "2026-10-24T05:16:46.185Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "22394461600",
-      "titulo": "Kit 100 Bolas de Natal com Estrela ou Kit 50 Enfeite Árvore Vermelha Dourada Mista Fosca Glitter",
-      "preco": "79.9",
-      "preco_formatado": "R$ 79,90",
-      "link": "https://s.shopee.com.br/9APcvsyUSM",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-82584-mu0wlh0ytywz41",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-82584-mu0wlh0ytywz41"
-      ],
-      "vendas": 647,
-      "avaliacao": "4.9",
-      "desconto_percentual": 48,
-      "coletado_em": "2026-10-24T05:16:48.484Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "58270654406",
-      "titulo": "Parafusadeira E Furadeira A Bateria 12V Com 1 Bateria De Litio E Carregador Bivolt Para Uso Domestico Oferta",
-      "preco": "69.98",
-      "preco_formatado": "R$ 69,98",
-      "link": "https://s.shopee.com.br/5q9BFzTtC4",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lm-mudkng1gn9j5bc",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820lm-mudkng1gn9j5bc"
-      ],
-      "vendas": 18,
-      "avaliacao": "4.9",
-      "desconto_percentual": 65,
-      "coletado_em": "2026-10-24T05:16:48.484Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "eletronicos",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "22194901992",
-      "titulo": "Capa Chuva Sapato Premium Protetor Pé Tênis Moto Adulto Impermeável Motoqueiro Calçado",
-      "preco": "23.99",
-      "preco_formatado": "R$ 23,99",
-      "link": "https://s.shopee.com.br/5fpl3gUWX3",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8262f-mll0dv98qpkz65",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-8262f-mll0dv98qpkz65"
-      ],
-      "vendas": 130,
-      "avaliacao": "4.8",
-      "desconto_percentual": 60,
-      "coletado_em": "2026-10-24T05:16:48.484Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "moda",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "23993394769",
-      "titulo": "Kit 6 Canecas de Natal 250ml Para Celebrar com Estilo Festa",
-      "preco": "64.99",
-      "preco_formatado": "R$ 64,99",
-      "link": "https://s.shopee.com.br/5VWKrNV9s2",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820l4-mtzg5qdpidxc1a",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820l4-mtzg5qdpidxc1a"
-      ],
-      "vendas": 14,
-      "avaliacao": "4.9",
-      "desconto_percentual": 8,
-      "coletado_em": "2026-10-24T05:16:48.484Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "22198020270",
-      "titulo": "Árvore de Natal Pinheiro Verde 60cm ou 120 cm  com 50 e 100 Galhos",
-      "preco": "22.99",
-      "preco_formatado": "R$ 22,99",
-      "link": "https://s.shopee.com.br/5LCuf4VnD1",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820mc-mtfhcncjw7b61e",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820mc-mtfhcncjw7b61e"
-      ],
-      "vendas": 6,
-      "avaliacao": "4.5",
-      "desconto_percentual": 45,
-      "coletado_em": "2026-10-24T05:16:48.484Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "58219928516",
-      "titulo": "Kit 2 Calças Jeans Wide Leg Cargo | Com Opção Unitária",
-      "preco": "94.9",
-      "preco_formatado": "R$ 94,90",
-      "link": "https://s.shopee.com.br/6VOs3DRLqG",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820ll-mu0saylcsmbm3d",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820ll-mu0saylcsmbm3d"
-      ],
-      "vendas": 97,
-      "avaliacao": "4.9",
-      "desconto_percentual": 14,
-      "coletado_em": "2026-10-24T05:16:48.484Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "moda",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "46560301686",
-      "titulo": "Comedouro e Bebedouro Automático para Gatos e Cães Premium 1L Jelplast",
-      "preco": "60.9",
-      "preco_formatado": "R$ 60,90",
-      "link": "https://s.shopee.com.br/6L5RquRzBF",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820ma-mo396acb8ttwdd",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820ma-mo396acb8ttwdd"
-      ],
-      "vendas": 72,
-      "avaliacao": "5",
-      "desconto_percentual": 6,
-      "coletado_em": "2026-10-24T05:16:48.484Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "pets",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "57267166910",
-      "titulo": "Capa de Almofadas 1 e 4 Decorativas 45x45 Estampas Natalinas estampa premium 2026 PAPAI NOEL SACO NAS COSTA F BR",
-      "preco": "19.7",
-      "preco_formatado": "R$ 19,70",
-      "link": "https://s.shopee.com.br/6Am1ebScWE",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-82591-mslwh8f8szr61a",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-82591-mslwh8f8szr61a"
-      ],
-      "vendas": 180,
-      "avaliacao": "4.7",
-      "desconto_percentual": 16,
-      "coletado_em": "2026-10-24T05:16:48.484Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "22396383290",
-      "titulo": "Kit Balão Bexiga Ano Novo 2027 + Numero Metalizado + Branco + Cristal Decoração",
-      "preco": "23.9",
-      "preco_formatado": "R$ 23,90",
-      "link": "https://s.shopee.com.br/60SbSITFrD",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m5-mpc6q0gpq1om25",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820m5-mpc6q0gpq1om25"
-      ],
-      "vendas": 290,
-      "avaliacao": "4.8",
-      "desconto_percentual": 8,
-      "coletado_em": "2026-10-24T05:16:48.484Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "pets",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "58260485680",
-      "titulo": "Boné Brasil 22 Bordado Premium Aba Curva Ajustável Amarelo Unissex",
-      "preco": "59",
-      "preco_formatado": "R$ 59,00",
-      "link": "https://s.shopee.com.br/7AeYqROoUS",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-825a0-msa0cayukop39b",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-825a0-msa0cayukop39b"
-      ],
-      "vendas": 328,
-      "avaliacao": "4.9",
-      "desconto_percentual": 0,
-      "coletado_em": "2026-10-24T05:16:48.484Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "moda",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "58269796283",
-      "titulo": "Caneca de Cerâmica Natalina com Alça, Estampa Papai Noel e Boneco de Neve Decoração Natal",
-      "preco": "33.9",
-      "preco_formatado": "R$ 33,90",
-      "link": "https://s.shopee.com.br/70L8e8PRpR",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820li-mty8lghvvev705",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820li-mty8lghvvev705"
-      ],
-      "vendas": 110,
-      "avaliacao": "4.9",
-      "desconto_percentual": 26,
-      "coletado_em": "2026-10-24T05:16:48.484Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "moda",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "21099771664",
-      "titulo": "Conjunto de capa de chuva imperme¡velpara motociclistas Capa de chuva comcapuz e faixa refetiva",
-      "preco": "34.99",
-      "preco_formatado": "R$ 34,99",
-      "link": "https://s.shopee.com.br/6q1iRpQ5AQ",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rfgh-m9zkzt9yocihe5",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-7rfgh-m9zkzt9yocihe5"
-      ],
-      "vendas": 818,
-      "avaliacao": "4.5",
-      "desconto_percentual": 50,
-      "coletado_em": "2026-10-24T05:16:48.484Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "52017809177",
-      "titulo": "Luz de Natal pendente em forma de chapéu de Natal com enfeites.",
-      "preco": "82.33",
-      "preco_formatado": "R$ 82,33",
-      "link": "https://s.shopee.com.br/6fiIFWQiVP",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-825az-mt3rfy31dg5db9",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-825az-mt3rfy31dg5db9"
-      ],
-      "vendas": 37,
-      "avaliacao": "4.2",
-      "desconto_percentual": 40,
-      "coletado_em": "2026-10-24T05:16:48.484Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "23399175232",
-      "titulo": "Presépio De Natal Manjedoura Decoração Enfeite Natalino Mdf",
-      "preco": "29.9",
-      "preco_formatado": "R$ 29,90",
-      "link": "https://s.shopee.com.br/7puFdfMH8e",
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-821e1-mgzrq0k1qtceba",
-      "imagens": [
-        "https://cf.shopee.com.br/file/sg-11134201-821e1-mgzrq0k1qtceba"
-      ],
-      "vendas": 4727,
-      "avaliacao": "4.4",
-      "desconto_percentual": 40,
-      "coletado_em": "2026-10-24T05:16:48.484Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "pets",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "20799891084",
-      "titulo": "Projetor LED Natalino Desenhos de Natal Laser Jardim Decoração Casa Luzes Parede Festas",
-      "preco": "58.8",
-      "preco_formatado": "R$ 58,80",
-      "link": "https://s.shopee.com.br/7fapRMMuTd",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820mc-mt8n740jz7k1d6",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820mc-mt8n740jz7k1d6"
-      ],
-      "vendas": 8,
-      "avaliacao": "5",
-      "desconto_percentual": 30,
-      "coletado_em": "2026-10-24T05:16:48.484Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "eletronicos",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "23298831390",
-      "titulo": "Guarda Sol Quadrado Gigante 3M Aberto Reforçado Contra Uv Para Praia",
-      "preco": "189",
-      "preco_formatado": "R$ 189,00",
-      "link": "https://s.shopee.com.br/7VHPF3NXoc",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820mg-ms1fxtl987b8b6",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-820mg-ms1fxtl987b8b6"
-      ],
-      "vendas": 291,
-      "avaliacao": "4.9",
-      "desconto_percentual": 53,
-      "coletado_em": "2026-10-24T05:16:48.484Z",
-      "fonte": "shopee-products-v2",
-      "nicho": "geral",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
-    },
-    {
-      "id": "23694359005",
-      "titulo": "Decoração de Natal :3M Luzes de Cortina 110V-220V com Estrelas, Anéis e Cristais – Ideal para Árvore, Festas e Reuniões",
-      "preco": "52.99",
-      "preco_formatado": "R$ 52,99",
-      "link": "https://s.shopee.com.br/7Kxz2kOB9b",
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mf932590g2dj98",
-      "imagens": [
-        "https://cf.shopee.com.br/file/br-11134207-81z1k-mf932590g2dj98"
-      ],
-      "vendas": 704,
-      "avaliacao": "4.9",
       "desconto_percentual": 52,
-      "coletado_em": "2026-10-24T05:16:48.484Z",
+      "coletado_em": "2026-10-24T14:11:51.745Z",
       "fonte": "shopee-products-v2",
-      "nicho": "casa",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
     },
     {
-      "id": "58218869208",
-      "titulo": "Cascata LED Chuva de Meteoro 8 Tubos 3m 50cm Bivolt Pisca Pisca para Natal Festa Casamento e Casa",
-      "preco": "42.99",
-      "preco_formatado": "R$ 42,99",
-      "link": "https://s.shopee.com.br/3B8Q55e2bo",
-      "imagem": "https://cf.shopee.com.br/file/br-11134211-820lk-mtqj3f4ch5vlff",
+      "id": "58270596328",
+      "titulo": "Guarda Sol Gigante 2,4m Uv Praia Piscina Respirável Verão",
+      "preco": "98.9",
+      "preco_formatado": "R$ 98,90",
+      "link": "https://s.shopee.com.br/1BNMteRMmf",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-825ag-mucphf3iaoei76",
       "imagens": [
-        "https://cf.shopee.com.br/file/br-11134211-820lk-mtqj3f4ch5vlff"
+        "https://cf.shopee.com.br/file/sg-11134201-825ag-mucphf3iaoei76"
       ],
-      "vendas": 19,
+      "vendas": 3,
       "avaliacao": "5",
-      "desconto_percentual": 46,
-      "coletado_em": "2026-10-24T05:16:48.484Z",
+      "desconto_percentual": 48,
+      "coletado_em": "2026-10-24T14:11:51.745Z",
       "fonte": "shopee-products-v2",
-      "nicho": "eletronicos",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
     },
     {
-      "id": "27968827694",
-      "titulo": "Tábua De Corte 304 Aço Inoxidável Antibacteriana À Prova De Mofo 46 cm tábua de cozinha",
-      "preco": "24.79",
-      "preco_formatado": "R$ 24,79",
-      "link": "https://s.shopee.com.br/30ozsmefwn",
-      "imagem": "https://cf.shopee.com.br/file/cn-11134207-7ras8-m31syvxotyp390",
+      "id": "46416304631",
+      "titulo": "Espelho Flame Com Moldura Em Couro 100x35 90x40 70x30 50x25 Hall Sala Closet",
+      "preco": "49",
+      "preco_formatado": "R$ 49,00",
+      "link": "https://s.shopee.com.br/gR6IjTGna",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m8-ms35tbxdrqiu49",
       "imagens": [
-        "https://cf.shopee.com.br/file/cn-11134207-7ras8-m31syvxotyp390"
+        "https://cf.shopee.com.br/file/br-11134207-820m8-ms35tbxdrqiu49"
       ],
-      "vendas": 5835,
-      "avaliacao": "4.7",
-      "desconto_percentual": 0,
-      "coletado_em": "2026-10-24T05:16:48.485Z",
+      "vendas": 4860,
+      "avaliacao": "4.8",
+      "desconto_percentual": 82,
+      "coletado_em": "2026-10-24T14:11:51.745Z",
       "fonte": "shopee-products-v2",
-      "nicho": "casa",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "22195203917",
+      "titulo": "Banco Banqueta De Musculação E Academia Regulável 8 Estágio Preto ADKING",
+      "preco": "379",
+      "preco_formatado": "R$ 379,00",
+      "link": "https://s.shopee.com.br/qkWV2SdSd",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820ma-mrhq5f5c9x518c",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820ma-mrhq5f5c9x518c"
+      ],
+      "vendas": 43,
+      "avaliacao": "4.7",
+      "desconto_percentual": 37,
+      "coletado_em": "2026-10-24T14:11:51.746Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "58216163636",
+      "titulo": "Bota Coturno Masculino Adventure De Qualidade e Barato Envio no Mesmo dia",
+      "preco": "49.8",
+      "preco_formatado": "R$ 49,80",
+      "link": "https://s.shopee.com.br/LoFu7UXTY",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m5-mruiyl52jax3b4",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820m5-mruiyl52jax3b4"
+      ],
+      "vendas": 4455,
+      "avaliacao": "4.2",
+      "desconto_percentual": 17,
+      "coletado_em": "2026-10-24T14:11:51.746Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
     },
     {
       "id": "18599233581",
       "titulo": "Conjunto Chuva Motoqueiro Blusão E Calça + Bota Pvc Solado Amarelo Motociclista Motoboy Impermeável",
       "preco": "142.57",
       "preco_formatado": "R$ 142,57",
-      "link": "https://s.shopee.com.br/2qVZgTfJHm",
+      "link": "https://s.shopee.com.br/W7g6QTu8b",
       "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rccc-lt2dq44xs03jf0",
       "imagens": [
         "https://cf.shopee.com.br/file/sg-11134201-7rccc-lt2dq44xs03jf0"
@@ -1805,10 +492,1324 @@
       "vendas": 294,
       "avaliacao": "4.8",
       "desconto_percentual": 45,
-      "coletado_em": "2026-10-24T05:16:48.485Z",
+      "coletado_em": "2026-10-24T14:11:51.746Z",
       "fonte": "shopee-products-v2",
       "nicho": "moda",
-      "classificado_em": "2026-10-24T05:16:48.488Z"
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "10997135504",
+      "titulo": "Árvore De Natal 1,50m Branca Decoração Natalina",
+      "preco": "99.99",
+      "preco_formatado": "R$ 99,99",
+      "link": "https://s.shopee.com.br/1BPVVVo9W",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lp-msy4kt04yoed79",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820lp-msy4kt04yoed79"
+      ],
+      "vendas": 4,
+      "avaliacao": "4.8",
+      "desconto_percentual": 33,
+      "coletado_em": "2026-10-24T14:11:51.746Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "pets",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "58267468764",
+      "titulo": "Kit 3 em 1 Furadeira de Impacto 1100W + Esmerilhadeira Angular 1200W + Serra Tico-Tico 950W com Maleta",
+      "preco": "159.99",
+      "preco_formatado": "R$ 159,99",
+      "link": "https://s.shopee.com.br/BUphoVAoZ",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lk-msnrr4pzb7yc3b",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820lk-msnrr4pzb7yc3b"
+      ],
+      "vendas": 55,
+      "avaliacao": "4.7",
+      "desconto_percentual": 65,
+      "coletado_em": "2026-10-24T14:11:51.746Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "ferramentas",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "58267719064",
+      "titulo": "22M Cordão de Luz Solar LED Natal Estrela Floco de Neve Árvore Decoração para Jardim e Varanda",
+      "preco": "45",
+      "preco_formatado": "R$ 45,00",
+      "link": "https://s.shopee.com.br/50a5ShCm0W",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820mb-msv7hhk4hds754",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820mb-msv7hhk4hds754"
+      ],
+      "vendas": 366,
+      "avaliacao": "4.8",
+      "desconto_percentual": 50,
+      "coletado_em": "2026-10-24T14:11:51.746Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "eletronicos",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "58256293907",
+      "titulo": "Espelho Orgânico 120x50 e 80x40 Com Moldura EM COURO Corpo Inteiro Moderno Luxo",
+      "preco": "79.9",
+      "preco_formatado": "R$ 79,90",
+      "link": "https://s.shopee.com.br/5AtVf0C8fZ",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lc-mttwfyiypkw26c",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820lc-mttwfyiypkw26c"
+      ],
+      "vendas": 1422,
+      "avaliacao": "4.9",
+      "desconto_percentual": 65,
+      "coletado_em": "2026-10-24T14:11:51.746Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "20999446851",
+      "titulo": "Árvore Natal 1,80m Pinheiro 146 Enfeites 450 Galhos e Led Pisca Pisca Enfeite Decorada Kit Completo Arvore 180cm Cheia",
+      "preco": "217.89",
+      "preco_formatado": "R$ 217,89",
+      "link": "https://s.shopee.com.br/4fxF45E2gU",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lg-ms4ed541fthja0",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820lg-ms4ed541fthja0"
+      ],
+      "vendas": 25,
+      "avaliacao": "4.8",
+      "desconto_percentual": 1,
+      "coletado_em": "2026-10-24T14:11:51.746Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "eletronicos",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "22299013128",
+      "titulo": "Capa De Chuva Motoqueiro Motoboy Moto Conjunto Impermeável",
+      "preco": "95",
+      "preco_formatado": "R$ 95,00",
+      "link": "https://s.shopee.com.br/4qGfGODPLX",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-824jc-mfmztuhn24uk93",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-824jc-mfmztuhn24uk93"
+      ],
+      "vendas": 49,
+      "avaliacao": "4.9",
+      "desconto_percentual": 0,
+      "coletado_em": "2026-10-24T14:11:51.746Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "22392058067",
+      "titulo": "Luva Lança Teia HO MEM A RANHA(COM CORDINHA)  Brinquedo Infantil",
+      "preco": "22.78",
+      "preco_formatado": "R$ 22,78",
+      "link": "https://s.shopee.com.br/4LKOfTFJMS",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lc-mrk6qh7qnbid7f",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820lc-mrk6qh7qnbid7f"
+      ],
+      "vendas": 2781,
+      "avaliacao": "4.8",
+      "desconto_percentual": 37,
+      "coletado_em": "2026-10-24T14:11:51.746Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "58209861957",
+      "titulo": "21 Potes Plásticos Multiuso com Tampa para Mantimentos, Alimentos e Marmitas",
+      "preco": "36.6",
+      "preco_formatado": "R$ 36,60",
+      "link": "https://s.shopee.com.br/4VdormEg1V",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lw-mtnwoivlaznlfc",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820lw-mtnwoivlaznlfc"
+      ],
+      "vendas": 4779,
+      "avaliacao": "4.8",
+      "desconto_percentual": 39,
+      "coletado_em": "2026-10-24T14:11:51.746Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "41584717212",
+      "titulo": "Kit Sousplast Jogo Americano Caminho De Mesa Natalino Natal Mesa Posta Sofisticação Sublimação Digital Tecido Premium",
+      "preco": "27.9",
+      "preco_formatado": "R$ 27,90",
+      "link": "https://s.shopee.com.br/40hYGrGa2Q",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m9-mttmiteg9dds35",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820m9-mttmiteg9dds35"
+      ],
+      "vendas": 53,
+      "avaliacao": "4.8",
+      "desconto_percentual": 32,
+      "coletado_em": "2026-10-24T14:11:51.746Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "22893267017",
+      "titulo": "Árvore De Natal Pinheiro 210cm 600 Galhos Cheia Premium Verde",
+      "preco": "64.9",
+      "preco_formatado": "R$ 64,90",
+      "link": "https://s.shopee.com.br/4B0yTAFwhT",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820ll-mseahc66bsp164",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820ll-mseahc66bsp164"
+      ],
+      "vendas": 1867,
+      "avaliacao": "4.8",
+      "desconto_percentual": 35,
+      "coletado_em": "2026-10-24T14:11:51.746Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "23394433423",
+      "titulo": "Conjunto Capa de Chuva PLUS SIZE Masculino Motoqueiro Motoboy PVC Proteção 100% Impermeável  - ExtraGrande G5",
+      "preco": "67.99",
+      "preco_formatado": "R$ 67,99",
+      "link": "https://s.shopee.com.br/3g4hsFHqiO",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820l5-mpgvy55kbtvq9a",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820l5-mpgvy55kbtvq9a"
+      ],
+      "vendas": 236,
+      "avaliacao": "4.9",
+      "desconto_percentual": 0,
+      "coletado_em": "2026-10-24T14:11:51.746Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "55702430893",
+      "titulo": "Revitalizador de farol remove amarelado e aspecto fosco",
+      "preco": "16",
+      "preco_formatado": "R$ 16,00",
+      "link": "https://s.shopee.com.br/3qO84YHDNR",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mht87kjg5b7qd2",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-81z1k-mht87kjg5b7qd2"
+      ],
+      "vendas": 8317,
+      "avaliacao": "4.7",
+      "desconto_percentual": 46,
+      "coletado_em": "2026-10-24T14:11:51.746Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "27968827694",
+      "titulo": "Tábua De Corte 304 Aço Inoxidável Antibacteriana À Prova De Mofo 46 cm tábua de cozinha",
+      "preco": "24.79",
+      "preco_formatado": "R$ 24,79",
+      "link": "https://s.shopee.com.br/3LRrTdJ7OM",
+      "imagem": "https://cf.shopee.com.br/file/cn-11134207-7ras8-m31syvxotyp390",
+      "imagens": [
+        "https://cf.shopee.com.br/file/cn-11134207-7ras8-m31syvxotyp390"
+      ],
+      "vendas": 5835,
+      "avaliacao": "4.7",
+      "desconto_percentual": 0,
+      "coletado_em": "2026-10-24T14:11:51.746Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "casa",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "21799541706",
+      "titulo": "Camisa Camiseta Masculino e Feminino Cavalo Muladeiros Proteçao solar UV",
+      "preco": "19.96",
+      "preco_formatado": "R$ 19,96",
+      "link": "https://s.shopee.com.br/5AtUSlEpP1",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rdyd-m1e9tmouv3b209",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-7rdyd-m1e9tmouv3b209"
+      ],
+      "vendas": 382,
+      "avaliacao": "4.9",
+      "desconto_percentual": 60,
+      "coletado_em": "2026-10-24T14:11:54.422Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "moda",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "41874811115",
+      "titulo": "Árvore de Natal Pinheiro 2,10m 1150 Galhos Cheia Verde Luxo Tradicional",
+      "preco": "99.89",
+      "preco_formatado": "R$ 99,89",
+      "link": "https://s.shopee.com.br/5VWKZ93RYb",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m4-mudhhj680zk346",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820m4-mudhhj680zk346"
+      ],
+      "vendas": 244,
+      "avaliacao": "4.8",
+      "desconto_percentual": 63,
+      "coletado_em": "2026-10-24T14:11:54.422Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "23294250520",
+      "titulo": "Conjunto Capa Chuva Moto Emborrachada Impermeável Com Gola Flex Motoboy Entregador Motoqueiro",
+      "preco": "74.98",
+      "preco_formatado": "R$ 74,98",
+      "link": "https://s.shopee.com.br/4VdormRfXT",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lm-ms5wre9qbmdj79",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820lm-ms5wre9qbmdj79"
+      ],
+      "vendas": 350,
+      "avaliacao": "4.9",
+      "desconto_percentual": 32,
+      "coletado_em": "2026-10-24T14:11:54.422Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "57068297282",
+      "titulo": "Luz De Projeção De Árvore De Natal , Projetor LED Plug-And-Play USB Com 6 Cenas Festivas , Lâmpada Flexível De Pescoço D",
+      "preco": "25.99",
+      "preco_formatado": "R$ 25,99",
+      "link": "https://s.shopee.com.br/3LRrTdW6uG",
+      "imagem": "https://cf.shopee.com.br/file/cn-11134207-820l4-mtg1vu2re8zof0",
+      "imagens": [
+        "https://cf.shopee.com.br/file/cn-11134207-820l4-mtg1vu2re8zof0"
+      ],
+      "vendas": 9,
+      "avaliacao": "4.1",
+      "desconto_percentual": 74,
+      "coletado_em": "2026-10-24T14:11:54.422Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "eletronicos",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "56861631343",
+      "titulo": "Conjunto de Relógio de Pulso Digital Sweet Heart para Meninas - Presente de Aniversário & Volta às Aulas Perfeito,",
+      "preco": "14.09",
+      "preco_formatado": "R$ 14,09",
+      "link": "https://s.shopee.com.br/3VlHfwVTZJ",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134253-823q1-mozxts732adn6c",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134253-823q1-mozxts732adn6c"
+      ],
+      "vendas": 259,
+      "avaliacao": "4.7",
+      "desconto_percentual": 50,
+      "coletado_em": "2026-10-24T14:11:54.422Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "eletronicos",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "23592287404",
+      "titulo": "Árvore Natal Verde 150cm 220 Galhos Decoração Natalina Pinheiro Pinheirinho Premium",
+      "preco": "59.89",
+      "preco_formatado": "R$ 59,89",
+      "link": "https://s.shopee.com.br/3g4hsFUqEM",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-825bd-mul0yky9qgoxba",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-825bd-mul0yky9qgoxba"
+      ],
+      "vendas": 322,
+      "avaliacao": "4.9",
+      "desconto_percentual": 33,
+      "coletado_em": "2026-10-24T14:11:54.422Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "pets",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "51807345661",
+      "titulo": "Secador Esterelizador de Tenis Elétrico Seca Tenis Sapatos 110v ou 220v",
+      "preco": "60.99",
+      "preco_formatado": "R$ 60,99",
+      "link": "https://s.shopee.com.br/3qO84YUCtP",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820ll-msfzq5mjfnk651",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820ll-msfzq5mjfnk651"
+      ],
+      "vendas": 799,
+      "avaliacao": "4.9",
+      "desconto_percentual": 39,
+      "coletado_em": "2026-10-24T14:11:54.422Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "moda",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "58260485680",
+      "titulo": "Boné Brasil 22 Bordado Premium Aba Curva Ajustável Amarelo Unissex",
+      "preco": "59",
+      "preco_formatado": "R$ 59,00",
+      "link": "https://s.shopee.com.br/2gCAgPYeGC",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-825a0-msa0cayukop39b",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-825a0-msa0cayukop39b"
+      ],
+      "vendas": 328,
+      "avaliacao": "4.9",
+      "desconto_percentual": 0,
+      "coletado_em": "2026-10-24T14:11:54.422Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "moda",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "23593093649",
+      "titulo": "Cooler Multifuncional Super Térmica 32 Litros Casa Praia Camping Viagens Multiuso",
+      "preco": "149.9",
+      "preco_formatado": "R$ 149,90",
+      "link": "https://s.shopee.com.br/2qVasiY0vF",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mfe54je0p345ca",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-81z1k-mfe54je0p345ca"
+      ],
+      "vendas": 39,
+      "avaliacao": "4.6",
+      "desconto_percentual": 29,
+      "coletado_em": "2026-10-24T14:11:54.422Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "casa",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "23194398000",
+      "titulo": "Copo Termico inox Personalizado Time Brasileiros + Seu Nome gravação a laser",
+      "preco": "38.9",
+      "preco_formatado": "R$ 38,90",
+      "link": "https://s.shopee.com.br/30p151XNaI",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-824g5-mej2joz7xlvn9e",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-824g5-mej2joz7xlvn9e"
+      ],
+      "vendas": 418,
+      "avaliacao": "4.9",
+      "desconto_percentual": 51,
+      "coletado_em": "2026-10-24T14:11:54.422Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "casa",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "58200866202",
+      "titulo": "Organizador de Pia 3 em 1 em Aço Inox com Dispensador de Detergente e Suporte para Esponja",
+      "preco": "28",
+      "preco_formatado": "R$ 28,00",
+      "link": "https://s.shopee.com.br/3B8RHKWkFL",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m5-mogwgauyccg0df",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820m5-mogwgauyccg0df"
+      ],
+      "vendas": 401,
+      "avaliacao": "4.9",
+      "desconto_percentual": 0,
+      "coletado_em": "2026-10-24T14:11:54.422Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "casa",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "55260497129",
+      "titulo": "Kit Estética Automotiva Vonixx V-Floc Tok Final Intense 240ml Pneu Pretinho Pano Pincel E Aplicador",
+      "preco": "119.92",
+      "preco_formatado": "R$ 119,92",
+      "link": "https://s.shopee.com.br/20wTtBbBc8",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lt-mqhpbloq1q0x0e",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820lt-mqhpbloq1q0x0e"
+      ],
+      "vendas": 2367,
+      "avaliacao": "4.9",
+      "desconto_percentual": 8,
+      "coletado_em": "2026-10-24T14:11:54.422Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "58209163627",
+      "titulo": "Patinete Elétrico Dobrável 350W | 3 Velocidades Ajustáveis | Amortecimento Reforçado | Suporta até 100KG",
+      "preco": "1107.4",
+      "preco_formatado": "R$ 1.107,40",
+      "link": "https://s.shopee.com.br/2BFu5UaYHB",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820me-mnddtntgasqs21",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820me-mnddtntgasqs21"
+      ],
+      "vendas": 49,
+      "avaliacao": "4.8",
+      "desconto_percentual": 45,
+      "coletado_em": "2026-10-24T14:11:54.422Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "55415924122",
+      "titulo": "3 Pçs Artesanal Ferro ArtElk Cervos Decoração Do Jardim De Natal & Luz LED Brilhante Glitter Rena Casa Ao Ar Livre Quint",
+      "preco": "184.2",
+      "preco_formatado": "R$ 184,20",
+      "link": "https://s.shopee.com.br/2LZKHnZuwE",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8257x-mrtusyz1p2ww16",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-8257x-mrtusyz1p2ww16"
+      ],
+      "vendas": 2,
+      "avaliacao": "5",
+      "desconto_percentual": 20,
+      "coletado_em": "2026-10-24T14:11:54.422Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "eletronicos",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "22699684273",
+      "titulo": "Árvore De Natal Pinheiro 1.80m 2.10m 2.40m 3.00m Super Cheia Premium Luxo Galhos Cheios Verde",
+      "preco": "169.9",
+      "preco_formatado": "R$ 169,90",
+      "link": "https://s.shopee.com.br/2VskU6ZHbH",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m5-msgd4t6cum869e",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820m5-msgd4t6cum869e"
+      ],
+      "vendas": 166,
+      "avaliacao": "4.8",
+      "desconto_percentual": 40,
+      "coletado_em": "2026-10-24T14:11:54.422Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "22194901992",
+      "titulo": "Capa Chuva Sapato Premium Protetor Pé Tênis Moto Adulto Impermeável Motoqueiro Calçado",
+      "preco": "23.99",
+      "preco_formatado": "R$ 23,99",
+      "link": "https://s.shopee.com.br/1Lgn5xdiy4",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8262f-mll0dv98qpkz65",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-8262f-mll0dv98qpkz65"
+      ],
+      "vendas": 130,
+      "avaliacao": "4.8",
+      "desconto_percentual": 60,
+      "coletado_em": "2026-10-24T14:11:54.422Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "moda",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "23399863976",
+      "titulo": "Kit 5 Toalha Lavabo Decoração Natal Natalina 100% Algodão 26x47cm",
+      "preco": "37.9",
+      "preco_formatado": "R$ 37,90",
+      "link": "https://s.shopee.com.br/1W0DIGd5d7",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820ls-mtz9fwuluoe8a2",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820ls-mtz9fwuluoe8a2"
+      ],
+      "vendas": 37,
+      "avaliacao": "4.4",
+      "desconto_percentual": 46,
+      "coletado_em": "2026-10-24T14:11:54.422Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "casa",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "18198149969",
+      "titulo": "Conjunto Academia Feminino Alta Compressão Fitness Top e Short com Bolso",
+      "preco": "35",
+      "preco_formatado": "R$ 35,00",
+      "link": "https://s.shopee.com.br/1gJdUZcSIA",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-mdnugrvunc8ped",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-7r98o-mdnugrvunc8ped"
+      ],
+      "vendas": 874,
+      "avaliacao": "4.8",
+      "desconto_percentual": 23,
+      "coletado_em": "2026-10-24T14:11:54.423Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "moda",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "23993394769",
+      "titulo": "Kit 6 Canecas de Natal 250ml Para Celebrar com Estilo Festa",
+      "preco": "64.99",
+      "preco_formatado": "R$ 64,99",
+      "link": "https://s.shopee.com.br/1qd3gsboxD",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820l4-mtzg5qdpidxc1a",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820l4-mtzg5qdpidxc1a"
+      ],
+      "vendas": 14,
+      "avaliacao": "4.9",
+      "desconto_percentual": 8,
+      "coletado_em": "2026-10-24T14:11:54.423Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "45700264946",
+      "titulo": "Decorações De Natal Para Casa Papai Noel Boneca De Pelúcia 30cm Navidad Festa Decoração Enfeites Presente De Ano Novo",
+      "preco": "63",
+      "preco_formatado": "R$ 63,00",
+      "link": "https://s.shopee.com.br/gR6IjgGK0",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-825b5-mgc7p41x8mbsa0",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-825b5-mgc7p41x8mbsa0"
+      ],
+      "vendas": 168,
+      "avaliacao": "4.9",
+      "desconto_percentual": 40,
+      "coletado_em": "2026-10-24T14:11:54.423Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "casa",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "53617827403",
+      "titulo": "Camisa Camiseta Blusa Proteção Solar UV Aparecida Black REDFISH BRASIL Longa Dry Fit Feminina",
+      "preco": "59.9",
+      "preco_formatado": "R$ 59,90",
+      "link": "https://s.shopee.com.br/8fTMdBwy04",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820mg-mtie4kpddg5caa",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820mg-mtie4kpddg5caa"
+      ],
+      "vendas": 4,
+      "avaliacao": "5",
+      "desconto_percentual": 20,
+      "coletado_em": "2026-10-24T14:11:56.560Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "moda",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "27845945422",
+      "titulo": "Soprador Térmico 2000W Até 600°C 110V-220V Ar Quente 2 Estágios Temperatura SparkBr Profissional",
+      "preco": "99.99",
+      "preco_formatado": "R$ 99,99",
+      "link": "https://s.shopee.com.br/8fTNpRKbdh",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m8-mtdy7aox6c5f08",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820m8-mtdy7aox6c5f08"
+      ],
+      "vendas": 788,
+      "avaliacao": "4.9",
+      "desconto_percentual": 29,
+      "coletado_em": "2026-10-24T14:11:56.560Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "58269112139",
+      "titulo": "Sombrinha Automática Abre/Fecha Reforçada Contra Vento Proteção Solar Blackout  KL-301",
+      "preco": "23.98",
+      "preco_formatado": "R$ 23,98",
+      "link": "https://s.shopee.com.br/9APeQMIhco",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m2-mtm5fwgbxts324",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820m2-mtm5fwgbxts324"
+      ],
+      "vendas": 310,
+      "avaliacao": "4.5",
+      "desconto_percentual": 60,
+      "coletado_em": "2026-10-24T14:11:56.560Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "58217438255",
+      "titulo": "Kit 100 Bolas +1 Estrela Pendentes Árvore Natal Decoração Enfeites Bolinhas Premium Lisas/Glitter/Fosca Vermelho/Dourado",
+      "preco": "39.9",
+      "preco_formatado": "R$ 39,90",
+      "link": "https://s.shopee.com.br/906EE3JKxn",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820mc-msn34j9o6z9i5f",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820mc-msn34j9o6z9i5f"
+      ],
+      "vendas": 28,
+      "avaliacao": "4.9",
+      "desconto_percentual": 60,
+      "coletado_em": "2026-10-24T14:11:56.560Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "pets",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "22098878065",
+      "titulo": "Chinelo Bandeirinha Original Sandalia De Dedo Unissex Verão. Presente para o Dia dos Pais",
+      "preco": "19.9",
+      "preco_formatado": "R$ 19,90",
+      "link": "https://s.shopee.com.br/8AX7EWMVee",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-824hw-me1mqqajx1c73f",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-824hw-me1mqqajx1c73f"
+      ],
+      "vendas": 12022,
+      "avaliacao": "4.7",
+      "desconto_percentual": 20,
+      "coletado_em": "2026-10-24T14:11:56.560Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "moda",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "58220426824",
+      "titulo": "Pistola de Fixação Manual Kit Completo com Óculos Luvas Acessórios Compacta para Obras Reparos e Instalações",
+      "preco": "39.99",
+      "preco_formatado": "R$ 39,99",
+      "link": "https://s.shopee.com.br/80Dh2DN8zd",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820mh-muc6kswhfk016b",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820mh-muc6kswhfk016b"
+      ],
+      "vendas": 11,
+      "avaliacao": "4.9",
+      "desconto_percentual": 50,
+      "coletado_em": "2026-10-24T14:11:56.560Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "moda",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "21099771664",
+      "titulo": "Conjunto de capa de chuva imperme¡velpara motociclistas Capa de chuva comcapuz e faixa refetiva",
+      "preco": "34.99",
+      "preco_formatado": "R$ 34,99",
+      "link": "https://s.shopee.com.br/8V9xd8LEyk",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rfgh-m9zkzt9yocihe5",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-7rfgh-m9zkzt9yocihe5"
+      ],
+      "vendas": 818,
+      "avaliacao": "4.5",
+      "desconto_percentual": 50,
+      "coletado_em": "2026-10-24T14:11:56.560Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "22394461600",
+      "titulo": "Kit 100 Bolas de Natal com Estrela ou Kit 50 Enfeite Árvore Vermelha Dourada Mista Fosca Glitter",
+      "preco": "79.9",
+      "preco_formatado": "R$ 79,90",
+      "link": "https://s.shopee.com.br/8KqXQpLsJj",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-82584-mu0wlh0ytywz41",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-82584-mu0wlh0ytywz41"
+      ],
+      "vendas": 647,
+      "avaliacao": "4.9",
+      "desconto_percentual": 48,
+      "coletado_em": "2026-10-24T14:11:56.560Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "58200838409",
+      "titulo": "Kit 3 Calcinha Fio Dental Renda Pingente Pimenta Microfibra Tanga Feminina Lingerie Moda Íntima",
+      "preco": "26.3",
+      "preco_formatado": "R$ 26,30",
+      "link": "https://s.shopee.com.br/AAIBcCEtb6",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztc-mj7dp9rig9vlc8",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-81ztc-mj7dp9rig9vlc8"
+      ],
+      "vendas": 31,
+      "avaliacao": "4.9",
+      "desconto_percentual": 32,
+      "coletado_em": "2026-10-24T14:11:56.560Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "moda",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "44434726303",
+      "titulo": "Bicicleta Elétrica Dobrável 14 Polegadas (A9) 600W, Bateria 48V 15Ah, 11 Níveis de Amortecimento e Freios a Disco Duplos",
+      "preco": "2899",
+      "preco_formatado": "R$ 2.899,00",
+      "link": "https://s.shopee.com.br/9zylPtFWw5",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820me-mtgh3rntlx4x88",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820me-mtgh3rntlx4x88"
+      ],
+      "vendas": 19,
+      "avaliacao": "5",
+      "desconto_percentual": 42,
+      "coletado_em": "2026-10-24T14:11:56.560Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "22199262533",
+      "titulo": "Fone de ouvido Wireless sem fio Bluetooth 760BT Microfone Pure Bass Cancelamento Ativo de Ruído Mp3",
+      "preco": "39.55",
+      "preco_formatado": "R$ 39,55",
+      "link": "https://s.shopee.com.br/AUv20oDcvC",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m1-mtdw9dzq5vcw6e",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820m1-mtdw9dzq5vcw6e"
+      ],
+      "vendas": 517,
+      "avaliacao": "4.9",
+      "desconto_percentual": 45,
+      "coletado_em": "2026-10-24T14:11:56.561Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "eletronicos",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "58215540854",
+      "titulo": "Cortina de LED Fada Cordão de Luz Janela Estrelas Guirlanda de Natal Alimentada por USB",
+      "preco": "29.9",
+      "preco_formatado": "R$ 29,90",
+      "link": "https://s.shopee.com.br/AKbboVEGGB",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lw-ms0dqfdvrqx3f5",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820lw-ms0dqfdvrqx3f5"
+      ],
+      "vendas": 933,
+      "avaliacao": "4.8",
+      "desconto_percentual": 50,
+      "coletado_em": "2026-10-24T14:11:56.561Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "eletronicos",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "53750943172",
+      "titulo": "Jogo De Panelas 10 Peças Antiaderente Conjunto Frigideira Fervedor tampa de vidro Cor Coffee Cappuccino Kit Talheres",
+      "preco": "199.99",
+      "preco_formatado": "R$ 199,99",
+      "link": "https://s.shopee.com.br/9V2UoyHQx2",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m6-ms42s3kelced28",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820m6-ms42s3kelced28"
+      ],
+      "vendas": 8400,
+      "avaliacao": "4.7",
+      "desconto_percentual": 35,
+      "coletado_em": "2026-10-24T14:11:56.561Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "casa",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "23899314572",
+      "titulo": "Patinete Elétrico Adulto 350W – Alta Velocidade, Bateria Longa e Suporta Até 150kg",
+      "preco": "1100",
+      "preco_formatado": "R$ 1.100,00",
+      "link": "https://s.shopee.com.br/9Kj4cfI4I1",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8261h-mk3v2sfwjoqw23",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-8261h-mk3v2sfwjoqw23"
+      ],
+      "vendas": 213,
+      "avaliacao": "4.8",
+      "desconto_percentual": 45,
+      "coletado_em": "2026-10-24T14:11:56.561Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "58214305706",
+      "titulo": "500G SEMENTES GRAMA ESMERALDA",
+      "preco": "25",
+      "preco_formatado": "R$ 25,00",
+      "link": "https://s.shopee.com.br/9pfLDaGAH8",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820li-mqoyzeakd7nm1f",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820li-mqoyzeakd7nm1f"
+      ],
+      "vendas": 1207,
+      "avaliacao": "4.9",
+      "desconto_percentual": 50,
+      "coletado_em": "2026-10-24T14:11:56.561Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "22293529889",
+      "titulo": "Camisa Camiseta UV Proteção Solar Motocross Moto Grau 244",
+      "preco": "19.96",
+      "preco_formatado": "R$ 19,96",
+      "link": "https://s.shopee.com.br/9fLv1HGnc7",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7renx-m2bd26rk0cr990",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-7renx-m2bd26rk0cr990"
+      ],
+      "vendas": 318,
+      "avaliacao": "4.8",
+      "desconto_percentual": 60,
+      "coletado_em": "2026-10-24T14:11:56.561Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "moda",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "58167686255",
+      "titulo": "Fz 1 Conjunto De Decorações Aconchegantes De Varanda De Inverno , Enfeite De Natal Rústico Iluminado , Fácil De Pendurar",
+      "preco": "78.51",
+      "preco_formatado": "R$ 78,51",
+      "link": "https://s.shopee.com.br/6Am2qqU7iS",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8258q-msycmiyak4xwa0",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-8258q-msycmiyak4xwa0"
+      ],
+      "vendas": 3,
+      "avaliacao": "1",
+      "desconto_percentual": 50,
+      "coletado_em": "2026-10-24T14:11:56.561Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "23699665611",
+      "titulo": "Kit Ferramentas 3 em 1 Furadeira de Impacto 1100W + Esmerilhadeira 1200W + Serra Tico-Tico 950W com Maleta",
+      "preco": "159.99",
+      "preco_formatado": "R$ 159,99",
+      "link": "https://s.shopee.com.br/60SceXUl3R",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m4-mthyq1an7u9v33",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820m4-mthyq1an7u9v33"
+      ],
+      "vendas": 59,
+      "avaliacao": "4.8",
+      "desconto_percentual": 65,
+      "coletado_em": "2026-10-24T14:11:56.561Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "ferramentas",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "45313071694",
+      "titulo": "Bicicleta Elétrica Scooter Mova Way 4.0 500w 48v Lítio",
+      "preco": "3999.9",
+      "preco_formatado": "R$ 3.999,90",
+      "link": "https://s.shopee.com.br/6VOtFSSr2Y",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-825ay-mq1yfaa5id4x7b",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-825ay-mq1yfaa5id4x7b"
+      ],
+      "vendas": 196,
+      "avaliacao": "4.7",
+      "desconto_percentual": 33,
+      "coletado_em": "2026-10-24T14:11:56.561Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "23498042511",
+      "titulo": "kit Árvore de Natal 1,5m Cheia Decorada 300 Galhos Verde Pé de Ferro 150cm Premium Pisca Led Laço Quente",
+      "preco": "127.96",
+      "preco_formatado": "R$ 127,96",
+      "link": "https://s.shopee.com.br/6L5T39TUNX",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lv-mu9g7lett4ar5e",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820lv-mu9g7lett4ar5e"
+      ],
+      "vendas": 266,
+      "avaliacao": "4.9",
+      "desconto_percentual": 43,
+      "coletado_em": "2026-10-24T14:11:56.561Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "eletronicos",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "19697687772",
+      "titulo": "Capa de Chuva Conjunto Unissex Motoqueiro Impermeável Resistente Com Faixa Refletiva de Sinalização--1622",
+      "preco": "29.99",
+      "preco_formatado": "R$ 29,99",
+      "link": "https://s.shopee.com.br/6Am2qqcvHM",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rd4j-lvxbejzszikrbf",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-7rd4j-lvxbejzszikrbf"
+      ],
+      "vendas": 252,
+      "avaliacao": "4.7",
+      "desconto_percentual": 63,
+      "coletado_em": "2026-10-24T14:11:58.651Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "22692591560",
+      "titulo": "Pisca Pisca 10Metros 100Leds Luz Coloridos 110V 220V Para Iluminação De Natal E Decoração De Festa",
+      "preco": "14.9",
+      "preco_formatado": "R$ 14,90",
+      "link": "https://s.shopee.com.br/60SceXdYcL",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lnhq3sox65zg0d",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-7r98o-lnhq3sox65zg0d"
+      ],
+      "vendas": 280,
+      "avaliacao": "4.8",
+      "desconto_percentual": 70,
+      "coletado_em": "2026-10-24T14:11:58.651Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "eletronicos",
+      "classificado_em": "2026-10-24T14:11:58.654Z"
+    },
+    {
+      "id": "19997972047",
+      "titulo": "Mesa Escrivaninha Para Computador Escritório Pc gamer- Várias Cores.",
+      "preco": "146.99",
+      "preco_formatado": "R$ 146,99",
+      "link": "https://s.shopee.com.br/6VOtFSbebS",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-m2113qu8it7jec",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-7r98o-m2113qu8it7jec"
+      ],
+      "vendas": 433,
+      "avaliacao": "4.8",
+      "desconto_percentual": 26,
+      "coletado_em": "2026-10-24T14:11:58.651Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.655Z"
+    },
+    {
+      "id": "51661234810",
+      "titulo": "Bicicleta Eletrica Zurbe X20 Scooter 1000w Bateria Removível 60v 20ah Suporta 200kg Faróis De Milha",
+      "preco": "9901.25",
+      "preco_formatado": "R$ 9.901,25",
+      "link": "https://s.shopee.com.br/6L5T39cHwR",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-823oe-moqtee3jvyml45",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-823oe-moqtee3jvyml45"
+      ],
+      "vendas": 0,
+      "avaliacao": "4.5",
+      "desconto_percentual": 11,
+      "coletado_em": "2026-10-24T14:11:58.651Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.655Z"
+    },
+    {
+      "id": "19798323901",
+      "titulo": "Campainha Com Câmera Vídeo Porteiro Sem Fio Wi-Fi HD Inteligente Smart Home Vê Pelo Celular -bombara",
+      "preco": "49.88",
+      "preco_formatado": "R$ 49,88",
+      "link": "https://s.shopee.com.br/5VWM3cfSdI",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820ma-mqyxie6ogft33d",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820ma-mqyxie6ogft33d"
+      ],
+      "vendas": 150,
+      "avaliacao": "4.6",
+      "desconto_percentual": 50,
+      "coletado_em": "2026-10-24T14:11:58.651Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "eletronicos",
+      "classificado_em": "2026-10-24T14:11:58.655Z"
+    },
+    {
+      "id": "20799891084",
+      "titulo": "Projetor LED Natalino Desenhos de Natal Laser Jardim Decoração Casa Luzes Parede Festas",
+      "preco": "58.8",
+      "preco_formatado": "R$ 58,80",
+      "link": "https://s.shopee.com.br/5LCvrJg5yH",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820mc-mt8n740jz7k1d6",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820mc-mt8n740jz7k1d6"
+      ],
+      "vendas": 8,
+      "avaliacao": "5",
+      "desconto_percentual": 30,
+      "coletado_em": "2026-10-24T14:11:58.651Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "eletronicos",
+      "classificado_em": "2026-10-24T14:11:58.655Z"
+    },
+    {
+      "id": "49267648178",
+      "titulo": "Conjunto Capa De Chuva Motoqueiro Impermeavel Com Bolso Kencover Pvc Resistente Inverno Frio",
+      "preco": "78.9",
+      "preco_formatado": "R$ 78,90",
+      "link": "https://s.shopee.com.br/5q9CSEeBxO",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820l8-mswnhxljmwav39",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820l8-mswnhxljmwav39"
+      ],
+      "vendas": 8,
+      "avaliacao": "5",
+      "desconto_percentual": 37,
+      "coletado_em": "2026-10-24T14:11:58.651Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.655Z"
+    },
+    {
+      "id": "58267720195",
+      "titulo": "Bicicleta Elétrica Dobrável Para Adultos Com Pedalada Assistida Suporte De Celular Com Carregamento Máxima De 30km 400W",
+      "preco": "2199.88",
+      "preco_formatado": "R$ 2.199,88",
+      "link": "https://s.shopee.com.br/5fpmFvepIN",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820ll-multb0j1dam9e1",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820ll-multb0j1dam9e1"
+      ],
+      "vendas": 0,
+      "avaliacao": "5",
+      "desconto_percentual": 66,
+      "coletado_em": "2026-10-24T14:11:58.651Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "eletronicos",
+      "classificado_em": "2026-10-24T14:11:58.655Z"
+    },
+    {
+      "id": "19598318228",
+      "titulo": "Bola Decorativa De Natal Temática Led Bolinha Natalina Iluminada Para Árvore Decoração",
+      "preco": "21.58",
+      "preco_formatado": "R$ 21,58",
+      "link": "https://s.shopee.com.br/AAIBcCNhAG",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-825bc-mtl4cmxvl1xfc1",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-825bc-mtl4cmxvl1xfc1"
+      ],
+      "vendas": 5,
+      "avaliacao": "0",
+      "desconto_percentual": 64,
+      "coletado_em": "2026-10-24T14:11:58.651Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "eletronicos",
+      "classificado_em": "2026-10-24T14:11:58.655Z"
+    },
+    {
+      "id": "19199866082",
+      "titulo": "Suporte de peito ajustável para telefones celulares e câmeras GoPro para peito de motocicleta e bicicleta",
+      "preco": "23.9",
+      "preco_formatado": "R$ 23,90",
+      "link": "https://s.shopee.com.br/9zylPtOKVF",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-me8dbv27szy8f0",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-81z1k-me8dbv27szy8f0"
+      ],
+      "vendas": 3350,
+      "avaliacao": "4.9",
+      "desconto_percentual": 72,
+      "coletado_em": "2026-10-24T14:11:58.651Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "eletronicos",
+      "classificado_em": "2026-10-24T14:11:58.655Z"
+    },
+    {
+      "id": "23299302725",
+      "titulo": "Colchão Massageador Shiatsu com Aquecimento, Airbag, Vibração e Controle Remoto",
+      "preco": "455.99",
+      "preco_formatado": "R$ 455,99",
+      "link": "https://s.shopee.com.br/AUv20oMQUM",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztc-mk3ui9fmkdmq65",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-81ztc-mk3ui9fmkdmq65"
+      ],
+      "vendas": 193,
+      "avaliacao": "4.9",
+      "desconto_percentual": 54,
+      "coletado_em": "2026-10-24T14:11:58.651Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "eletronicos",
+      "classificado_em": "2026-10-24T14:11:58.655Z"
+    },
+    {
+      "id": "23697593504",
+      "titulo": "Capa Chuva Sapato Premium Protetor Pé Tênis Moto Adulto Impermeável Motoqueiro Calçado",
+      "preco": "23.99",
+      "preco_formatado": "R$ 23,99",
+      "link": "https://s.shopee.com.br/AKbboVN3pL",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lwk0nro3aahebd",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-7r98o-lwk0nro3aahebd"
+      ],
+      "vendas": 20,
+      "avaliacao": "4.8",
+      "desconto_percentual": 60,
+      "coletado_em": "2026-10-24T14:11:58.652Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "moda",
+      "classificado_em": "2026-10-24T14:11:58.655Z"
+    },
+    {
+      "id": "52067240770",
+      "titulo": "Kit Jarra de Vidro 1,6L com Tampa e 6 Taças Diamond 320ml Conjunto 7 Peças",
+      "preco": "33.49",
+      "preco_formatado": "R$ 33,49",
+      "link": "https://s.shopee.com.br/9V2UoyQEWC",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lu-mtoj55i1wp36c1",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820lu-mtoj55i1wp36c1"
+      ],
+      "vendas": 22,
+      "avaliacao": "4.7",
+      "desconto_percentual": 58,
+      "coletado_em": "2026-10-24T14:11:58.652Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.655Z"
+    },
+    {
+      "id": "58262746825",
+      "titulo": "Guarda-Chuva Automático Anti-Vento com Lanterna Proteção UV Blackout Compacto para Bolsa e Mochila",
+      "preco": "34",
+      "preco_formatado": "R$ 34,00",
+      "link": "https://s.shopee.com.br/9Kj4cfQrrB",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820mb-mqo88pve6q6bd7",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820mb-mqo88pve6q6bd7"
+      ],
+      "vendas": 1656,
+      "avaliacao": "4.9",
+      "desconto_percentual": 60,
+      "coletado_em": "2026-10-24T14:11:58.652Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "moda",
+      "classificado_em": "2026-10-24T14:11:58.655Z"
+    },
+    {
+      "id": "58270573155",
+      "titulo": "Bicicleta Elétrica Dobrável 35km/h Autonomia de Até 30km com Cesta e Banco Confortável",
+      "preco": "2300",
+      "preco_formatado": "R$ 2.300,00",
+      "link": "https://s.shopee.com.br/9pfLDaOxqI",
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8259j-mucil3yqzpxdbf",
+      "imagens": [
+        "https://cf.shopee.com.br/file/sg-11134201-8259j-mucil3yqzpxdbf"
+      ],
+      "vendas": 0,
+      "avaliacao": "0",
+      "desconto_percentual": 23,
+      "coletado_em": "2026-10-24T14:11:58.652Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.655Z"
+    },
+    {
+      "id": "58220286076",
+      "titulo": "Lona Transparente de PVC Reforçado – Impermeável,Durável e Proteção Solar – Com Ilhós – Jardim,Portas,Janelas e Varandas",
+      "preco": "69.89",
+      "preco_formatado": "R$ 69,89",
+      "link": "https://s.shopee.com.br/9fLv1HPbBH",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lw-mu7jw2statc390",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820lw-mu7jw2statc390"
+      ],
+      "vendas": 6,
+      "avaliacao": "5",
+      "desconto_percentual": 47,
+      "coletado_em": "2026-10-24T14:11:58.652Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "casa",
+      "classificado_em": "2026-10-24T14:11:58.655Z"
+    },
+    {
+      "id": "22097923147",
+      "titulo": "Creme Anti-Estrias - Diga Adeus às Estrias! Previne Novas Estrias & Reforça a Elasticidade Da Pele",
+      "preco": "39.9",
+      "preco_formatado": "R$ 39,90",
+      "link": "https://s.shopee.com.br/8pmo1kSls8",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m8-mu8vjxhp28e876",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820m8-mu8vjxhp28e876"
+      ],
+      "vendas": 1146,
+      "avaliacao": "4.8",
+      "desconto_percentual": 67,
+      "coletado_em": "2026-10-24T14:11:58.652Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "beleza",
+      "classificado_em": "2026-10-24T14:11:58.655Z"
+    },
+    {
+      "id": "58205450798",
+      "titulo": "Capa de Chuva Impermeável Conjunto Completo Pvc Para Motoqueiro Adulto",
+      "preco": "79.98",
+      "preco_formatado": "R$ 79,98",
+      "link": "https://s.shopee.com.br/8fTNpRTPD7",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztw-mkwjkg2ptiiree",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-81ztw-mkwjkg2ptiiree"
+      ],
+      "vendas": 575,
+      "avaliacao": "4.8",
+      "desconto_percentual": 20,
+      "coletado_em": "2026-10-24T14:11:58.652Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.655Z"
+    },
+    {
+      "id": "58218792205",
+      "titulo": "Moto Scooter Elétrica Guerreiro Lobo 9, Bateria Lítio 72V 30A, Motor 800W, Amortecedor Duplo, Freio a Disco Duplo, Auton",
+      "preco": "9449.89",
+      "preco_formatado": "R$ 9.449,89",
+      "link": "https://s.shopee.com.br/9APeQMRVCE",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m8-mtg4pha5o3cwba",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-820m8-mtg4pha5o3cwba"
+      ],
+      "vendas": 1,
+      "avaliacao": "4",
+      "desconto_percentual": 60,
+      "coletado_em": "2026-10-24T14:11:58.652Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "geral",
+      "classificado_em": "2026-10-24T14:11:58.655Z"
+    },
+    {
+      "id": "22898199528",
+      "titulo": "Parafusadeira e Furadeira c 2 Baterias + Maleta ou Parafusadeira c Jogo de Ferramentas Profissional",
+      "preco": "69.99",
+      "preco_formatado": "R$ 69,99",
+      "link": "https://s.shopee.com.br/906EE3S8XD",
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-m95035ynuhvmda",
+      "imagens": [
+        "https://cf.shopee.com.br/file/br-11134207-7r98o-m95035ynuhvmda"
+      ],
+      "vendas": 16,
+      "avaliacao": "4.7",
+      "desconto_percentual": 55,
+      "coletado_em": "2026-10-24T14:11:58.652Z",
+      "fonte": "shopee-products-v2",
+      "nicho": "ferramentas",
+      "classificado_em": "2026-10-24T14:11:58.655Z"
     }
   ]
 }
